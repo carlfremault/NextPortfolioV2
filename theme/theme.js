@@ -9,9 +9,47 @@ const theme = createTheme({
       main: "#0889A6",
     },
     background: {
-      default: "#8AA3A6",
+      default: "#052026",
+    },
+    text: {
+      primary: "#D9D9D9",
+    },
+  },
+  shape: {
+    borderRadius: 0,
+  },
+  typography: {
+    h2: {
+      fontFamily: "'STIX Two Text', serif",
+    },
+    h4: {
+      fontWeight: 300,
+    },
+    subtitle1: {
+      fontWeight: 300,
     },
   },
 });
+
+theme.typography.h2 = {
+  [theme.breakpoints.only("xs")]: {
+    fontSize: "1.75rem",
+  },
+  [theme.breakpoints.up("sm")]: {
+    fontSize: "2.75rem",
+  },
+  [theme.breakpoints.up("lg")]: {
+    fontSize: "3.75rem",
+  },
+};
+
+theme.typography.h4 = {
+  [theme.breakpoints.only("xs")]: {
+    fontSize: "1.5rem",
+  },
+  [theme.breakpoints.up("sm")]: {
+    fontSize: "2.125rem",
+  },
+};
 
 export default theme;

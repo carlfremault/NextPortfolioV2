@@ -13,10 +13,10 @@ import { useState } from "react";
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
-  root: { backgroundColor: "rgba(5, 32, 38, 0.5)" },
+  root: { backgroundColor: "rgba(3, 12, 13, 0.5)" },
 });
 
-const menu = ["Accueil", "Projets", "A Propos", "Curriculum Vitae"];
+const menu = ["Accueil", "À Propos", "Projets", "Curriculum Vitae"];
 
 const HideOnScroll = ({ children }) => {
   const trigger = useScrollTrigger();
@@ -42,9 +42,14 @@ const Navbar = (props) => {
 
   return (
     <HideOnScroll {...props}>
-      <AppBar classes={{ root: classes.root }}>
+      <AppBar className={classes.root}>
         <Toolbar>
-          <Grid container direction="row" justify="center" alignItems="center">
+          <Grid
+            container
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+          >
             <Tabs value={value} onChange={handleChange} centered>
               {menu.map((el) => (
                 <Tab key={el} label={el} />

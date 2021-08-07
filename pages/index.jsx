@@ -1,10 +1,12 @@
 import { Typography } from "@material-ui/core";
+import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
     <>
       <Navbar />
+      <Hero />
       <Typography variant="h1" color="primary">
         Hello
       </Typography>
