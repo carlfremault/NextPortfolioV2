@@ -16,7 +16,13 @@ const useStyles = makeStyles({
   root: { backgroundColor: "rgba(3, 12, 13, 0.5)" },
 });
 
-const menu = ["Accueil", "À Propos", "Projets", "Curriculum Vitae"];
+const menu = [
+  "Accueil",
+  "À Propos",
+  "Projets",
+  "Veille Informatique",
+  "Curriculum Vitae",
+];
 
 const HideOnScroll = ({ children }) => {
   const trigger = useScrollTrigger();
