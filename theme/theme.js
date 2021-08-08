@@ -19,12 +19,6 @@ const theme = createTheme({
     borderRadius: 0,
   },
   typography: {
-    h2: {
-      fontFamily: "'STIX Two Text', serif",
-    },
-    h4: {
-      fontWeight: 300,
-    },
     subtitle1: {
       fontWeight: 300,
     },
@@ -32,6 +26,8 @@ const theme = createTheme({
 });
 
 theme.typography.h2 = {
+  fontFamily: "'STIX Two Text', serif",
+  fontWeight: 300,
   [theme.breakpoints.only("xs")]: {
     fontSize: "1.75rem",
   },
@@ -44,6 +40,7 @@ theme.typography.h2 = {
 };
 
 theme.typography.h4 = {
+  fontWeight: 300,
   [theme.breakpoints.only("xs")]: {
     fontSize: "1.5rem",
   },

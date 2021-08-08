@@ -19,9 +19,6 @@ const useStyles = makeStyles((theme) => ({
   opaqueLayer: {
     backgroundColor: "rgba(5, 32, 38, 0.7)",
     height: "100vh",
-    // paddingLeft: 0,
-    // paddingRight: 0,
-    // width: "100vw",
     zIndex: -1,
   },
   heroGrid: {
@@ -32,6 +29,11 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 400,
     top: "1.5rem",
     borderColor: theme.palette.text.primary,
+  },
+  credits: {
+    position: "absolute",
+    bottom: 5,
+    right: 10,
   },
 }));
 
@@ -49,16 +51,18 @@ const Hero = () => {
           alignItems="center"
         >
           <Grid item>
-            <Typography variant="h4" style={{ paddingBottom: "0.2rem" }}>
+            <Typography variant="h4" component="h2">
               Carl Fremault
             </Typography>
           </Grid>
           <Grid item>
-            <Typography variant="h2">Étudiant développeur</Typography>
+            <Typography variant="h2" component="h1">
+              Étudiant développeur
+            </Typography>
           </Grid>
           <Hidden only={["xs"]}>
             <Grid item>
-              <Typography variant="subtitle1">
+              <Typography variant="subtitle1" component="h2">
                 2ième année BTS SIO - Solutions Logicielles et Applications
                 Métier
               </Typography>
@@ -66,10 +70,12 @@ const Hero = () => {
           </Hidden>
           <Hidden smUp>
             <Grid item>
-              <Typography variant="subtitle1">2ième année BTS SIO</Typography>
+              <Typography variant="subtitle1" component="h2">
+                2ième année BTS SIO
+              </Typography>
             </Grid>
             <Grid item>
-              <Typography variant="subtitle1">
+              <Typography variant="subtitle1" component="h2">
                 Solutions Logicielles et Applications Métier
               </Typography>
             </Grid>
@@ -80,6 +86,16 @@ const Hero = () => {
             </Button>
           </Grid>
         </Grid>
+        <Typography className={classes.credits}>
+          Photo by{" "}
+          <a href="https://unsplash.com/@matthewhenry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            Matthew Henry
+          </a>{" "}
+          on{" "}
+          <a href="https://unsplash.com/s/photos/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            Unsplash
+          </a>
+        </Typography>
       </Container>
     </Container>
   );
