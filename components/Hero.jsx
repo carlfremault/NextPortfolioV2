@@ -3,6 +3,7 @@ import {
   Container,
   Grid,
   Hidden,
+  Link,
   makeStyles,
   Typography,
 } from "@material-ui/core";
@@ -87,14 +88,14 @@ const Hero = () => {
           </Grid>
         </Grid>
         <Typography className={classes.credits}>
-          Photo by{" "}
-          <a href="https://unsplash.com/@matthewhenry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-            Matthew Henry
-          </a>{" "}
-          on{" "}
-          <a href="https://unsplash.com/s/photos/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-            Unsplash
-          </a>
+          Photo par{" "}
+          <Link href="https://unsplash.com/@matthewhenry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            <a>Matthew Henry</a>
+          </Link>{" "}
+          sur{" "}
+          <Link href="https://unsplash.com/s/photos/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            <a>Unsplash</a>
+          </Link>
         </Typography>
       </Container>
     </Container>
