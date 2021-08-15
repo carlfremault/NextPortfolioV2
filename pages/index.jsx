@@ -1,4 +1,4 @@
-import Apropos from "../components/Apropos";
+import Apropos from "../components/apropos/Apropos";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 
