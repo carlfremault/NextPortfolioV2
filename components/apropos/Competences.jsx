@@ -14,7 +14,7 @@ import CheckIcon from "@material-ui/icons/Check";
 
 const useStyles = makeStyles(() => ({
   card: {
-    backgroundColor: "inherit",
+    backgroundColor: "#052026",
     boxShadow: "none",
     width: "250px",
   },
