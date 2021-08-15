@@ -3,10 +3,10 @@ import {
   Container,
   Grid,
   Hidden,
-  Link,
   makeStyles,
   Typography,
 } from "@material-ui/core";
+import Link from "next/link";
 
 const useStyles = makeStyles((theme) => ({
   heroContainer: {
