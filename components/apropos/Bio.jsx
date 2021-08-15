@@ -1,37 +1,28 @@
 import { Box, Container, Typography } from "@material-ui/core";
 
-const Apropos = () => {
+const bio = () => {
   return (
-    <Container maxWidth={false}>
-      <Typography
-        variant="h1"
-        color="primary"
-        align="center"
-        style={{ margin: "4rem 0 2rem 0" }}
-        id="apropos"
-      >
+    <Container
+      style={{
+        marginTop: "4rem",
+        marginBottom: "4rem",
+      }}
+    >
+      <Typography variant="h1" color="primary" align="center">
         À propos
       </Typography>
       <Container maxWidth="md">
         <Box m={2}>
           <Typography variant="body1" align="justify">
             Ma passion pour l&apos;informatique a commencé vers mes 10 ans quand
-            j&apos;ai eu un IBM PC 5150 d&apos;occasion en cadeau. Comme la
-            carte graphique CGA n&apos;était pas incluse je n&apos;avais pas
-            accès aux jeux vidéo que jouaient mes amis, du coup je
-            &apos;jouais&apos; avec WordPerfect, Lotus 123, et la programmation
-            en MS Basic.
-          </Typography>
-        </Box>
-        <Box m={2}>
-          <Typography variant="body1" align="justify">
-            Quelques années (et quelques générations de processeurs) plus tard
-            j&apos;ai intégré mon premier emploi en tant que ingénieur de
-            maintenance en informatique, chez Systemat en Belgique. La moitié du
-            temps j&apos;étais en sous-traitance chez un de nos clients pour
-            administrer son réseau, l&apos;autre moitié j&apos;intervenais chez
-            des clients professionnels pour dépanner et installer serveurs,
-            ordinateurs de bureau, ordinateurs portables et imprimantes.
+            j&apos;ai eu un IBM PC 5150 d&apos;occasion en cadeau. Quelques
+            années plus tard j&apos;ai intégré mon premier emploi en tant que
+            ingénieur de maintenance en informatique, chez Systemat en Belgique.
+            La moitié du temps j&apos;étais en sous-traitance chez un de nos
+            clients pour administrer son réseau, l&apos;autre moitié
+            j&apos;intervenais chez des clients professionnels pour dépanner et
+            installer serveurs, ordinateurs de bureau, ordinateurs portables et
+            imprimantes.
           </Typography>
         </Box>
         <Box m={2}>
@@ -58,7 +49,7 @@ const Apropos = () => {
             informatiques aux Organisations, option Solutions Logicielles et
             Applications Métier. À côté de cette formation au CNED je fais
             également des cours en ligne sur Udemy (C#, JavaScript, React) et je
-            m&apos;entraîne sur Exercism et Codewars (JavaScript).
+            m&apos;entraîne sur Exercism {"\n"} et Codewars.
           </Typography>
         </Box>
       </Container>
@@ -66,4 +57,4 @@ const Apropos = () => {
   );
 };
 
-export default Apropos;
+export default bio;

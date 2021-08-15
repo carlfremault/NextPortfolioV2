@@ -6,7 +6,7 @@ const theme = createTheme({
       main: "#0896A6",
     },
     secondary: {
-      main: "#0889A6",
+      main: "#406473",
     },
     background: {
       default: "#052026",
@@ -50,7 +50,18 @@ theme.typography.h2 = {
     fontSize: "3.75rem",
   },
 };
-
+theme.typography.h3 = {
+  fontWeight: 300,
+  [theme.breakpoints.only("xs")]: {
+    fontSize: "1.7rem",
+  },
+  [theme.breakpoints.up("sm")]: {
+    fontSize: "1.9rem",
+  },
+  [theme.breakpoints.up("lg")]: {
+    fontSize: "2.4rem",
+  },
+};
 theme.typography.h4 = {
   fontWeight: 300,
   [theme.breakpoints.only("xs")]: {
@@ -58,6 +69,18 @@ theme.typography.h4 = {
   },
   [theme.breakpoints.up("sm")]: {
     fontSize: "2.125rem",
+  },
+};
+theme.typography.h5 = {
+  fontWeight: 300,
+  [theme.breakpoints.only("xs")]: {
+    fontSize: "1.2rem",
+  },
+  [theme.breakpoints.up("sm")]: {
+    fontSize: "1.4rem",
+  },
+  [theme.breakpoints.up("lg")]: {
+    fontSize: "1.9rem",
   },
 };
 
