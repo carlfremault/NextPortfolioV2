@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   heroGrid: {
     height: "100vh",
   },
-  heroButton: {
+  button: {
     fontFamily: "Roboto",
     fontWeight: 400,
     top: "1.5rem",
@@ -82,7 +82,7 @@ const Hero = () => {
             </Grid>
           </Hidden>
           <Grid item>
-            <Button variant="outlined" className={classes.heroButton}>
+            <Button variant="outlined" className={classes.button}>
               Découvrez mes projets
             </Button>
           </Grid>
