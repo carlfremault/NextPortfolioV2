@@ -16,17 +16,19 @@ import MenuIcon from "@material-ui/icons/Menu";
 import MenuOpenIcon from "@material-ui/icons/MenuOpen";
 
 const useStyles = makeStyles({
-  root: { backgroundColor: "rgba(3, 12, 13, 0.5)" },
+  root: { backgroundColor: "rgba(3, 12, 13, 0.8)" },
 });
 
 const menu = [
   {
     item: "Accueil",
-    path: "/",
+    path: "hero",
+    offset: 0,
   },
   {
     item: "À Propos",
-    path: "#apropos",
+    path: "apropos",
+    offset: -60,
   },
   {
     item: "Projets",
@@ -37,7 +39,7 @@ const menu = [
     path: "#",
   },
   {
-    item: "Curriculum Vitae",
+    item: "CV",
     path: "#",
   },
 ];
