@@ -1,31 +1,11 @@
-import {
-  Button,
-  Container,
-  Grid,
-  makeStyles,
-  Typography,
-} from "@material-ui/core";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import GitHubIcon from "@material-ui/icons/GitHub";
-
-const useStyles = makeStyles((theme) => ({
-  button: {
-    borderColor: theme.palette.text.primary,
-    fontFamily: "Roboto",
-    fontWeight: 400,
-    textTransform: "none",
-    top: "1.5rem",
-  },
-}));
+import { Container, Typography } from "@material-ui/core";
 
 const Bio = () => {
-  const classes = useStyles();
-
   return (
     <Container
       style={{
         marginTop: "4rem",
-        marginBottom: "6rem",
+        marginBottom: "4rem",
       }}
     >
       <Typography
@@ -84,40 +64,6 @@ const Bio = () => {
           également des cours en ligne sur Udemy (C#, JavaScript, React) et je
           m&apos;entraîne sur Exercism et Codewars.
         </Typography>
-      </Container>
-      <Container maxWidth="sm">
-        <Grid container justifyContent="space-around">
-          <Grid item>
-            <a
-              href="https://www.linkedin.com/in/carl-fremault/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Button
-                variant="outlined"
-                className={classes.button}
-                startIcon={<LinkedInIcon />}
-              >
-                LinkedIn
-              </Button>
-            </a>
-          </Grid>
-          <Grid item>
-            <a
-              href="https://github.com/carlfremault"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Button
-                variant="outlined"
-                className={classes.button}
-                startIcon={<GitHubIcon />}
-              >
-                GitHub
-              </Button>
-            </a>
-          </Grid>
-        </Grid>
       </Container>
     </Container>
   );
