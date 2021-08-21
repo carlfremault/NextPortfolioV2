@@ -4,12 +4,12 @@ import Competences from "./Competences";
 
 const Apropos = () => {
   return (
-    <Container maxWidth={false}>
-      <section id="apropos" style={{ scrollMarginTop: "4rem" }}>
+    <section id="apropos">
+      <Container maxWidth={false}>
         <Bio />
         <Competences />
-      </section>
-    </Container>
+      </Container>
+    </section>
   );
 };
 

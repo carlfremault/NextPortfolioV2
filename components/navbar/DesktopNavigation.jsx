@@ -1,20 +1,34 @@
 import PropTypes from "prop-types";
-import { Tab, Tabs } from "@material-ui/core";
-import { useState } from "react";
+import { Button, Typography } from "@material-ui/core";
+import { Link } from "react-scroll";
 
 const DesktopNavigation = ({ menu }) => {
-  const [value, setValue] = useState(0);
-
-  const handleChange = (e, newValue) => {
-    setValue(newValue);
-  };
-
   return (
-    <Tabs value={value} onChange={handleChange} centered>
+    <>
       {menu.map((item) => (
-        <Tab key={item.item} label={item.item} href={item.path} />
+        <Link
+          to={item.path}
+          spy={true}
+          smooth={true}
+          offset={item.offset}
+          duration={500}
+          key={item.item}
+        >
+          <Button>
+            <Typography
+              variant="subtitle1"
+              color="primary"
+              style={{
+                margin: "0 2rem 0 2rem",
+                color: "primary",
+              }}
+            >
+              {item.item}
+            </Typography>
+          </Button>
+        </Link>
       ))}
-    </Tabs>
+    </>
   );
 };
 

@@ -42,63 +42,65 @@ const Hero = () => {
   const classes = useStyles();
 
   return (
-    <Container className={classes.heroContainer} maxWidth={false}>
-      <Container className={classes.opaqueLayer} maxWidth={false}>
-        <Grid
-          container
-          className={classes.heroGrid}
-          direction="column"
-          justifyContent="center"
-          alignItems="center"
-        >
-          <Grid item>
-            <Typography variant="h4" component="h2">
-              Carl Fremault
-            </Typography>
-          </Grid>
-          <Grid item>
-            <Typography variant="h2" component="h1">
-              Étudiant développeur
-            </Typography>
-          </Grid>
-          <Hidden only={["xs"]}>
+    <section id="hero">
+      <Container className={classes.heroContainer} maxWidth={false}>
+        <Container className={classes.opaqueLayer} maxWidth={false}>
+          <Grid
+            container
+            className={classes.heroGrid}
+            direction="column"
+            justifyContent="center"
+            alignItems="center"
+          >
             <Grid item>
-              <Typography variant="subtitle1" component="h2">
-                2ième année BTS SIO - Solutions Logicielles et Applications
-                Métier
-              </Typography>
-            </Grid>
-          </Hidden>
-          <Hidden smUp>
-            <Grid item>
-              <Typography variant="subtitle1" component="h2">
-                2ième année BTS SIO
+              <Typography variant="h4" component="h2">
+                Carl Fremault
               </Typography>
             </Grid>
             <Grid item>
-              <Typography variant="subtitle1" component="h2">
-                Solutions Logicielles et Applications Métier
+              <Typography variant="h2" component="h1">
+                Étudiant développeur
               </Typography>
             </Grid>
-          </Hidden>
-          <Grid item>
-            <Button variant="outlined" className={classes.button}>
-              Découvrez mes projets
-            </Button>
+            <Hidden only={["xs"]}>
+              <Grid item>
+                <Typography variant="subtitle1" component="h2">
+                  2ième année BTS SIO - Solutions Logicielles et Applications
+                  Métier
+                </Typography>
+              </Grid>
+            </Hidden>
+            <Hidden smUp>
+              <Grid item>
+                <Typography variant="subtitle1" component="h2">
+                  2ième année BTS SIO
+                </Typography>
+              </Grid>
+              <Grid item>
+                <Typography variant="subtitle1" component="h2">
+                  Solutions Logicielles et Applications Métier
+                </Typography>
+              </Grid>
+            </Hidden>
+            <Grid item>
+              <Button variant="outlined" className={classes.button}>
+                Découvrez mes projets
+              </Button>
+            </Grid>
           </Grid>
-        </Grid>
-        <Typography className={classes.credits}>
-          Photo par{" "}
-          <Link href="https://unsplash.com/@matthewhenry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-            <a>Matthew Henry</a>
-          </Link>{" "}
-          sur{" "}
-          <Link href="https://unsplash.com/s/photos/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-            <a>Unsplash</a>
-          </Link>
-        </Typography>
+          <Typography className={classes.credits}>
+            Photo par{" "}
+            <Link href="https://unsplash.com/@matthewhenry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              <a>Matthew Henry</a>
+            </Link>{" "}
+            sur{" "}
+            <Link href="https://unsplash.com/s/photos/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              <a>Unsplash</a>
+            </Link>
+          </Typography>
+        </Container>
       </Container>
-    </Container>
+    </section>
   );
 };
 

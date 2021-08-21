@@ -56,12 +56,12 @@ const Bio = () => {
           align="justify"
           style={{ marginBottom: "1rem" }}
         >
-          Une envie de voir de nouveaux horizons m&apos;a amené à déménager dans
-          les Alpes où j&apos;ai travaillé pendant 19 ans dans les secteurs de
-          l&apos;hôtellerie et du tourisme. Riche en expériences, cet
-          intermezzo, qui a duré plus longtemps que prévu, m&apos;a appris que,
-          si on est prêt à faire des efforts et quelques sacrifices, il est tout
-          à fait possible de réaliser ses rêves.
+          Toujours à la recherche de nouveaux défis et horizons, j&apos;ai
+          déménagé ensuite dans les Alpes où j&apos;ai travaillé pendant 19 ans
+          dans les secteurs de l&apos;hôtellerie et du tourisme. Riche en
+          expériences, cet intermezzo, m&apos;a appris que, si on est prêt à
+          faire des efforts et quelques sacrifices, il est tout à fait possible
+          de réaliser ses rêves.
         </Typography>
         <Typography
           variant="body1"
