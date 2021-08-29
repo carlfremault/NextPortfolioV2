@@ -32,18 +32,16 @@ const menu = [
   },
   {
     item: "Projets",
-    path: "#",
+    path: "projets",
+    offset: 0,
   },
   {
     item: "Veille Informatique",
     path: "#",
   },
-  {
-    item: "CV",
-    path: "#",
-  },
 ];
 
+// Functionality for navbar disappearing when scrolling down, reappearing when scrolling up
 const HideOnScroll = ({ children }) => {
   const trigger = useScrollTrigger();
 
@@ -58,11 +56,18 @@ HideOnScroll.propTypes = {
   children: PropTypes.element.isRequired,
 };
 
+/**
+ * Navbar component displays 'classic' navbar at page top for desktop navigation (960px and more),
+ * and Drawer for Mobile navigation (below 960px)
+ * Navigation items handled with 'menu' array of objects
+ * Navbar disappears when scrolling down, reappears when scrolling up
+ */
 const Navbar = (props) => {
   const classes = useStyles();
   const [openDrawer, setOpenDrawer] = useState(false);
   const node = useRef();
 
+  // A click outside of the toolbar sets drawer to 'closed'
   const handleClick = (e) => {
     if (node.current.contains(e.target)) {
       return;

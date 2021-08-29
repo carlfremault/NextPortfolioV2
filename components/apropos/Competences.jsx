@@ -30,7 +30,12 @@ const Competences = () => {
         marginBottom: "4rem",
       }}
     >
-      <Typography variant="h3" color="primary" align="center">
+      <Typography
+        variant="h3"
+        color="primary"
+        align="center"
+        style={{ marginBottom: "1rem" }}
+      >
         Compétences
       </Typography>
       <Grid container justifyContent="center" alignItems="stretch">

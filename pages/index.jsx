@@ -1,6 +1,7 @@
 import Apropos from "../components/apropos/Apropos";
 import Hero from "../components/Hero";
 import Navbar from "../components/navbar/Navbar";
+import Projets from "../components/projets/Projets";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Apropos />
+      <Projets />
     </>
   );
 }
