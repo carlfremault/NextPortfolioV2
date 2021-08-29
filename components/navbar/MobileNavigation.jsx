@@ -1,27 +1,19 @@
 import PropTypes from "prop-types";
-import { Drawer, Grid, List, makeStyles, Typography } from "@material-ui/core";
+import { Drawer, Grid, List, Typography } from "@material-ui/core";
+import { useTheme } from "@material-ui/styles";
 import { Link } from "react-scroll";
 
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    background: theme.palette.secondary.main,
-  },
-  links: {
-    color: "white",
-    margin: "1rem 0 1rem 0",
-  },
-}));
-
+/**
+ * Drawer for mobile navigation (below 960px)
+ * @param {boolean} drawerOpen - Defines if Drawer is open or not
+ * @param {array} menu - Array of objects, one for each menu item
+ * @param {string} variant - Mui Drawer variant
+ */
 const MobileNavigation = ({ drawerOpen, menu, variant }) => {
-  const classes = useStyles();
+  const theme = useTheme();
 
   return (
-    <Drawer
-      variant={variant}
-      anchor="top"
-      open={drawerOpen}
-      classes={{ paper: classes.paper }}
-    >
+    <Drawer variant={variant} anchor="top" open={drawerOpen}>
       <List>
         <Grid
           container
@@ -39,7 +31,7 @@ const MobileNavigation = ({ drawerOpen, menu, variant }) => {
               duration={500}
               key={item.item}
             >
-              <Typography className={classes.links}>{item.item}</Typography>
+              <Typography style={theme.mobileNavLink}>{item.item}</Typography>
             </Link>
           ))}
         </Grid>

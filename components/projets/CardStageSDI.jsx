@@ -5,36 +5,14 @@ import {
   CardHeader,
   CardMedia,
   Grid,
-  makeStyles,
   Typography,
 } from "@material-ui/core";
+import { useTheme } from "@material-ui/styles";
 import LinkIcon from "@material-ui/icons/Link";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 
-const useStyles = makeStyles((theme) => ({
-  subheader: {
-    color: theme.palette.primary.main,
-  },
-  button: {
-    borderColor: theme.palette.primary.main,
-    color: theme.palette.primary.main,
-    fontFamily: "Roboto",
-    fontWeight: 400,
-    textTransform: "none",
-    marginTop: "1rem",
-  },
-  buttonsGroup: {
-    position: "absolute",
-    bottom: 5,
-    left: "auto",
-    right: "auto",
-    border: "1px solid red",
-    width: "90%",
-  },
-}));
-
 const CardStageSDI = () => {
-  const classes = useStyles();
+  const theme = useTheme();
 
   return (
     <div
@@ -48,18 +26,14 @@ const CardStageSDI = () => {
       <CardHeader
         title="Création de site web vitrine - Next.js"
         subheader={
-          <Typography className={classes.subheader}>
-            Stage en milieu professionnel
-          </Typography>
+          <Typography color="primary">Stage en milieu professionnel</Typography>
         }
       />
-
       <CardMedia
         image="/imgs/SDI.png"
         title="Site web Sport Data Intelligence"
         style={{ height: 200 }}
       />
-
       <CardContent>
         <Typography variant="body1" color="textPrimary" align="justify">
           Pour mon stage de première année j’ai été accueilli par Sport Data
@@ -67,7 +41,6 @@ const CardStageSDI = () => {
           2021.
         </Typography>
       </CardContent>
-
       <CardActions>
         <Grid
           container
@@ -83,7 +56,7 @@ const CardStageSDI = () => {
             >
               <Button
                 variant="outlined"
-                className={classes.button}
+                style={theme.primaryButton}
                 startIcon={<LinkIcon />}
               >
                 Visitez le site
@@ -94,7 +67,7 @@ const CardStageSDI = () => {
             <a href="#" target="_blank" rel="noreferrer">
               <Button
                 variant="outlined"
-                className={classes.button}
+                style={theme.primaryButton}
                 startIcon={<AddCircleOutlineIcon />}
               >
                 Plus d&apos;infos

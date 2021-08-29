@@ -1,25 +1,15 @@
-import { Card, Container, Grid, makeStyles } from "@material-ui/core";
+import { Card, Container, Grid } from "@material-ui/core";
+import { useTheme } from "@material-ui/styles";
 import CardStageSDI from "./CardStageSDI";
 import CardPPEMediaTek from "./CardPPEMediaTek";
 import CardCalculatrice from "./CardCalculatrice";
 import CardAlgosTri from "./CardAlgosTri";
 
-const useStyles = makeStyles({
-  card: {
-    backgroundColor: "#052026",
-    boxShadow: "none",
-    width: "350px",
-    minHeight: "550px",
-    position: "relative",
-    marginTop: "3rem",
-  },
-});
-
 /**
  * Grid container for hardcoded Project Cards
  */
 const ProjectCards = () => {
-  const classes = useStyles();
+  const theme = useTheme();
 
   return (
     <Container
@@ -29,36 +19,16 @@ const ProjectCards = () => {
       }}
     >
       <Grid container justifyContent="space-evenly" alignItems="stretch">
-        <Grid
-          item
-          component={Card}
-          classes={{ root: classes.card }}
-          raised={true}
-        >
+        <Grid item component={Card} style={theme.projectCard} raised={true}>
           <CardStageSDI />
         </Grid>
-        <Grid
-          item
-          component={Card}
-          classes={{ root: classes.card }}
-          raised={true}
-        >
+        <Grid item component={Card} style={theme.projectCard} raised={true}>
           <CardPPEMediaTek />
         </Grid>
-        <Grid
-          item
-          component={Card}
-          classes={{ root: classes.card }}
-          raised={true}
-        >
+        <Grid item component={Card} style={theme.projectCard} raised={true}>
           <CardCalculatrice />
         </Grid>
-        <Grid
-          item
-          component={Card}
-          classes={{ root: classes.card }}
-          raised={true}
-        >
+        <Grid item component={Card} style={theme.projectCard} raised={true}>
           <CardAlgosTri />
         </Grid>
       </Grid>

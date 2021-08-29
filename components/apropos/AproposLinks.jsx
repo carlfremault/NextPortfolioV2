@@ -1,30 +1,17 @@
-import { Button, Container, Grid, makeStyles } from "@material-ui/core";
+import { Button, Container, Grid } from "@material-ui/core";
+import { useTheme } from "@material-ui/styles";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import FaceIcon from "@material-ui/icons/Face";
 
-const useStyles = makeStyles((theme) => ({
-  button: {
-    borderColor: theme.palette.text.primary,
-    fontFamily: "Roboto",
-    fontWeight: 400,
-    textTransform: "none",
-    // top: "1.5rem",
-    margin: "2rem 2rem",
-  },
-}));
-
+/**
+ * Horizontal grid with link buttons
+ */
 const AproposLinks = () => {
-  const classes = useStyles();
+  const theme = useTheme();
 
   return (
-    <Container
-      maxWidth="sm"
-      //   style={{
-      //     marginTop: "4rem",
-      //     marginBottom: "6rem",
-      //   }}
-    >
+    <Container maxWidth="sm">
       <Grid
         container
         direction="row"
@@ -39,7 +26,7 @@ const AproposLinks = () => {
           >
             <Button
               variant="outlined"
-              className={classes.button}
+              style={theme.aproposButton}
               startIcon={<LinkedInIcon />}
             >
               LinkedIn
@@ -54,7 +41,7 @@ const AproposLinks = () => {
           >
             <Button
               variant="outlined"
-              className={classes.button}
+              style={theme.aproposButton}
               startIcon={<GitHubIcon />}
             >
               GitHub
@@ -69,7 +56,7 @@ const AproposLinks = () => {
           >
             <Button
               variant="outlined"
-              className={classes.button}
+              style={theme.aproposButton}
               startIcon={<FaceIcon />}
             >
               CV (PDF)
