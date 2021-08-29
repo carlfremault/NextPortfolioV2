@@ -1,21 +1,16 @@
 import { Container, Typography } from "@material-ui/core";
 
+/**
+ * Hardcoded bio
+ */
 const Bio = () => {
   return (
     <Container
       style={{
-        marginTop: "4rem",
+        marginTop: "2rem",
         marginBottom: "4rem",
       }}
     >
-      <Typography
-        variant="h1"
-        color="primary"
-        align="center"
-        style={{ marginBottom: "2rem" }}
-      >
-        À propos
-      </Typography>
       <Container maxWidth="md">
         <Typography
           variant="body1"
@@ -39,7 +34,7 @@ const Bio = () => {
           Toujours à la recherche de nouveaux défis et horizons, j&apos;ai
           déménagé ensuite dans les Alpes où j&apos;ai travaillé pendant 19 ans
           dans les secteurs de l&apos;hôtellerie et du tourisme. Riche en
-          expériences, cet intermezzo, m&apos;a appris que, si on est prêt à
+          expériences, cet intermezzo m&apos;a appris que, si on est prêt à
           faire des efforts et quelques sacrifices, il est tout à fait possible
           de réaliser ses rêves.
         </Typography>

@@ -1,25 +1,17 @@
-import { Container, makeStyles, Typography } from "@material-ui/core";
+import { Container, Typography } from "@material-ui/core";
+import { useTheme } from "@material-ui/styles";
 import ProjectCards from "./ProjectCards";
-
-const useStyles = makeStyles({
-  projets: {
-    backgroundColor: "#1E3C40",
-    overflow: "hidden",
-    paddingLeft: 0,
-    paddingRight: 0,
-  },
-});
 
 /**
  * 'Projets' section
  * Section title and container ProjectCards for project cards
  */
 const Projets = () => {
-  const classes = useStyles();
+  const theme = useTheme();
 
   return (
     <section id="projets">
-      <Container maxWidth={false} className={classes.projets}>
+      <Container maxWidth={false} style={theme.projectsSection}>
         <Container
           style={{
             marginTop: "4rem",

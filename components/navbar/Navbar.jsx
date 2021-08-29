@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { useEffect, useRef, useState } from "react";
-import { makeStyles } from "@material-ui/styles";
+import { useTheme } from "@material-ui/styles";
 import {
   AppBar,
   Grid,
@@ -14,10 +14,6 @@ import DesktopNavigation from "../navbar/DesktopNavigation";
 import MobileNavigation from "../navbar/MobileNavigation";
 import MenuIcon from "@material-ui/icons/Menu";
 import MenuOpenIcon from "@material-ui/icons/MenuOpen";
-
-const useStyles = makeStyles({
-  root: { backgroundColor: "rgba(3, 12, 13, 0.8)" },
-});
 
 const menu = [
   {
@@ -63,7 +59,7 @@ HideOnScroll.propTypes = {
  * Navbar disappears when scrolling down, reappears when scrolling up
  */
 const Navbar = (props) => {
-  const classes = useStyles();
+  const theme = useTheme();
   const [openDrawer, setOpenDrawer] = useState(false);
   const node = useRef();
 
@@ -87,7 +83,7 @@ const Navbar = (props) => {
   return (
     <>
       <HideOnScroll {...props}>
-        <AppBar className={classes.root}>
+        <AppBar style={theme.appbar}>
           <div ref={node}>
             <Toolbar>
               <Grid

@@ -5,27 +5,14 @@ import {
   CardHeader,
   CardMedia,
   Grid,
-  makeStyles,
   Typography,
 } from "@material-ui/core";
+import { useTheme } from "@material-ui/styles";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import GitHubIcon from "@material-ui/icons/GitHub";
 
-const useStyles = makeStyles((theme) => ({
-  subheader: {
-    color: theme.palette.primary.main,
-  },
-  button: {
-    borderColor: theme.palette.primary.main,
-    color: theme.palette.primary.main,
-    fontFamily: "Roboto",
-    fontWeight: 400,
-    textTransform: "none",
-  },
-}));
-
 const CardStageSDI = () => {
-  const classes = useStyles();
+  const theme = useTheme();
 
   return (
     <div
@@ -38,11 +25,7 @@ const CardStageSDI = () => {
     >
       <CardHeader
         title="Calculatrice Simple - Java"
-        subheader={
-          <Typography className={classes.subheader}>
-            Projet Personnel
-          </Typography>
-        }
+        subheader={<Typography color="primary">Projet Personnel</Typography>}
       />
       <CardMedia
         image="/imgs/Calculatrice.png"
@@ -70,7 +53,7 @@ const CardStageSDI = () => {
             >
               <Button
                 variant="outlined"
-                className={classes.button}
+                style={theme.primaryButton}
                 startIcon={<GitHubIcon />}
               >
                 GitHub repo
@@ -81,7 +64,7 @@ const CardStageSDI = () => {
             <a href="#" target="_blank" rel="noreferrer">
               <Button
                 variant="outlined"
-                className={classes.button}
+                style={theme.primaryButton}
                 startIcon={<AddCircleOutlineIcon />}
               >
                 Plus d&apos;infos
