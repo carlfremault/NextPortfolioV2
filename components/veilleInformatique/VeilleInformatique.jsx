@@ -2,6 +2,10 @@ import { Container, Typography } from "@material-ui/core";
 import Forums from "./Forums";
 import Newsletters from "./Newsletters";
 
+/**
+ * 'Veille Informatique' section
+ * Introduction and contains Newletters and Forums components
+ */
 const VeilleInformatique = () => {
   return (
     <section id="veilleinfo">

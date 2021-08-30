@@ -11,7 +11,7 @@ const Projets = () => {
 
   return (
     <section id="projets">
-      <Container maxWidth={false} style={theme.projectsSection}>
+      <Container maxWidth={false} style={theme.lightBackgroundSection}>
         <Container
           style={{
             marginTop: "4rem",

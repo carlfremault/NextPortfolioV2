@@ -40,6 +40,7 @@ const theme = createTheme({
     fontFamily: "Roboto",
     fontWeight: 400,
     textTransform: "none",
+    margin: "0.2rem 0",
   },
   desktopNavButton: {
     margin: "0 2rem 0 2rem",
@@ -51,6 +52,9 @@ const theme = createTheme({
     fontWeight: 400,
     top: "1.5rem",
     borderColor: "#D9D9D9",
+  },
+  heroLink: {
+    color: "#0896A6",
   },
   // Custom cards
   competenceCard: {
@@ -67,11 +71,18 @@ const theme = createTheme({
     marginTop: "3rem",
   },
   // Sections
-  projectsSection: {
+  lightBackgroundSection: {
     backgroundColor: "#1E3C40",
     overflow: "hidden",
     paddingLeft: 0,
     paddingRight: 0,
+  },
+  footer: {
+    backgroundColor: "#030c0d",
+    overflow: "hidden",
+    paddingLeft: 0,
+    paddingRight: 0,
+    minHeight: "15vh",
   },
   // Hero
   heroContainer: {
