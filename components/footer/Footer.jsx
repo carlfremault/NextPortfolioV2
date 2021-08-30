@@ -1,6 +1,7 @@
 import { Container, Grid, Typography } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
+import CGU from "./CGU";
 
 /**
  * Footer component, contains contact info and General Conditions of Use link
@@ -10,7 +11,7 @@ const Footer = () => {
 
   return (
     <Container maxWidth={false} style={theme.footer}>
-      <Container maxWidth="70vw">
+      <Container style={theme.footerContainer}>
         <Grid
           container
           direction="row"
@@ -65,9 +66,7 @@ const Footer = () => {
               margin: "1rem 0",
             }}
           >
-            <Typography variant="body2" color="primary">
-              Conditions Générales d&apos;Utilisation
-            </Typography>
+            <CGU />
           </Grid>
         </Grid>
       </Container>
