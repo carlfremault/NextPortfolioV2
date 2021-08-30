@@ -84,6 +84,9 @@ const theme = createTheme({
     paddingRight: 0,
     minHeight: "15vh",
   },
+  footerContainer: {
+    maxWidth: "95vw",
+  },
   // Hero
   heroContainer: {
     background: `url(/imgs/matthew-henry-VviFtDJakYk-unsplash.jpg) no-repeat top/cover`,
