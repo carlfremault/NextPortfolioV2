@@ -1,7 +1,10 @@
 import { Button, Container, Grid, Hidden, Typography } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
-import Link from "next/link";
+import { Link } from "react-scroll";
 
+/**
+ * Hero component including link to projects section
+ */
 const Hero = () => {
   const theme = useTheme();
 
@@ -47,20 +50,38 @@ const Hero = () => {
               </Grid>
             </Hidden>
             <Grid item>
-              <Button variant="outlined" style={theme.heroButton}>
-                Découvrez mes projets
-              </Button>
+              <Link
+                to={"projets"}
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
+                <Button variant="outlined" style={theme.heroButton}>
+                  Découvrez mes projets
+                </Button>
+              </Link>
             </Grid>
           </Grid>
           <Typography style={theme.credits}>
             Photo par{" "}
-            <Link href="https://unsplash.com/@matthewhenry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-              <a>Matthew Henry</a>
-            </Link>{" "}
+            <a
+              href="https://unsplash.com/@matthewhenry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              style={theme.heroLink}
+              rel="noreferrer"
+            >
+              Matthew Henry
+            </a>{" "}
             sur{" "}
-            <Link href="https://unsplash.com/s/photos/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-              <a>Unsplash</a>
-            </Link>
+            <a
+              href="https://unsplash.com/s/photos/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              style={theme.heroLink}
+              rel="noreferrer"
+            >
+              Unsplash
+            </a>
           </Typography>
         </Container>
       </Container>

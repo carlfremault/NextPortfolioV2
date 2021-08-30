@@ -1,4 +1,5 @@
 import Apropos from "../components/apropos/Apropos";
+import Footer from "../components/footer/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/navbar/Navbar";
 import Projets from "../components/projets/Projets";
@@ -12,6 +13,7 @@ export default function Home() {
       <Apropos />
       <Projets />
       <VeilleInformatique />
+      <Footer />
     </>
   );
 }
