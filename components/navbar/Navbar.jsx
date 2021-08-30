@@ -33,7 +33,8 @@ const menu = [
   },
   {
     item: "Veille Informatique",
-    path: "#",
+    path: "veilleinfo",
+    offset: -60,
   },
 ];
 
