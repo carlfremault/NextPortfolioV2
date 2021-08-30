@@ -7,10 +7,8 @@ import {
   Typography,
 } from "@material-ui/core";
 import { useState } from "react";
-// import { useTheme } from "@material-ui/styles";
 
 const CGU = () => {
-  //   const theme = useTheme();
   const [open, setOpen] = useState(false);
 
   const handleOpen = (e) => {
@@ -21,15 +19,6 @@ const CGU = () => {
   const handleClose = () => {
     setOpen(false);
   };
-
-  //   const body = (
-  //     <div style={theme.modal}>
-  //       <h2 id="simple-modal-title">Text in a modal</h2>
-  //       <p id="simple-modal-description">
-  //         Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-  //       </p>
-  //     </div>
-  //   );
 
   return (
     <Typography variant="body2" color="primary">
