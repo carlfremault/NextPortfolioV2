@@ -32,6 +32,7 @@ const theme = createTheme({
     fontWeight: 400,
     textTransform: "none",
     margin: "2rem 2rem",
+    minWidth: "150px",
   },
   primaryButton: {
     borderColor: "#0896A6",

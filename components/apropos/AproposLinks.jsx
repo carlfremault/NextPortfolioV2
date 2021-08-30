@@ -18,7 +18,7 @@ const AproposLinks = () => {
         alignItems="center"
         justifyContent="space-between"
       >
-        <Grid item>
+        <Grid item xs={12} sm={4} style={{ textAlign: "center" }}>
           <a
             href="https://www.linkedin.com/in/carl-fremault/"
             target="_blank"
@@ -33,7 +33,7 @@ const AproposLinks = () => {
             </Button>
           </a>
         </Grid>
-        <Grid item>
+        <Grid item xs={12} sm={4} style={{ textAlign: "center" }}>
           <a
             href="https://github.com/carlfremault"
             target="_blank"
@@ -48,12 +48,8 @@ const AproposLinks = () => {
             </Button>
           </a>
         </Grid>
-        <Grid item>
-          <a
-            href="../../CVCarlFremault072021Web.pdf"
-            target="_blank"
-            rel="noreferrer"
-          >
+        <Grid item xs={12} sm={4} style={{ textAlign: "center" }}>
+          <a href="../../CVCarlFremault072021Web.pdf" target="_blank">
             <Button
               variant="outlined"
               style={theme.aproposButton}
