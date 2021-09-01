@@ -6,9 +6,11 @@ import {
   DialogTitle,
   Typography,
 } from "@material-ui/core";
+import { useTheme } from "@material-ui/styles";
 import { useState } from "react";
 
 const CGU = () => {
+  const theme = useTheme();
   const [open, setOpen] = useState(false);
 
   const handleOpen = (e) => {
@@ -107,7 +109,7 @@ const CGU = () => {
           </Typography>
         </DialogContent>
         <DialogActions>
-          <Button autoFocus onClick={handleClose} color="primary">
+          <Button autoFocus onClick={handleClose} style={theme.cguButton}>
             Fermer
           </Button>
         </DialogActions>

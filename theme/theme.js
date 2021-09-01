@@ -47,14 +47,8 @@ const theme = createTheme({
     color: "primary",
     textTransform: "capitalize",
   },
-  heroButton: {
-    fontFamily: "Roboto",
-    fontWeight: 400,
-    top: "1.5rem",
-    borderColor: "#D9D9D9",
-  },
-  heroLink: {
-    color: "#0896A6",
+  cguButton: {
+    color: "#D9D9D9",
   },
   // Custom cards
   competenceCard: {
@@ -100,6 +94,15 @@ const theme = createTheme({
     backgroundColor: "rgba(5, 32, 38, 0.7)",
     height: "100vh",
     zIndex: -1,
+  },
+  heroButton: {
+    fontFamily: "Roboto",
+    fontWeight: 400,
+    top: "1.5rem",
+    borderColor: "#D9D9D9",
+  },
+  heroLink: {
+    color: "#0896A6",
   },
   heroGrid: {
     height: "100vh",
