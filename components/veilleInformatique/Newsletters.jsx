@@ -1,4 +1,5 @@
 import { Container, Grid, Typography } from "@material-ui/core";
+import SubTitle from "../tools/SubTitle";
 import Image from "next/image";
 import JavaScriptWeekly from "../../public/imgs/JavaScriptWeekly.png";
 import ReactStatus from "../../public/imgs/ReactStatus.png";
@@ -8,38 +9,16 @@ import NodeWeekly from "../../public/imgs/NodeWeekly.png";
 const Newsletters = () => {
   return (
     <>
-      <Container
-        style={{
-          marginTop: "4rem",
-          marginBottom: "2rem",
-        }}
-      >
-        <Typography variant="h3" color="primary" align="center">
-          Newsletters
-        </Typography>
-      </Container>
-      <Container
-        style={{
-          marginTop: "2rem",
-          marginBottom: "4rem",
-        }}
-      >
+      <SubTitle title="Newsletters" />
+      <Container>
         <Container maxWidth="md">
-          <Typography
-            variant="body1"
-            align="justify"
-            style={{ marginBottom: "1rem" }}
-          >
+          <Typography variant="body1" align="justify" gutterBottom>
             Comme axe principale de ma veille informatique j&apos;ai choisi les
             newsletters, qui pour moi trouvent une équilibre parfaite entre un
             apport régulier d&apos;informations, sans toutefois se trouver
             inondé commme on pourrait l&apos;être avec des feed RSS par exemple.
           </Typography>
-          <Typography
-            variant="body1"
-            align="justify"
-            style={{ marginBottom: "1rem" }}
-          >
+          <Typography variant="body1" align="justify" gutterBottom>
             Les quatres newsletter auxquels je me suis abonné :
           </Typography>
           <Grid
@@ -47,13 +26,13 @@ const Newsletters = () => {
             direction="row"
             justifyContent="space-between"
             alignItems="center"
+            style={{ margin: "2rem 0 3rem" }}
           >
             <Grid
               item
               xs={12}
-              sm={6}
-              md={2}
-              style={{ margin: "0.5rem 0.2rem", textAlign: "center" }}
+              md={3}
+              style={{ margin: "1rem 0", textAlign: "center" }}
             >
               <a
                 href="https://javascriptweekly.com/"
@@ -71,9 +50,8 @@ const Newsletters = () => {
             <Grid
               item
               xs={12}
-              sm={6}
-              md={2}
-              style={{ margin: "0.5rem 0.2rem", textAlign: "center" }}
+              md={3}
+              style={{ margin: "1rem 0", textAlign: "center" }}
             >
               <a
                 href="https://react.statuscode.com/"
@@ -91,9 +69,8 @@ const Newsletters = () => {
             <Grid
               item
               xs={12}
-              sm={6}
-              md={2}
-              style={{ margin: "0.5rem 0.2rem", textAlign: "center" }}
+              md={3}
+              style={{ margin: "1rem 0", textAlign: "center" }}
             >
               <a
                 href="https://frontendfoc.us/"
@@ -111,9 +88,8 @@ const Newsletters = () => {
             <Grid
               item
               xs={12}
-              sm={6}
-              md={2}
-              style={{ margin: "0.5rem 0.2rem", textAlign: "center" }}
+              md={3}
+              style={{ margin: "1rem 0", textAlign: "center" }}
             >
               <a
                 href="https://nodeweekly.com/"

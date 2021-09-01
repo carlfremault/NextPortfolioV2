@@ -11,6 +11,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import CheckIcon from "@material-ui/icons/Check";
+import SubTitle from "../tools/SubTitle";
 
 /**
  * Grid with 4 Cards, each incorporating a title and a List (of bullet points)
@@ -20,22 +21,8 @@ const Competences = () => {
 
   return (
     <>
-      <Container
-        style={{
-          marginTop: "4rem",
-          marginBottom: "2rem",
-        }}
-      >
-        <Typography variant="h3" color="primary" align="center">
-          Compétences
-        </Typography>
-      </Container>
-      <Container
-        style={{
-          marginTop: "2rem",
-          marginBottom: "4rem",
-        }}
-      >
+      <SubTitle title="Compétences" />
+      <Container>
         <Grid container justifyContent="center" alignItems="stretch">
           <Grid
             item

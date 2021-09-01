@@ -1,6 +1,6 @@
 import Apropos from "../components/apropos/Apropos";
 import Footer from "../components/footer/Footer";
-import Hero from "../components/Hero";
+import Hero from "../components/hero/Hero";
 import Navbar from "../components/navbar/Navbar";
 import Projets from "../components/projets/Projets";
 import VeilleInformatique from "../components/veilleInformatique/VeilleInformatique";

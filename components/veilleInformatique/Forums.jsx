@@ -1,4 +1,5 @@
 import { Container, Grid, Typography } from "@material-ui/core";
+import SubTitle from "../tools/SubTitle";
 import Image from "next/image";
 import RedditJavaScript from "../../public/imgs/RedditJavaScript.png";
 import RedditFrontend from "../../public/imgs/RedditFrontend.png";
@@ -8,28 +9,10 @@ import RedditLearnReact from "../../public/imgs/RedditLearnReact.png";
 const Forums = () => {
   return (
     <>
-      <Container
-        style={{
-          marginTop: "4rem",
-          marginBottom: "2rem",
-        }}
-      >
-        <Typography variant="h3" color="primary" align="center">
-          Forums
-        </Typography>
-      </Container>
-      <Container
-        style={{
-          marginTop: "2rem",
-          marginBottom: "4rem",
-        }}
-      >
+      <SubTitle title="Forums" />
+      <Container>
         <Container maxWidth="md">
-          <Typography
-            variant="body1"
-            align="justify"
-            style={{ marginBottom: "1rem" }}
-          >
+          <Typography variant="body1" align="justify" gutterBottom>
             Pour compléter l&apos;influx d&apos;informations reçus
             hebdomadairement je consulte régulièrement les sites Hackernews
             ainsi que Reddit. Sur un ton plus léger, ils me permettent non
@@ -38,11 +21,7 @@ const Forums = () => {
             ... d&apos;autres personnes, dont pas mal de développeurs
             professionnels.
           </Typography>
-          <Typography
-            variant="body1"
-            align="justify"
-            style={{ marginBottom: "1rem" }}
-          >
+          <Typography variant="body1" align="justify" gutterBottom>
             Quelques &quot;subreddit&quot; que je consulte régulièrement:
           </Typography>
           <Grid
@@ -50,13 +29,13 @@ const Forums = () => {
             direction="row"
             justifyContent="space-between"
             alignItems="center"
+            style={{ margin: "2rem 0 3rem" }}
           >
             <Grid
               item
               xs={12}
-              sm={6}
-              md={2}
-              style={{ margin: "0.5rem 0.2rem", textAlign: "center" }}
+              md={3}
+              style={{ margin: "1rem 0", textAlign: "center" }}
             >
               <a
                 href="https://www.reddit.com/r/javascript/"
@@ -74,9 +53,8 @@ const Forums = () => {
             <Grid
               item
               xs={12}
-              sm={6}
-              md={2}
-              style={{ margin: "0.5rem 0.2rem", textAlign: "center" }}
+              md={3}
+              style={{ margin: "1rem 0", textAlign: "center" }}
             >
               <a
                 href="https://www.reddit.com/r/Frontend/"
@@ -94,9 +72,8 @@ const Forums = () => {
             <Grid
               item
               xs={12}
-              sm={6}
-              md={2}
-              style={{ margin: "0.5rem 0.2rem", textAlign: "center" }}
+              md={3}
+              style={{ margin: "1rem 0", textAlign: "center" }}
             >
               <a
                 href="https://www.reddit.com/r/reactjs/"
@@ -114,9 +91,8 @@ const Forums = () => {
             <Grid
               item
               xs={12}
-              sm={6}
-              md={2}
-              style={{ margin: "0.5rem 0.2rem", textAlign: "center" }}
+              md={3}
+              style={{ margin: "1rem 0", textAlign: "center" }}
             >
               <a
                 href="https://www.reddit.com/r/learnreactjs/"

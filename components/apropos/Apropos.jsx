@@ -1,4 +1,5 @@
-import { Container, Typography } from "@material-ui/core";
+import { Container } from "@material-ui/core";
+import SectionTitle from "../tools/SectionTitle";
 import AproposLinks from "./AproposLinks";
 import Bio from "./Bio";
 import Competences from "./Competences";
@@ -11,21 +12,7 @@ const Apropos = () => {
   return (
     <section id="apropos">
       <Container maxWidth={false}>
-        <Container
-          style={{
-            marginTop: "4rem",
-            marginBottom: "2rem",
-          }}
-        >
-          <Typography
-            variant="h1"
-            color="primary"
-            align="center"
-            style={{ marginBottom: "2rem" }}
-          >
-            À propos
-          </Typography>
-        </Container>
+        <SectionTitle title="À propos" />
         <Bio />
         <AproposLinks />
         <Competences />

@@ -12,23 +12,18 @@ const ProjectCards = () => {
   const theme = useTheme();
 
   return (
-    <Container
-      style={{
-        marginTop: "2rem",
-        marginBottom: "4rem",
-      }}
-    >
+    <Container>
       <Grid container justifyContent="space-evenly" alignItems="stretch">
-        <Grid item component={Card} style={theme.projectCard} raised={true}>
+        <Grid item component={Card} style={theme.projectCard}>
           <CardStageSDI />
         </Grid>
-        <Grid item component={Card} style={theme.projectCard} raised={true}>
+        <Grid item component={Card} style={theme.projectCard}>
           <CardPPEMediaTek />
         </Grid>
-        <Grid item component={Card} style={theme.projectCard} raised={true}>
+        <Grid item component={Card} style={theme.projectCard}>
           <CardCalculatrice />
         </Grid>
-        <Grid item component={Card} style={theme.projectCard} raised={true}>
+        <Grid item component={Card} style={theme.projectCard}>
           <CardAlgosTri />
         </Grid>
       </Grid>
