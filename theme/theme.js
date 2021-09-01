@@ -62,7 +62,8 @@ const theme = createTheme({
     width: "350px",
     minHeight: "550px",
     position: "relative",
-    marginTop: "3rem",
+    // marginTop: "3rem",
+    marginBottom: "2rem",
   },
   // Sections
   lightBackgroundSection: {

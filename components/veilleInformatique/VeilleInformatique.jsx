@@ -1,6 +1,7 @@
 import { Container, Typography } from "@material-ui/core";
 import Forums from "./Forums";
 import Newsletters from "./Newsletters";
+import SectionTitle from "../tools/SectionTitle";
 
 /**
  * 'Veille Informatique' section
@@ -10,33 +11,10 @@ const VeilleInformatique = () => {
   return (
     <section id="veilleinfo">
       <Container maxWidth={false}>
-        <Container
-          style={{
-            marginTop: "4rem",
-            marginBottom: "2rem",
-          }}
-        >
-          <Typography
-            variant="h1"
-            color="primary"
-            align="center"
-            style={{ marginBottom: "2rem" }}
-          >
-            Veille Informatique
-          </Typography>
-        </Container>
-        <Container
-          style={{
-            marginTop: "2rem",
-            marginBottom: "4rem",
-          }}
-        >
+        <SectionTitle title="Veille Informatique" />
+        <Container>
           <Container maxWidth="md">
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ marginBottom: "1rem" }}
-            >
+            <Typography variant="body1" align="justify" gutterBottom>
               Le sujet que j&apos;ai choisi pour ma veille informatique est
               l&apos;écosystème JavaScript. Les technologies du cloud computing
               sont en forte croissance ces dernières années, notamment les
@@ -47,11 +25,7 @@ const VeilleInformatique = () => {
               technologies une entreprise gagne en efficacité et peut réduire et
               mieux maitriser son budget. ........
             </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ marginBottom: "1rem" }}
-            >
+            <Typography variant="body1" align="justify" gutterBottom>
               Le JavaScript ainsi que ses librairies et frameworks sont
               indéniablement le poid lourd en ce qui concerne le développement
               d&apos;applications web. Comme j&apos;envisage de me profiler en

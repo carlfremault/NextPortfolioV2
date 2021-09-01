@@ -1,10 +1,11 @@
-import { Container, Typography } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
 import ProjectCards from "./ProjectCards";
+import SectionTitle from "../tools/SectionTitle";
 
 /**
  * 'Projets' section
- * Section title and container ProjectCards for project cards
+ * SectionTitle and container ProjectCards for project cards
  */
 const Projets = () => {
   const theme = useTheme();
@@ -12,16 +13,7 @@ const Projets = () => {
   return (
     <section id="projets">
       <Container maxWidth={false} style={theme.lightBackgroundSection}>
-        <Container
-          style={{
-            marginTop: "4rem",
-            marginBottom: "2rem",
-          }}
-        >
-          <Typography variant="h1" color="primary" align="center">
-            Projets
-          </Typography>
-        </Container>
+        <SectionTitle title="Projets" />
         <ProjectCards />
       </Container>
     </section>
