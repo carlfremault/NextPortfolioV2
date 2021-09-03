@@ -23,18 +23,14 @@ const CGU = () => {
   };
 
   return (
-    <Typography variant="body2" color="primary">
-      <a href="#" onClick={handleOpen} id="cgu">
-        Conditions Générales d&apos;Utilisation
-      </a>
-      <Dialog
-        onClose={handleClose}
-        aria-labelledby="customized-dialog-title"
-        open={open}
-      >
-        <DialogTitle id="customized-dialog-title" onClose={handleClose}>
+    <>
+      <Typography variant="body2" color="primary">
+        <a href="#" onClick={handleOpen}>
           Conditions Générales d&apos;Utilisation
-        </DialogTitle>
+        </a>
+      </Typography>
+      <Dialog onClose={handleClose} open={open}>
+        <DialogTitle>Conditions Générales d&apos;Utilisation</DialogTitle>
         <DialogContent dividers>
           <Typography gutterBottom>En vigueur au 15/11/2020</Typography>
           <Typography gutterBottom align="justify">
@@ -114,7 +110,7 @@ const CGU = () => {
           </Button>
         </DialogActions>
       </Dialog>
-    </Typography>
+    </>
   );
 };
 
