@@ -197,7 +197,17 @@ const PPEMediaTekDialog = ({ handleClose, open }) => {
             alignItems="center"
             style={{ margin: "2rem 0" }}
           >
-            <ReactPlayer url="../../video/MediaTek86.mp4" controls />
+            <ReactPlayer
+              url="../../video/MediaTek86.mp4"
+              controls
+              config={{
+                file: {
+                  attributes: {
+                    controlsList: "nodownload",
+                  },
+                },
+              }}
+            />
           </Grid>
         </DialogContent>
         <DialogActions>
