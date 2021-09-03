@@ -29,7 +29,7 @@ const menu = [
   {
     item: "Projets",
     path: "projets",
-    offset: 0,
+    offset: 30,
   },
   {
     item: "Veille Informatique",

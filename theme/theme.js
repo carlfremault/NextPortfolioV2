@@ -11,7 +11,8 @@ const theme = createTheme({
     },
     background: {
       default: "#052026",
-      paper: "#406E73",
+      paper: "#253F42",
+      // paper: "#406E73",
     },
     text: {
       primary: "#D9D9D9",
@@ -26,7 +27,7 @@ const theme = createTheme({
     },
   },
   // Custom buttons
-  aproposButton: {
+  contrastButton: {
     borderColor: "#D9D9D9",
     fontFamily: "Roboto",
     fontWeight: 400,
@@ -64,6 +65,13 @@ const theme = createTheme({
     position: "relative",
     // marginTop: "3rem",
     marginBottom: "2rem",
+  },
+  // Dialog
+  dialog: {
+    // backgroundColor: "#030c0d",
+    // backgroundColor: "#406E73",
+    backgroundColor: "#253F42",
+    color: "#D9D9D9",
   },
   // Sections
   lightBackgroundSection: {

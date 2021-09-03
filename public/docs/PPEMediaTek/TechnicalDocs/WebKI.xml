@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="Absence class">
+    <HelpKINode Title="Absence Class" Url="html/6f83120c-8e87-69ae-bc2f-482af4d665a5.htm" />
+    <HelpKINode Title="constructor" Url="html/5ba64eec-ad4e-1091-ab05-0f285a9d9b96.htm" />
+    <HelpKINode Title="fields" Url="html/c2409f31-5689-f890-4c98-8155970d15c8.htm" />
+    <HelpKINode Title="methods" Url="html/cdd58f97-0a62-270d-2cee-0d6cafa19e62.htm" />
+    <HelpKINode Title="properties" Url="html/9a46ff02-1370-6601-e6a8-dcc22c62c10d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Absence.Absence constructor" Url="html/5ba64eec-ad4e-1091-ab05-0f285a9d9b96.htm" />
+  <HelpKINode Title="Absence.dateDebut field" Url="html/b093b8d0-cf12-c5fd-4041-3c641df436db.htm" />
+  <HelpKINode Title="Absence.DateDebut property" Url="html/a04c3020-bd83-cc77-39d1-bf98fae0a6c8.htm" />
+  <HelpKINode Title="Absence.dateFin field" Url="html/27dff72c-f1ef-f31e-b9f8-f9393da4eb87.htm" />
+  <HelpKINode Title="Absence.DateFin property" Url="html/f579788d-d294-405c-71b3-1a905a3c9187.htm" />
+  <HelpKINode Title="Absence.idMotif field" Url="html/3c9ab971-9e2a-1611-f8ac-6afe45517f75.htm" />
+  <HelpKINode Title="Absence.IdMotif property" Url="html/949647d7-c171-4646-b694-b066fe6779f4.htm" />
+  <HelpKINode Title="Absence.idPersonnel field" Url="html/400d64e3-6082-9131-58e4-6b375b146d9a.htm" />
+  <HelpKINode Title="Absence.IdPersonnel property" Url="html/dff34a8a-13c0-639e-18fd-0a3eee4f9048.htm" />
+  <HelpKINode Title="Absence.motif field" Url="html/d6411a11-7129-1668-7615-0d4b41b508a0.htm" />
+  <HelpKINode Title="Absence.Motif property" Url="html/6045a6cf-fc6c-3a19-8214-fc410d0f5b5b.htm" />
+  <HelpKINode Title="absenceAModifier field" Url="html/306181db-dc0c-9413-4175-08a36975ddbe.htm" />
+  <HelpKINode Title="AbsenceAModifier property" Url="html/2d650ab2-046b-b417-2c7d-5a5794c56249.htm" />
+  <HelpKINode Title="AccesDonnees class">
+    <HelpKINode Title="AccesDonnees Class" Url="html/f00c4dc4-1001-bd26-3f5c-6df9cc4fcda9.htm" />
+    <HelpKINode Title="constructor" Url="html/d466a020-38e1-9123-d763-b7e736cfe853.htm" />
+    <HelpKINode Title="constructor" Url="html/1b7b7c6e-14cb-02e6-2280-7cd17f282071.htm" />
+    <HelpKINode Title="fields" Url="html/6e6189f8-56a5-3d86-0132-1a2f4f5f13cc.htm" />
+    <HelpKINode Title="methods" Url="html/b92bc5d6-9b6d-44fd-1d3d-5d749e014a3b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AccesDonnees.AccesDonnees constructor">
+    <HelpKINode Title="AccesDonnees Constructor " Url="html/d466a020-38e1-9123-d763-b7e736cfe853.htm" />
+    <HelpKINode Title="AccesDonnees Constructor " Url="html/1b7b7c6e-14cb-02e6-2280-7cd17f282071.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AccesDonnees.AddAbsence method" Url="html/95735abc-6624-0e8f-29fb-8014a15e7dc5.htm" />
+  <HelpKINode Title="AccesDonnees.AddPersonnel method" Url="html/06cce3e7-86f1-6739-278a-14bfb2a100f3.htm" />
+  <HelpKINode Title="AccesDonnees.connectionString field" Url="html/a7d7a128-3ebe-0e01-995b-21ff33e75b4a.htm" />
+  <HelpKINode Title="AccesDonnees.DelAbsence method" Url="html/4903ebdb-43d5-0785-f741-7f5f8df29004.htm" />
+  <HelpKINode Title="AccesDonnees.DelPersonnel method" Url="html/12b8d365-c770-7f5d-9d3f-df79bdfb3222.htm" />
+  <HelpKINode Title="AccesDonnees.GetLePersonnel method" Url="html/908a227b-abf5-ec0c-80ff-b529d795dcd3.htm" />
+  <HelpKINode Title="AccesDonnees.GetLesAbsences method" Url="html/098b2882-5f9b-c230-cff0-e79ba1e5433a.htm" />
+  <HelpKINode Title="AccesDonnees.GetLesMotifs method" Url="html/ba513d99-99c8-8fda-160d-0f658769aa48.htm" />
+  <HelpKINode Title="AccesDonnees.GetLesServices method" Url="html/bbdb27b7-436d-92ef-c33f-8fe96c4c8291.htm" />
+  <HelpKINode Title="AccesDonnees.GetStringSha256Hash method" Url="html/15594d75-a5a3-31ff-77c2-2e1953ba61d8.htm" />
+  <HelpKINode Title="AccesDonnees.UpdateAbsence method" Url="html/e4d6afcf-dbc3-a16e-b1e7-fa014c8a0a09.htm" />
+  <HelpKINode Title="AccesDonnees.UpdatePersonnel method" Url="html/7aa7508d-acd0-1da7-0f75-0719a67d5117.htm" />
+  <HelpKINode Title="AccesDonnees.VerifierAuthentification method" Url="html/6818c320-99d0-4487-22b7-4b89b7191f83.htm" />
+  <HelpKINode Title="AddAbsence method">
+    <HelpKINode Title="AccesDonnees.AddAbsence Method " Url="html/95735abc-6624-0e8f-29fb-8014a15e7dc5.htm" />
+    <HelpKINode Title="Controle.AddAbsence Method " Url="html/85aefd63-5791-5cc1-c526-4201c84e2718.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddPersonnel method">
+    <HelpKINode Title="AccesDonnees.AddPersonnel Method " Url="html/06cce3e7-86f1-6739-278a-14bfb2a100f3.htm" />
+    <HelpKINode Title="Controle.AddPersonnel Method " Url="html/e8e1367d-ab39-617d-18b0-64466f795a7c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AfficherAbsences method" Url="html/84064004-cf6b-0538-36ff-da5ac0885002.htm" />
+  <HelpKINode Title="AjouterAbsence method" Url="html/4faa3de9-4f82-c167-dd42-fdd1bdb69ac8.htm" />
+  <HelpKINode Title="AjouterPersonnel method" Url="html/725cd6bf-55aa-381d-1601-a97d364decc3.htm" />
+  <HelpKINode Title="bdgAbsences field" Url="html/76347bf2-815c-2bef-387a-ee58304ca2b8.htm" />
+  <HelpKINode Title="bdgMotifs field" Url="html/88d74cb2-452b-daa7-3a58-a8e474c997c2.htm" />
+  <HelpKINode Title="bdgPersonnel field" Url="html/57d7ce81-d47f-7258-0570-0c82cb8ee93d.htm" />
+  <HelpKINode Title="bdgServices field" Url="html/848bffed-312a-8a55-f2a5-536dfef3c9c2.htm" />
+  <HelpKINode Title="btnAffichAbsences field" Url="html/e31e98f2-6111-0b36-9746-ff7924fd4759.htm" />
+  <HelpKINode Title="btnAffichAbsences_Click method" Url="html/f940de0f-2168-7aa8-b3d4-e4b126cf8e95.htm" />
+  <HelpKINode Title="btnAjoutAbsence field" Url="html/7a86e566-ae33-2ddf-f094-458d28357575.htm" />
+  <HelpKINode Title="btnAjoutAbsence_Click method" Url="html/24a0368e-93a3-ce97-5587-b9aa89ac213b.htm" />
+  <HelpKINode Title="btnAjoutPersonnel field" Url="html/f6f0e4d1-1ff8-f23b-83e5-2eb5629af433.htm" />
+  <HelpKINode Title="btnAjoutPersonnel_Click method" Url="html/f4744c1e-aff9-2700-ff69-53a3f1f20753.htm" />
+  <HelpKINode Title="btnAnnuler field">
+    <HelpKINode Title="FrmAMAbsences.btnAnnuler Field" Url="html/5627f03d-fbdf-f6b8-a46e-4011e003cbc5.htm" />
+    <HelpKINode Title="FrmAMPersonnel.btnAnnuler Field" Url="html/b641a337-f300-25fe-8825-c5823b0dea54.htm" />
+  </HelpKINode>
+  <HelpKINode Title="btnAnnuler_Click method">
+    <HelpKINode Title="FrmAMAbsences.btnAnnuler_Click Method " Url="html/471af0a3-d11b-1625-4c59-bab7674cb9a4.htm" />
+    <HelpKINode Title="FrmAMPersonnel.btnAnnuler_Click Method " Url="html/4a7e63b7-c7d4-9381-54ce-e35f7f67a7f5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="btnConnecter field" Url="html/a98b706d-4c0c-4043-8da8-f87db2b7e485.htm" />
+  <HelpKINode Title="btnConnecter_Click method" Url="html/da0ceb14-c035-19ed-0dc5-fde8e5cd9888.htm" />
+  <HelpKINode Title="btnEnregistrer field">
+    <HelpKINode Title="FrmAMAbsences.btnEnregistrer Field" Url="html/3155799d-1756-91e6-c75d-142c9132ef35.htm" />
+    <HelpKINode Title="FrmAMPersonnel.btnEnregistrer Field" Url="html/65ca5af5-909c-8a76-1da1-1780c113e277.htm" />
+  </HelpKINode>
+  <HelpKINode Title="btnEnregistrer_Click method">
+    <HelpKINode Title="FrmAMAbsences.btnEnregistrer_Click Method " Url="html/efc031aa-8864-1c27-a454-672a1a23533a.htm" />
+    <HelpKINode Title="FrmAMPersonnel.btnEnregistrer_Click Method " Url="html/65d1ae9b-0a1a-841c-c417-813bf12ffafd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="btnModifAbsence field" Url="html/9a08b887-7c15-0c4c-553a-dc93e2297a0e.htm" />
+  <HelpKINode Title="btnModifAbsence_Click method" Url="html/b199a9d5-eb6f-06aa-347f-588741e5c623.htm" />
+  <HelpKINode Title="btnModifPersonnel field" Url="html/07ba8014-c6d4-f042-0022-2a3babcfcd9e.htm" />
+  <HelpKINode Title="btnModifPersonnel_Click method" Url="html/e7289d35-d4c8-e966-5624-d8d3de1865da.htm" />
+  <HelpKINode Title="btnRetourPersonnel field" Url="html/6a2c7c3c-d487-247d-cca5-97b3bf05c679.htm" />
+  <HelpKINode Title="btnRetourPersonnel_Click method" Url="html/f1dad9f4-0490-ab4a-a0a6-215d4c6d6a11.htm" />
+  <HelpKINode Title="btnSuppAbsence field" Url="html/1aae1af0-e780-dc53-7d33-bac33b9fcf2d.htm" />
+  <HelpKINode Title="btnSuppAbsence_Click method" Url="html/fa24725a-6bcf-55ed-89d1-89df7cc98140.htm" />
+  <HelpKINode Title="btnSuppPersonnel field" Url="html/47ab61e0-93a6-9b9c-a39b-5bc8dea1fdf9.htm" />
+  <HelpKINode Title="btnSuppPersonnel_Click method" Url="html/448aab96-d1fe-89e2-b5b5-7007ae88f679.htm" />
+  <HelpKINode Title="cboMotif field" Url="html/5734a061-c21c-6b6a-9d81-398a2ded12a8.htm" />
+  <HelpKINode Title="cboService field" Url="html/165ab2ad-d1ab-608c-beda-642ba792dcc1.htm" />
+  <HelpKINode Title="Close method" Url="html/e33a3765-0a98-99c9-a153-4ab7421e1d8b.htm" />
+  <HelpKINode Title="command field" Url="html/02280e2e-7c80-8ff7-3d00-6ef3deaade4c.htm" />
+  <HelpKINode Title="components field">
+    <HelpKINode Title="FrmAbsences.components Field" Url="html/a99a5b7e-ea73-0221-b2d0-28a91b3c2a1f.htm" />
+    <HelpKINode Title="FrmAMAbsences.components Field" Url="html/2d7b5d78-f013-5ec6-cf6a-6d4b70b9b381.htm" />
+    <HelpKINode Title="FrmAMPersonnel.components Field" Url="html/58a1e46d-d6e9-71b1-43f3-6b759ada690d.htm" />
+    <HelpKINode Title="FrmAuthentification.components Field" Url="html/4952a87a-a9d7-fd7b-0720-3ee1c5ff0ce6.htm" />
+    <HelpKINode Title="FrmPersonnel.components Field" Url="html/b1cf2356-52d9-3374-2332-257b16506471.htm" />
+  </HelpKINode>
+  <HelpKINode Title="connection field" Url="html/beee11ac-c547-12c7-f22d-800aee6265bb.htm" />
+  <HelpKINode Title="connectionString field" Url="html/a7d7a128-3ebe-0e01-995b-21ff33e75b4a.htm" />
+  <HelpKINode Title="ConnexionBDD class">
+    <HelpKINode Title="ConnexionBDD Class" Url="html/255feeeb-9dde-7e3a-2428-3e8e8c36e573.htm" />
+    <HelpKINode Title="constructor" Url="html/c2938c39-4207-ddbf-3ce9-0cfe74be64fb.htm" />
+    <HelpKINode Title="fields" Url="html/9447e80a-4b88-360f-36bc-c4249cb678ee.htm" />
+    <HelpKINode Title="methods" Url="html/891971a9-8299-7d02-48b3-b69cea55bdfd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ConnexionBDD.Close method" Url="html/e33a3765-0a98-99c9-a153-4ab7421e1d8b.htm" />
+  <HelpKINode Title="ConnexionBDD.command field" Url="html/02280e2e-7c80-8ff7-3d00-6ef3deaade4c.htm" />
+  <HelpKINode Title="ConnexionBDD.connection field" Url="html/beee11ac-c547-12c7-f22d-800aee6265bb.htm" />
+  <HelpKINode Title="ConnexionBDD.ConnexionBDD constructor" Url="html/c2938c39-4207-ddbf-3ce9-0cfe74be64fb.htm" />
+  <HelpKINode Title="ConnexionBDD.Field method" Url="html/a46ce2d8-155e-0163-0902-fb08149b501f.htm" />
+  <HelpKINode Title="ConnexionBDD.GetInstance method" Url="html/23d1f15b-8047-296f-4654-c4b74f993159.htm" />
+  <HelpKINode Title="ConnexionBDD.instance field" Url="html/2242a9fd-76fa-34d0-2baf-a4270695c0e3.htm" />
+  <HelpKINode Title="ConnexionBDD.Read method" Url="html/dab8b43c-77f9-0593-b4dd-cd53c331d369.htm" />
+  <HelpKINode Title="ConnexionBDD.reader field" Url="html/70fcbe13-5f3d-bd3c-ab30-f35f18344ef4.htm" />
+  <HelpKINode Title="ConnexionBDD.ReqSelect method" Url="html/4b93ee98-2f5b-bad0-edf8-717fb706a6df.htm" />
+  <HelpKINode Title="ConnexionBDD.ReqUpdate method" Url="html/d02a0871-61b0-8128-e0ac-f0dd2fe813a9.htm" />
+  <HelpKINode Title="Controle class">
+    <HelpKINode Title="Controle Class" Url="html/e108c6f6-9198-8285-a814-97e7a78a9b0e.htm" />
+    <HelpKINode Title="constructor" Url="html/6170255e-4d42-b58c-0886-2500c0705a86.htm" />
+    <HelpKINode Title="fields" Url="html/076b4aec-79a1-696f-04a6-9f85e7f668eb.htm" />
+    <HelpKINode Title="methods" Url="html/5a779c33-ecbc-c2d0-b09e-3d4a4c64a32a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="controle field">
+    <HelpKINode Title="FrmAbsences.controle Field" Url="html/fb740fee-5135-b18e-ee87-8c51a306a0e4.htm" />
+    <HelpKINode Title="FrmAMAbsences.controle Field" Url="html/d4f2399c-ee6c-a838-f09e-0049e48a6b25.htm" />
+    <HelpKINode Title="FrmAMPersonnel.controle Field" Url="html/5d0452ea-650d-3451-48cf-769c46e9434b.htm" />
+    <HelpKINode Title="FrmAuthentification.controle Field" Url="html/5aad9453-dd03-7cdd-aba0-2442022cfd39.htm" />
+    <HelpKINode Title="FrmPersonnel.controle Field" Url="html/309898e2-8755-2d32-dd55-f37665d49c53.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Controle.AddAbsence method" Url="html/85aefd63-5791-5cc1-c526-4201c84e2718.htm" />
+  <HelpKINode Title="Controle.AddPersonnel method" Url="html/e8e1367d-ab39-617d-18b0-64466f795a7c.htm" />
+  <HelpKINode Title="Controle.AfficherAbsences method" Url="html/84064004-cf6b-0538-36ff-da5ac0885002.htm" />
+  <HelpKINode Title="Controle.AjouterAbsence method" Url="html/4faa3de9-4f82-c167-dd42-fdd1bdb69ac8.htm" />
+  <HelpKINode Title="Controle.AjouterPersonnel method" Url="html/725cd6bf-55aa-381d-1601-a97d364decc3.htm" />
+  <HelpKINode Title="Controle.Controle constructor" Url="html/6170255e-4d42-b58c-0886-2500c0705a86.htm" />
+  <HelpKINode Title="Controle.DelAbsence method" Url="html/92c77600-64eb-6ece-b06a-5d6fa8836ba2.htm" />
+  <HelpKINode Title="Controle.DelPersonnel method" Url="html/37da1703-af48-7256-7dff-c8b550015361.htm" />
+  <HelpKINode Title="Controle.FermerAbsences method" Url="html/8396522b-12d6-b0d9-928d-22e9e946012f.htm" />
+  <HelpKINode Title="Controle.FermerAMAbsences method" Url="html/81c85fa5-9fb7-096a-8788-c3151facebe6.htm" />
+  <HelpKINode Title="Controle.FermerAMPersonnel method" Url="html/c8bcd17f-7268-8cda-30d3-0896d1920f00.htm" />
+  <HelpKINode Title="Controle.frmAbsences field" Url="html/8a8d7b5c-645c-8b92-45e9-142ce8bd0ac9.htm" />
+  <HelpKINode Title="Controle.frmAMAbsences field" Url="html/46c60190-0966-e07a-ce2a-961044ddeb16.htm" />
+  <HelpKINode Title="Controle.frmAMPersonnel field" Url="html/aa9d6195-2429-6238-a8d9-d94a598b622f.htm" />
+  <HelpKINode Title="Controle.frmAuthentification field" Url="html/b514c829-5c6e-cc00-260f-a00825279192.htm" />
+  <HelpKINode Title="Controle.frmPersonnel field" Url="html/f209851a-bb00-917f-4beb-50bf493ad2b9.htm" />
+  <HelpKINode Title="Controle.GetLePersonnel method" Url="html/ee1de4ca-20df-3200-5d5d-7dc470c51b43.htm" />
+  <HelpKINode Title="Controle.GetLesAbsences method" Url="html/627b8c08-07da-4e61-aaf9-a83b5f9ed0d5.htm" />
+  <HelpKINode Title="Controle.GetLesMotifs method" Url="html/f904877d-5abd-e937-9a1a-574fa094dacd.htm" />
+  <HelpKINode Title="Controle.GetLesServices method" Url="html/48e50d40-bc11-6c24-85d1-38ec043a6072.htm" />
+  <HelpKINode Title="Controle.ModifierAbsence method" Url="html/f87a81ee-6911-f537-19e4-19b4352eb8a4.htm" />
+  <HelpKINode Title="Controle.ModifierPersonnel method" Url="html/cb723ff0-cdef-6571-1afc-25d8216ac764.htm" />
+  <HelpKINode Title="Controle.UpdateAbsence method" Url="html/53670e66-7c14-73aa-4609-44d7ba1af606.htm" />
+  <HelpKINode Title="Controle.UpdatePersonnel method" Url="html/52f39921-3499-8f8c-57d6-930999cffda0.htm" />
+  <HelpKINode Title="Controle.VerifierAuthentification method" Url="html/840ddfdb-eecc-50e0-d8e4-c38c38e0b915.htm" />
+  <HelpKINode Title="dateDebut field" Url="html/b093b8d0-cf12-c5fd-4041-3c641df436db.htm" />
+  <HelpKINode Title="DateDebut property" Url="html/a04c3020-bd83-cc77-39d1-bf98fae0a6c8.htm" />
+  <HelpKINode Title="dateFin field" Url="html/27dff72c-f1ef-f31e-b9f8-f9393da4eb87.htm" />
+  <HelpKINode Title="DateFin property" Url="html/f579788d-d294-405c-71b3-1a905a3c9187.htm" />
+  <HelpKINode Title="DelAbsence method">
+    <HelpKINode Title="AccesDonnees.DelAbsence Method " Url="html/4903ebdb-43d5-0785-f741-7f5f8df29004.htm" />
+    <HelpKINode Title="Controle.DelAbsence Method " Url="html/92c77600-64eb-6ece-b06a-5d6fa8836ba2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DelPersonnel method">
+    <HelpKINode Title="AccesDonnees.DelPersonnel Method " Url="html/12b8d365-c770-7f5d-9d3f-df79bdfb3222.htm" />
+    <HelpKINode Title="Controle.DelPersonnel Method " Url="html/37da1703-af48-7256-7dff-c8b550015361.htm" />
+  </HelpKINode>
+  <HelpKINode Title="dgvAbsences field" Url="html/9ada4252-627f-486b-dba6-6093fd1feb82.htm" />
+  <HelpKINode Title="dgvPersonnel field" Url="html/11dbbe92-95a2-8d4a-1398-da7b1a9527ea.htm" />
+  <HelpKINode Title="Dispose method">
+    <HelpKINode Title="FrmAbsences.Dispose Method " Url="html/7ea86762-6e5c-726f-fd14-1e21fb968329.htm" />
+    <HelpKINode Title="FrmAMAbsences.Dispose Method " Url="html/6dacbc11-e7c4-c5bc-7b5e-17d708a51a87.htm" />
+    <HelpKINode Title="FrmAMPersonnel.Dispose Method " Url="html/948f89f9-cd63-6691-ce43-b9aab0a55039.htm" />
+    <HelpKINode Title="FrmAuthentification.Dispose Method " Url="html/40cbd404-874b-cc8c-91e2-dc8ec135a305.htm" />
+    <HelpKINode Title="FrmPersonnel.Dispose Method " Url="html/e2b5e4d9-d08b-05fb-df2b-5838552e2109.htm" />
+  </HelpKINode>
+  <HelpKINode Title="dtpDebut field" Url="html/6e620a99-5a59-9a4f-1499-5516a562ddd2.htm" />
+  <HelpKINode Title="dtpFin field" Url="html/2b23913d-4c56-58f4-cee1-b57ebff6771a.htm" />
+  <HelpKINode Title="FermerAbsences method" Url="html/8396522b-12d6-b0d9-928d-22e9e946012f.htm" />
+  <HelpKINode Title="FermerAMAbsences method" Url="html/81c85fa5-9fb7-096a-8788-c3151facebe6.htm" />
+  <HelpKINode Title="FermerAMPersonnel method" Url="html/c8bcd17f-7268-8cda-30d3-0896d1920f00.htm" />
+  <HelpKINode Title="Field method" Url="html/a46ce2d8-155e-0163-0902-fb08149b501f.htm" />
+  <HelpKINode Title="FrmAbsences class">
+    <HelpKINode Title="FrmAbsences Class" Url="html/42360110-1b93-f6f8-ecf7-dbe847867ec1.htm" />
+    <HelpKINode Title="constructor" Url="html/cb411504-3c1d-436e-195e-6c3f870f4d33.htm" />
+    <HelpKINode Title="events" Url="html/70bf7b13-a452-efb9-f523-5b8f41a8a1c5.htm" />
+    <HelpKINode Title="fields" Url="html/1b502205-3e86-8639-dd73-3bbf2c6e2a1c.htm" />
+    <HelpKINode Title="methods" Url="html/3e1506ae-ad5c-6cfc-76a6-a2fdc13659f4.htm" />
+    <HelpKINode Title="properties" Url="html/f8ada9b4-45df-1f16-b5b5-864697d33ad5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="frmAbsences field" Url="html/8a8d7b5c-645c-8b92-45e9-142ce8bd0ac9.htm" />
+  <HelpKINode Title="FrmAbsences.bdgAbsences field" Url="html/76347bf2-815c-2bef-387a-ee58304ca2b8.htm" />
+  <HelpKINode Title="FrmAbsences.btnAjoutAbsence field" Url="html/7a86e566-ae33-2ddf-f094-458d28357575.htm" />
+  <HelpKINode Title="FrmAbsences.btnAjoutAbsence_Click method" Url="html/24a0368e-93a3-ce97-5587-b9aa89ac213b.htm" />
+  <HelpKINode Title="FrmAbsences.btnModifAbsence field" Url="html/9a08b887-7c15-0c4c-553a-dc93e2297a0e.htm" />
+  <HelpKINode Title="FrmAbsences.btnModifAbsence_Click method" Url="html/b199a9d5-eb6f-06aa-347f-588741e5c623.htm" />
+  <HelpKINode Title="FrmAbsences.btnRetourPersonnel field" Url="html/6a2c7c3c-d487-247d-cca5-97b3bf05c679.htm" />
+  <HelpKINode Title="FrmAbsences.btnRetourPersonnel_Click method" Url="html/f1dad9f4-0490-ab4a-a0a6-215d4c6d6a11.htm" />
+  <HelpKINode Title="FrmAbsences.btnSuppAbsence field" Url="html/1aae1af0-e780-dc53-7d33-bac33b9fcf2d.htm" />
+  <HelpKINode Title="FrmAbsences.btnSuppAbsence_Click method" Url="html/fa24725a-6bcf-55ed-89d1-89df7cc98140.htm" />
+  <HelpKINode Title="FrmAbsences.components field" Url="html/a99a5b7e-ea73-0221-b2d0-28a91b3c2a1f.htm" />
+  <HelpKINode Title="FrmAbsences.controle field" Url="html/fb740fee-5135-b18e-ee87-8c51a306a0e4.htm" />
+  <HelpKINode Title="FrmAbsences.dgvAbsences field" Url="html/9ada4252-627f-486b-dba6-6093fd1feb82.htm" />
+  <HelpKINode Title="FrmAbsences.Dispose method" Url="html/7ea86762-6e5c-726f-fd14-1e21fb968329.htm" />
+  <HelpKINode Title="FrmAbsences.FrmAbsences constructor" Url="html/cb411504-3c1d-436e-195e-6c3f870f4d33.htm" />
+  <HelpKINode Title="FrmAbsences.InitializeComponent method" Url="html/521082a4-abaf-c6a9-b26a-ccd39141b1d2.htm" />
+  <HelpKINode Title="FrmAbsences.personnelAbsence field" Url="html/7fd0c3f1-503d-de79-29af-f9b394c5e718.htm" />
+  <HelpKINode Title="FrmAbsences.RemplirListeAbsences method" Url="html/22a222ee-704d-f5d2-9da5-60eba220a75b.htm" />
+  <HelpKINode Title="FrmAMAbsences class">
+    <HelpKINode Title="FrmAMAbsences Class" Url="html/65255225-f3ce-5f35-27c7-3e2c7fb0b242.htm" />
+    <HelpKINode Title="constructor" Url="html/21404200-5b7c-142e-51f7-f4089f27787f.htm" />
+    <HelpKINode Title="events" Url="html/c76309f0-4e4b-cfe2-ce09-87a86494bf83.htm" />
+    <HelpKINode Title="fields" Url="html/c1d72450-2cd9-08cc-a5ed-45ea64b06050.htm" />
+    <HelpKINode Title="methods" Url="html/6c080c66-98ee-ada8-259d-c7049f867f84.htm" />
+    <HelpKINode Title="properties" Url="html/ec78dcda-e80e-4b04-8ed3-c800fa265815.htm" />
+  </HelpKINode>
+  <HelpKINode Title="frmAMAbsences field" Url="html/46c60190-0966-e07a-ce2a-961044ddeb16.htm" />
+  <HelpKINode Title="FrmAMAbsences.absenceAModifier field" Url="html/306181db-dc0c-9413-4175-08a36975ddbe.htm" />
+  <HelpKINode Title="FrmAMAbsences.AbsenceAModifier property" Url="html/2d650ab2-046b-b417-2c7d-5a5794c56249.htm" />
+  <HelpKINode Title="FrmAMAbsences.bdgMotifs field" Url="html/88d74cb2-452b-daa7-3a58-a8e474c997c2.htm" />
+  <HelpKINode Title="FrmAMAbsences.btnAnnuler field" Url="html/5627f03d-fbdf-f6b8-a46e-4011e003cbc5.htm" />
+  <HelpKINode Title="FrmAMAbsences.btnAnnuler_Click method" Url="html/471af0a3-d11b-1625-4c59-bab7674cb9a4.htm" />
+  <HelpKINode Title="FrmAMAbsences.btnEnregistrer field" Url="html/3155799d-1756-91e6-c75d-142c9132ef35.htm" />
+  <HelpKINode Title="FrmAMAbsences.btnEnregistrer_Click method" Url="html/efc031aa-8864-1c27-a454-672a1a23533a.htm" />
+  <HelpKINode Title="FrmAMAbsences.cboMotif field" Url="html/5734a061-c21c-6b6a-9d81-398a2ded12a8.htm" />
+  <HelpKINode Title="FrmAMAbsences.components field" Url="html/2d7b5d78-f013-5ec6-cf6a-6d4b70b9b381.htm" />
+  <HelpKINode Title="FrmAMAbsences.controle field" Url="html/d4f2399c-ee6c-a838-f09e-0049e48a6b25.htm" />
+  <HelpKINode Title="FrmAMAbsences.Dispose method" Url="html/6dacbc11-e7c4-c5bc-7b5e-17d708a51a87.htm" />
+  <HelpKINode Title="FrmAMAbsences.dtpDebut field" Url="html/6e620a99-5a59-9a4f-1499-5516a562ddd2.htm" />
+  <HelpKINode Title="FrmAMAbsences.dtpFin field" Url="html/2b23913d-4c56-58f4-cee1-b57ebff6771a.htm" />
+  <HelpKINode Title="FrmAMAbsences.FrmAMAbsences constructor" Url="html/21404200-5b7c-142e-51f7-f4089f27787f.htm" />
+  <HelpKINode Title="FrmAMAbsences.InitialiserLesChamps method" Url="html/dec83bad-8372-ea9a-7d50-ef429a38db04.htm" />
+  <HelpKINode Title="FrmAMAbsences.InitializeComponent method" Url="html/3323a72c-ce62-f861-9595-8f40846fb6bb.htm" />
+  <HelpKINode Title="FrmAMAbsences.label1 field" Url="html/86f2cefd-db29-e1f1-5d04-3f3c31f27226.htm" />
+  <HelpKINode Title="FrmAMAbsences.label2 field" Url="html/b3c8b727-d905-4baa-b4dc-0ebb09556631.htm" />
+  <HelpKINode Title="FrmAMAbsences.label3 field" Url="html/83d89209-78da-a679-eaab-d7d064b7c998.htm" />
+  <HelpKINode Title="FrmAMAbsences.modificationAbsence field" Url="html/0587be7f-3e5e-32aa-32f3-e530016ec7a5.htm" />
+  <HelpKINode Title="FrmAMAbsences.ModifierAbsence method" Url="html/7c8ee661-56cd-2594-6b39-fba19791ef5f.htm" />
+  <HelpKINode Title="FrmAMAbsences.personnelAbsence field" Url="html/463eb4fe-7962-192e-f8fb-b272870180f6.htm" />
+  <HelpKINode Title="FrmAMAbsences.PersonnelAbsence property" Url="html/fc7d3f1f-1a97-1a9d-6682-d7d24e577779.htm" />
+  <HelpKINode Title="FrmAMAbsences.RemplirMotifs method" Url="html/e9cfdf15-1c28-9e0b-692e-9c5ba22d2794.htm" />
+  <HelpKINode Title="FrmAMPersonnel class">
+    <HelpKINode Title="FrmAMPersonnel Class" Url="html/662c1829-64f7-2cc4-9828-45e3dce4d8b9.htm" />
+    <HelpKINode Title="constructor" Url="html/8c39707e-9302-587b-a7b5-13715736fe1c.htm" />
+    <HelpKINode Title="events" Url="html/64552241-e0cd-0193-209b-42cd3f7abb35.htm" />
+    <HelpKINode Title="fields" Url="html/bea6c595-cf7c-8055-f3e5-47a81fe41d34.htm" />
+    <HelpKINode Title="methods" Url="html/8c548a18-2062-7c14-25f9-dc3a16b2fd35.htm" />
+    <HelpKINode Title="properties" Url="html/b95ed8b9-d52f-36d5-7251-91f999126ec9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="frmAMPersonnel field" Url="html/aa9d6195-2429-6238-a8d9-d94a598b622f.htm" />
+  <HelpKINode Title="FrmAMPersonnel.bdgServices field" Url="html/848bffed-312a-8a55-f2a5-536dfef3c9c2.htm" />
+  <HelpKINode Title="FrmAMPersonnel.btnAnnuler field" Url="html/b641a337-f300-25fe-8825-c5823b0dea54.htm" />
+  <HelpKINode Title="FrmAMPersonnel.btnAnnuler_Click method" Url="html/4a7e63b7-c7d4-9381-54ce-e35f7f67a7f5.htm" />
+  <HelpKINode Title="FrmAMPersonnel.btnEnregistrer field" Url="html/65ca5af5-909c-8a76-1da1-1780c113e277.htm" />
+  <HelpKINode Title="FrmAMPersonnel.btnEnregistrer_Click method" Url="html/65d1ae9b-0a1a-841c-c417-813bf12ffafd.htm" />
+  <HelpKINode Title="FrmAMPersonnel.cboService field" Url="html/165ab2ad-d1ab-608c-beda-642ba792dcc1.htm" />
+  <HelpKINode Title="FrmAMPersonnel.components field" Url="html/58a1e46d-d6e9-71b1-43f3-6b759ada690d.htm" />
+  <HelpKINode Title="FrmAMPersonnel.controle field" Url="html/5d0452ea-650d-3451-48cf-769c46e9434b.htm" />
+  <HelpKINode Title="FrmAMPersonnel.Dispose method" Url="html/948f89f9-cd63-6691-ce43-b9aab0a55039.htm" />
+  <HelpKINode Title="FrmAMPersonnel.FrmAMPersonnel constructor" Url="html/8c39707e-9302-587b-a7b5-13715736fe1c.htm" />
+  <HelpKINode Title="FrmAMPersonnel.idPersonnelAModifier field" Url="html/89e78ce3-0cac-7ebd-0f08-b0393b915c97.htm" />
+  <HelpKINode Title="FrmAMPersonnel.InitializeComponent method" Url="html/44d840dd-2e9c-6412-73d7-cb09ffdc7bf3.htm" />
+  <HelpKINode Title="FrmAMPersonnel.label1 field" Url="html/f4303d72-db8a-c3fd-c70e-ccdc91a6f39c.htm" />
+  <HelpKINode Title="FrmAMPersonnel.label2 field" Url="html/6978335f-6e8d-97bd-43f9-1cdcdc7970b5.htm" />
+  <HelpKINode Title="FrmAMPersonnel.label3 field" Url="html/2d78baef-2fd4-b8d0-c7b4-7f8e9b5219b3.htm" />
+  <HelpKINode Title="FrmAMPersonnel.label4 field" Url="html/9c07f686-077e-ac1c-f9b8-603d883e92d6.htm" />
+  <HelpKINode Title="FrmAMPersonnel.label5 field" Url="html/e03822be-24d5-a67b-50e5-3423d7ca27da.htm" />
+  <HelpKINode Title="FrmAMPersonnel.modification field" Url="html/9d61b1f6-7dba-9599-861d-0485e22b1b07.htm" />
+  <HelpKINode Title="FrmAMPersonnel.ModifierPersonnel method" Url="html/6e55618e-514d-134e-a869-e090557a66ce.htm" />
+  <HelpKINode Title="FrmAMPersonnel.RemplirServices method" Url="html/50323de7-1f94-84ba-8a18-d6d54628bf46.htm" />
+  <HelpKINode Title="FrmAMPersonnel.txtMail field" Url="html/72968331-0004-ffbc-8a8f-e58653fbafa3.htm" />
+  <HelpKINode Title="FrmAMPersonnel.txtNom field" Url="html/57172283-595c-c359-74f0-eb48606a9322.htm" />
+  <HelpKINode Title="FrmAMPersonnel.txtPrenom field" Url="html/98b1d784-ba08-ce67-6fc6-4dddaa16da02.htm" />
+  <HelpKINode Title="FrmAMPersonnel.txtTel field" Url="html/812d0787-2ca6-3cce-bc79-6d143d272758.htm" />
+  <HelpKINode Title="FrmAMPersonnel.ViderLesChamps method" Url="html/5abf98fa-cc45-1976-a007-2119cc61f605.htm" />
+  <HelpKINode Title="FrmAuthentification class">
+    <HelpKINode Title="FrmAuthentification Class" Url="html/b5b71df2-e66c-aa17-5f67-dbca77dd395a.htm" />
+    <HelpKINode Title="constructor" Url="html/904410b2-aecb-b8a0-bf8f-0148376769df.htm" />
+    <HelpKINode Title="events" Url="html/6ea51c34-c019-89e0-c960-5cca8771ea2a.htm" />
+    <HelpKINode Title="fields" Url="html/a097adb6-3aec-1296-6f48-f91f1e7d0f1e.htm" />
+    <HelpKINode Title="methods" Url="html/d51ee28a-02e0-4aec-4b4e-cb511e09c31b.htm" />
+    <HelpKINode Title="properties" Url="html/49282b6a-5a0e-957a-9cab-b5bb28c1e6bc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="frmAuthentification field" Url="html/b514c829-5c6e-cc00-260f-a00825279192.htm" />
+  <HelpKINode Title="FrmAuthentification.btnConnecter field" Url="html/a98b706d-4c0c-4043-8da8-f87db2b7e485.htm" />
+  <HelpKINode Title="FrmAuthentification.btnConnecter_Click method" Url="html/da0ceb14-c035-19ed-0dc5-fde8e5cd9888.htm" />
+  <HelpKINode Title="FrmAuthentification.components field" Url="html/4952a87a-a9d7-fd7b-0720-3ee1c5ff0ce6.htm" />
+  <HelpKINode Title="FrmAuthentification.controle field" Url="html/5aad9453-dd03-7cdd-aba0-2442022cfd39.htm" />
+  <HelpKINode Title="FrmAuthentification.Dispose method" Url="html/40cbd404-874b-cc8c-91e2-dc8ec135a305.htm" />
+  <HelpKINode Title="FrmAuthentification.FrmAuthentification constructor" Url="html/904410b2-aecb-b8a0-bf8f-0148376769df.htm" />
+  <HelpKINode Title="FrmAuthentification.InitializeComponent method" Url="html/37e7316c-eb4b-cfc8-364a-dcd6d84cdda6.htm" />
+  <HelpKINode Title="FrmAuthentification.label1 field" Url="html/439be3f0-7b71-a97c-4cdc-85fe8f019201.htm" />
+  <HelpKINode Title="FrmAuthentification.label2 field" Url="html/c301feb7-86a9-3efa-2569-6a09654737b6.htm" />
+  <HelpKINode Title="FrmAuthentification.txtMotdepasse field" Url="html/e90c4180-6ee5-47e6-2b66-4d2978453bed.htm" />
+  <HelpKINode Title="FrmAuthentification.txtUtilisateur field" Url="html/a46f8091-4342-2413-a3fe-43f03244cfed.htm" />
+  <HelpKINode Title="FrmPersonnel class">
+    <HelpKINode Title="FrmPersonnel Class" Url="html/4e39457c-ba14-4eb5-c83c-a0062bc2353f.htm" />
+    <HelpKINode Title="constructor" Url="html/ff0fbc25-b0ed-c83b-3024-808227464c82.htm" />
+    <HelpKINode Title="events" Url="html/6410561c-1b49-366d-496c-1a8cb85b4f21.htm" />
+    <HelpKINode Title="fields" Url="html/639dfd92-16d3-e503-6d41-7de37f499d69.htm" />
+    <HelpKINode Title="methods" Url="html/b937278e-6862-5462-daca-d00515eb9962.htm" />
+    <HelpKINode Title="properties" Url="html/d571b583-878a-eae9-1a0f-49e2b8b4cfd0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="frmPersonnel field" Url="html/f209851a-bb00-917f-4beb-50bf493ad2b9.htm" />
+  <HelpKINode Title="FrmPersonnel.bdgPersonnel field" Url="html/57d7ce81-d47f-7258-0570-0c82cb8ee93d.htm" />
+  <HelpKINode Title="FrmPersonnel.btnAffichAbsences field" Url="html/e31e98f2-6111-0b36-9746-ff7924fd4759.htm" />
+  <HelpKINode Title="FrmPersonnel.btnAffichAbsences_Click method" Url="html/f940de0f-2168-7aa8-b3d4-e4b126cf8e95.htm" />
+  <HelpKINode Title="FrmPersonnel.btnAjoutPersonnel field" Url="html/f6f0e4d1-1ff8-f23b-83e5-2eb5629af433.htm" />
+  <HelpKINode Title="FrmPersonnel.btnAjoutPersonnel_Click method" Url="html/f4744c1e-aff9-2700-ff69-53a3f1f20753.htm" />
+  <HelpKINode Title="FrmPersonnel.btnModifPersonnel field" Url="html/07ba8014-c6d4-f042-0022-2a3babcfcd9e.htm" />
+  <HelpKINode Title="FrmPersonnel.btnModifPersonnel_Click method" Url="html/e7289d35-d4c8-e966-5624-d8d3de1865da.htm" />
+  <HelpKINode Title="FrmPersonnel.btnSuppPersonnel field" Url="html/47ab61e0-93a6-9b9c-a39b-5bc8dea1fdf9.htm" />
+  <HelpKINode Title="FrmPersonnel.btnSuppPersonnel_Click method" Url="html/448aab96-d1fe-89e2-b5b5-7007ae88f679.htm" />
+  <HelpKINode Title="FrmPersonnel.components field" Url="html/b1cf2356-52d9-3374-2332-257b16506471.htm" />
+  <HelpKINode Title="FrmPersonnel.controle field" Url="html/309898e2-8755-2d32-dd55-f37665d49c53.htm" />
+  <HelpKINode Title="FrmPersonnel.dgvPersonnel field" Url="html/11dbbe92-95a2-8d4a-1398-da7b1a9527ea.htm" />
+  <HelpKINode Title="FrmPersonnel.Dispose method" Url="html/e2b5e4d9-d08b-05fb-df2b-5838552e2109.htm" />
+  <HelpKINode Title="FrmPersonnel.FrmPersonnel constructor" Url="html/ff0fbc25-b0ed-c83b-3024-808227464c82.htm" />
+  <HelpKINode Title="FrmPersonnel.InitializeComponent method" Url="html/b80df82c-214c-28a1-7d4d-282114b86499.htm" />
+  <HelpKINode Title="FrmPersonnel.RemplirListePersonnel method" Url="html/1e0d0a18-d223-f98c-9ca3-47072ac2f1fe.htm" />
+  <HelpKINode Title="GetInstance method" Url="html/23d1f15b-8047-296f-4654-c4b74f993159.htm" />
+  <HelpKINode Title="GetLePersonnel method">
+    <HelpKINode Title="AccesDonnees.GetLePersonnel Method " Url="html/908a227b-abf5-ec0c-80ff-b529d795dcd3.htm" />
+    <HelpKINode Title="Controle.GetLePersonnel Method " Url="html/ee1de4ca-20df-3200-5d5d-7dc470c51b43.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetLesAbsences method">
+    <HelpKINode Title="AccesDonnees.GetLesAbsences Method " Url="html/098b2882-5f9b-c230-cff0-e79ba1e5433a.htm" />
+    <HelpKINode Title="Controle.GetLesAbsences Method " Url="html/627b8c08-07da-4e61-aaf9-a83b5f9ed0d5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetLesMotifs method">
+    <HelpKINode Title="AccesDonnees.GetLesMotifs Method " Url="html/ba513d99-99c8-8fda-160d-0f658769aa48.htm" />
+    <HelpKINode Title="Controle.GetLesMotifs Method " Url="html/f904877d-5abd-e937-9a1a-574fa094dacd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetLesServices method">
+    <HelpKINode Title="AccesDonnees.GetLesServices Method " Url="html/bbdb27b7-436d-92ef-c33f-8fe96c4c8291.htm" />
+    <HelpKINode Title="Controle.GetLesServices Method " Url="html/48e50d40-bc11-6c24-85d1-38ec043a6072.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetStringSha256Hash method" Url="html/15594d75-a5a3-31ff-77c2-2e1953ba61d8.htm" />
+  <HelpKINode Title="idMotif field">
+    <HelpKINode Title="Absence.idMotif Field" Url="html/3c9ab971-9e2a-1611-f8ac-6afe45517f75.htm" />
+    <HelpKINode Title="Motif.idMotif Field" Url="html/95e3edac-7a2e-1cff-414b-6c416e6f646e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IdMotif property">
+    <HelpKINode Title="Absence.IdMotif Property " Url="html/949647d7-c171-4646-b694-b066fe6779f4.htm" />
+    <HelpKINode Title="Motif.IdMotif Property " Url="html/f258c2e6-7b93-4413-7877-bf139fd0dd60.htm" />
+  </HelpKINode>
+  <HelpKINode Title="idPersonnel field">
+    <HelpKINode Title="Absence.idPersonnel Field" Url="html/400d64e3-6082-9131-58e4-6b375b146d9a.htm" />
+    <HelpKINode Title="Personnel.idPersonnel Field" Url="html/a62b4e9b-3eaf-2d69-7c48-1207b2a46a82.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IdPersonnel property">
+    <HelpKINode Title="Absence.IdPersonnel Property " Url="html/dff34a8a-13c0-639e-18fd-0a3eee4f9048.htm" />
+    <HelpKINode Title="Personnel.IdPersonnel Property " Url="html/54c57dc9-180d-6b45-2562-3cb3c04f7260.htm" />
+  </HelpKINode>
+  <HelpKINode Title="idPersonnelAModifier field" Url="html/89e78ce3-0cac-7ebd-0f08-b0393b915c97.htm" />
+  <HelpKINode Title="idService field">
+    <HelpKINode Title="Personnel.idService Field" Url="html/8c4c04fd-607e-6225-b04c-2d647f2dd563.htm" />
+    <HelpKINode Title="Service.idService Field" Url="html/d138ad28-b238-5c33-8840-338dd093ae42.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IdService property">
+    <HelpKINode Title="Personnel.IdService Property " Url="html/dd694a9c-bd0d-7d49-38f4-fa0796983498.htm" />
+    <HelpKINode Title="Service.IdService Property " Url="html/63ad257e-2505-a99e-deb1-3cfb2a73f82a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InitialiserLesChamps method" Url="html/dec83bad-8372-ea9a-7d50-ef429a38db04.htm" />
+  <HelpKINode Title="InitializeComponent method">
+    <HelpKINode Title="FrmAbsences.InitializeComponent Method " Url="html/521082a4-abaf-c6a9-b26a-ccd39141b1d2.htm" />
+    <HelpKINode Title="FrmAMAbsences.InitializeComponent Method " Url="html/3323a72c-ce62-f861-9595-8f40846fb6bb.htm" />
+    <HelpKINode Title="FrmAMPersonnel.InitializeComponent Method " Url="html/44d840dd-2e9c-6412-73d7-cb09ffdc7bf3.htm" />
+    <HelpKINode Title="FrmAuthentification.InitializeComponent Method " Url="html/37e7316c-eb4b-cfc8-364a-dcd6d84cdda6.htm" />
+    <HelpKINode Title="FrmPersonnel.InitializeComponent Method " Url="html/b80df82c-214c-28a1-7d4d-282114b86499.htm" />
+  </HelpKINode>
+  <HelpKINode Title="instance field" Url="html/2242a9fd-76fa-34d0-2baf-a4270695c0e3.htm" />
+  <HelpKINode Title="label1 field">
+    <HelpKINode Title="FrmAMAbsences.label1 Field" Url="html/86f2cefd-db29-e1f1-5d04-3f3c31f27226.htm" />
+    <HelpKINode Title="FrmAMPersonnel.label1 Field" Url="html/f4303d72-db8a-c3fd-c70e-ccdc91a6f39c.htm" />
+    <HelpKINode Title="FrmAuthentification.label1 Field" Url="html/439be3f0-7b71-a97c-4cdc-85fe8f019201.htm" />
+  </HelpKINode>
+  <HelpKINode Title="label2 field">
+    <HelpKINode Title="FrmAMAbsences.label2 Field" Url="html/b3c8b727-d905-4baa-b4dc-0ebb09556631.htm" />
+    <HelpKINode Title="FrmAMPersonnel.label2 Field" Url="html/6978335f-6e8d-97bd-43f9-1cdcdc7970b5.htm" />
+    <HelpKINode Title="FrmAuthentification.label2 Field" Url="html/c301feb7-86a9-3efa-2569-6a09654737b6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="label3 field">
+    <HelpKINode Title="FrmAMAbsences.label3 Field" Url="html/83d89209-78da-a679-eaab-d7d064b7c998.htm" />
+    <HelpKINode Title="FrmAMPersonnel.label3 Field" Url="html/2d78baef-2fd4-b8d0-c7b4-7f8e9b5219b3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="label4 field" Url="html/9c07f686-077e-ac1c-f9b8-603d883e92d6.htm" />
+  <HelpKINode Title="label5 field" Url="html/e03822be-24d5-a67b-50e5-3423d7ca27da.htm" />
+  <HelpKINode Title="libelle field" Url="html/3c20059e-da64-d2bc-b628-492dc51a8d73.htm" />
+  <HelpKINode Title="Libelle property" Url="html/b961f210-8fba-373f-6111-e71e36d54b4c.htm" />
+  <HelpKINode Title="login field" Url="html/77d558d1-6419-d93b-afa1-141a274e0c99.htm" />
+  <HelpKINode Title="Login property" Url="html/fff8c756-6c9f-9472-b74f-941ae2f7efc8.htm" />
+  <HelpKINode Title="mail field" Url="html/04772d3c-a8ce-0ce5-8aac-f4d5bae460a1.htm" />
+  <HelpKINode Title="Mail property" Url="html/88c3fe58-cb7e-2831-15d7-ca9af3ded05e.htm" />
+  <HelpKINode Title="Main method" Url="html/cdf364b4-48b2-4933-05cd-b83768afaa76.htm" />
+  <HelpKINode Title="MediaTek86 namespace" Url="html/917a76a8-be2e-b492-98ef-cc530d95ceea.htm" />
+  <HelpKINode Title="MediaTek86.connexion namespace" Url="html/9d7058df-33a9-0eea-0f06-7b4b450c00fc.htm" />
+  <HelpKINode Title="MediaTek86.connexion.ConnexionBDD class" Url="html/255feeeb-9dde-7e3a-2428-3e8e8c36e573.htm" />
+  <HelpKINode Title="MediaTek86.controleur namespace" Url="html/da12431f-f0a4-edc7-3045-e85c9839f80a.htm" />
+  <HelpKINode Title="MediaTek86.controleur.Controle class" Url="html/e108c6f6-9198-8285-a814-97e7a78a9b0e.htm" />
+  <HelpKINode Title="MediaTek86.dal namespace" Url="html/664fd9da-fcc9-8ede-52c5-fb8d850dc85e.htm" />
+  <HelpKINode Title="MediaTek86.dal.AccesDonnees class" Url="html/f00c4dc4-1001-bd26-3f5c-6df9cc4fcda9.htm" />
+  <HelpKINode Title="MediaTek86.modele namespace" Url="html/3a415e69-fbe5-4233-38e0-25e720be8582.htm" />
+  <HelpKINode Title="MediaTek86.modele.Absence class" Url="html/6f83120c-8e87-69ae-bc2f-482af4d665a5.htm" />
+  <HelpKINode Title="MediaTek86.modele.Motif class" Url="html/568bb918-be0d-13dd-a4f1-6a9a0b3ff9f4.htm" />
+  <HelpKINode Title="MediaTek86.modele.Personnel class" Url="html/a6192bd3-bd57-40db-e7a9-2c514821493b.htm" />
+  <HelpKINode Title="MediaTek86.modele.Responsable class" Url="html/1ca9fb22-05f0-2363-65ae-09a5562f374b.htm" />
+  <HelpKINode Title="MediaTek86.modele.Service class" Url="html/cc663648-99c7-22ae-e901-0702a0ef7640.htm" />
+  <HelpKINode Title="MediaTek86.Program class" Url="html/851f25d2-7074-8c16-7150-07f882ae2279.htm" />
+  <HelpKINode Title="MediaTek86.vue namespace" Url="html/77eaf969-a6df-dbf5-9f1f-d497e4a99901.htm" />
+  <HelpKINode Title="MediaTek86.vue.FrmAbsences class" Url="html/42360110-1b93-f6f8-ecf7-dbe847867ec1.htm" />
+  <HelpKINode Title="MediaTek86.vue.FrmAMAbsences class" Url="html/65255225-f3ce-5f35-27c7-3e2c7fb0b242.htm" />
+  <HelpKINode Title="MediaTek86.vue.FrmAMPersonnel class" Url="html/662c1829-64f7-2cc4-9828-45e3dce4d8b9.htm" />
+  <HelpKINode Title="MediaTek86.vue.FrmAuthentification class" Url="html/b5b71df2-e66c-aa17-5f67-dbca77dd395a.htm" />
+  <HelpKINode Title="MediaTek86.vue.FrmPersonnel class" Url="html/4e39457c-ba14-4eb5-c83c-a0062bc2353f.htm" />
+  <HelpKINode Title="modification field" Url="html/9d61b1f6-7dba-9599-861d-0485e22b1b07.htm" />
+  <HelpKINode Title="modificationAbsence field" Url="html/0587be7f-3e5e-32aa-32f3-e530016ec7a5.htm" />
+  <HelpKINode Title="ModifierAbsence method">
+    <HelpKINode Title="Controle.ModifierAbsence Method " Url="html/f87a81ee-6911-f537-19e4-19b4352eb8a4.htm" />
+    <HelpKINode Title="FrmAMAbsences.ModifierAbsence Method " Url="html/7c8ee661-56cd-2594-6b39-fba19791ef5f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ModifierPersonnel method">
+    <HelpKINode Title="Controle.ModifierPersonnel Method " Url="html/cb723ff0-cdef-6571-1afc-25d8216ac764.htm" />
+    <HelpKINode Title="FrmAMPersonnel.ModifierPersonnel Method " Url="html/6e55618e-514d-134e-a869-e090557a66ce.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Motif class">
+    <HelpKINode Title="Motif Class" Url="html/568bb918-be0d-13dd-a4f1-6a9a0b3ff9f4.htm" />
+    <HelpKINode Title="constructor" Url="html/29c32286-df5f-9487-a5b4-490386dbedf7.htm" />
+    <HelpKINode Title="fields" Url="html/89326bd7-7f22-3c6b-4fc3-aa20b4896ea5.htm" />
+    <HelpKINode Title="methods" Url="html/b73c0182-bf36-059c-bd30-5614aff05866.htm" />
+    <HelpKINode Title="properties" Url="html/f034aa37-9035-59c2-b20b-e951bbf361ca.htm" />
+  </HelpKINode>
+  <HelpKINode Title="motif field" Url="html/d6411a11-7129-1668-7615-0d4b41b508a0.htm" />
+  <HelpKINode Title="Motif property" Url="html/6045a6cf-fc6c-3a19-8214-fc410d0f5b5b.htm" />
+  <HelpKINode Title="Motif.idMotif field" Url="html/95e3edac-7a2e-1cff-414b-6c416e6f646e.htm" />
+  <HelpKINode Title="Motif.IdMotif property" Url="html/f258c2e6-7b93-4413-7877-bf139fd0dd60.htm" />
+  <HelpKINode Title="Motif.libelle field" Url="html/3c20059e-da64-d2bc-b628-492dc51a8d73.htm" />
+  <HelpKINode Title="Motif.Libelle property" Url="html/b961f210-8fba-373f-6111-e71e36d54b4c.htm" />
+  <HelpKINode Title="Motif.Motif constructor" Url="html/29c32286-df5f-9487-a5b4-490386dbedf7.htm" />
+  <HelpKINode Title="Motif.ToString method" Url="html/6bee413f-917b-a55f-8026-0deffa10e700.htm" />
+  <HelpKINode Title="nom field">
+    <HelpKINode Title="Personnel.nom Field" Url="html/e37662ad-af79-3310-76c2-e478c9f9bee2.htm" />
+    <HelpKINode Title="Service.nom Field" Url="html/fd43035e-7da9-3eef-9b3b-88a252f69240.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Nom property">
+    <HelpKINode Title="Personnel.Nom Property " Url="html/78659290-a6ef-1d18-32c4-81b1842fe83c.htm" />
+    <HelpKINode Title="Service.Nom Property " Url="html/5c644ea5-52db-2790-b049-122d5410d7f5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Personnel class">
+    <HelpKINode Title="Personnel Class" Url="html/a6192bd3-bd57-40db-e7a9-2c514821493b.htm" />
+    <HelpKINode Title="constructor" Url="html/6bf0b935-9ef6-be4a-860e-8c3ab2180ea1.htm" />
+    <HelpKINode Title="fields" Url="html/7073c50d-fbdd-5e74-50f0-2900e35a5d75.htm" />
+    <HelpKINode Title="methods" Url="html/5e8be04a-d0bc-81f8-4c4f-d06b21959403.htm" />
+    <HelpKINode Title="properties" Url="html/7128efcf-6096-e619-9a82-d09e94b61f6f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Personnel.idPersonnel field" Url="html/a62b4e9b-3eaf-2d69-7c48-1207b2a46a82.htm" />
+  <HelpKINode Title="Personnel.IdPersonnel property" Url="html/54c57dc9-180d-6b45-2562-3cb3c04f7260.htm" />
+  <HelpKINode Title="Personnel.idService field" Url="html/8c4c04fd-607e-6225-b04c-2d647f2dd563.htm" />
+  <HelpKINode Title="Personnel.IdService property" Url="html/dd694a9c-bd0d-7d49-38f4-fa0796983498.htm" />
+  <HelpKINode Title="Personnel.mail field" Url="html/04772d3c-a8ce-0ce5-8aac-f4d5bae460a1.htm" />
+  <HelpKINode Title="Personnel.Mail property" Url="html/88c3fe58-cb7e-2831-15d7-ca9af3ded05e.htm" />
+  <HelpKINode Title="Personnel.nom field" Url="html/e37662ad-af79-3310-76c2-e478c9f9bee2.htm" />
+  <HelpKINode Title="Personnel.Nom property" Url="html/78659290-a6ef-1d18-32c4-81b1842fe83c.htm" />
+  <HelpKINode Title="Personnel.Personnel constructor" Url="html/6bf0b935-9ef6-be4a-860e-8c3ab2180ea1.htm" />
+  <HelpKINode Title="Personnel.prenom field" Url="html/b77f41ba-e1a3-a667-4f95-fc2f58420756.htm" />
+  <HelpKINode Title="Personnel.Prenom property" Url="html/b5edea32-dd8a-adc7-6614-3dbb2786bd8e.htm" />
+  <HelpKINode Title="Personnel.service field" Url="html/70ff3a0b-b659-e5de-dd0a-abbc769fbb0f.htm" />
+  <HelpKINode Title="Personnel.Service property" Url="html/58091bfb-4600-d0a9-1f33-0d1798eebd4a.htm" />
+  <HelpKINode Title="Personnel.tel field" Url="html/08ead8ab-a09f-78fe-bb33-1a555f96e9fa.htm" />
+  <HelpKINode Title="Personnel.Tel property" Url="html/e36025b6-5bd8-9904-3bcd-07ffabf5eece.htm" />
+  <HelpKINode Title="personnelAbsence field">
+    <HelpKINode Title="FrmAbsences.personnelAbsence Field" Url="html/7fd0c3f1-503d-de79-29af-f9b394c5e718.htm" />
+    <HelpKINode Title="FrmAMAbsences.personnelAbsence Field" Url="html/463eb4fe-7962-192e-f8fb-b272870180f6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PersonnelAbsence property" Url="html/fc7d3f1f-1a97-1a9d-6682-d7d24e577779.htm" />
+  <HelpKINode Title="prenom field" Url="html/b77f41ba-e1a3-a667-4f95-fc2f58420756.htm" />
+  <HelpKINode Title="Prenom property" Url="html/b5edea32-dd8a-adc7-6614-3dbb2786bd8e.htm" />
+  <HelpKINode Title="Program class">
+    <HelpKINode Title="Program Class" Url="html/851f25d2-7074-8c16-7150-07f882ae2279.htm" />
+    <HelpKINode Title="methods" Url="html/02b28bbe-955a-ccd2-9e98-78f3b8614b6d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Program.Main method" Url="html/cdf364b4-48b2-4933-05cd-b83768afaa76.htm" />
+  <HelpKINode Title="pwd field" Url="html/fc190dcc-5833-6928-c228-734ac9574b70.htm" />
+  <HelpKINode Title="Pwd property" Url="html/756d9adf-35bc-2be4-dce4-b5582974b0a9.htm" />
+  <HelpKINode Title="Read method" Url="html/dab8b43c-77f9-0593-b4dd-cd53c331d369.htm" />
+  <HelpKINode Title="reader field" Url="html/70fcbe13-5f3d-bd3c-ab30-f35f18344ef4.htm" />
+  <HelpKINode Title="RemplirListeAbsences method" Url="html/22a222ee-704d-f5d2-9da5-60eba220a75b.htm" />
+  <HelpKINode Title="RemplirListePersonnel method" Url="html/1e0d0a18-d223-f98c-9ca3-47072ac2f1fe.htm" />
+  <HelpKINode Title="RemplirMotifs method" Url="html/e9cfdf15-1c28-9e0b-692e-9c5ba22d2794.htm" />
+  <HelpKINode Title="RemplirServices method" Url="html/50323de7-1f94-84ba-8a18-d6d54628bf46.htm" />
+  <HelpKINode Title="ReqSelect method" Url="html/4b93ee98-2f5b-bad0-edf8-717fb706a6df.htm" />
+  <HelpKINode Title="ReqUpdate method" Url="html/d02a0871-61b0-8128-e0ac-f0dd2fe813a9.htm" />
+  <HelpKINode Title="Responsable class">
+    <HelpKINode Title="Responsable Class" Url="html/1ca9fb22-05f0-2363-65ae-09a5562f374b.htm" />
+    <HelpKINode Title="constructor" Url="html/05036fdb-c3bf-ad9a-3266-c7205439349b.htm" />
+    <HelpKINode Title="fields" Url="html/d2797b96-e6ed-137b-3575-e91b04ea7b0f.htm" />
+    <HelpKINode Title="methods" Url="html/57306da6-a66f-aa0a-bc74-fac665382bb3.htm" />
+    <HelpKINode Title="properties" Url="html/415f18eb-60b0-daf1-ba91-03fe5b5c1725.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Responsable.login field" Url="html/77d558d1-6419-d93b-afa1-141a274e0c99.htm" />
+  <HelpKINode Title="Responsable.Login property" Url="html/fff8c756-6c9f-9472-b74f-941ae2f7efc8.htm" />
+  <HelpKINode Title="Responsable.pwd field" Url="html/fc190dcc-5833-6928-c228-734ac9574b70.htm" />
+  <HelpKINode Title="Responsable.Pwd property" Url="html/756d9adf-35bc-2be4-dce4-b5582974b0a9.htm" />
+  <HelpKINode Title="Responsable.Responsable constructor" Url="html/05036fdb-c3bf-ad9a-3266-c7205439349b.htm" />
+  <HelpKINode Title="Service class">
+    <HelpKINode Title="Service Class" Url="html/cc663648-99c7-22ae-e901-0702a0ef7640.htm" />
+    <HelpKINode Title="constructor" Url="html/59e6b9db-99e2-f74a-885c-76bb379aab22.htm" />
+    <HelpKINode Title="fields" Url="html/4097d5fc-0841-ff15-b98e-6c736d4fe9e9.htm" />
+    <HelpKINode Title="methods" Url="html/1077683c-2897-cf71-582b-9d07b6a8c212.htm" />
+    <HelpKINode Title="properties" Url="html/66d3de8f-6ba2-b7ed-b908-6615d448905d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="service field" Url="html/70ff3a0b-b659-e5de-dd0a-abbc769fbb0f.htm" />
+  <HelpKINode Title="Service property" Url="html/58091bfb-4600-d0a9-1f33-0d1798eebd4a.htm" />
+  <HelpKINode Title="Service.idService field" Url="html/d138ad28-b238-5c33-8840-338dd093ae42.htm" />
+  <HelpKINode Title="Service.IdService property" Url="html/63ad257e-2505-a99e-deb1-3cfb2a73f82a.htm" />
+  <HelpKINode Title="Service.nom field" Url="html/fd43035e-7da9-3eef-9b3b-88a252f69240.htm" />
+  <HelpKINode Title="Service.Nom property" Url="html/5c644ea5-52db-2790-b049-122d5410d7f5.htm" />
+  <HelpKINode Title="Service.Service constructor" Url="html/59e6b9db-99e2-f74a-885c-76bb379aab22.htm" />
+  <HelpKINode Title="Service.ToString method" Url="html/30c169f8-d7e3-d510-6db7-b63500a7f726.htm" />
+  <HelpKINode Title="tel field" Url="html/08ead8ab-a09f-78fe-bb33-1a555f96e9fa.htm" />
+  <HelpKINode Title="Tel property" Url="html/e36025b6-5bd8-9904-3bcd-07ffabf5eece.htm" />
+  <HelpKINode Title="ToString method">
+    <HelpKINode Title="Motif.ToString Method " Url="html/6bee413f-917b-a55f-8026-0deffa10e700.htm" />
+    <HelpKINode Title="Service.ToString Method " Url="html/30c169f8-d7e3-d510-6db7-b63500a7f726.htm" />
+  </HelpKINode>
+  <HelpKINode Title="txtMail field" Url="html/72968331-0004-ffbc-8a8f-e58653fbafa3.htm" />
+  <HelpKINode Title="txtMotdepasse field" Url="html/e90c4180-6ee5-47e6-2b66-4d2978453bed.htm" />
+  <HelpKINode Title="txtNom field" Url="html/57172283-595c-c359-74f0-eb48606a9322.htm" />
+  <HelpKINode Title="txtPrenom field" Url="html/98b1d784-ba08-ce67-6fc6-4dddaa16da02.htm" />
+  <HelpKINode Title="txtTel field" Url="html/812d0787-2ca6-3cce-bc79-6d143d272758.htm" />
+  <HelpKINode Title="txtUtilisateur field" Url="html/a46f8091-4342-2413-a3fe-43f03244cfed.htm" />
+  <HelpKINode Title="UpdateAbsence method">
+    <HelpKINode Title="AccesDonnees.UpdateAbsence Method " Url="html/e4d6afcf-dbc3-a16e-b1e7-fa014c8a0a09.htm" />
+    <HelpKINode Title="Controle.UpdateAbsence Method " Url="html/53670e66-7c14-73aa-4609-44d7ba1af606.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UpdatePersonnel method">
+    <HelpKINode Title="AccesDonnees.UpdatePersonnel Method " Url="html/7aa7508d-acd0-1da7-0f75-0719a67d5117.htm" />
+    <HelpKINode Title="Controle.UpdatePersonnel Method " Url="html/52f39921-3499-8f8c-57d6-930999cffda0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VerifierAuthentification method">
+    <HelpKINode Title="AccesDonnees.VerifierAuthentification Method " Url="html/6818c320-99d0-4487-22b7-4b89b7191f83.htm" />
+    <HelpKINode Title="Controle.VerifierAuthentification Method " Url="html/840ddfdb-eecc-50e0-d8e4-c38c38e0b915.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ViderLesChamps method" Url="html/5abf98fa-cc45-1976-a007-2119cc61f605.htm" />
+</HelpKI>

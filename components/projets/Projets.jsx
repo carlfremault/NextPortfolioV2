@@ -6,6 +6,7 @@ import SectionTitle from "../tools/SectionTitle";
 /**
  * 'Projets' section
  * SectionTitle and container ProjectCards for project cards
+ * Nothing needs to be changed in here when adding new projects
  */
 const Projets = () => {
   const theme = useTheme();

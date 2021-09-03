@@ -26,7 +26,7 @@ const AproposLinks = () => {
           >
             <Button
               variant="outlined"
-              style={theme.aproposButton}
+              style={theme.contrastButton}
               startIcon={<LinkedInIcon />}
             >
               LinkedIn
@@ -41,7 +41,7 @@ const AproposLinks = () => {
           >
             <Button
               variant="outlined"
-              style={theme.aproposButton}
+              style={theme.contrastButton}
               startIcon={<GitHubIcon />}
             >
               GitHub
@@ -49,10 +49,10 @@ const AproposLinks = () => {
           </a>
         </Grid>
         <Grid item xs={12} sm={4} style={{ textAlign: "center" }}>
-          <a href="../../CVCarlFremault072021Web.pdf" target="_blank">
+          <a href="../../pdf/CVCarlFremault072021Web.pdf" target="_blank">
             <Button
               variant="outlined"
-              style={theme.aproposButton}
+              style={theme.contrastButton}
               startIcon={<FaceIcon />}
             >
               CV (PDF)
