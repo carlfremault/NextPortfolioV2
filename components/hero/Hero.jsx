@@ -54,7 +54,7 @@ const Hero = () => {
                 to={"projets"}
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={30}
                 duration={500}
               >
                 <Button variant="outlined" style={theme.heroButton}>

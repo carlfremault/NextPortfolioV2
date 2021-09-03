@@ -32,7 +32,7 @@ const theme = createTheme({
     fontFamily: "Roboto",
     fontWeight: 400,
     textTransform: "none",
-    margin: "2rem 2rem",
+    margin: "1rem 0",
     minWidth: "150px",
   },
   primaryButton: {

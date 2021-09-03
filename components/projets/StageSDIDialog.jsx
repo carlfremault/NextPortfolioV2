@@ -34,41 +34,63 @@ const StageSDIDialog = ({ handleClose, open }) => {
       >
         <DialogTitle>Création de site web vitrine - Next.js</DialogTitle>
         <DialogContent dividers>
+          <Container
+            maxWidth="md"
+            style={{ marginTop: "2rem", marginBottom: "2rem" }}
+          >
+            <Image
+              src="/imgs/SDI.png"
+              width="1284px"
+              height="742px"
+              alt="Image of SDI website frontpage"
+            />
+          </Container>
+
           <Grid
             container
-            direction="row"
+            direction="column"
             justifyContent="space-between"
             alignItems="center"
           >
-            <Grid item xs={12} md={6}>
-              <Image
-                src="/imgs/SDI.png"
-                width="642px"
-                height="371px"
-                alt="Image of SDI website frontpage"
-              />
+            <Grid item style={{ textAlign: "center" }}>
+              <a
+                href="https://sport-data-intelligence.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button
+                  variant="outlined"
+                  style={theme.contrastButton}
+                  startIcon={<LinkIcon />}
+                >
+                  Visitez le site
+                </Button>
+              </a>
             </Grid>
+          </Grid>
+          <Container
+            maxWidth="sm"
+            style={{ marginTop: "2rem", marginBottom: "2rem" }}
+          >
             <Grid
-              item
               container
-              xs={12}
-              md={6}
               direction="column"
-              justifyContent="space-around"
+              justifyContent="space-between"
               alignItems="center"
-              style={{ padding: "2rem 2rem" }}
             >
               <Grid item>
-                <Typography variant="h6">Technologies</Typography>
+                <Typography variant="h6" gutterBottom>
+                  Technologies
+                </Typography>
               </Grid>
               <Grid
                 item
                 container
                 direction="row"
-                justifyContent="space-around"
+                justifyContent="space-evenly"
                 alignItems="center"
               >
-                <Grid item style={{ padding: "1rem 0" }}>
+                <Grid item>
                   <a
                     href="https://nextjs.org/"
                     target="_blank"
@@ -83,7 +105,7 @@ const StageSDIDialog = ({ handleClose, open }) => {
                     />
                   </a>
                 </Grid>
-                <Grid item style={{ padding: "1rem 0" }}>
+                <Grid item>
                   <a
                     href="https://reactjs.org/"
                     target="_blank"
@@ -98,7 +120,7 @@ const StageSDIDialog = ({ handleClose, open }) => {
                     />
                   </a>
                 </Grid>
-                <Grid item style={{ padding: "1rem 0" }}>
+                <Grid item>
                   <a
                     href="https://material-ui.com/"
                     target="_blank"
@@ -114,34 +136,8 @@ const StageSDIDialog = ({ handleClose, open }) => {
                   </a>
                 </Grid>
               </Grid>
-              <Grid item>
-                <Typography variant="h6">Liens</Typography>
-              </Grid>
-              <Grid
-                item
-                container
-                direction="row"
-                justifyContent="space-around"
-                alignItems="center"
-              >
-                <Grid item style={{ padding: "1rem 0" }}>
-                  <a
-                    href="https://sport-data-intelligence.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Button
-                      variant="outlined"
-                      style={theme.contrastButton}
-                      startIcon={<LinkIcon />}
-                    >
-                      Visitez le site
-                    </Button>
-                  </a>
-                </Grid>
-              </Grid>
             </Grid>
-          </Grid>
+          </Container>
           <Container maxWidth="md">
             <Typography variant="h6" style={{ margin: "2rem 0" }}>
               2 juillet 2021

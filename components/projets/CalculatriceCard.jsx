@@ -8,11 +8,23 @@ import {
   Typography,
 } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
+import { useState } from "react";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import CalculatriceDialog from "./CalculatriceDialog";
 
 const CalculatriceCard = () => {
   const theme = useTheme();
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = (e) => {
+    e.preventDefault();
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   return (
     <div
@@ -61,7 +73,7 @@ const CalculatriceCard = () => {
             </a>
           </Grid>
           <Grid item>
-            <a href="#" target="_blank" rel="noreferrer">
+            <a href="#" onClick={handleOpen}>
               <Button
                 variant="outlined"
                 style={theme.primaryButton}
@@ -73,6 +85,7 @@ const CalculatriceCard = () => {
           </Grid>
         </Grid>
       </CardActions>
+      <CalculatriceDialog open={open} handleClose={handleClose} />
     </div>
   );
 };

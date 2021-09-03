@@ -11,7 +11,10 @@ const AproposLinks = () => {
   const theme = useTheme();
 
   return (
-    <Container maxWidth="sm">
+    <Container
+      maxWidth="sm"
+      style={{ marginTop: "3rem", marginBottom: "4rem" }}
+    >
       <Grid
         container
         direction="row"
