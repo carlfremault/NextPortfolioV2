@@ -1,6 +1,6 @@
 import { Container } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
-import ProjectCards from "./ProjectCards";
+import ProjectCardContainer from "./ProjectCardContainer";
 import SectionTitle from "../tools/SectionTitle";
 
 /**
@@ -15,7 +15,7 @@ const Projets = () => {
     <section id="projets">
       <Container maxWidth={false} style={theme.lightBackgroundSection}>
         <SectionTitle title="Projets" />
-        <ProjectCards />
+        <ProjectCardContainer />
       </Container>
     </section>
   );
