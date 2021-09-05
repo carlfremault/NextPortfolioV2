@@ -77,7 +77,7 @@ const lightTheme = createTheme({
     paddingRight: 0,
   },
   footer: {
-    backgroundColor: lightColors.darkBackground,
+    backgroundColor: lightColors.footerBackground,
     minHeight: "15vh",
     overflow: "hidden",
     paddingLeft: 0,
@@ -123,7 +123,7 @@ const lightTheme = createTheme({
     margin: "2rem 0 2rem 0",
   },
   appbar: {
-    backgroundColor: lightColors.darkBackgroundOpaque,
+    backgroundColor: lightColors.navbarBackgroundOpaque,
   },
 });
 

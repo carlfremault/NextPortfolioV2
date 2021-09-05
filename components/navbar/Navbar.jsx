@@ -97,6 +97,14 @@ const Navbar = (props) => {
                 <Grid
                   item
                   style={{
+                    visibility: "hidden",
+                  }}
+                >
+                  <ThemeSwitcher />
+                </Grid>
+                <Grid
+                  item
+                  style={{
                     marginLeft: "auto",
                   }}
                 >
