@@ -211,7 +211,7 @@ const PPEMediaTekDialog = ({ handleClose, open }) => {
           </Grid>
         </DialogContent>
         <DialogActions>
-          <Button autoFocus onClick={handleClose} style={theme.cguButton}>
+          <Button autoFocus onClick={handleClose} style={theme.contrastColor}>
             Fermer
           </Button>
         </DialogActions>
