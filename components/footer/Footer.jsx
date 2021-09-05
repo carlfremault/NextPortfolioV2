@@ -24,8 +24,8 @@ const Footer = () => {
             xs={12}
             md={3}
             style={{
-              textAlign: "center",
               margin: "1rem 0",
+              textAlign: "center",
             }}
           >
             <Typography variant="body2" color="primary">
@@ -37,8 +37,8 @@ const Footer = () => {
             xs={12}
             md={3}
             style={{
-              textAlign: "center",
               margin: "1rem 0",
+              textAlign: "center",
             }}
           >
             <Grid
@@ -62,8 +62,8 @@ const Footer = () => {
             xs={12}
             md={3}
             style={{
-              textAlign: "center",
               margin: "1rem 0",
+              textAlign: "center",
             }}
           >
             <CGU />

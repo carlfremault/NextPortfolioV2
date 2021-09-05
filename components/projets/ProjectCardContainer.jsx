@@ -7,8 +7,8 @@ import AlgosTriCard from "./algosTri/AlgosTriCard";
 import PortfolioCard from "./portfolioNext/PortfolioCard";
 
 /**
- * Grid container for hardcoded Project Cards
- * When adding a new Project Card it needs to be inserted in a new Grid item
+ * Grid container for ProjectCards
+ * When adding a new ProjectCard it needs to be inserted in a new Grid item
  */
 const ProjectCardContainer = () => {
   const theme = useTheme();
