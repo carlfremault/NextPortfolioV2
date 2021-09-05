@@ -16,6 +16,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import MenuOpenIcon from "@material-ui/icons/MenuOpen";
 import ThemeSwitcher from "./ThemeSwitcher";
 
+// Navigation items
 const menu = [
   {
     item: "Accueil",

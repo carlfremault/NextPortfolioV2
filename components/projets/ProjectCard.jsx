@@ -15,17 +15,6 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkIcon from "@material-ui/icons/Link";
 
 /**
- * Hardcoded Project Card
- * CardHeader with title and subtitle
- * CardMedia with image
- * CardContent with text
- * CardActions with buttons in grid
- *  - one button to github or website
- *  - one button for dialog window 'more info'
- * Custom Dialog component needs open={open} and handleClose={handleClose} props
- */
-
-/**
  * Project Card component
  * @param {string} title - Title for CardHeader
  * @param {string} subtitle - Subtitle for CardHeader
@@ -66,9 +55,9 @@ const ProjectCard = ({
     <div
       style={{
         display: "flex",
-        justifyContent: "space-between",
         flexDirection: "column",
         height: "95%",
+        justifyContent: "space-between",
       }}
     >
       <CardHeader

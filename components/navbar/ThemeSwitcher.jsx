@@ -3,11 +3,17 @@ import { useContext } from "react";
 import { ColorContext } from "../../pages/_app";
 import Brightness4Icon from "@material-ui/icons/Brightness4";
 
+/**
+ * Button allowing to switch between dark and light theme
+ */
 const ThemeSwitcher = () => {
   const { darkMode, toggleDarkMode } = useContext(ColorContext);
 
   return (
-    <div style={{ alignItems: "center", display: "flex", flexWrap: "wrap" }}>
+    <div
+      style={{ alignItems: "center", display: "flex", flexWrap: "wrap" }}
+      aria-label="Button to change website color theme"
+    >
       <Brightness4Icon color="primary" />
       <Switch checked={darkMode} onChange={toggleDarkMode} name="ThemeSwitch" />
     </div>
