@@ -14,6 +14,7 @@ import DesktopNavigation from "../navbar/DesktopNavigation";
 import MobileNavigation from "../navbar/MobileNavigation";
 import MenuIcon from "@material-ui/icons/Menu";
 import MenuOpenIcon from "@material-ui/icons/MenuOpen";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const menu = [
   {
@@ -93,14 +94,29 @@ const Navbar = (props) => {
                 justifyContent="center"
                 alignItems="center"
               >
-                <Hidden smDown>
-                  <DesktopNavigation menu={menu} />
-                </Hidden>
-                <Hidden mdUp>
-                  <IconButton color="primary" onClick={toggleDrawer}>
-                    {openDrawer ? <MenuOpenIcon /> : <MenuIcon />}
-                  </IconButton>
-                </Hidden>
+                <Grid
+                  item
+                  style={{
+                    marginLeft: "auto",
+                  }}
+                >
+                  <Hidden smDown>
+                    <DesktopNavigation menu={menu} />
+                  </Hidden>
+                  <Hidden mdUp>
+                    <IconButton color="primary" onClick={toggleDrawer}>
+                      {openDrawer ? <MenuOpenIcon /> : <MenuIcon />}
+                    </IconButton>
+                  </Hidden>
+                </Grid>
+                <Grid
+                  item
+                  style={{
+                    marginLeft: "auto",
+                  }}
+                >
+                  <ThemeSwitcher />
+                </Grid>
               </Grid>
             </Toolbar>
           </div>

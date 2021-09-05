@@ -150,7 +150,7 @@ const CalculatriceDialog = ({ handleClose, open }) => {
           </Container>
         </DialogContent>
         <DialogActions>
-          <Button autoFocus onClick={handleClose} style={theme.cguButton}>
+          <Button autoFocus onClick={handleClose} style={theme.contrastColor}>
             Fermer
           </Button>
         </DialogActions>

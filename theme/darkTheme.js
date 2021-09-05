@@ -1,21 +1,20 @@
 import { createTheme } from "@material-ui/core";
+import darkColors from "./darkColors";
 
-const theme = createTheme({
-  // Overrides default theme
+const darkTheme = createTheme({
   palette: {
     primary: {
-      main: "#0896A6",
+      main: darkColors.primary,
     },
     secondary: {
-      main: "#406E73",
+      main: darkColors.secondary,
     },
     background: {
-      default: "#052026",
-      paper: "#253F42",
-      // paper: "#406E73",
+      default: darkColors.defaultBackground,
+      paper: darkColors.paperBackground,
     },
     text: {
-      primary: "#D9D9D9",
+      primary: darkColors.contrast,
     },
   },
   shape: {
@@ -28,71 +27,68 @@ const theme = createTheme({
   },
   // Custom buttons
   contrastButton: {
-    borderColor: "#D9D9D9",
+    borderColor: darkColors.contrast,
     fontFamily: "Roboto",
     fontWeight: 400,
-    textTransform: "none",
     margin: "1rem 0",
     minWidth: "150px",
+    textTransform: "none",
   },
   primaryButton: {
-    borderColor: "#0896A6",
-    color: "#0896A6",
+    borderColor: darkColors.primary,
+    color: darkColors.primary,
     fontFamily: "Roboto",
     fontWeight: 400,
-    textTransform: "none",
     margin: "0.2rem 0",
+    textTransform: "none",
   },
   desktopNavButton: {
+    color: darkColors.primary,
     margin: "0 2rem 0 2rem",
-    color: "primary",
     textTransform: "capitalize",
   },
-  cguButton: {
-    color: "#D9D9D9",
+  contrastColor: {
+    color: darkColors.contrast,
   },
   // Custom cards
   competenceCard: {
-    backgroundColor: "#052026",
+    backgroundColor: darkColors.defaultBackground,
     boxShadow: "none",
     width: "250px",
   },
   projectCard: {
-    backgroundColor: "#052026",
+    backgroundColor: darkColors.defaultBackground,
     boxShadow: "none",
-    width: "350px",
+    marginBottom: "2rem",
     minHeight: "550px",
     position: "relative",
-    // marginTop: "3rem",
-    marginBottom: "2rem",
+    width: "350px",
   },
   // Dialog
   dialog: {
-    // backgroundColor: "#030c0d",
-    // backgroundColor: "#406E73",
-    backgroundColor: "#253F42",
-    color: "#D9D9D9",
+    backgroundColor: darkColors.paperBackground,
+    color: darkColors.contrast,
   },
   // Sections
   lightBackgroundSection: {
-    backgroundColor: "#1E3C40",
+    backgroundColor: darkColors.lightBackground,
     overflow: "hidden",
     paddingLeft: 0,
     paddingRight: 0,
   },
   footer: {
-    backgroundColor: "#030c0d",
+    backgroundColor: darkColors.darkBackground,
+    minHeight: "15vh",
     overflow: "hidden",
     paddingLeft: 0,
     paddingRight: 0,
-    minHeight: "15vh",
   },
   footerContainer: {
     maxWidth: "95vw",
   },
   // Hero
   heroContainer: {
-    background: `url(/imgs/matthew-henry-VviFtDJakYk-unsplash.jpg) no-repeat top/cover`,
+    background: darkColors.heroImage,
     height: "100vh",
     overflow: "hidden",
     paddingLeft: 0,
@@ -100,18 +96,18 @@ const theme = createTheme({
     zIndex: -2,
   },
   opaqueLayer: {
-    backgroundColor: "rgba(5, 32, 38, 0.7)",
+    backgroundColor: darkColors.opaqueLayerHero,
     height: "100vh",
     zIndex: -1,
   },
   heroButton: {
+    borderColor: darkColors.contrast,
     fontFamily: "Roboto",
     fontWeight: 400,
     top: "1.5rem",
-    borderColor: "#D9D9D9",
   },
   heroLink: {
-    color: "#0896A6",
+    color: darkColors.primary,
   },
   heroGrid: {
     height: "100vh",
@@ -123,71 +119,71 @@ const theme = createTheme({
   },
   // Other
   mobileNavLink: {
-    color: "#D9D9D9",
+    color: darkColors.contrast,
     margin: "2rem 0 2rem 0",
   },
   appbar: {
-    backgroundColor: "rgba(3, 12, 13, 0.8)",
+    backgroundColor: darkColors.darkBackgroundOpaque,
   },
 });
 
-theme.typography.h1 = {
+darkTheme.typography.h1 = {
   fontWeight: 300,
-  [theme.breakpoints.only("xs")]: {
+  [darkTheme.breakpoints.only("xs")]: {
     fontSize: "1.75rem",
   },
-  [theme.breakpoints.up("sm")]: {
+  [darkTheme.breakpoints.up("sm")]: {
     fontSize: "2.75rem",
   },
-  [theme.breakpoints.up("lg")]: {
+  [darkTheme.breakpoints.up("lg")]: {
     fontSize: "3.75rem",
   },
 };
-theme.typography.h2 = {
+darkTheme.typography.h2 = {
   fontFamily: "'STIX Two Text', serif",
   fontWeight: 300,
-  [theme.breakpoints.only("xs")]: {
+  [darkTheme.breakpoints.only("xs")]: {
     fontSize: "1.75rem",
   },
-  [theme.breakpoints.up("sm")]: {
+  [darkTheme.breakpoints.up("sm")]: {
     fontSize: "2.75rem",
   },
-  [theme.breakpoints.up("lg")]: {
+  [darkTheme.breakpoints.up("lg")]: {
     fontSize: "3.75rem",
   },
 };
-theme.typography.h3 = {
+darkTheme.typography.h3 = {
   fontWeight: 300,
-  [theme.breakpoints.only("xs")]: {
+  [darkTheme.breakpoints.only("xs")]: {
     fontSize: "1.7rem",
   },
-  [theme.breakpoints.up("sm")]: {
+  [darkTheme.breakpoints.up("sm")]: {
     fontSize: "1.9rem",
   },
-  [theme.breakpoints.up("lg")]: {
+  [darkTheme.breakpoints.up("lg")]: {
     fontSize: "2.4rem",
   },
 };
-theme.typography.h4 = {
+darkTheme.typography.h4 = {
   fontWeight: 300,
-  [theme.breakpoints.only("xs")]: {
+  [darkTheme.breakpoints.only("xs")]: {
     fontSize: "1.5rem",
   },
-  [theme.breakpoints.up("sm")]: {
+  [darkTheme.breakpoints.up("sm")]: {
     fontSize: "2.125rem",
   },
 };
-theme.typography.h5 = {
+darkTheme.typography.h5 = {
   fontWeight: 300,
-  [theme.breakpoints.only("xs")]: {
+  [darkTheme.breakpoints.only("xs")]: {
     fontSize: "1.2rem",
   },
-  [theme.breakpoints.up("sm")]: {
+  [darkTheme.breakpoints.up("sm")]: {
     fontSize: "1.4rem",
   },
-  [theme.breakpoints.up("lg")]: {
+  [darkTheme.breakpoints.up("lg")]: {
     fontSize: "1.9rem",
   },
 };
 
-export default theme;
+export default darkTheme;
