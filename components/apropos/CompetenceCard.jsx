@@ -40,7 +40,7 @@ const CompetenceCard = ({ title, items }) => {
   );
 };
 
-CompetenceCard.PropTypes = {
+CompetenceCard.propTypes = {
   title: PropTypes.string.isRequired,
   items: PropTypes.array.isRequired,
 };
