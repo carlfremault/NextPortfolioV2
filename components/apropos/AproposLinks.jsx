@@ -31,6 +31,7 @@ const AproposLinks = () => {
               variant="outlined"
               style={theme.contrastButton}
               startIcon={<LinkedInIcon />}
+              data-testid="aproposLinkedInButton"
             >
               LinkedIn
             </Button>
@@ -46,6 +47,7 @@ const AproposLinks = () => {
               variant="outlined"
               style={theme.contrastButton}
               startIcon={<GitHubIcon />}
+              data-testid="aproposGitHubButton"
             >
               GitHub
             </Button>
@@ -57,6 +59,7 @@ const AproposLinks = () => {
               variant="outlined"
               style={theme.contrastButton}
               startIcon={<FaceIcon />}
+              data-testid="aproposCVButton"
             >
               CV (PDF)
             </Button>

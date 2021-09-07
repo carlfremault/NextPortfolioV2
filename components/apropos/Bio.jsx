@@ -5,7 +5,7 @@ import { Container, Typography } from "@material-ui/core";
  */
 const Bio = () => {
   return (
-    <Container>
+    <Container data-testid="bio">
       <Container maxWidth="md">
         <Typography variant="body1" align="justify" gutterBottom>
           Ma passion pour l&apos;informatique a commencé vers mes 10 ans quand

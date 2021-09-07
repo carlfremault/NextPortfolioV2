@@ -12,7 +12,7 @@ const diversArray = ["Git", "Méthode Agile"];
  */
 const Competences = () => {
   return (
-    <>
+    <div data-testid="competences">
       <SubTitle title="Compétences" />
       <Container>
         <Grid container justifyContent="center" alignItems="stretch">
@@ -22,7 +22,7 @@ const Competences = () => {
           <CompetenceCard title="Divers" items={diversArray} />
         </Grid>
       </Container>
-    </>
+    </div>
   );
 };
 
