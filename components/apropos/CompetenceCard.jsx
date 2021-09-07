@@ -20,7 +20,13 @@ import CheckIcon from "@material-ui/icons/Check";
 const CompetenceCard = ({ title, items }) => {
   const theme = useTheme();
   return (
-    <Grid item component={Card} style={theme.competenceCard} raised={false}>
+    <Grid
+      item
+      component={Card}
+      style={theme.competenceCard}
+      raised={false}
+      data-testid="competenceCard"
+    >
       <CardContent>
         <Typography variant="h5" color="secondary" align="center">
           {title}

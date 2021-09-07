@@ -23,14 +23,16 @@ const CGU = () => {
   };
 
   return (
-    <>
+    <div data-testid="cgu">
       <Typography variant="body2" color="primary">
-        <a href="#" onClick={handleOpen}>
+        <a href="#" onClick={handleOpen} data-testid="cguLink">
           Conditions Générales d&apos;Utilisation
         </a>
       </Typography>
       <Dialog onClose={handleClose} open={open}>
-        <DialogTitle>Conditions Générales d&apos;Utilisation</DialogTitle>
+        <DialogTitle data-testid="cguDialogTitle">
+          Conditions Générales d&apos;Utilisation
+        </DialogTitle>
         <DialogContent dividers>
           <Typography gutterBottom>En vigueur au 15/11/2020</Typography>
           <Typography gutterBottom align="justify">
@@ -110,7 +112,7 @@ const CGU = () => {
           </Button>
         </DialogActions>
       </Dialog>
-    </>
+    </div>
   );
 };
 

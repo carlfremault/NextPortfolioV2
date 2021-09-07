@@ -10,7 +10,7 @@ const Footer = () => {
   const theme = useTheme();
 
   return (
-    <Container maxWidth={false} style={theme.footer}>
+    <Container maxWidth={false} style={theme.footer} data-testid="footer">
       <Container style={theme.footerContainer}>
         <Grid
           container
