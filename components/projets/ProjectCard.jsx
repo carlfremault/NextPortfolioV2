@@ -24,7 +24,7 @@ import LinkIcon from "@material-ui/icons/Link";
  * @param {string} cardText - Short introductory text
  * @param {string} repoLink - optional - link to GitHub repo
  * @param {string} siteLink - optional - link to website
- * @param {object} dialog - Dialog component linked to card
+ * @param {function} dialog - Dialog component linked to card
  */
 const ProjectCard = ({
   title,
@@ -136,7 +136,7 @@ ProjectCard.propTypes = {
   cardText: PropTypes.string.isRequired,
   repoLink: PropTypes.string,
   siteLink: PropTypes.string,
-  dialog: PropTypes.object.isRequired,
+  dialog: PropTypes.func.isRequired,
 };
 
 export default ProjectCard;
