@@ -1,14 +1,10 @@
 import { Container, Grid, Typography } from "@material-ui/core";
 import SubTitle from "../tools/SubTitle";
 import Image from "next/image";
-import RedditJavaScript from "../../public/imgs/RedditJavaScript.png";
-import RedditFrontend from "../../public/imgs/RedditFrontend.png";
-import RedditReactJs from "../../public/imgs/RedditReactJs.png";
-import RedditLearnReact from "../../public/imgs/RedditLearnReact.png";
 
 const Forums = () => {
   return (
-    <>
+    <div data-testid="forums">
       <SubTitle title="Forums" />
       <Container>
         <Container maxWidth="md">
@@ -45,7 +41,7 @@ const Forums = () => {
                 <Image
                   width="180px"
                   height="40px"
-                  src={RedditJavaScript}
+                  src="/imgs/RedditJavaScript.png"
                   alt="r/javascript"
                 />
               </a>
@@ -64,7 +60,7 @@ const Forums = () => {
                 <Image
                   width="180px"
                   height="40px"
-                  src={RedditFrontend}
+                  src="/imgs/RedditFrontend.png"
                   alt="r/frontend"
                 />
               </a>
@@ -83,7 +79,7 @@ const Forums = () => {
                 <Image
                   width="180px"
                   height="40px"
-                  src={RedditReactJs}
+                  src="/imgs/RedditReactJs.png"
                   alt="r/reactjs"
                 />
               </a>
@@ -102,7 +98,7 @@ const Forums = () => {
                 <Image
                   width="180px"
                   height="40px"
-                  src={RedditLearnReact}
+                  src="/imgs/RedditLearnReact.png"
                   alt="r/learnreact"
                 />
               </a>
@@ -110,7 +106,7 @@ const Forums = () => {
           </Grid>
         </Container>
       </Container>
-    </>
+    </div>
   );
 };
 

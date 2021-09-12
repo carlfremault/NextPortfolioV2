@@ -33,7 +33,7 @@ const StageSDIDialog = ({ handleClose, open }) => {
         maxWidth="lg"
       >
         <DialogTitle>Création de site web vitrine - Next.js</DialogTitle>
-        <DialogContent dividers>
+        <DialogContent dividers data-testid="dialogContent">
           <Container
             maxWidth="md"
             style={{ marginTop: "2rem", marginBottom: "2rem" }}
@@ -200,7 +200,12 @@ const StageSDIDialog = ({ handleClose, open }) => {
           </Container>
         </DialogContent>
         <DialogActions>
-          <Button autoFocus onClick={handleClose} style={theme.contrastColor}>
+          <Button
+            autoFocus
+            onClick={handleClose}
+            style={theme.contrastColor}
+            data-testid="projectCardCloseDialog"
+          >
             Fermer
           </Button>
         </DialogActions>

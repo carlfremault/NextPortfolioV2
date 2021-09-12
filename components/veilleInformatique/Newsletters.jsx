@@ -1,14 +1,10 @@
 import { Container, Grid, Typography } from "@material-ui/core";
 import SubTitle from "../tools/SubTitle";
 import Image from "next/image";
-import JavaScriptWeekly from "../../public/imgs/JavaScriptWeekly.png";
-import ReactStatus from "../../public/imgs/ReactStatus.png";
-import FrontendFocus from "../../public/imgs/FrontendFocus.png";
-import NodeWeekly from "../../public/imgs/NodeWeekly.png";
 
 const Newsletters = () => {
   return (
-    <>
+    <div data-testid="newsletters">
       <SubTitle title="Newsletters" />
       <Container>
         <Container maxWidth="md">
@@ -42,7 +38,7 @@ const Newsletters = () => {
                 <Image
                   width="180px"
                   height="40px"
-                  src={JavaScriptWeekly}
+                  src="/imgs/JavaScriptWeekly.png"
                   alt="JavaScript Weekly"
                 />
               </a>
@@ -61,7 +57,7 @@ const Newsletters = () => {
                 <Image
                   width="180px"
                   height="40px"
-                  src={ReactStatus}
+                  src="/imgs/ReactStatus.png"
                   alt="React Status"
                 />
               </a>
@@ -80,7 +76,7 @@ const Newsletters = () => {
                 <Image
                   width="180px"
                   height="40px"
-                  src={FrontendFocus}
+                  src="/imgs/FrontendFocus.png"
                   alt="Frontend Focus"
                 />
               </a>
@@ -99,7 +95,7 @@ const Newsletters = () => {
                 <Image
                   width="180px"
                   height="40px"
-                  src={NodeWeekly}
+                  src="/imgs/NodeWeekly.png"
                   alt="Node Weekly"
                 />
               </a>
@@ -107,7 +103,7 @@ const Newsletters = () => {
           </Grid>
         </Container>
       </Container>
-    </>
+    </div>
   );
 };
 
