@@ -59,18 +59,30 @@ const ProjectCard = ({
         height: "95%",
         justifyContent: "space-between",
       }}
+      data-testid="projectCard"
     >
       <CardHeader
         title={title}
-        subheader={<Typography color="primary">{subtitle}</Typography>}
+        subheader={
+          <Typography color="primary" data-testid="projectCardSubTitle">
+            {subtitle}
+          </Typography>
+        }
+        data-testid="projectCardTitle"
       />
       <CardMedia
         image={image}
         title={imageTitle}
         style={{ height: imageHeight }}
+        data-testid="projectCardImage"
       />
       <CardContent>
-        <Typography variant="body1" color="textPrimary" align="justify">
+        <Typography
+          variant="body1"
+          color="textPrimary"
+          align="justify"
+          data-testid="projectCardText"
+        >
           {cardText}
         </Typography>
       </CardContent>
@@ -93,7 +105,12 @@ const ProjectCard = ({
                 </Button>
               </a>
             ) : (
-              <a href={siteLink} target="_blank" rel="noreferrer">
+              <a
+                href={siteLink}
+                target="_blank"
+                rel="noreferrer"
+                data-testid="projectCardSiteLink"
+              >
                 <Button
                   variant="outlined"
                   style={theme.primaryButton}
@@ -105,7 +122,7 @@ const ProjectCard = ({
             )}
           </Grid>
           <Grid item>
-            <a href="#" onClick={handleOpen}>
+            <a href="#" onClick={handleOpen} data-testid="projectCardMoreInfo">
               <Button
                 variant="outlined"
                 style={theme.primaryButton}

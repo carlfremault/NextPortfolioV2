@@ -9,7 +9,7 @@ import SectionTitle from "../tools/SectionTitle";
  */
 const VeilleInformatique = () => {
   return (
-    <section id="veilleinfo">
+    <section id="veilleinfo" data-testid="veilleInformatique">
       <Container maxWidth={false}>
         <SectionTitle title="Veille Informatique" />
         <Container>
