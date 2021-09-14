@@ -15,30 +15,10 @@ import MobileNavigation from "../navbar/MobileNavigation";
 import MenuIcon from "@material-ui/icons/Menu";
 import MenuOpenIcon from "@material-ui/icons/MenuOpen";
 import ThemeSwitcher from "./ThemeSwitcher";
+import Menu from "./Menu";
 
 // Navigation items
-const menu = [
-  {
-    item: "Accueil",
-    path: "hero",
-    offset: 0,
-  },
-  {
-    item: "À Propos",
-    path: "apropos",
-    offset: -60,
-  },
-  {
-    item: "Projets",
-    path: "projets",
-    offset: 30,
-  },
-  {
-    item: "Veille Informatique",
-    path: "veilleinfo",
-    offset: -60,
-  },
-];
+const menu = Menu();
 
 // Functionality for navbar disappearing when scrolling down, reappearing when scrolling up
 const HideOnScroll = ({ children }) => {
