@@ -6,15 +6,15 @@ After my internship at [Sport Data Intelligence](https://sport-data-intelligence
 
 For this project I wanted to focus on a few key points:
 
-#### Styling
+### Styling
 
 I wanted to get some more practice with the implementation of custom stylings with Material-UI. For this project I chose to centralize almost all style elements in a custom theme, only sporadically using inline styling (generally for margins) in places where they would never change.
 
-#### Using Context
+### Using Context
 
 Until now I've only been using Context in some small exercises. It seemed like a good occasion to try and implement it in a 'real world' application (even if it's only a static website), especially given the previous goal of wanting to play around with the styling a bit more. Therefore I made both a dark and a light theme, which were then inserted with a (very basic) implementation of the useContext hook.
 
-#### Using npm packages
+### Using npm packages
 
 Another thing I haven't done much before is using third party npm packages. For this project I used a few:
 
