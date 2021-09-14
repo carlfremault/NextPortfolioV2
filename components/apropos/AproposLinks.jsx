@@ -40,7 +40,7 @@ const AproposLinks = () => {
         container
         direction="row"
         justifyContent="space-evenly"
-        alignItems="stretch"
+        alignItems="center"
       >
         <Grid item style={{ textAlign: "center" }}>
           <a
