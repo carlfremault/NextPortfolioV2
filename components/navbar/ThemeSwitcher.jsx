@@ -13,9 +13,15 @@ const ThemeSwitcher = () => {
     <div
       style={{ alignItems: "center", display: "flex", flexWrap: "wrap" }}
       aria-label="Button to change website color theme"
+      data-testid="themeSwitcher"
     >
       <Brightness4Icon color="primary" />
-      <Switch checked={darkMode} onChange={toggleDarkMode} name="ThemeSwitch" />
+      <Switch
+        checked={darkMode}
+        onChange={toggleDarkMode}
+        name="ThemeSwitch"
+        data-testid="switch"
+      />
     </div>
   );
 };
