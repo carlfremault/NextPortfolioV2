@@ -61,6 +61,12 @@ const ProjectCard = ({
       }}
       data-testid="projectCard"
     >
+      <CardMedia
+        image={image}
+        title={imageTitle}
+        style={{ height: imageHeight }}
+        data-testid="projectCardImage"
+      />
       <CardHeader
         title={title}
         subheader={
@@ -69,12 +75,6 @@ const ProjectCard = ({
           </Typography>
         }
         data-testid="projectCardTitle"
-      />
-      <CardMedia
-        image={image}
-        title={imageTitle}
-        style={{ height: imageHeight }}
-        data-testid="projectCardImage"
       />
       <CardContent>
         <Typography
