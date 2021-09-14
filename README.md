@@ -14,6 +14,10 @@ I wanted to get some more practice with the implementation of custom stylings wi
 
 Until now I've only been using Context in some small exercises. It seemed like a good occasion to try and implement it in a 'real world' application (even if it's only a static website), especially given the previous goal of wanting to play around with the styling a bit more. Therefore I made both a dark and a light theme, which were then inserted with a (very basic) implementation of the useContext hook.
 
+As a result the entire app is wrapped within two providers:
+- The first (inner) layer consists of the Material-UI ThemeProvider, which gets one of both themes inserted depending on the context.
+- The second (outer) layer is the Context Provider
+
 ### Using npm packages
 
 Another thing I haven't done much before is using third party npm packages. For this project I used a few:
