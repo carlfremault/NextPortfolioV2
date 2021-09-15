@@ -10,17 +10,13 @@ const ThemeSwitcher = () => {
   const { darkMode, toggleDarkMode } = useContext(ColorContext);
 
   return (
-    <div
-      style={{ alignItems: "center", display: "flex", flexWrap: "wrap" }}
-      aria-label="Button to change website color theme"
-      data-testid="themeSwitcher"
-    >
+    <div style={{ alignItems: "center", display: "flex", flexWrap: "wrap" }}>
       <Brightness4Icon color="primary" />
       <Switch
         checked={darkMode}
         onChange={toggleDarkMode}
         name="ThemeSwitch"
-        data-testid="switch"
+        aria-label="Button to change website color theme"
       />
     </div>
   );

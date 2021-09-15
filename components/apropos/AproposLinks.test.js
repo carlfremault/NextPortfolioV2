@@ -9,8 +9,10 @@ it("Render without crashing", () => {
   const aproposLinkedInButton = getByTestId("aproposLinkedInButton");
   const aproposGitHubButton = getByTestId("aproposGitHubButton");
   const aproposCVButton = getByTestId("aproposCVButton");
+  const aproposContactButton = getByTestId("aproposContactButton");
 
   expect(aproposLinkedInButton).toBeInTheDocument;
   expect(aproposGitHubButton).toBeInTheDocument;
   expect(aproposCVButton).toBeInTheDocument;
+  expect(aproposContactButton).toBeInTheDocument;
 });
