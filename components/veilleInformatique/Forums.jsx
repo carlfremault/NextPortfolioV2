@@ -9,13 +9,16 @@ const Forums = () => {
       <Container>
         <Container maxWidth="md">
           <Typography variant="body1" align="justify" gutterBottom>
-            Pour compléter l&apos;influx d&apos;informations reçus
-            hebdomadairement je consulte régulièrement les sites Hackernews
-            ainsi que Reddit. Sur un ton plus léger, ils me permettent non
-            seulement de retrouver des nouveautés ou autres informations que
-            j&apos;aurais ratés, mais aussi d&apos;avoir des opinions, méthodes,
-            ... d&apos;autres personnes, dont pas mal de développeurs
-            professionnels.
+            Le deuxième axe, selon la méthode &quot;pull&quot; et pour compléter
+            l&apos;influx d&apos;informations reçus hebdomadairement je consulte
+            régulièrement les sites Hackernews ainsi que Reddit. Sur un ton plus
+            léger, ils me permettent non seulement de retrouver des nouveautés
+            ou autres informations que j&apos;aurais ratés, mais aussi
+            d&apos;avoir des opinions, méthodes de travail, ... d&apos;autres
+            personnes, dont beaucoup de développeurs professionnels. Les
+            différents &quot;threads&quot; des forums m&apos;offrent ainsi un
+            aperçu de la vie de tous les jours d&apos;un développeur
+            informatique à l&apos;heure actuelle.
           </Typography>
           <Typography variant="body1" align="justify" gutterBottom>
             Quelques &quot;subreddit&quot; que je consulte régulièrement:

@@ -115,7 +115,7 @@ const AlgosTriDialog = ({ handleClose, open }) => {
               d&apos;entiers (avec liste de longueur variable et détection
               d’erreurs de saisie avec une boucle try/catch) puis la liste est
               triée en affichant les différentes étapes. Pour l&apos;affichage
-              du menu j&apos;ai utilisé la classe StringBuilder
+              du menu j&apos;ai utilisé la classe StringBuilder.
             </Typography>
           </Container>
         </DialogContent>
