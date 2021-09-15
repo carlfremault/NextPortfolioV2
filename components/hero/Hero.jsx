@@ -1,5 +1,7 @@
 import { Button, Container, Grid, Hidden, Typography } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
+import { useContext } from "react";
+import { ColorContext } from "../../pages/_app";
 import { Link } from "react-scroll";
 
 /**
@@ -7,6 +9,7 @@ import { Link } from "react-scroll";
  */
 const Hero = () => {
   const theme = useTheme();
+  const { darkMode } = useContext(ColorContext);
 
   return (
     <section id="hero">
@@ -65,14 +68,25 @@ const Hero = () => {
           </Grid>
           <Typography style={theme.credits}>
             Photo par{" "}
-            <a
-              href="https://unsplash.com/@matthewhenry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-              target="_blank"
-              style={theme.heroLink}
-              rel="noreferrer"
-            >
-              Matthew Henry
-            </a>{" "}
+            {darkMode ? (
+              <a
+                href="https://unsplash.com/@matthewhenry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                target="_blank"
+                style={theme.heroLink}
+                rel="noreferrer"
+              >
+                Matthew Henry
+              </a>
+            ) : (
+              <a
+                href="https://unsplash.com/@adriel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                target="_blank"
+                style={theme.heroLink}
+                rel="noreferrer"
+              >
+                Adriel Kloppenburg
+              </a>
+            )}{" "}
             sur{" "}
             <a
               href="https://unsplash.com/s/photos/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
