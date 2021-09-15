@@ -16,20 +16,22 @@ const VeilleInformatique = () => {
           <Container maxWidth="md">
             <Typography variant="body1" align="justify" gutterBottom>
               Le sujet que j&apos;ai choisi pour ma veille informatique est
-              l&apos;écosystème JavaScript. Les technologies du cloud computing
-              sont en forte croissance ces dernières années, notamment les
-              applications &quot;SaaS&quot;. Les nouveaux modes de travail
-              émergents, tel que le télétravail, gagnent en importance. Avoir
-              accès à distance aux données ainsi qu&apos;aux applications de son
-              entreprise devient un enjeu important. En adoptant ces
-              technologies une entreprise gagne en efficacité et peut réduire et
-              mieux maitriser son budget. ........
+              l&apos;écosystème JavaScript, avec, pour l&apos;instant, une
+              attention particulière pour la librairie React.
             </Typography>
             <Typography variant="body1" align="justify" gutterBottom>
-              Le JavaScript ainsi que ses librairies et frameworks sont
-              indéniablement le poid lourd en ce qui concerne le développement
-              d&apos;applications web. Comme j&apos;envisage de me profiler en
-              tant que développeur front end le choix semble logique.
+              Comme j&apos;envisage une carrière dans le développement web, ce
+              choix me semble logique. Ces dernières années, l&apos;écosystème
+              JavaScript s&apos;est imposé comme technologie dominante en tout
+              ce qui concerne le développement web front-end, tout en étant un
+              choix tout à fait valable pour le back-end aussi. C&apos;est une
+              technologie qui est bien établie, avec beaucoup de ressources
+              disponibles sur le web, et qui est très vivante aussi, avec de
+              nouveaux frameworks et librairies qui apparaissent régulièrement.
+            </Typography>
+            <Typography variant="body1" align="justify" gutterBottom>
+              Concrètement j&apos;ai choisi d&apos;effectuer cette veille sur
+              deux axes :{" "}
             </Typography>
           </Container>
         </Container>

@@ -134,6 +134,18 @@ const CalculatriceDialog = ({ handleClose, open }) => {
                 </ListItemIcon>
                 <ListItemText primary="Gestion des décimales (utilisation de la classe BigDecimal)" />
               </ListItem>
+              <Typography
+                variant="body1"
+                align="justify"
+                style={{ margin: "1rem 0 0 0" }}
+              >
+                Passage obligatoire pour tous les apprentis développeurs? En
+                tout cas j&apos;étais bien surpris quand &quot;ma nouvelle
+                calculatrice&quot; affichait &quot;0.1 + 0.2 = 0.4&quot; ! La
+                problématique étant bien documenté sur le web, la solution était
+                facile à trouver et j&apos;ai modifié tous mes types pour des
+                BigDecimal au lieu des Doubles.
+              </Typography>
               <ListItem>
                 <ListItemIcon>
                   <CheckIcon color="secondary" />
@@ -146,6 +158,18 @@ const CalculatriceDialog = ({ handleClose, open }) => {
                 </ListItemIcon>
                 <ListItemText primary="Gestion de répétition de calcul en appuyant la touche ‘égale’ successivement" />
               </ListItem>
+              <Typography
+                variant="body1"
+                align="justify"
+                style={{ margin: "1rem 0 0 0" }}
+              >
+                Ces deux points étaient étroitement liés. Ma solution est
+                d&apos;utiliser deux variables pour stocker les opérateurs :
+                lors d&apos;un appui sur un bouton &quot;opérateur&quot;, avant
+                de le stocker dans la variable d&apos;opérateur actuel, la
+                valeur stockée dans cette variable est transmise dans une autre
+                variable &quot;opérateur précédent&quot;.
+              </Typography>
             </List>
           </Container>
         </DialogContent>
