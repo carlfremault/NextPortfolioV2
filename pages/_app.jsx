@@ -9,7 +9,7 @@ import lightTheme from "../theme/lightTheme";
 export const ColorContext = createContext();
 
 function MyApp({ Component, pageProps }) {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
