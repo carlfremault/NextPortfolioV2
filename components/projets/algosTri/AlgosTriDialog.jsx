@@ -14,6 +14,10 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import Image from "next/image";
 import AlgosTriGallery from "./AlgosTriGallery";
 
+const myLoader = ({ src, width, quality }) => {
+  return `${src}?w=${width}&q=${quality || 75}`;
+};
+
 const AlgosTriDialog = ({ handleClose, open }) => {
   const theme = useTheme();
 
@@ -88,6 +92,7 @@ const AlgosTriDialog = ({ handleClose, open }) => {
                     rel="noreferrer"
                   >
                     <Image
+                      loader={myLoader}
                       src="/imgs/LogoCSharp.png"
                       width="90px"
                       height="90px"

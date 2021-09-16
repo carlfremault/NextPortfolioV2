@@ -2,6 +2,10 @@ import { Container, Grid, Typography } from "@material-ui/core";
 import SubTitle from "../tools/SubTitle";
 import Image from "next/image";
 
+const myLoader = ({ src, width, quality }) => {
+  return `${src}?w=${width}&q=${quality || 75}`;
+};
+
 const Forums = () => {
   return (
     <div data-testid="forums">
@@ -43,6 +47,7 @@ const Forums = () => {
                 rel="noreferrer"
               >
                 <Image
+                  loader={myLoader}
                   width="180px"
                   height="40px"
                   src="/imgs/RedditJavaScript.png"
@@ -62,6 +67,7 @@ const Forums = () => {
                 rel="noreferrer"
               >
                 <Image
+                  loader={myLoader}
                   width="180px"
                   height="40px"
                   src="/imgs/RedditFrontend.png"
@@ -81,6 +87,7 @@ const Forums = () => {
                 rel="noreferrer"
               >
                 <Image
+                  loader={myLoader}
                   width="180px"
                   height="40px"
                   src="/imgs/RedditReactJs.png"
@@ -100,6 +107,7 @@ const Forums = () => {
                 rel="noreferrer"
               >
                 <Image
+                  loader={myLoader}
                   width="180px"
                   height="40px"
                   src="/imgs/RedditLearnReact.png"
