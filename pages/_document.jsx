@@ -5,8 +5,14 @@ import { ServerStyleSheets } from "@material-ui/core/styles";
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="fr">
         <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="true"
+          />
           <link
             href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
             rel="stylesheet"
@@ -18,12 +24,6 @@ export default class MyDocument extends Document {
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-          />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossOrigin="true"
           />
           <link
             href="https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap"

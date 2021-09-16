@@ -31,9 +31,32 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <title>Carl Fremault - Portfolio</title>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/imgs/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/imgs/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/imgs/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/imgs/site.webmanifest" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
+        />
+        <meta
+          name="description"
+          content="Carl Fremault - Etudiant développeur en 2ième année du BTS Services Informatiques aux Organisations - Portfolio"
         />
       </Head>
       <ColorContext.Provider value={{ darkMode, toggleDarkMode }}>
