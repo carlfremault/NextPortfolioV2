@@ -21,13 +21,13 @@ const VeilleInformatique = () => {
             </Typography>
             <Typography variant="body1" align="justify" gutterBottom>
               Comme j&apos;envisage une carrière dans le développement web, ce
-              choix me semble logique. Ces dernières années, l&apos;écosystème
-              JavaScript s&apos;est imposé comme technologie dominante en tout
-              ce qui concerne le développement web front-end, tout en étant un
-              choix tout à fait valable pour le back-end aussi. C&apos;est une
+              choix me semble logique. Ces dernières années, JavaScript
+              s&apos;est imposé comme technologie dominante en tout ce qui
+              concerne le développement web front-end, tout en étant un choix
+              tout à fait valable pour le back-end aussi. C&apos;est une
               technologie qui est bien établie, avec beaucoup de ressources
-              disponibles sur le web, et qui est très vivante aussi, avec de
-              nouveaux frameworks et librairies qui apparaissent régulièrement.
+              disponibles sur le web, et qui est très vivante, avec de nouveaux
+              frameworks et librairies qui apparaissent régulièrement.
             </Typography>
             <Typography variant="body1" align="justify" gutterBottom>
               Concrètement j&apos;ai choisi d&apos;effectuer cette veille sur

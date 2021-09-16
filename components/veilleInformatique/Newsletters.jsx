@@ -9,8 +9,8 @@ const Newsletters = () => {
       <Container>
         <Container maxWidth="md">
           <Typography variant="body1" align="justify" gutterBottom>
-            Comme axe principale de ma veille informatique et selon la méthode
-            &quot;push&quot; j&apos;ai choisi les newsletters, qui pour moi
+            Comme axe principale de ma veille informatique, et selon la méthode
+            &quot;push&quot;, j&apos;ai choisi les newsletters, qui pour moi
             trouvent un équilibre parfait entre un apport régulier
             d&apos;informations, sans toutefois se trouver inondé comme on
             pourrait l&apos;être avec des feed RSS par exemple.
