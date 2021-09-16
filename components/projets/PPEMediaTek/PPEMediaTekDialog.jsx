@@ -65,7 +65,7 @@ const PPEMediaTekDialog = ({ handleClose, open }) => {
                 </Button>
               </a>
               <a
-                href="../../docs/PPEMediaTek/TechnicalDocs/index.html"
+                href="/docs/PPEMediaTek/TechnicalDocs/index.html"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -78,7 +78,7 @@ const PPEMediaTekDialog = ({ handleClose, open }) => {
                 </Button>
               </a>
               <a
-                href="../../docs/PPEMediaTek/PencilPrototype/index.html"
+                href="/docs/PPEMediaTek/PencilPrototype/index.html"
                 target="_blank"
                 rel="noreferrer"
               >
