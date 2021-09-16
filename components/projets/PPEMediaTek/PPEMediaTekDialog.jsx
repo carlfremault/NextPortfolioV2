@@ -18,6 +18,10 @@ import Image from "next/image";
 import PPEMediaTekGallery from "./PPEMediaTekGallery";
 import ReactPlayer from "react-player/lazy";
 
+const myLoader = ({ src, width, quality }) => {
+  return `${src}?w=${width}&q=${quality || 75}`;
+};
+
 const PPEMediaTekDialog = ({ handleClose, open }) => {
   const theme = useTheme();
 
@@ -61,7 +65,7 @@ const PPEMediaTekDialog = ({ handleClose, open }) => {
                 </Button>
               </a>
               <a
-                href="../../docs/PPEMediaTek/TechnicalDocs/index.html"
+                href="/docs/PPEMediaTek/TechnicalDocs/index.html"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -74,7 +78,7 @@ const PPEMediaTekDialog = ({ handleClose, open }) => {
                 </Button>
               </a>
               <a
-                href="../../docs/PPEMediaTek/PencilPrototype/index.html"
+                href="/docs/PPEMediaTek/PencilPrototype/index.html"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -131,6 +135,7 @@ const PPEMediaTekDialog = ({ handleClose, open }) => {
                     rel="noreferrer"
                   >
                     <Image
+                      loader={myLoader}
                       src="/imgs/LogoCSharp.png"
                       width="90px"
                       height="90px"
@@ -146,6 +151,7 @@ const PPEMediaTekDialog = ({ handleClose, open }) => {
                     rel="noreferrer"
                   >
                     <Image
+                      loader={myLoader}
                       src="/imgs/LogoMySql.png"
                       width="120px"
                       height="62px"

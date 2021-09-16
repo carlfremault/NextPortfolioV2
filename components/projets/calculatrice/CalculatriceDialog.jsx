@@ -18,6 +18,10 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import CheckIcon from "@material-ui/icons/Check";
 import Image from "next/image";
 
+const myLoader = ({ src, width, quality }) => {
+  return `${src}?w=${width}&q=${quality || 75}`;
+};
+
 const CalculatriceDialog = ({ handleClose, open }) => {
   const theme = useTheme();
 
@@ -39,6 +43,7 @@ const CalculatriceDialog = ({ handleClose, open }) => {
             style={{ marginTop: "2rem", marginBottom: "2rem" }}
           >
             <Image
+              loader={myLoader}
               src="/imgs/Calculatrice.png"
               width="838px"
               height="485px"
@@ -97,6 +102,7 @@ const CalculatriceDialog = ({ handleClose, open }) => {
                     rel="noreferrer"
                   >
                     <Image
+                      loader={myLoader}
                       src="/imgs/LogoJava.png"
                       width="128px"
                       height="128px"

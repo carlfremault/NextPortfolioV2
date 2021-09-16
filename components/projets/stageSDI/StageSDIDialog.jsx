@@ -18,6 +18,10 @@ import LinkIcon from "@material-ui/icons/Link";
 import CheckIcon from "@material-ui/icons/Check";
 import Image from "next/image";
 
+const myLoader = ({ src, width, quality }) => {
+  return `${src}?w=${width}&q=${quality || 75}`;
+};
+
 const StageSDIDialog = ({ handleClose, open }) => {
   const theme = useTheme();
 
@@ -39,13 +43,13 @@ const StageSDIDialog = ({ handleClose, open }) => {
             style={{ marginTop: "2rem", marginBottom: "2rem" }}
           >
             <Image
+              loader={myLoader}
               src="/imgs/SDI.png"
               width="1284px"
               height="742px"
               alt="Image of SDI website frontpage"
             />
           </Container>
-
           <Grid
             container
             direction="column"
@@ -98,6 +102,7 @@ const StageSDIDialog = ({ handleClose, open }) => {
                     rel="noreferrer"
                   >
                     <Image
+                      loader={myLoader}
                       src="/imgs/LogoNextJs.svg"
                       width="90px"
                       height="50px"
@@ -113,6 +118,7 @@ const StageSDIDialog = ({ handleClose, open }) => {
                     rel="noreferrer"
                   >
                     <Image
+                      loader={myLoader}
                       src="/imgs/LogoReact.png"
                       width="150px"
                       height="50px"
@@ -128,6 +134,7 @@ const StageSDIDialog = ({ handleClose, open }) => {
                     rel="noreferrer"
                   >
                     <Image
+                      loader={myLoader}
                       src="/imgs/LogoMui.png"
                       width="82px"
                       height="82px"

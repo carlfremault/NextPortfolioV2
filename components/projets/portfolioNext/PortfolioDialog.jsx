@@ -18,6 +18,10 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 import Image from "next/image";
 
+const myLoader = ({ src, width, quality }) => {
+  return `${src}?w=${width}&q=${quality || 75}`;
+};
+
 const PortfolioDialog = ({ handleClose, open }) => {
   const theme = useTheme();
   return (
@@ -38,6 +42,7 @@ const PortfolioDialog = ({ handleClose, open }) => {
             style={{ marginTop: "2rem", marginBottom: "2rem" }}
           >
             <Image
+              loader={myLoader}
               src="/imgs/Portfolio.png"
               width="1896px"
               height="923px"
@@ -96,6 +101,7 @@ const PortfolioDialog = ({ handleClose, open }) => {
                     rel="noreferrer"
                   >
                     <Image
+                      loader={myLoader}
                       src="/imgs/LogoNextJs.svg"
                       width="90px"
                       height="50px"
@@ -111,6 +117,7 @@ const PortfolioDialog = ({ handleClose, open }) => {
                     rel="noreferrer"
                   >
                     <Image
+                      loader={myLoader}
                       src="/imgs/LogoReact.png"
                       width="150px"
                       height="50px"
@@ -126,6 +133,7 @@ const PortfolioDialog = ({ handleClose, open }) => {
                     rel="noreferrer"
                   >
                     <Image
+                      loader={myLoader}
                       src="/imgs/LogoMui.png"
                       width="82px"
                       height="82px"
@@ -138,7 +146,7 @@ const PortfolioDialog = ({ handleClose, open }) => {
           </Container>
           <Container maxWidth="md">
             <Typography variant="h6" style={{ margin: "2rem 0" }}>
-              20 septembre 2021
+              16 septembre 2021
             </Typography>
             <Typography
               variant="body1"
