@@ -2,6 +2,10 @@ import { Container, Grid, Typography } from "@material-ui/core";
 import SubTitle from "../tools/SubTitle";
 import Image from "next/image";
 
+const myLoader = ({ src, width, quality }) => {
+  return `${src}?w=${width}&q=${quality || 75}`;
+};
+
 const Newsletters = () => {
   return (
     <div data-testid="newsletters">
@@ -37,6 +41,7 @@ const Newsletters = () => {
                 rel="noreferrer"
               >
                 <Image
+                  loader={myLoader}
                   width="180px"
                   height="40px"
                   src="/imgs/JavaScriptWeekly.png"
@@ -56,6 +61,7 @@ const Newsletters = () => {
                 rel="noreferrer"
               >
                 <Image
+                  loader={myLoader}
                   width="180px"
                   height="40px"
                   src="/imgs/ReactStatus.png"
@@ -75,6 +81,7 @@ const Newsletters = () => {
                 rel="noreferrer"
               >
                 <Image
+                  loader={myLoader}
                   width="180px"
                   height="40px"
                   src="/imgs/FrontendFocus.png"
@@ -94,6 +101,7 @@ const Newsletters = () => {
                 rel="noreferrer"
               >
                 <Image
+                  loader={myLoader}
                   width="180px"
                   height="40px"
                   src="/imgs/NodeWeekly.png"
