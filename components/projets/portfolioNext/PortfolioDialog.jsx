@@ -234,7 +234,7 @@ const PortfolioDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Je voulais m&apos;entrainer un peu à utiliser des paquets npm. Les
+              Je voulais m&apos;entrainer à utiliser des paquets npm. Les
               paquets que j&apos;ai utilisé pour ce projet :
             </Typography>
             <List>
@@ -303,7 +303,8 @@ const PortfolioDialog = ({ handleClose, open }) => {
               Finalement je voulais m&apos;entrainer à l&apos;utilisation de
               react-testing-library et Jest. Les tests unitaires que j&apos;ai
               fait sont assez simples (comme il s&apos;agit d&apos;un site
-              statique) mais ainsi j&apos;ai pu me familiariser avec le concept.
+              statique) mais ainsi j&apos;ai pu me familiariser avec le
+              fonctionnement.
             </Typography>
           </Container>
         </DialogContent>

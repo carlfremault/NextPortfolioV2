@@ -31,16 +31,14 @@ const Bio = () => {
           Solutions Logicielles et Applications Métier, au CNED.
         </Typography>
         <Typography variant="body1" align="justify" gutterBottom>
-          Effectivement, depuis mes premières incursions sur le World Wide Web à
-          la fin des années 90, j&apos;ai toujours été fasciné par cette
-          technologie aux possibilités infinies. L&apos;arrivée du Cloud
-          Computing, et particulièrement le SaaS, permet de complètement
-          repenser nos modes de travail, et de vie.
-        </Typography>
-        <Typography variant="body1" align="justify" gutterBottom>
-          J&apos;aimerais beaucoup participer à cette (r)évolution, ainsi je me
-          prépare, avec les cours du CNED, mais aussi sur Udemy, Exercism,
-          Codewars, etc., pour une nouvelle carrière dans le développement web.
+          Depuis mes premières incursions sur le World Wide Web à la fin des
+          années 90, j&apos;ai toujours été fasciné par cette technologie aux
+          possibilités infinies. L&apos;arrivée du Cloud Computing, et
+          particulièrement le SaaS, permet de complètement repenser nos modes de
+          travail, et de vie. J&apos;aimerais beaucoup participer à cette
+          (r)évolution, ainsi je me prépare, avec les cours du CNED, mais aussi
+          sur Udemy, Exercism, Codewars, etc., pour une nouvelle carrière dans
+          le développement web.
         </Typography>
       </Container>
     </Container>
