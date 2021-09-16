@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import "../styles/globals.css";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Head from "next/head";
+import ReactGA from "react-ga";
 import { ThemeProvider } from "@material-ui/styles";
 import darkTheme from "../theme/darkTheme";
 import lightTheme from "../theme/lightTheme";
@@ -22,6 +23,9 @@ function MyApp({ Component, pageProps }) {
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
+    // Initialize react-ga
+    ReactGA.initialize("UA-183090947-1");
+    ReactGA.pageview(window.location.pathname);
   }, []);
 
   return (

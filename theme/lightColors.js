@@ -6,7 +6,7 @@ const lightColors = {
   paperBackground: "#D9C7BA", // sand beige
   lightBackground: "#A7D5F2", // baby blue
   footerBackground: "#B0BCC2", // blueish gray
-  navbarBackgroundOpaque: "rgba(184, 204, 217, 0.8)", // blueish grey opaque (navbar)
+  navbarBackgroundOpaque: "rgba(184, 204, 217, 0.9)", // blueish grey opaque (navbar)
   opaqueLayerHero: "rgba(255, 255, 255, 0)", // white fully transparent
 
   heroImage: `url(/imgs/adriel-kloppenburg-S1XAf3JxOLI-unsplash.jpg) no-repeat top/cover`,
