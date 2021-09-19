@@ -4,8 +4,8 @@ import SubTitle from "../tools/SubTitle";
 
 const javascriptArray = ["React", "Next.js", "Material-UI", "Jest"];
 const cSharpArray = ["Architecture MVC", "SonarLint", "NUnit", "SpecFlow"];
-const bddArray = ["SQL", "MongoDB", "WinDesign"];
-const diversArray = ["Git, GitHub", "Méthode Agile", "Markdown"];
+const bddArray = ["SQL", "MongoDB"];
+const diversArray = ["Git, GitHub", "Méthode Agile", "WordPress", "UML"];
 
 /**
  * For each CompetenceCard a title and items-array needs to be specified

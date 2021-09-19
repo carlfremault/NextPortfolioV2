@@ -28,7 +28,7 @@ const Bio = () => {
           j&apos;ai également saisi l&apos;opportunité pour me lancer dans une
           reconversion professionnelle. Actuellement je me retrouve en deuxième
           année d&apos;un BTS Services Informatiques aux Organisations, option
-          Solutions Logicielles et Applications Métier, au CNED.
+          Solutions Logicielles et Applications Métiers, au CNED.
         </Typography>
         <Typography variant="body1" align="justify" gutterBottom>
           Depuis mes premières incursions sur le World Wide Web à la fin des

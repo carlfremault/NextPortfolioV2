@@ -36,7 +36,7 @@ const Hero = () => {
               <Grid item>
                 <Typography variant="subtitle1" component="h2">
                   2ième année BTS SIO - Solutions Logicielles et Applications
-                  Métier
+                  Métiers
                 </Typography>
               </Grid>
             </Hidden>
@@ -48,7 +48,7 @@ const Hero = () => {
               </Grid>
               <Grid item>
                 <Typography variant="subtitle1" component="h2">
-                  Solutions Logicielles et Applications Métier
+                  Solutions Logicielles et Applications Métiers
                 </Typography>
               </Grid>
             </Hidden>
