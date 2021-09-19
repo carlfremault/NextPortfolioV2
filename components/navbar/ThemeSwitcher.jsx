@@ -16,7 +16,6 @@ const ThemeSwitcher = () => {
         checked={darkMode}
         onChange={toggleDarkMode}
         name="ThemeSwitch"
-        aria-label="Button to change website color theme"
         data-testid="themeSwitcher"
       />
     </div>
