@@ -85,7 +85,7 @@ const ProjectCard = ({
         alignItems="center"
         style={{ padding: "1rem" }}
       >
-        {repoLink ? (
+        {repoLink && (
           <a href={repoLink} target="_blank" rel="noreferrer">
             <Button
               variant="outlined"
@@ -95,7 +95,8 @@ const ProjectCard = ({
               GitHub repo
             </Button>
           </a>
-        ) : (
+        )}
+        {siteLink && (
           <a
             href={siteLink}
             target="_blank"
