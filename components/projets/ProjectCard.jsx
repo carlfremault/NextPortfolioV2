@@ -1,25 +1,21 @@
 import PropTypes from "prop-types";
-import {
-  Button,
-  CardActions,
-  CardContent,
-  CardHeader,
-  CardMedia,
-  Grid,
-  Typography,
-} from "@material-ui/core";
+import { Button, Grid, Typography } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
 import { useState } from "react";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkIcon from "@material-ui/icons/Link";
+import Image from "next/image";
+
+const myLoader = ({ src, width, quality }) => {
+  return `${src}?w=${width}&q=${quality || 75}`;
+};
 
 /**
  * Project Card component
  * @param {string} title - Title for CardHeader
  * @param {string} subtitle - Subtitle for CardHeader
  * @param {string} image - Path to image for CardMedia
- * @param {number} imageHeight - Image height in pixels
  * @param {string} imageTitle - Alt title for image
  * @param {string} cardText - Short introductory text
  * @param {string} repoLink - optional - link to GitHub repo
@@ -30,7 +26,6 @@ const ProjectCard = ({
   title,
   subtitle,
   image,
-  imageHeight,
   imageTitle,
   cardText,
   repoLink,
@@ -52,90 +47,83 @@ const ProjectCard = ({
   const DialogComponent = dialog;
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        height: "95%",
-        justifyContent: "space-between",
-      }}
-      data-testid="projectCard"
-    >
-      <CardMedia
-        image={image}
-        title={imageTitle}
-        style={{ height: imageHeight }}
-        data-testid="projectCardImage"
-      />
-      <CardHeader
-        title={title}
-        subheader={
-          <Typography color="primary" data-testid="projectCardSubTitle">
-            {subtitle}
-          </Typography>
-        }
-        data-testid="projectCardTitle"
-      />
-      <CardContent>
-        <Typography
-          variant="body1"
-          color="textPrimary"
-          align="justify"
-          data-testid="projectCardText"
-        >
+    <Grid container direction="row">
+      <Grid
+        item
+        xs={12}
+        md={3}
+        container
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+        style={{ padding: "1rem" }}
+      >
+        <Image
+          loader={myLoader}
+          width="270px"
+          height="156px"
+          src={image}
+          alt={imageTitle}
+        />
+      </Grid>
+      <Grid item xs={12} md={6} style={{ padding: "1.5rem" }}>
+        <Typography variant="h4">{title}</Typography>
+        <Typography variant="subtitle1" color="primary">
+          {subtitle}
+        </Typography>
+        <Typography variant="body1" align="justify">
           {cardText}
         </Typography>
-      </CardContent>
-      <CardActions>
-        <Grid
-          container
-          direction="row"
-          alignItems="center"
-          justifyContent="space-around"
-        >
-          <Grid item>
-            {repoLink ? (
-              <a href={repoLink} target="_blank" rel="noreferrer">
-                <Button
-                  variant="outlined"
-                  style={theme.primaryButton}
-                  startIcon={<GitHubIcon />}
-                >
-                  GitHub repo
-                </Button>
-              </a>
-            ) : (
-              <a
-                href={siteLink}
-                target="_blank"
-                rel="noreferrer"
-                data-testid="projectCardSiteLink"
-              >
-                <Button
-                  variant="outlined"
-                  style={theme.primaryButton}
-                  startIcon={<LinkIcon />}
-                >
-                  Visitez le site
-                </Button>
-              </a>
-            )}
-          </Grid>
-          <Grid item>
-            <a href="#" onClick={handleOpen} data-testid="projectCardMoreInfo">
-              <Button
-                variant="outlined"
-                style={theme.primaryButton}
-                startIcon={<AddCircleOutlineIcon />}
-              >
-                Plus d&apos;infos
-              </Button>
-            </a>
-          </Grid>
-        </Grid>
-      </CardActions>
-      <DialogComponent open={open} handleClose={handleClose} />
-    </div>
+      </Grid>
+      <Grid
+        item
+        xs={12}
+        md={3}
+        container
+        direction="column"
+        justifyContent="space-evenly"
+        alignItems="center"
+        style={{ padding: "1rem" }}
+      >
+        {repoLink && (
+          <a href={repoLink} target="_blank" rel="noreferrer">
+            <Button
+              variant="outlined"
+              style={theme.primaryButton}
+              startIcon={<GitHubIcon />}
+            >
+              GitHub repo
+            </Button>
+          </a>
+        )}
+        {siteLink && (
+          <a
+            href={siteLink}
+            target="_blank"
+            rel="noreferrer"
+            data-testid="projectCardSiteLink"
+          >
+            <Button
+              variant="outlined"
+              style={theme.primaryButton}
+              startIcon={<LinkIcon />}
+            >
+              Visitez le site
+            </Button>
+          </a>
+        )}
+        <a href="#" onClick={handleOpen} data-testid="projectCardMoreInfo">
+          <Button
+            variant="outlined"
+            style={theme.primaryButton}
+            startIcon={<AddCircleOutlineIcon />}
+          >
+            Plus d&apos;infos
+          </Button>
+        </a>
+        <DialogComponent open={open} handleClose={handleClose} />
+      </Grid>
+    </Grid>
   );
 };
 
@@ -148,7 +136,6 @@ ProjectCard.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  imageHeight: PropTypes.number.isRequired,
   imageTitle: PropTypes.string.isRequired,
   cardText: PropTypes.string.isRequired,
   repoLink: PropTypes.string,

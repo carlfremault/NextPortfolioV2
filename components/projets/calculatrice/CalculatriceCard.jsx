@@ -8,7 +8,6 @@ const CalculatriceCard = () => {
       subtitle="Projet Personnel"
       image="/imgs/Calculatrice.png"
       imageTitle="Capture d'écran Calculatrice"
-      imageHeight={200}
       cardText="Pour ce projet POO j'ai créé une calculatrice en Java, avec une
           (simple) architecture MVC."
       repoLink="https://github.com/carlfremault/Calculatrice"

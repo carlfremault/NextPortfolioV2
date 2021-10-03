@@ -40,6 +40,8 @@ const darkTheme = createTheme({
     fontFamily: "Roboto",
     fontWeight: 400,
     margin: "0.2rem 0",
+    minHeight: "37px",
+    minWidth: "144px",
     textTransform: "none",
   },
   desktopNavButton: {
@@ -60,9 +62,8 @@ const darkTheme = createTheme({
     backgroundColor: darkColors.defaultBackground,
     boxShadow: "none",
     marginBottom: "2rem",
-    minHeight: "550px",
     position: "relative",
-    width: "350px",
+    width: "70vw",
   },
   // Dialog
   dialog: {

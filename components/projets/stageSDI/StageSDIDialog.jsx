@@ -14,9 +14,11 @@ import {
   Typography,
 } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
-import LinkIcon from "@material-ui/icons/Link";
+import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
+import CameraAltIcon from "@material-ui/icons/CameraAlt";
 import CheckIcon from "@material-ui/icons/Check";
 import Image from "next/image";
+import Link from "next/link";
 
 const myLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 75}`;
@@ -57,19 +59,42 @@ const StageSDIDialog = ({ handleClose, open }) => {
             alignItems="center"
           >
             <Grid item style={{ textAlign: "center" }}>
+              <Typography
+                variant="subtitle1"
+                align="justify"
+                style={{ maxWidth: "800px" }}
+              >
+                Malheureusement Sport Data Intelligence ont cessé leurs
+                activités fin septembre 2021. Par conséquent le site web
+                n&apos;est plus en ligne. Je vous propose le rapport de stage
+                ainsi que des captures d&apos;écran.
+              </Typography>
+            </Grid>
+            <Grid item style={{ textAlign: "center" }}>
               <a
-                href="https://sport-data-intelligence.com"
+                href="../../pdf/SDIRapportDeStage.pdf"
                 target="_blank"
                 rel="noreferrer"
               >
                 <Button
                   variant="outlined"
                   style={theme.contrastButton}
-                  startIcon={<LinkIcon />}
+                  startIcon={<PictureAsPdfIcon />}
                 >
-                  Visitez le site
+                  Rapport de Stage (PDF)
                 </Button>
               </a>
+              <Link href="/sdi" passHref>
+                <a target="_blank">
+                  <Button
+                    variant="outlined"
+                    style={theme.contrastButton}
+                    startIcon={<CameraAltIcon />}
+                  >
+                    Galerie
+                  </Button>
+                </a>
+              </Link>
             </Grid>
           </Grid>
           <Container
