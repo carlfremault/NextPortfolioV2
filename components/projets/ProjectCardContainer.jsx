@@ -1,4 +1,4 @@
-import { Card, Container, Grid } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
 import StageSDICard from "./stageSDI/StageSDICard";
 import PPEMediaTekCard from "./PPEMediaTek/PPEMediaTekCard";
@@ -14,25 +14,23 @@ const ProjectCardContainer = () => {
   const theme = useTheme();
 
   return (
-    <Container data-testid="projectCardContainer">
-      <Grid container justifyContent="space-evenly" alignItems="stretch">
-        <Grid item component={Card} style={theme.projectCard}>
-          <PortfolioCard />
-        </Grid>
-        <Grid item component={Card} style={theme.projectCard}>
-          <StageSDICard />
-        </Grid>
-        <Grid item component={Card} style={theme.projectCard}>
-          <PPEMediaTekCard />
-        </Grid>
-        <Grid item component={Card} style={theme.projectCard}>
-          <CalculatriceCard />
-        </Grid>
-        <Grid item component={Card} style={theme.projectCard}>
-          <AlgosTriCard />
-        </Grid>
+    <Grid container direction="column" alignItems="center">
+      <Grid item style={theme.projectCard}>
+        <PortfolioCard />
       </Grid>
-    </Container>
+      <Grid item style={theme.projectCard}>
+        <StageSDICard />
+      </Grid>
+      <Grid item style={theme.projectCard}>
+        <PPEMediaTekCard />
+      </Grid>
+      <Grid item style={theme.projectCard}>
+        <CalculatriceCard />
+      </Grid>
+      <Grid item style={theme.projectCard}>
+        <AlgosTriCard />
+      </Grid>
+    </Grid>
   );
 };
 
