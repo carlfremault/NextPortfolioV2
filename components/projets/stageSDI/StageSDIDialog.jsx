@@ -85,7 +85,7 @@ const StageSDIDialog = ({ handleClose, open }) => {
                 </Button>
               </a>
               <Link href="/sdi" passHref>
-                <a target="_blank" rel="noreferrer">
+                <a target="_blank">
                   <Button
                     variant="outlined"
                     style={theme.contrastButton}
