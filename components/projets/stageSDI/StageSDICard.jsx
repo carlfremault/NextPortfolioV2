@@ -11,7 +11,6 @@ const StageSDICard = () => {
       cardText="Pour mon stage de première année j’ai été accueilli par Sport Data
           Intelligence, une start-up basée à Annecy (74), du 24 mai au 2 juillet
           2021."
-      siteLink="https://sport-data-intelligence.com"
       dialog={StageSDIDialog}
     />
   );
