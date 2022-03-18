@@ -84,7 +84,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
                 </Button>
               </a>             
               <a
-                href="/docs/downloads/Mediatek86.zip"
+                href="/downloads/Mediatek86.zip"
                 rel="noreferrer"
                 download
               >
