@@ -99,7 +99,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
               </Grid>
               <Grid item style={{ textAlign: "center" }}>
               <a
-                href="/docs/AP3MediaTek/index.html"
+                href="/docs/AP3Mediatek/index.html"
                 target="_blank"
                 rel="noreferrer"
               >
