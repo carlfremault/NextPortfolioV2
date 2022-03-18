@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="51ceccc3-448a-4c7a-843b-671a37969d34" Title="Namespaces" Url="html/d75eb659-6335-53f6-af7a-81814a21ab7f.htm">
+    <HelpTOCNode Id="4e642447-7ea6-45c4-9f4f-6c6ed9e8115f" Title="Mediatek86.bdd" Url="html/e193ddc4-e820-c1d6-b16e-2371c99b9149.htm">
+      <HelpTOCNode Id="d41b78fd-de46-4efb-b79c-1b3f7f7fee4b" Title="BddMySql Class" Url="html/9fffc05c-9104-fd54-2d3b-550525a779fb.htm">
+        <HelpTOCNode Id="b9ddb762-c9a0-4c84-81a6-ebd3e20e4df0" Title="BddMySql Methods" Url="html/966a055c-9206-9057-e5a9-f6be0b4726b8.htm">
+          <HelpTOCNode Title="Close Method " Url="html/5a929ac8-26da-376e-9b4c-7012e8f52d0f.htm" />
+          <HelpTOCNode Title="Field Method " Url="html/f985795d-b52c-07be-5a3f-f42bda90fe73.htm" />
+          <HelpTOCNode Title="GetInstance Method " Url="html/e84ee0ce-45ba-e9e2-f1d5-6714ed4ca2a9.htm" />
+          <HelpTOCNode Title="Read Method " Url="html/17a15201-b7dc-cb2c-b3b8-6ef1afe65033.htm" />
+          <HelpTOCNode Title="ReqSelect Method " Url="html/a34a3755-c9e2-8567-965d-762124decd37.htm" />
+          <HelpTOCNode Title="ReqUpdate Method " Url="html/96446b47-4229-21a4-3eba-34170438abea.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="edbe35de-eef0-41fe-8d12-8b59cee81046" Title="Mediatek86.controleur" Url="html/9b0525ba-0553-02b0-d5ca-cb14f687f592.htm">
+      <HelpTOCNode Id="83a2af5b-af9a-4c88-bd6c-d9e7d0b39da4" Title="Controle Class" Url="html/c8a8a4ea-a5d3-f296-8e13-07f59c341f68.htm">
+        <HelpTOCNode Title="Controle Constructor " Url="html/f85418e0-5dc8-3adc-caa3-8dc2950673ac.htm" />
+        <HelpTOCNode Id="3db1e018-b92d-49e2-a7f5-2cfa8408ac7e" Title="Controle Properties" Url="html/cae796b3-eddc-5867-ae0c-496a04953863.htm">
+          <HelpTOCNode Title="LeService Property " Url="html/67ea075c-3ff9-7e2a-c36c-5c452efcf136.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="2ff617c0-a798-4425-a677-978ba2b55271" Title="Controle Methods" Url="html/cdec2155-9495-228f-f093-16e6039bee48.htm">
+          <HelpTOCNode Title="Authentification Method " Url="html/affa5ff7-bf24-0b43-0e5e-27a9918ac5fe.htm" />
+          <HelpTOCNode Title="CreateMD5 Method " Url="html/fa028a49-4256-e785-8b37-589a99d8e845.htm" />
+          <HelpTOCNode Title="CreerAbonnement Method " Url="html/6a9d0a49-865f-cbf0-3e41-e99df39d5782.htm" />
+          <HelpTOCNode Title="CreerCommandeDocument Method " Url="html/12e2ecf0-98c9-a37c-5b78-d1352dd979ac.htm" />
+          <HelpTOCNode Title="CreerDvd Method " Url="html/51b79c9e-31bc-2423-d8cb-fd45f202b5e1.htm" />
+          <HelpTOCNode Title="CreerExemplaire Method " Url="html/284061ae-81b2-93d0-0cdc-92740917bbc3.htm" />
+          <HelpTOCNode Title="CreerLivre Method " Url="html/bd9df590-46c1-3417-52ba-f75470eceaf6.htm" />
+          <HelpTOCNode Title="CreerRevue Method " Url="html/5a917b61-ef57-22fb-bf34-67417a1bf5fc.htm" />
+          <HelpTOCNode Title="GetAbonnement Method " Url="html/ca463b83-ec0e-f080-c134-7bf7e6ea4aec.htm" />
+          <HelpTOCNode Title="GetAllDvd Method " Url="html/3f7f6782-8be7-bb29-bcf3-1fcba15cb729.htm" />
+          <HelpTOCNode Title="GetAllGenres Method " Url="html/37edab45-99ba-b8ae-1cf0-555bd543434f.htm" />
+          <HelpTOCNode Title="GetAllLivres Method " Url="html/51e01a64-8ac2-42f2-ce1a-f5b541c66311.htm" />
+          <HelpTOCNode Title="GetAllPublics Method " Url="html/f3825671-69ac-be9c-f213-9170281d9caf.htm" />
+          <HelpTOCNode Title="GetAllRayons Method " Url="html/1d85a4d9-a8c5-61cc-9fde-9559433cd77c.htm" />
+          <HelpTOCNode Title="GetAllRevues Method " Url="html/95869873-dfc7-beca-6d47-aa90493da211.htm" />
+          <HelpTOCNode Title="GetAllSuivis Method " Url="html/91dc32d0-50f4-b99c-6002-60f1d102692d.htm" />
+          <HelpTOCNode Title="GetCommandeDocument Method " Url="html/42b6a16f-0440-ee96-3e62-4e1fae17472d.htm" />
+          <HelpTOCNode Title="GetExemplairesRevue Method " Url="html/a6679cb4-158f-12c6-b83c-1f0d31023ccd.htm" />
+          <HelpTOCNode Title="GetFinAbonnement Method " Url="html/cf8d5099-ecb9-83ba-b87f-97800a32f4eb.htm" />
+          <HelpTOCNode Title="ModifDvd Method " Url="html/0f045069-0a78-f1b5-1c3d-6fd18128311e.htm" />
+          <HelpTOCNode Title="ModifLivre Method " Url="html/28180a82-ab03-d8ff-7186-7bbbae6ea1e1.htm" />
+          <HelpTOCNode Title="ModifRevue Method " Url="html/6140c7b1-b9c8-f978-031d-22b062da9632.htm" />
+          <HelpTOCNode Title="ModifSuiviCommandeDocument Method " Url="html/16b81960-0c68-bebe-5141-f07e5cc481b0.htm" />
+          <HelpTOCNode Title="ParutionDansAbonnement Method " Url="html/5152b840-2537-d3ee-2733-42514b9419e8.htm" />
+          <HelpTOCNode Title="RefreshAllDvd Method " Url="html/1ed86fc8-a797-4647-9575-92f2b7908e12.htm" />
+          <HelpTOCNode Title="RefreshAllLivres Method " Url="html/3a80457c-b045-7fbc-714d-617a51b7a5aa.htm" />
+          <HelpTOCNode Title="RefreshAllRevues Method " Url="html/99310478-dd97-6064-6c78-40a059176179.htm" />
+          <HelpTOCNode Title="SupprAbonnement Method " Url="html/64233237-f720-70a8-69ac-a538b384e295.htm" />
+          <HelpTOCNode Title="SupprCommandeDocument Method " Url="html/9fda4021-0667-21d4-d0df-166be5997f39.htm" />
+          <HelpTOCNode Title="SupprDvd Method " Url="html/55444841-4066-668f-a3dc-424e150d7c84.htm" />
+          <HelpTOCNode Title="SupprLivre Method " Url="html/386271ef-ab47-2b5e-3a4c-87b6b6dd09e0.htm" />
+          <HelpTOCNode Title="SupprRevue Method " Url="html/05d26c95-c319-e38d-248f-343aed2c840a.htm" />
+          <HelpTOCNode Title="VerifSuppressionAbonnement Method " Url="html/74f0cbba-14ce-a596-5443-0b3933c027df.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d01f599f-3867-4428-909a-e0d60965183b" Title="Mediatek86.metier" Url="html/16b924a1-b9b7-5884-d6ea-18343dbfaaac.htm">
+      <HelpTOCNode Id="c358c3e8-5a04-436d-a5cf-46f506d5d2dd" Title="Abonnement Class" Url="html/ec26a20c-227a-e352-0daf-94585d011b47.htm">
+        <HelpTOCNode Title="Abonnement Constructor " Url="html/1a7f3948-db28-d169-c45c-c0507adfde5b.htm" />
+        <HelpTOCNode Id="d415e76f-dbd9-4105-a3b5-f2b16d7a2499" Title="Abonnement Properties" Url="html/1923cd76-f48d-9dbd-1471-77c30f217287.htm">
+          <HelpTOCNode Title="DateFinAbonnement Property " Url="html/48599b18-942d-1dce-c40f-299190f74ae0.htm" />
+          <HelpTOCNode Title="IdRevue Property " Url="html/7ce289ca-b45f-0bbf-f80f-f1d995f4ce49.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Abonnement Methods" Url="html/19d3fc09-4df8-0f27-2d0b-f15cdd72572b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f4d31399-7aa5-446c-93d9-cc2440b8f141" Title="Categorie Class" Url="html/29619a1b-a306-4a4c-3d1a-6d930441d494.htm">
+        <HelpTOCNode Title="Categorie Constructor " Url="html/b6503537-47a4-5525-f4b2-0da7d08a1e12.htm" />
+        <HelpTOCNode Id="7404a50f-d936-433b-bff8-2132e628e588" Title="Categorie Properties" Url="html/d0092eeb-73cb-cde0-19e1-d5701cf9fb2d.htm">
+          <HelpTOCNode Title="Id Property " Url="html/76e267fb-eb79-2b2c-40b7-bce47611b2b7.htm" />
+          <HelpTOCNode Title="Libelle Property " Url="html/99807cbb-de95-279e-fb32-ad34c4252c3c.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="4eab1a67-31cb-4c2b-a854-610e249f0975" Title="Categorie Methods" Url="html/abe9839f-d207-c1a8-2d75-4337e32999a2.htm">
+          <HelpTOCNode Title="ToString Method " Url="html/afd30383-9b17-f76e-45d7-c097e5a3a093.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="d30834b8-eec9-4ca8-8d44-4bc7b316e4d7" Title="Commande Class" Url="html/f1aab7d1-1e97-f81a-da15-ef9db568532f.htm">
+        <HelpTOCNode Title="Commande Constructor " Url="html/5f40ca2c-53ef-71c2-d7e8-419054829e2e.htm" />
+        <HelpTOCNode Id="01a996e3-5724-4993-9238-a26edebfb350" Title="Commande Properties" Url="html/fff9e9ff-9ecd-61c6-4a4e-46a7a18298b9.htm">
+          <HelpTOCNode Title="DateCommande Property " Url="html/f473c5d5-0fba-f231-a1e0-2e2c9fbbb5cf.htm" />
+          <HelpTOCNode Title="Id Property " Url="html/c38021c1-5983-0b9f-3d95-e16b48a9b517.htm" />
+          <HelpTOCNode Title="Montant Property " Url="html/653f555e-dac3-dad5-94e9-0c4fc3d61868.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Commande Methods" Url="html/ebaea093-c622-f512-8a7f-5bf4b5521a9e.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d3e6a5d2-ed2c-4673-b5d5-639b26c07aa2" Title="CommandeDocument Class" Url="html/629f7b30-861e-301c-d9e2-b081fa29b507.htm">
+        <HelpTOCNode Title="CommandeDocument Constructor " Url="html/025a7cee-1c2d-b679-9a56-6e0d5930f1db.htm" />
+        <HelpTOCNode Id="c7a21d17-284f-4d85-9fb5-7fd7a09f9df5" Title="CommandeDocument Properties" Url="html/72f1e8ba-115b-b531-5d2b-615bd42a0c27.htm">
+          <HelpTOCNode Title="IdLivreDvd Property " Url="html/4f2b8427-48d2-def1-2384-409c8d23cc27.htm" />
+          <HelpTOCNode Title="IdSuivi Property " Url="html/40d94016-ac97-b8f5-1482-8cbbc5906278.htm" />
+          <HelpTOCNode Title="LibelleSuivi Property " Url="html/145b7f7c-7670-e1cb-8636-f5875c88cf86.htm" />
+          <HelpTOCNode Title="NbExemplaires Property " Url="html/4aaa8dfb-5d0d-d3c8-8917-5dab0749a99f.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="CommandeDocument Methods" Url="html/640ea85b-42ee-611c-77dd-08a6104a983b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="42ceadbf-fd48-4b7a-b582-e16fee75cf2c" Title="Document Class" Url="html/28ca3727-a757-52a0-b622-abd3d8015bc1.htm">
+        <HelpTOCNode Title="Document Constructor " Url="html/bb20b169-a00e-16e9-bd08-a96107e53f32.htm" />
+        <HelpTOCNode Id="a7258f0a-0e9b-4b1c-851f-1d6fdaccd651" Title="Document Properties" Url="html/923a73a6-3d97-dca1-aec6-5014a7023b89.htm">
+          <HelpTOCNode Title="Genre Property " Url="html/3953185f-4bea-0189-ef13-e105f21d6c18.htm" />
+          <HelpTOCNode Title="Id Property " Url="html/e604ea8f-ddca-a52b-0ae4-3948de17984a.htm" />
+          <HelpTOCNode Title="IdGenre Property " Url="html/065293c4-7af7-ad58-be69-b17066f28c07.htm" />
+          <HelpTOCNode Title="IdPublic Property " Url="html/6be57152-39f6-9428-2c44-c18a15dbb044.htm" />
+          <HelpTOCNode Title="IdRayon Property " Url="html/18a47ba4-a41a-c5ec-7d80-5e2c9266d41c.htm" />
+          <HelpTOCNode Title="Image Property " Url="html/71602590-9921-8fe8-26ed-ff6d4a7b627a.htm" />
+          <HelpTOCNode Title="Public Property " Url="html/d8fea443-9854-504f-cd83-2c07b5a3302c.htm" />
+          <HelpTOCNode Title="Rayon Property " Url="html/8d9d4f7c-e180-e19b-5a96-07070ea027cb.htm" />
+          <HelpTOCNode Title="Titre Property " Url="html/43bf0b30-4462-df6b-4b06-7a223fee6580.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Document Methods" Url="html/c4b1014d-09f6-2c96-9a74-f0139fa61a8c.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6d3eabcb-ca42-4c44-a275-89e43406705c" Title="Dvd Class" Url="html/af27768b-6e54-9cf0-e430-0c8af84f69c9.htm">
+        <HelpTOCNode Title="Dvd Constructor " Url="html/ba10d67c-dd8d-59b6-e3fc-ae58f2977896.htm" />
+        <HelpTOCNode Id="110effd7-2868-4772-8aa8-1b8e0203e079" Title="Dvd Properties" Url="html/69825e10-db21-05fd-1788-248692935d64.htm">
+          <HelpTOCNode Title="Duree Property " Url="html/639c5a12-5ffe-59a8-0476-27a864afff86.htm" />
+          <HelpTOCNode Title="Realisateur Property " Url="html/6c670339-f355-4b99-0750-92ce966b3753.htm" />
+          <HelpTOCNode Title="Synopsis Property " Url="html/21e12ab7-8f41-10a7-26db-669ed1c3d14e.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Dvd Methods" Url="html/c902e370-83a2-0f16-81d1-ac781fb215fd.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d7e66fa6-4547-4e44-9b1d-3964eae30c73" Title="Etat Class" Url="html/57d67426-cfa3-4b7a-b851-90d052cf71a3.htm">
+        <HelpTOCNode Title="Etat Constructor " Url="html/2a704268-5351-502a-2d76-9cb5cbd64ea6.htm" />
+        <HelpTOCNode Id="23eb3d1b-cbb4-43e9-b11a-c918b0135259" Title="Etat Properties" Url="html/dd2b5583-df86-59c6-8740-e057125ece6e.htm">
+          <HelpTOCNode Title="Id Property " Url="html/515c59e6-8cc8-30e9-2103-506729c72a92.htm" />
+          <HelpTOCNode Title="Libelle Property " Url="html/5f55e61a-9a78-bbde-bab4-ecf616890498.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Etat Methods" Url="html/b15ab09f-6a65-9d94-6f51-9b672a46ddb7.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7387fafd-69dc-4db8-9472-5bfdacd86d62" Title="Exemplaire Class" Url="html/064216e6-c47a-7327-1dc8-8113c6349184.htm">
+        <HelpTOCNode Title="Exemplaire Constructor " Url="html/18dae9e0-43ef-46d8-0040-f660ec3505ad.htm" />
+        <HelpTOCNode Id="293e8e9b-f3bf-4923-823f-ea73058a0388" Title="Exemplaire Properties" Url="html/336483b2-a723-3a21-3a79-6ca635728bb5.htm">
+          <HelpTOCNode Title="DateAchat Property " Url="html/99f400c8-ec32-8e93-4bff-4bd7f58542e0.htm" />
+          <HelpTOCNode Title="IdDocument Property " Url="html/4a81e5b2-77f7-d4a9-8002-8eae9b29b95f.htm" />
+          <HelpTOCNode Title="IdEtat Property " Url="html/2fb6f534-d18b-7061-3c0b-8d204915779b.htm" />
+          <HelpTOCNode Title="Numero Property " Url="html/a35137ee-2fdf-2010-63e5-17a0701a6544.htm" />
+          <HelpTOCNode Title="Photo Property " Url="html/476d0817-0875-aef0-b0af-33c29660a159.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Exemplaire Methods" Url="html/de8513e6-abcb-0c37-9b19-61e9b848b983.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="95128c06-78e3-416d-8a00-b79efe7e0b5f" Title="FinAbonnement Class" Url="html/8340f041-c12a-f843-2a8c-70254cf4cb28.htm">
+        <HelpTOCNode Title="FinAbonnement Constructor " Url="html/7984baae-bf30-b3cd-e4bb-f417204dc2a4.htm" />
+        <HelpTOCNode Id="f4288ad6-00ab-4c1c-9709-63115cadd120" Title="FinAbonnement Properties" Url="html/3a8b4215-bd38-03ed-b703-161823a3a0ea.htm">
+          <HelpTOCNode Title="DateFinAbonnement Property " Url="html/bee48a8f-78e0-5d11-f032-57fe45ae684a.htm" />
+          <HelpTOCNode Title="IdRevue Property " Url="html/d9b58274-5a4d-90ef-0f4c-deaee77568de.htm" />
+          <HelpTOCNode Title="TitreRevue Property " Url="html/6ed7c593-8ba2-1b7a-d706-706c004c9bde.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="FinAbonnement Methods" Url="html/599c698d-1d82-3df6-effe-cbbff256c8f7.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="ab0dd221-afdd-423e-9ef8-cf25ad00f21c" Title="Genre Class" Url="html/a6ae6b33-8747-7bc7-ca5f-05a1a4e97c7f.htm">
+        <HelpTOCNode Title="Genre Constructor " Url="html/b16a6672-6124-7e10-1edc-d139a921af61.htm" />
+        <HelpTOCNode Title="Genre Properties" Url="html/c11a4af9-cd9a-a942-c997-658fbe9f3e72.htm" />
+        <HelpTOCNode Title="Genre Methods" Url="html/75cd8ee4-6989-a5e5-34e8-45f61e1cb2fd.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="84956162-6395-417e-99db-b691997cee9f" Title="Livre Class" Url="html/f4ab2049-6672-91bf-3ce3-4006dee52be2.htm">
+        <HelpTOCNode Title="Livre Constructor " Url="html/b14a71c2-3e64-d13b-893f-5f456a5e1e57.htm" />
+        <HelpTOCNode Id="d5a0e172-bb05-42ca-8951-a4cbe479892d" Title="Livre Properties" Url="html/d83ea962-bfc3-94c1-c3b9-d76dc746a560.htm">
+          <HelpTOCNode Title="Auteur Property " Url="html/7f279122-f451-88b1-bfda-12de3ce12121.htm" />
+          <HelpTOCNode Title="Collection Property " Url="html/a961fd45-3cea-04b2-ad90-a69fc8b5bc09.htm" />
+          <HelpTOCNode Title="Isbn Property " Url="html/cdaf99ab-e8b8-c4a2-bf56-febe92d66401.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Livre Methods" Url="html/07fb9d05-83a9-8cbd-4e5c-61d2ef27d104.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="1163c158-b121-4a41-82e4-12ed9d6c15ab" Title="LivreDvd Class" Url="html/7040b657-d6ff-bdf5-3324-09e64e36ad81.htm">
+        <HelpTOCNode Title="LivreDvd Constructor " Url="html/99678016-e8b7-5ad3-5508-8a0f4c4e7863.htm" />
+        <HelpTOCNode Title="LivreDvd Properties" Url="html/3b195cc5-f9ae-64af-35ea-77e2871e7551.htm" />
+        <HelpTOCNode Title="LivreDvd Methods" Url="html/0c574c76-ac2e-3c04-962f-45a96c5996a5.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c63c959a-f74a-4ea4-99a3-cee285c43f19" Title="Public Class" Url="html/66f99932-b823-7785-2f60-994ecc4d26f2.htm">
+        <HelpTOCNode Title="Public Constructor " Url="html/2b4e73d3-cb1f-0af7-5857-8ac72108254e.htm" />
+        <HelpTOCNode Title="Public Properties" Url="html/e2bf9e5a-a52d-a939-4a00-45502f3a2b31.htm" />
+        <HelpTOCNode Title="Public Methods" Url="html/d75e7e59-1924-c192-25be-fe4365f09756.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5d12e7da-a7f1-47e7-8888-4159c07815fd" Title="Rayon Class" Url="html/fec66fa5-ddd0-aa20-4f10-04297030d18b.htm">
+        <HelpTOCNode Title="Rayon Constructor " Url="html/9da95314-6b39-80fe-5819-c40737e7dea4.htm" />
+        <HelpTOCNode Title="Rayon Properties" Url="html/afdec619-3b8d-8c0c-bc6f-98eff6ad4988.htm" />
+        <HelpTOCNode Title="Rayon Methods" Url="html/d26e195c-5579-fc7d-f83c-cded40057dc8.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2f58b82f-1ee2-471f-9268-028a9cd0d6a2" Title="Revue Class" Url="html/7bc01d6a-f2f3-5039-4eb9-230e8b051f1d.htm">
+        <HelpTOCNode Title="Revue Constructor " Url="html/c2048e74-9bed-f164-5243-26e4c1dd4870.htm" />
+        <HelpTOCNode Id="ab60f70a-339d-479e-85e6-c5b0ae97c696" Title="Revue Properties" Url="html/612b5418-d1af-f80c-4a7d-f6a89416b435.htm">
+          <HelpTOCNode Title="DelaiMiseADispo Property " Url="html/057d45af-d1db-7b81-0285-b30d88cf3a58.htm" />
+          <HelpTOCNode Title="Empruntable Property " Url="html/5f84c307-6489-4b1b-3e5d-84a268a079d6.htm" />
+          <HelpTOCNode Title="Periodicite Property " Url="html/cb9fc2be-ca52-3ded-d772-14291faa1d6b.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Revue Methods" Url="html/2d753431-c531-fe27-8c99-15f1aaa42325.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5fe40519-1799-4c17-b9a2-5fee3121cef7" Title="Service Class" Url="html/0312f4fb-d79e-f71f-2a3b-24b4d74cf4d7.htm">
+        <HelpTOCNode Title="Service Constructor " Url="html/6fb2d2c6-ecdf-54d7-4776-63827c7dc3bd.htm" />
+        <HelpTOCNode Id="8eec116f-9b97-4b29-825d-3a30e938a61d" Title="Service Properties" Url="html/e06e594f-8816-bcf4-1b61-26f8b0735d3d.htm">
+          <HelpTOCNode Title="Id Property " Url="html/5a27fc89-ef6e-a635-2e6d-7b8e7d3baacd.htm" />
+          <HelpTOCNode Title="Libelle Property " Url="html/09edfdaf-6c78-fab4-f534-ed0b794c6432.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Service Methods" Url="html/9a634cdb-fc22-d27e-56d4-4d2715a492a1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="41cfedc4-a6aa-4806-bbd5-004d9f1c7d49" Title="Suivi Class" Url="html/6c8fb102-d113-11cc-7436-cd56b874b6c5.htm">
+        <HelpTOCNode Title="Suivi Constructor " Url="html/184d2a92-0cdb-03e3-8921-289b8bc84cf2.htm" />
+        <HelpTOCNode Id="2f678ba8-3b43-4cf6-93d6-91906c7761dd" Title="Suivi Properties" Url="html/b4f28ea8-8cad-e2a9-fc19-72c253b1bc39.htm">
+          <HelpTOCNode Title="Id Property " Url="html/888819b3-4938-3091-e544-35ab0170334b.htm" />
+          <HelpTOCNode Title="Libelle Property " Url="html/f9691bb1-c5e2-a5c8-cca8-e13c09ef58f8.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Suivi Methods" Url="html/3afd9eb3-3f02-d6f3-674c-ccb1519de5d6.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="598066a6-ae9f-4a70-96e1-7955f6976036" Title="Mediatek86.modele" Url="html/8a4ebd68-6a2a-179a-5f15-d1bb4059bf0c.htm">
+      <HelpTOCNode Id="aec236fa-da9e-4d16-8267-03e1154515e9" Title="Dao Class" Url="html/fede85f2-6562-c89b-9a54-75203b747c23.htm">
+        <HelpTOCNode Id="378b8699-d814-42bd-b027-1a79d6dff4b9" Title="Dao Methods" Url="html/312ee80a-7677-5bab-427b-d59ab972c236.htm">
+          <HelpTOCNode Title="Authentification Method " Url="html/5ec673af-8835-6260-2142-8b098a019dfa.htm" />
+          <HelpTOCNode Title="CreerAbonnement Method " Url="html/b3ced692-42b6-538b-18a1-3179df303c63.htm" />
+          <HelpTOCNode Title="CreerCommandeDocument Method " Url="html/caf46e55-2c20-7bb8-629d-0c09cd0253db.htm" />
+          <HelpTOCNode Title="CreerDvd Method " Url="html/ac5b48b7-aa8b-5d3d-3538-3f6b7832b2eb.htm" />
+          <HelpTOCNode Title="CreerExemplaire Method " Url="html/edf2f625-81fc-8d0f-bfce-b03d15424325.htm" />
+          <HelpTOCNode Title="CreerLivre Method " Url="html/3d34fd80-5647-7f3f-a077-b51e8d4841f3.htm" />
+          <HelpTOCNode Title="CreerRevue Method " Url="html/aac4d43a-296b-627b-2120-081acb64fa8c.htm" />
+          <HelpTOCNode Title="GetAbonnement Method " Url="html/6bdc960d-1cf0-fe30-e23b-84cc29de7f0c.htm" />
+          <HelpTOCNode Title="GetAllDvd Method " Url="html/74023196-6fb6-b4fb-e00f-1bcbdce0a132.htm" />
+          <HelpTOCNode Title="GetAllGenres Method " Url="html/09091cf7-2b69-cd4c-6fac-d5dce508fc26.htm" />
+          <HelpTOCNode Title="GetAllLivres Method " Url="html/4b2090e1-bfb8-4414-1bf6-17aa6e69c9cb.htm" />
+          <HelpTOCNode Title="GetAllPublics Method " Url="html/8e432a87-015b-918c-c076-759f85f49e03.htm" />
+          <HelpTOCNode Title="GetAllRayons Method " Url="html/fec4facc-7acc-9f60-a84f-f0191adaf50e.htm" />
+          <HelpTOCNode Title="GetAllRevues Method " Url="html/1b0f9945-c777-254d-05be-f5d20513c66e.htm" />
+          <HelpTOCNode Title="GetAllSuivis Method " Url="html/20860242-dc86-028d-a8e5-6ba9a1a87f39.htm" />
+          <HelpTOCNode Title="GetCommandeDocument Method " Url="html/cfb2d183-4b11-5c66-2d83-74b25b163e8c.htm" />
+          <HelpTOCNode Title="GetExemplairesRevue Method " Url="html/338bcd33-f648-5523-c36f-d9ddb9674dc5.htm" />
+          <HelpTOCNode Title="GetFinAbonnement Method " Url="html/f08c4def-5c02-1c0b-5b00-aa92a184df88.htm" />
+          <HelpTOCNode Title="ModifDvd Method " Url="html/7946dfdc-5cc8-784c-1bce-5a9445964697.htm" />
+          <HelpTOCNode Title="ModifLivre Method " Url="html/5a682bf1-370a-a5fc-2946-9efd06236ed8.htm" />
+          <HelpTOCNode Title="ModifRevue Method " Url="html/1e037bda-8423-0a8d-3b5e-70ffae9b8b1f.htm" />
+          <HelpTOCNode Title="ModifSuiviCommandeDocument Method " Url="html/a92fdd57-84d3-46f9-ca14-351ba565074c.htm" />
+          <HelpTOCNode Title="SupprAbonnement Method " Url="html/a7e2484f-8eb0-24c7-0cc9-a50b69d5e262.htm" />
+          <HelpTOCNode Title="SupprCommandeDocument Method " Url="html/c0b2cd1f-378e-4276-958a-21cfb25deb62.htm" />
+          <HelpTOCNode Title="SupprDvd Method " Url="html/531c1ec5-c76d-6662-8699-cfda40203b0e.htm" />
+          <HelpTOCNode Title="SupprLivre Method " Url="html/a3e3d07a-e0d1-bdc3-a738-9caf35ea0942.htm" />
+          <HelpTOCNode Title="SupprRevue Method " Url="html/75903ae5-fb92-d3b0-8f70-e5924b611357.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="27158fa1-7c18-47aa-9510-7f02d09a97e0" Title="Mediatek86.vue" Url="html/906cda2f-40bb-946f-f718-3a3e8e498d14.htm">
+      <HelpTOCNode Id="b3b62205-967f-4155-bf0c-d3365e7e93b9" Title="FrmAlerteFinAbonnements Class" Url="html/15f72664-c9d3-95fb-2e70-0a6e2288e67a.htm">
+        <HelpTOCNode Title="FrmAlerteFinAbonnements Properties" Url="html/7dc1166c-bb32-1149-b3ff-5504627588cd.htm" />
+        <HelpTOCNode Id="f381a402-57ae-468a-8ba7-471c2e58dfb5" Title="FrmAlerteFinAbonnements Methods" Url="html/a68f1d83-9f35-5644-f0df-71e8376d6be0.htm">
+          <HelpTOCNode Id="71e46011-ed69-439f-b639-16af324d3e7e" Title="Dispose Method " Url="html/5a714e09-1988-3352-a6cf-01c6dd4e986f.htm">
+            <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/5b026d41-a37c-cd92-b2ef-4caf80742535.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+        <HelpTOCNode Title="FrmAlerteFinAbonnements Events" Url="html/ea0d8217-f6a3-8314-50c2-87200a1d0914.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3fdb9809-c5dd-4f1b-96f6-00dc348d758f" Title="FrmAuthentification Class" Url="html/64cc4e7a-91e8-acdb-9e22-1305d02d1b54.htm">
+        <HelpTOCNode Id="38caa014-b67a-4011-ab57-76d3b740e5b2" Title="FrmAuthentification Properties" Url="html/66eb1d7f-4ade-5736-49e2-2b4ec6cfe416.htm">
+          <HelpTOCNode Title="AuthentificationSucces Property " Url="html/9ab3b24e-76a3-e4a3-c15e-b3e345939ea0.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="6bef8008-2daf-4c97-9ad2-14948847706f" Title="FrmAuthentification Methods" Url="html/acc76402-0520-7984-2f69-509c3edb5ef5.htm">
+          <HelpTOCNode Id="21585226-daf3-4b18-8786-b58aa1529b6f" Title="Dispose Method " Url="html/919e8cdf-c057-70f6-6472-569830a7b707.htm">
+            <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/aa4a80c8-14ef-8f6e-59af-c491a1abb039.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+        <HelpTOCNode Title="FrmAuthentification Events" Url="html/9dfbb369-6749-2dd1-7a88-2ce18409d6f4.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="44f53e2b-f004-4824-a55a-639fd4fa812d" Title="FrmMediatek Class" Url="html/182a778b-cc51-04ff-5952-8b45780a87b2.htm">
+        <HelpTOCNode Title="FrmMediatek Constructor " Url="html/3df76f2f-9fff-b7f3-3826-34b6a6f9b31a.htm" />
+        <HelpTOCNode Title="FrmMediatek Properties" Url="html/5feb0982-1e38-33f5-e17f-41977d91ab86.htm" />
+        <HelpTOCNode Id="d6afea7c-a43e-421d-86e3-7dd208570346" Title="FrmMediatek Methods" Url="html/23ab00d7-ec6d-b50c-7bdf-866b2b561101.htm">
+          <HelpTOCNode Id="5ccafc0f-b315-48fd-8615-85ba3abb9be9" Title="Dispose Method " Url="html/dc2e6cc8-12c2-e27a-0d24-4d9ae1972eba.htm">
+            <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/56b04671-19dc-1acf-7da4-803c936ec66c.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="RemplirComboCategorie Method " Url="html/d4f88904-c013-2453-2e0d-204a9689acc1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="FrmMediatek Events" Url="html/b5406d65-822b-072d-bebc-f7276e2fd7b6.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>
