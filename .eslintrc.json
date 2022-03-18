@@ -1,15 +1,8 @@
 {
-  "extends": ["eslint:recommended", "plugin:prettier/recommended", "next", "next/core-web-vitals"],
-  "plugins": ["prettier"],
+  "extends": ["eslint:recommended", "next", "next/core-web-vitals"],
   "rules": {
     "eqeqeq": "error",
-    "no-console": "warn",
-    "prettier/prettier": [
-      "error",
-      { 
-        "endOfLine" : "auto"
-      }
-    ]
+    "no-console": "warn"
   },
   "parser": "babel-eslint",
   "parserOptions": {
