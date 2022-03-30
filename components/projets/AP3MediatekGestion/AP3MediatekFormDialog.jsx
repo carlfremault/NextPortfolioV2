@@ -69,7 +69,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
                 >
                   GitHub repo
                 </Button>
-              </a>    
+              </a>
               <a
                 href="https://trello.com/invite/b/kDeTnxl7/c958591cb5c23a7725c91ba072fdd8dc/mediatek86"
                 target="_blank"
@@ -82,7 +82,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
                 >
                   Suivi de projet Trello
                 </Button>
-              </a>             
+              </a>
               <a
                 href="/downloads/Mediatek86.zip"
                 rel="noreferrer"
@@ -93,11 +93,11 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<DownloadForOfflineIcon />}
                 >
-                   Télécharger l&apos;application
+                  Télécharger l&apos;application
                 </Button>
               </a>
-              </Grid>
-              <Grid item style={{ textAlign: "center" }}>
+            </Grid>
+            <Grid item style={{ textAlign: "center" }}>
               <a
                 href="/docs/AP3Mediatek/index.html"
                 target="_blank"
@@ -124,7 +124,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
                   Contexte
                 </Button>
               </a>
-              <a  
+              <a
                 href="/pdf/AP3MediaGestDossier.pdf"
                 target="_blank"
                 rel="noreferrer"
@@ -175,7 +175,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
                 alignItems="center"
               >
                 <Grid item>
-                <a
+                  <a
                     href="https://docs.microsoft.com/en-us/dotnet/csharp/"
                     target="_blank"
                     alt="C# documentation official website"
@@ -232,73 +232,21 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Des systèmes d&apos;authentification et de journalisation ont été mises en place, et des tests unitaires et fonctionnels ont été créés. J&apos;ai également généré la documentation technique. 
+              Des systèmes d&apos;authentification et de journalisation ont été mises en place, et des tests unitaires et fonctionnels ont été créés. J&apos;ai également généré la documentation technique.
             </Typography>
             <Typography
               variant="body1"
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              À la base cet Atelier est conçu pour être effectué par plusieurs développeurs. En raison des particularités de la formation à distance CNED cependant j&apos;ai choisi de le faire seul. Dans ce cas il était permis d&apos;omettre deux des missions qui étaient optionnelles. J&apos;ai toutefois préféré réaliser une de ces deux missions. 
+              À la base cet Atelier est conçu pour être effectué par plusieurs développeurs. En raison des particularités de la formation à distance CNED cependant j&apos;ai choisi de le faire seul. Dans ce cas il était permis d&apos;omettre deux des missions qui étaient optionnelles. J&apos;ai toutefois préféré réaliser une de ces deux missions.
             </Typography>
             <Typography
               variant="body1"
               align="justify"
               style={{ margin: "2rem 0 1rem" }}
             >
-              Les compétences officielles couvertes par cet atelier sont les suivantes : 
-            </Typography>           
-            <List>   
-            <ListItem>
-                <ListItemIcon style={{ transform: "translate(10px)" }}>
-                  <CheckIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>Répondre aux incidents et aux demandes d&apos;assistance et d&apos;évolution</ListItemText>
-              </ListItem>       
-              <ListItem>             
-                <ListItemText inset>- Collecter, suivre et orienter des demandes</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Traiter des demandes concernant les applications</ListItemText>
-              </ListItem>
-          </List>
-            <List>       
-            <ListItem>
-                <ListItemIcon style={{ transform: "translate(10px)" }}>
-                  <CheckIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>Travailler en mode projet</ListItemText>
-              </ListItem>   
-              <ListItem>
-                <ListItemText inset>- Analyser les objectifs et les modalités d&apos;organisation d&apos;un projet</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Planifier les activités</ListItemText>
-              </ListItem>
-          </List>
-            <List> 
-            <ListItem>
-                <ListItemIcon style={{ transform: "translate(10px)" }}>
-                  <CheckIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>Mettre à disposition des utilisateurs un service informatique</ListItemText>
-              </ListItem>         
-              <ListItem>
-                <ListItemText inset>- Réaliser les tests d&apos;intégration et d&apos;acceptation d&apos;un service</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Déployer un service</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Accompagner les utilisateurs dans la mise en place d&apos;un service</ListItemText>
-              </ListItem>
-          </List>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "2rem 0" }}
-            >
-              Voici une vidéo qui présente l&apos;utilisation de l&apos;application : 
+              Voici une vidéo qui présente l&apos;utilisation de l&apos;application :
             </Typography>
           </Container>
           <Grid
@@ -320,6 +268,60 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
               }}
             />
           </Grid>
+          <Container maxWidth="md">
+            <Typography
+              variant="body1"
+              align="justify"
+              style={{ margin: "4rem 0 1rem" }}
+            >
+              Les compétences officielles couvertes par cet atelier sont les suivantes :
+            </Typography>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Répondre aux incidents et aux demandes d&apos;assistance et d&apos;évolution</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Collecter, suivre et orienter des demandes</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Traiter des demandes concernant les applications</ListItemText>
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Travailler en mode projet</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Analyser les objectifs et les modalités d&apos;organisation d&apos;un projet</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Planifier les activités</ListItemText>
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Mettre à disposition des utilisateurs un service informatique</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Réaliser les tests d&apos;intégration et d&apos;acceptation d&apos;un service</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Déployer un service</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Accompagner les utilisateurs dans la mise en place d&apos;un service</ListItemText>
+              </ListItem>
+            </List>
+            </Container>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} style={theme.contrastColor}>

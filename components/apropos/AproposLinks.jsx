@@ -75,7 +75,7 @@ const AproposLinks = () => {
           </a>
         </Grid>
         <Grid item style={{ textAlign: "center" }}>
-          <a href="../../pdf/CVCarlFremault092021Web.pdf" target="_blank">
+          <a href="../../pdf/CVCarlFremault032022Web.pdf" target="_blank">
             <Button
               variant="outlined"
               style={theme.contrastButton}

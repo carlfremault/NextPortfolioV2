@@ -7,10 +7,15 @@ import {
   DialogContent,
   DialogTitle,
   Grid,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
   Typography,
 } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
 import BuildIcon from "@material-ui/icons/Build";
+import CheckIcon from "@material-ui/icons/Check";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkIcon from "@material-ui/icons/Link";
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
@@ -37,7 +42,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
         maxWidth="lg"
       >
         <DialogTitle>
-          Application web Mediatek Formations - PHP, Symfony
+          Application web Mediatek Formations - PHP, Symfony, MySQL
         </DialogTitle>
         <DialogContent dividers>
           <Container
@@ -67,7 +72,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
                 </Button>
               </a>
               <a
-                href="#" 
+                href="https://mediatek86-formation.go.yj.fr/public/" 
                 target="_blank"
                 rel="noreferrer"
               >
@@ -76,7 +81,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<LinkIcon />}
                 >
-                  Visitez le site
+                  Visiter le site
                 </Button>
               </a>
               <a
@@ -119,7 +124,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
                 </Button>
               </a>
               <a
-                href="#"
+                href="/pdf/A1CompteRendu.pdf"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -208,7 +213,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
           </Container>
           <Container maxWidth="md">
             <Typography variant="h6" style={{ margin: "2rem 0" }}>
-              7 mars 2022
+              30 mars 2022
             </Typography>
             <Typography
               variant="body1"
@@ -234,12 +239,12 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
             <Typography
               variant="body1"
               align="justify"
-              style={{ margin: "1rem 0" }}
+              style={{ margin: "2rem 0 1rem" }}
             >
               Voici une vidéo qui présente l&apos;utilisation du site :
             </Typography>
-          </Container>
-          <Grid
+            </Container>
+            <Grid
             container
             direction="row"
             justifyContent="space-around"
@@ -247,7 +252,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
             style={{ margin: "2rem 0" }}
           >
             <ReactPlayer
-              url="../../video/MediaTek86.mp4"
+              url="../../video/Atelier1.mkv"
               controls
               config={{
                 file: {
@@ -258,6 +263,71 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
               }}
             />
           </Grid>
+            <Container maxWidth="md">
+            <Typography
+              variant="body1"
+              align="justify"
+              style={{ margin: "3rem 0 1rem" }}
+            >
+              Les compétences officielles couvertes par cet atelier sont les suivantes :
+            </Typography>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Répondre aux incidents et aux demandes d&apos;assistance et d&apos;évolution</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Collecter, suivre et orienter des demandes</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Traiter des demandes concernant les applications</ListItemText>
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Développer la présence en ligne de l&apos;organisation</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Participer à l&apos;évolution d&apos;un site Web exploitant les données de l&apos;organisation</ListItemText>
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Travailler en mode projet</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Analyser les objectifs et les modalités d&apos;organisation d&apos;un projet</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Planifier les activités</ListItemText>
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Mettre à disposition des utilisateurs un service informatique</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Réaliser les tests d&apos;intégration et d&apos;acceptation d&apos;un service</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Déployer un service</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Accompagner les utilisateurs dans la mise en place d&apos;un service</ListItemText>
+              </ListItem>
+            </List>           
+          </Container>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} style={theme.contrastColor}>
