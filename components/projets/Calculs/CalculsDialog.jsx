@@ -136,7 +136,7 @@ const CalculsDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Pour cet exercice j'ai corrigé une application console éducative C# qui permet de s'entraîner en calculs. Comme point de départ une application contenant des erreurs a été fournie, ainsi qu'un ticket et rapport d'incidents.
+              Pour cet exercice j&apos;ai corrigé une application console éducative C# qui permet de s&apos;entraîner en calculs. Comme point de départ une application contenant des erreurs a été fournie, ainsi qu&apos;un ticket et rapport d&apos;incidents.
             </Typography>
             <Container style={{ margin: "3rem 0" }}>
               <Image

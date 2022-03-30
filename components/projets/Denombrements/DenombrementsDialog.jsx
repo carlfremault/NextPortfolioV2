@@ -149,7 +149,7 @@ const DenombrementsDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Pour cet exercice de revue de code j'ai corrigé une application console qui permet de calculer des dénombrements. Des règles de codage à respecter étaient fournis, un rapport d'analyse était à compléter.
+              Pour cet exercice de revue de code j&apos;ai corrigé une application console qui permet de calculer des dénombrements. Des règles de codage à respecter étaient fournis, un rapport d&apos;analyse était à compléter.
             </Typography>
             <Container maxWidth="md">
               <Typography

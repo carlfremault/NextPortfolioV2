@@ -13,10 +13,10 @@ const Cours = () => {
       <Container>
         <Container maxWidth="md">
           <Typography variant="body1" align="justify" gutterBottom>
-            Pour compléter mon parcours de formation au CNED, et afin de me préparer aux stages, j'ai entâmé quelques cours en ligne, notamment sur la plateforme Udemy. Les cours sont volumineux, je progresse petit à petit dès que j'ai un peu de temps.
+            Pour compléter mon parcours de formation au CNED, et afin de me préparer aux stages, j&apos;ai entâmé quelques cours en ligne, notamment sur la plateforme Udemy. Les cours sont volumineux, je progresse petit à petit dès que j&apos;ai un peu de temps.
           </Typography>
           <Typography variant="body1" align="justify" gutterBottom>
-            Quelques cours "en cours" :
+            Quelques cours &quot;en cours&quot; :
           </Typography>
           <Container style={{ margin: "2rem 0" }}>
             <Image
@@ -29,7 +29,7 @@ const Cours = () => {
             />
           </Container>
           <Typography variant="body1" align="justify" gutterBottom>
-            Finalement, j'aime bien m'entraîner, aussi bien au niveau de maîtrise des langages et en algorithmique et structures de données, avec les exercices proposées sur des différents sites. C'est une façon ludique de progresser et de voir des différentes façons de résoudre un problème.
+            Finalement, j&apos;aime bien m&apos;entraîner, aussi bien au niveau de maîtrise des langages et en algorithmique et structures de données, avec les exercices proposées sur des différents sites. C&apos;est une façon ludique de progresser et de voir des différentes façons de résoudre un problème.
           </Typography>
           <Grid
             container

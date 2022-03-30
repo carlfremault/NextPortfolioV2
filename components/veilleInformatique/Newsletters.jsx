@@ -112,7 +112,7 @@ const Newsletters = () => {
             </Grid>
           </Grid>
           <Typography variant="body1" align="justify" gutterBottom>
-            On y trouve des articles, des informations sur les releases, et des tutoriels. Voici une sélection parmi les articles que j'ai trouvé intéressants :
+            On y trouve des articles, des informations sur les releases, et des tutoriels. Voici une sélection parmi les articles que j&apos;ai trouvé intéressants :
           </Typography>
           <List>
             <ListItem>
