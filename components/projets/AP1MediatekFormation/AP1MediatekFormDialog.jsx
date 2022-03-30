@@ -85,7 +85,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
                 </Button>
               </a>
               <a
-                href="#"
+                href="/docs/AP1Mediatek/index.html"
                 target="_blank"
                 rel="noreferrer"
               >
