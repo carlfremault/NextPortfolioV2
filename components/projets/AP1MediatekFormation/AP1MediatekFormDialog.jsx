@@ -7,10 +7,15 @@ import {
   DialogContent,
   DialogTitle,
   Grid,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
   Typography,
 } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
 import BuildIcon from "@material-ui/icons/Build";
+import CheckIcon from "@material-ui/icons/Check";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkIcon from "@material-ui/icons/Link";
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
@@ -67,7 +72,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
                 </Button>
               </a>
               <a
-                href="#" 
+                href="https://mediatek86-formation.go.yj.fr/public/" 
                 target="_blank"
                 rel="noreferrer"
               >
@@ -76,7 +81,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<LinkIcon />}
                 >
-                  Visitez le site
+                  Visiter le site
                 </Button>
               </a>
               <a
@@ -119,7 +124,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
                 </Button>
               </a>
               <a
-                href="#"
+                href="/pdf/A1CompteRendu.pdf"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -234,12 +239,12 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
             <Typography
               variant="body1"
               align="justify"
-              style={{ margin: "1rem 0" }}
+              style={{ margin: "2rem 0 1rem" }}
             >
               Voici une vidéo qui présente l&apos;utilisation du site :
             </Typography>
-          </Container>
-          <Grid
+            </Container>
+            <Grid
             container
             direction="row"
             justifyContent="space-around"
@@ -258,6 +263,201 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
               }}
             />
           </Grid>
+            <Container maxWidth="md">
+            <Typography
+              variant="body1"
+              align="justify"
+              style={{ margin: "3rem 0 1rem" }}
+            >
+              Les compétences officielles couvertes par cet atelier sont les suivantes :
+            </Typography>
+            <Typography
+              variant="subtitle2"
+              align="justify"
+              style={{ margin: "2rem 0 1rem" }}
+            >
+              Bloc 1 :
+            </Typography>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Répondre aux incidents et aux demandes d&apos;assistance et d&apos;évolution</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Collecter, suivre et orienter des demandes</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Traiter des demandes concernant les applications</ListItemText>
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Développer la présence en ligne de l&apos;organisation</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Participer à l&apos;évolution d&apos;un site Web exploitant les données de l&apos;organisation</ListItemText>
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Travailler en mode projet</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Analyser les objectifs et les modalités d&apos;organisation d&apos;un projet</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Planifier les activités</ListItemText>
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Mettre à disposition des utilisateurs un service informatique</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Réaliser les tests d&apos;intégration et d&apos;acceptation d&apos;un service</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Déployer un service</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Accompagner les utilisateurs dans la mise en place d&apos;un service</ListItemText>
+              </ListItem>
+            </List>
+            <Typography
+              variant="subtitle2"
+              align="justify"
+              style={{ margin: "2rem 0 1rem" }}
+            >
+              Bloc 2 :
+            </Typography>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Concevoir et développer une solution applicative</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Participer à la conception de l&apos;architecture d&apos;une solution applicative</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Exploiter les ressources du cadre applicatif (framework)</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Identifier, développer, utiliser ou adapter des composants logiciels</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Exploiter les technologies Web pour mettre en œuvre les échanges entre applications, y compris de mobilité</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Utiliser des composants d&apos;accès aux données</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Intégrer en continu les versions d&apos;une solution applicative</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Réaliser les tests nécessaires à la validation ou à la mise en production d&apos;éléments adaptés ou développés</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Rédiger des documentations techniques et d&apos;utilisation d&apos;une solution applicative</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Exploiter les fonctionnalités d&apos;un environnement de développement et de tests</ListItemText>
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Assurer la maintenance corrective ou évolutive d&apos;une solution applicative</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Recueillir, analyser et mettre à jour les informations sur une version d&apos;une solution applicative</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Évaluer la qualité d&apos;une solution applicative</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Analyser et corriger un dysfonctionnement
+                </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Mettre à jour des documentations techniques et d&apos;utilisation d&apos;une solution applicative
+                </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Élaborer et réaliser les tests des éléments mis à jour
+                </ListItemText>
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Gérer les données</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Exploiter des données à l&apos;aide d&apos;un langage de requêtes</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Concevoir ou adapter une base de données</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Administrer et déployer une base de données</ListItemText>
+              </ListItem>
+            </List>
+            <Typography
+              variant="subtitle2"
+              align="justify"
+              style={{ margin: "2rem 0 1rem" }}
+            >
+              Bloc 3 :
+            </Typography>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Sécuriser les équipements et les usages des utilisateurs</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Identifier les menaces et mettre en œuvre les défenses appropriées</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Gérer les accès et les privilèges appropriés</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Vérifier l&apos;efficacité de la protection</ListItemText>
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Assurer la cybersécurité d&apos;une solution applicative et de son développement</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Prendre en compte la sécurité dans un projet de développement d&apos;une solution applicative</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Prévenir les attaques</ListItemText>
+              </ListItem>
+            </List>            
+          </Container>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} style={theme.contrastColor}>

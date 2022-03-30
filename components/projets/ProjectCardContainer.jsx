@@ -1,14 +1,16 @@
 import { Grid } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
+import AlgosTriCard from "./algosTri/AlgosTriCard";
+import AP1MediatekFormCard from "./AP1MediatekFormation/AP1MediatekFormCard";
+import AP3MediatekFormCard from "./AP3MediatekGestion/AP3MediatekFormCard";
+import CalculatriceCard from "./calculatrice/CalculatriceCard";
+import CalculsCard from "./Calculs/CalculsCard";
+import DenombrementsCard from "./Denombrements/DenombrementsCard";
+import PortfolioCard from "./portfolioNext/PortfolioCard";
+import PPEMediaTekCard from "./PPEMediaTek/PPEMediaTekCard";
 import StageFaibrikCard from "./stageFaibrik/StageFaibrikCard";
 import StageSDICard from "./stageSDI/StageSDICard";
-import PPEMediaTekCard from "./PPEMediaTek/PPEMediaTekCard";
-import CalculatriceCard from "./calculatrice/CalculatriceCard";
-import AlgosTriCard from "./algosTri/AlgosTriCard";
-import PortfolioCard from "./portfolioNext/PortfolioCard";
 import SubTitle from "../tools/SubTitle";
-// import AP1MediatekFormCard from "./AP1MediatekFormation/AP1MediatekFormCard";
-import AP3MediatekFormCard from "./AP3MediatekGestion/AP3MediatekFormCard";
 
 /**
  * Grid container for ProjectCards
@@ -23,9 +25,9 @@ const ProjectCardContainer = () => {
       <Grid item style={theme.projectCard} id="AP3">
         <AP3MediatekFormCard />
       </Grid>
-      {/* <Grid item style={theme.projectCard}>
+      <Grid item style={theme.projectCard} id="AP1">
         <AP1MediatekFormCard />
-      </Grid> */}
+      </Grid>
       <Grid item style={theme.projectCard}>
         <StageFaibrikCard />
       </Grid>
@@ -44,6 +46,12 @@ const ProjectCardContainer = () => {
       </Grid>
       <Grid item style={theme.projectCard}>
         <AlgosTriCard />
+      </Grid>
+      <Grid item style={theme.projectCard}>
+        <DenombrementsCard />
+      </Grid>
+      <Grid item style={theme.projectCard}>
+        <CalculsCard />
       </Grid>
     </Grid>
   );

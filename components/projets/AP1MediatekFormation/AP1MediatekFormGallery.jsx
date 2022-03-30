@@ -3,32 +3,38 @@ import "react-image-gallery/styles/css/image-gallery.css";
 
 const images = [
   {
-    original: "../../imgs/Personnel.png",
+    original: "../../imgs/A1Bienvenue.png",
     originalHeight: "451px",
     originalWidth: "845px",
-    originalAlt: "Ecran d'accueil montrant la liste des membres du personnel",
+    originalAlt: "Ecran d'accueil de l'application",
   },
   {
-    original: "../../imgs/AjoutModifPersonnel.png",
+    original: "../../imgs/A1Details.png",
     originalHeight: "451px",
     originalWidth: "845px",
-    originalAlt: "Ecran permettant de modifier ou d'ajouter un membre",
+    originalAlt: "Ecran affichant les détails d'une formation",
   },
   {
-    original: "../../imgs/Absences.png",
+    original: "../../imgs/A1Formations.png",
     originalHeight: "451px",
     originalWidth: "845px",
     originalAlt:
-      "Ecran montrant les absences enregistrées pour un membre du personnel",
+      "Ecran présentant la liste des formations",
   },
   {
-    original: "../../imgs/AjoutModifAbsence.png",
+    original: "../../imgs/A1Modif.png",
     originalHeight: "451px",
     originalWidth: "845px",
-    originalAlt: "Ecran permettant de modifier ou d'ajouter une absence",
+    originalAlt: "Formulaire permettant de modifier ou d'ajouter une formation",
   },
   {
-    original: "../../imgs/Authentification.png",
+    original: "../../imgs/A1Niveaux.png",
+    originalHeight: "451px",
+    originalWidth: "845px",
+    originalAlt: "Ecran de gestion des niveaux",
+  },
+  {
+    original: "../../imgs/A1Auth.png",
     originalHeight: "451px",
     originalWidth: "845px",
     originalAlt: "Ecran d'authentification",

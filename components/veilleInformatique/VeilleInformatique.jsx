@@ -1,4 +1,5 @@
 import { Container, Typography } from "@material-ui/core";
+import Cours from "./Cours";
 import Forums from "./Forums";
 import Newsletters from "./Newsletters";
 import SectionTitle from "../tools/SectionTitle";
@@ -37,6 +38,7 @@ const VeilleInformatique = () => {
         </Container>
         <Newsletters />
         <Forums />
+        <Cours/>
       </Container>
     </section>
   );

@@ -134,7 +134,7 @@ const StageFaibrikDialog = ({ handleClose, open }) => {
               style={{ margin: "1rem 0" }}
             >
               Pour mon stage de deuxième année j&apos;ai intégré l&apos;équipe de fAIbrik, start-up basée à Annecy (74), du 15 novembre au 31 décembre
-              2022. La mission pour ce stage était de créer une application Microsoft Teams qui permet d&apos;envoyer des alertes aux utilisateurs de la plateforme fAIbrik lorsqu&apos;un événement s&apos;y produit.
+              2021. La mission pour ce stage était de créer une application Microsoft Teams qui permet d&apos;envoyer des alertes aux utilisateurs de la plateforme fAIbrik lorsqu&apos;un événement s&apos;y produit.
             </Typography>
             <Typography
               variant="body1"
