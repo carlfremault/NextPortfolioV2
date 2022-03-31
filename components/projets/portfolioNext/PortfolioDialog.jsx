@@ -33,7 +33,7 @@ const PortfolioDialog = ({ handleClose, open }) => {
           style: theme.dialog,
         }}
         fullWidth={true}
-        maxWidth="md"
+        maxWidth="lg"
       >
         <DialogTitle>Création de site web portfolio - Next.js</DialogTitle>
         <DialogContent dividers>

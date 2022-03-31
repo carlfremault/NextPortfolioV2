@@ -14,7 +14,6 @@ import {
   Typography,
 } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
-import GitHubIcon from "@material-ui/icons/GitHub";
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
 import CheckIcon from "@material-ui/icons/Check";
 import Image from "next/image";
@@ -23,7 +22,7 @@ const myLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 75}`;
 };
 
-const CalculsDialog = ({ handleClose, open }) => {
+const MigrationChocDialog = ({ handleClose, open }) => {
   const theme = useTheme();
 
   return (
@@ -37,7 +36,7 @@ const CalculsDialog = ({ handleClose, open }) => {
         fullWidth={true}
         maxWidth="lg"
       >
-        <DialogTitle>Application console Calculs - C#</DialogTitle>
+        <DialogTitle>Migration dans le cloud Azure d&apos;une application web</DialogTitle>
         <DialogContent dividers>
           <Container
             maxWidth="md"
@@ -45,10 +44,10 @@ const CalculsDialog = ({ handleClose, open }) => {
           >
             <Image
               loader={myLoader}
-              src="/imgs/Calculs.png"
+              src="/imgs/PCAChoc.png"
               width="838px"
               height="485px"
-              alt="Application Console Educative Calculs"
+              alt="OCS Inventory"
             />
           </Container>
           <Grid
@@ -59,20 +58,7 @@ const CalculsDialog = ({ handleClose, open }) => {
           >
             <Grid item style={{ textAlign: "center" }}>
               <a
-                href="https://github.com/carlfremault/Calculs"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Button
-                  variant="outlined"
-                  style={theme.contrastButton}
-                  startIcon={<GitHubIcon />}
-                >
-                  GitHub repo
-                </Button>
-              </a>
-              <a
-                href="/pdf/CalculsRapportIncidents.pdf"
+                href="/pdf/MigrationChocCompteRendu.pdf"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -81,73 +67,35 @@ const CalculsDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<PictureAsPdfIcon />}
                 >
-                  Rapport d&apos;incidents
+                  Compte rendu du déploiement
+                </Button>
+              </a>
+              <a
+                href="/pdf/MigrationChocMiseEchelle.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button
+                  variant="outlined"
+                  style={theme.contrastButton}
+                  startIcon={<PictureAsPdfIcon />}
+                >
+                  Étude mise à l&apos;échelle
                 </Button>
               </a>
             </Grid>
           </Grid>
-          <Container
-            maxWidth="sm"
-            style={{ marginTop: "2rem", marginBottom: "2rem" }}
-          >
-            <Grid
-              container
-              direction="column"
-              justifyContent="space-between"
-              alignItems="center"
-            >
-              <Grid item>
-                <Typography variant="h6" gutterBottom>
-                  Technologies
-                </Typography>
-              </Grid>
-              <Grid
-                item
-                container
-                direction="row"
-                justifyContent="space-evenly"
-                alignItems="center"
-              >
-                <Grid item>
-                  <a
-                    href="https://docs.microsoft.com/en-us/dotnet/csharp/"
-                    target="_blank"
-                    alt="C# documentation official website"
-                    rel="noreferrer"
-                  >
-                    <Image
-                      loader={myLoader}
-                      src="/imgs/LogoCSharp.png"
-                      width="90px"
-                      height="90px"
-                      alt="C# Logo"
-                    />
-                  </a>
-                </Grid>
-              </Grid>
-            </Grid>
-          </Container>
           <Container maxWidth="md">
             <Typography variant="h6" style={{ margin: "2rem 0" }}>
-              12 octobre 2020
+              21 octobre 2021
             </Typography>
             <Typography
               variant="body1"
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Pour cet exercice j&apos;ai corrigé une application console éducative C# qui permet de s&apos;entraîner en calculs. Comme point de départ une application contenant des erreurs a été fournie, ainsi qu&apos;un ticket et rapport d&apos;incidents.
+                Pendant cette exercice nous avons procédé à la migration de l&apos;application web Chocolete&apos;in dans le cloud Azure. Avec le Azure CLI (Command Line Interface) nous avons créé un App Service et un Ressource Group. Après avoir fait un push de l&apos; du dépôt local vers le nouveau App Service nous avons créé une base de données MariaDB pour ensuite paramétrer le pare-feu Azure. Finalement nous avons fait une étude pour implémenter un service de mise à l&apos;échelle.
             </Typography>
-            <Container style={{ margin: "3rem 0" }}>
-              <Image
-                loader={myLoader}
-                width="1586px"
-                height="927px"
-                src="/imgs/CalculsTicketIncident.png"
-                alt="Udemy cours en cours"
-
-              />
-            </Container>
             <Container maxWidth="md">
               <Typography
                 variant="body1"
@@ -161,13 +109,13 @@ const CalculsDialog = ({ handleClose, open }) => {
                   <ListItemIcon style={{ transform: "translate(10px)" }}>
                     <CheckIcon color="secondary" />
                   </ListItemIcon>
-                  <ListItemText>Répondre aux incidents et aux demandes d&apos;assistance et d&apos;évolution</ListItemText>
+                  <ListItemText>Gérer le patrimoine informatique</ListItemText>
                 </ListItem>
                 <ListItem>
-                  <ListItemText inset>- Collecter, suivre et orienter des demandes</ListItemText>
-                </ListItem>
+                <ListItemText inset>- Recenser et identifier les ressources numériques</ListItemText>
+              </ListItem>
                 <ListItem>
-                  <ListItemText inset>- Traiter des demandes concernant les applications</ListItemText>
+                  <ListItemText inset>- Vérifier les conditions de la continuité d&apos;un service informatique</ListItemText>
                 </ListItem>
               </List>
             </Container>
@@ -183,8 +131,8 @@ const CalculsDialog = ({ handleClose, open }) => {
   );
 };
 
-CalculsDialog.propTypes = {
+MigrationChocDialog.propTypes = {
   handleClose: PropTypes.func.isRequired,
   open: PropTypes.bool.isRequired,
 };
-export default CalculsDialog;
+export default MigrationChocDialog;

@@ -91,6 +91,32 @@ const PPEMediaTekDialog = ({ handleClose, open }) => {
                 </Button>
               </a>
               <a
+                href="/pdf/APMediatek86Contexte.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button
+                  variant="outlined"
+                  style={theme.contrastButton}
+                  startIcon={<PictureAsPdfIcon />}
+                >
+                  Contexte
+                </Button>
+              </a>
+              <a
+                href="/pdf/PPEDossier.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button
+                  variant="outlined"
+                  style={theme.contrastButton}
+                  startIcon={<PictureAsPdfIcon />}
+                >
+                  Expression des besoins
+                </Button>
+              </a>
+              <a
                 href="../../docs/PPEMediaTek/CompteRendu.pdf"
                 target="_blank"
                 rel="noreferrer"

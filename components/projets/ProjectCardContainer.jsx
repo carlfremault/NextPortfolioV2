@@ -3,9 +3,14 @@ import { useTheme } from "@material-ui/styles";
 import AlgosTriCard from "./algosTri/AlgosTriCard";
 import AP1MediatekFormCard from "./AP1MediatekFormation/AP1MediatekFormCard";
 import AP3MediatekFormCard from "./AP3MediatekGestion/AP3MediatekFormCard";
+import BackupChocCard from "./BackupChoc/BackupChocCard";
 import CalculatriceCard from "./calculatrice/CalculatriceCard";
 import CalculsCard from "./Calculs/CalculsCard";
 import DenombrementsCard from "./Denombrements/DenombrementsCard";
+import MigrationChocCard from "./MigrationChoc/MigrationChocCard";
+import MSProjectCard from "./MSProject/MSProjectCard";
+import OCSICard from "./OCSI/OCSICard";
+import PCAChocCard from "./PCAChoc/PCAChocCard";
 import PortfolioCard from "./portfolioNext/PortfolioCard";
 import PPEMediaTekCard from "./PPEMediaTek/PPEMediaTekCard";
 import StageFaibrikCard from "./stageFaibrik/StageFaibrikCard";
@@ -22,11 +27,11 @@ const ProjectCardContainer = () => {
   return (
     <Grid container direction="column" alignItems="center">
       <SubTitle title = "Projets professionnels" />
-      <Grid item style={theme.projectCard} id="AP3">
-        <AP3MediatekFormCard />
-      </Grid>
       <Grid item style={theme.projectCard} id="AP1">
         <AP1MediatekFormCard />
+      </Grid>
+      <Grid item style={theme.projectCard} id="AP3">
+        <AP3MediatekFormCard />
       </Grid>
       <Grid item style={theme.projectCard}>
         <StageFaibrikCard />
@@ -36,8 +41,20 @@ const ProjectCardContainer = () => {
       </Grid>
       <SubTitle title = "Projets scolaires et personnels" />
       <Grid item style={theme.projectCard}>
+        <BackupChocCard />
+      </Grid>
+      <Grid item style={theme.projectCard}>
+        <MigrationChocCard />
+      </Grid>
+      <Grid item style={theme.projectCard}>
+        <PCAChocCard />
+      </Grid>
+      <Grid item style={theme.projectCard}>
         <PortfolioCard />
-      </Grid>      
+      </Grid>
+      <Grid item style={theme.projectCard}>
+        <MSProjectCard />
+      </Grid>    
       <Grid item style={theme.projectCard}>
         <PPEMediaTekCard />
       </Grid>
@@ -52,6 +69,9 @@ const ProjectCardContainer = () => {
       </Grid>
       <Grid item style={theme.projectCard}>
         <CalculsCard />
+      </Grid>
+      <Grid item style={theme.projectCard}>
+        <OCSICard />
       </Grid>
     </Grid>
   );

@@ -5,7 +5,7 @@ const CalculsCard = () => {
   return (
     <ProjectCard
       title="Application console Calculs - C#"
-      subtitle="Projet en cours de formation"
+      subtitle="Réalisation en cours de formation - 12/10/2020"
       image="/imgs/Calculs.png"
       imageTitle="Capture d'écran application Calculs"
       cardText="Correction d'une application console éducative qui permet d'évaluer ses compétences en calculs suite à la soumission d&apos;un incident utilisateur."

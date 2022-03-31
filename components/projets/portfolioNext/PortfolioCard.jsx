@@ -5,7 +5,7 @@ const PortfolioCard = () => {
   return (
     <ProjectCard
       title="Création de site portfolio - Next.js"
-      subtitle="Projet Personnel"
+      subtitle="Projet Personnel - 16/09/2021"
       image="/imgs/Portfolio.png"
       imageTitle="Portfolio Carl Fremault"
       cardText="A l'issue de mon stage, où j'ai pu mieux me familiariser

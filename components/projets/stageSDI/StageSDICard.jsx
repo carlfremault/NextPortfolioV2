@@ -5,7 +5,7 @@ const StageSDICard = () => {
   return (
     <ProjectCard
       title="Création de site vitrine - Next.js"
-      subtitle="Stage en milieu professionnel"
+      subtitle="Stage en milieu professionnel - 24/05 au 02/07/2021"
       image="/imgs/SDI.png"
       imageTitle="Site web Sport Data Intelligence"
       cardText="Pour mon stage de première année j’ai été accueilli par Sport Data
