@@ -6,10 +6,14 @@ import AP3MediatekFormCard from "./AP3MediatekGestion/AP3MediatekFormCard";
 import BackupChocCard from "./BackupChoc/BackupChocCard";
 import CalculatriceCard from "./calculatrice/CalculatriceCard";
 import CalculsCard from "./Calculs/CalculsCard";
+import ContactsCard from "./Contacts/ContactsCard";
 import DenombrementsCard from "./Denombrements/DenombrementsCard";
+import GestionReseauCard from "./GestionReseau/GestionReseauCard";
+import GLPICard from "./GLPI/GLPICard";
 import MigrationChocCard from "./MigrationChoc/MigrationChocCard";
 import MSProjectCard from "./MSProject/MSProjectCard";
 import OCSICard from "./OCSI/OCSICard";
+import PacketTracerCard from "./PacketTracer/PacketTracerCard";
 import PCAChocCard from "./PCAChoc/PCAChocCard";
 import PortfolioCard from "./portfolioNext/PortfolioCard";
 import PPEMediaTekCard from "./PPEMediaTek/PPEMediaTekCard";
@@ -59,10 +63,22 @@ const ProjectCardContainer = () => {
         <PPEMediaTekCard />
       </Grid>
       <Grid item style={theme.projectCard}>
+        <GLPICard />
+      </Grid>
+      <Grid item style={theme.projectCard}>
         <CalculatriceCard />
       </Grid>
       <Grid item style={theme.projectCard}>
         <AlgosTriCard />
+      </Grid>
+      <Grid item style={theme.projectCard}>
+        <PacketTracerCard />
+      </Grid>
+      <Grid item style={theme.projectCard}>
+        <GestionReseauCard />
+      </Grid>
+      <Grid item style={theme.projectCard}>
+        <ContactsCard />
       </Grid>
       <Grid item style={theme.projectCard}>
         <DenombrementsCard />
