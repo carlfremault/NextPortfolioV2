@@ -43,14 +43,14 @@ const StageFaibrikDialog = ({ handleClose, open }) => {
             maxWidth="md"
             style={{ marginTop: "2rem", marginBottom: "2rem" }}
           >
-            <StageFaibrikGallery/>
+            <StageFaibrikGallery />
           </Container>
           <Grid
             container
             direction="column"
             justifyContent="space-between"
             alignItems="center"
-          >            
+          >
             <Grid item style={{ textAlign: "center" }}>
               <a
                 href="../../pdf/faibrikRapportDeStage.pdf"
@@ -64,7 +64,7 @@ const StageFaibrikDialog = ({ handleClose, open }) => {
                 >
                   Rapport de Stage (PDF)
                 </Button>
-              </a>              
+              </a>
             </Grid>
           </Grid>
           <Container
@@ -120,7 +120,7 @@ const StageFaibrikDialog = ({ handleClose, open }) => {
                       alt="React Logo"
                     />
                   </a>
-                </Grid>                
+                </Grid>
               </Grid>
             </Grid>
           </Container>
@@ -206,6 +206,68 @@ const StageFaibrikDialog = ({ handleClose, open }) => {
                   <CheckIcon color="secondary" />
                 </ListItemIcon>
                 <ListItemText primary="Ngrok, Postman, Auth0, RabbitMQ" />
+              </ListItem>
+            </List>
+          </Container>
+          <Container maxWidth="md">
+            <Typography
+              variant="body1"
+              align="justify"
+              style={{ margin: "4rem 0 1rem" }}
+            >
+              Les compétences officielles couvertes par cet atelier sont les suivantes :
+            </Typography>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Répondre aux incidents et aux demandes d&apos;assistance et d&apos;évolution</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Collecter, suivre et orienter des demandes</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Traiter des demandes concernant les applications</ListItemText>
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Développer la présence en ligne de l&apos;organisation</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Participer à la valorisation de l&apos;image de l&apos;organisation sur les médias numériques en tenant compte du cadre juridique et des enjeux économiques</ListItemText>
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Travailler en mode projet</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Analyser les objectifs et les modalités d&apos;organisation d&apos;un projet</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Planifier les activités</ListItemText>
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Mettre à disposition des utilisateurs un service informatique</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Réaliser les tests d&apos;intégration et d&apos;acceptation d&apos;un service</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Déployer un service</ListItemText>
               </ListItem>
             </List>
           </Container>

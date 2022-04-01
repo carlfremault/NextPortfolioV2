@@ -4,7 +4,7 @@ import CalculsDialog from "./CalculsDialog";
 const CalculsCard = () => {
   return (
     <ProjectCard
-      title="Application console Calculs - C#"
+      title="Prise en charge d'incidents sur une application console Calculs - C#"
       subtitle="Réalisation en cours de formation - 12/10/2020"
       image="/imgs/Calculs.png"
       imageTitle="Capture d'écran application Calculs"

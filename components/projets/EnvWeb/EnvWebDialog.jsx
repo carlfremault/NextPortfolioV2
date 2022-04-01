@@ -22,7 +22,7 @@ const myLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 75}`;
 };
 
-const BackupChocDialog = ({ handleClose, open }) => {
+const EnvWebDialog = ({ handleClose, open }) => {
   const theme = useTheme();
 
   return (
@@ -36,7 +36,7 @@ const BackupChocDialog = ({ handleClose, open }) => {
         fullWidth={true}
         maxWidth="lg"
       >
-        <DialogTitle>Mise en place de solution de sauvegarde d&apos;une application web Azure</DialogTitle>
+        <DialogTitle>Installation d&apos;un service web</DialogTitle>
         <DialogContent dividers>
           <Container
             maxWidth="md"
@@ -44,10 +44,10 @@ const BackupChocDialog = ({ handleClose, open }) => {
           >
             <Image
               loader={myLoader}
-              src="/imgs/PCAChoc.png"
+              src="/imgs/EnvWeb.png"
               width="838px"
               height="485px"
-              alt="OCS Inventory"
+              alt="Capture d'écran application web"
             />
           </Container>
           <Grid
@@ -57,8 +57,8 @@ const BackupChocDialog = ({ handleClose, open }) => {
             alignItems="center"
           >
             <Grid item style={{ textAlign: "center" }}>
-            <a
-                href="/pdf/RestaurationAzureChocolatein.pdf"
+              <a
+                href="/pdf/EnvWebPreparation.pdf"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -67,11 +67,11 @@ const BackupChocDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<PictureAsPdfIcon />}
                 >
-                  Compte rendu - Restauration des données
+                  Compte rendu : Préparation service web
                 </Button>
               </a>
               <a
-                href="/pdf/ReplicaAzureChocolatein.pdf"
+                href="/pdf/EnvWebDeploiement.pdf"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -80,52 +80,50 @@ const BackupChocDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<PictureAsPdfIcon />}
                 >
-                  Compte rendu - Configuration du réplica
+                  Compte rendu : déploiement application
                 </Button>
               </a>
             </Grid>
           </Grid>
           <Container maxWidth="md">
             <Typography variant="h6" style={{ margin: "2rem 0" }}>
-              21 octobre 2021
+              12 avril 2021
             </Typography>
             <Typography
               variant="body1"
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Pendant cette activité nous avons commencé par simuler une perte de données dans la base. Ensuite nous avons effectué une restauration de données depuis la sauvegarde Azure. Ceci génère un nouveau serveur, où il faut vérifier les paramètres du pare-feu, puis il faut mettre à jour les informations de connexion dans l&apos;application, pour pointer vers ce nouveau serveur.
+              Dans cette exercice nous avons installé un environnement technique &quot;type&quot; pour un développement web classique : une VM Debian avec installation de serveur web Apache 2 et PHP, une deuxième VM Debian avec MariaDB.
             </Typography>
             <Typography
               variant="body1"
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-La prochaine étape était de créer un serveur replica dans Azure, puis de réitérer la démarche (simulation de panne, bascule sur le replica)
+              Ensuite nous avons déployé une application web de gestion de stages sur cet environnement, et nous avons créé des enregistrements DNS dans Windows Server.
             </Typography>
-            <Container maxWidth="md">
-              <Typography
-                variant="body1"
-                align="justify"
-                style={{ margin: "4rem 0 1rem" }}
-              >
-                Les compétences officielles couvertes par cet exercice sont les suivantes :
-              </Typography>
-              <List>
-                <ListItem>
-                  <ListItemIcon style={{ transform: "translate(10px)" }}>
-                    <CheckIcon color="secondary" />
-                  </ListItemIcon>
-                  <ListItemText>Gérer le patrimoine informatique</ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemText inset>- Vérifier les conditions de la continuité d&apos;un service informatique</ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemText inset>- Gérer des sauvegardes</ListItemText>
-                </ListItem>
-              </List>
-            </Container>
+            <Typography
+              variant="body1"
+              align="justify"
+              style={{ margin: "4rem 0 1rem" }}
+            >
+              Les compétences officielles couvertes par cet exercice sont les suivantes :
+            </Typography>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Mettre à disposition des utilisateurs un service informatique</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Réaliser les tests d&apos;intégration et d&apos;acceptation d&apos;un service</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Déployer un service</ListItemText>
+              </ListItem>
+            </List>
           </Container>
         </DialogContent>
         <DialogActions>
@@ -138,8 +136,8 @@ La prochaine étape était de créer un serveur replica dans Azure, puis de réi
   );
 };
 
-BackupChocDialog.propTypes = {
+EnvWebDialog.propTypes = {
   handleClose: PropTypes.func.isRequired,
   open: PropTypes.bool.isRequired,
 };
-export default BackupChocDialog;
+export default EnvWebDialog;

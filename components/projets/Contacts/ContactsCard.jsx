@@ -4,7 +4,7 @@ import ContactsDialog from "./ContactsDialog";
 const ContactsCard = () => {
   return (
     <ProjectCard
-      title="Application de bureau Contacts - C#"
+      title="Évolution d'application de bureau Contacts - C#"
       subtitle="Réalisation en cours de formation - 02/11/2020"
       image="/imgs/Contacts.png"
       imageTitle="Capture d'écran application Contacts"

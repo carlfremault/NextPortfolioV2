@@ -8,8 +8,11 @@ import CalculatriceCard from "./calculatrice/CalculatriceCard";
 import CalculsCard from "./Calculs/CalculsCard";
 import ContactsCard from "./Contacts/ContactsCard";
 import DenombrementsCard from "./Denombrements/DenombrementsCard";
+import EnvWebCard from "./EnvWeb/EnvWebCard";
 import GestionReseauCard from "./GestionReseau/GestionReseauCard";
 import GLPICard from "./GLPI/GLPICard";
+import GLPIDeploiementCard from "./GLPIDeploiement/GLPIDeploiementCard";
+import MigrationBDDCard from "./MigrationBDD/MigrationBDDCard";
 import MigrationChocCard from "./MigrationChoc/MigrationChocCard";
 import MSProjectCard from "./MSProject/MSProjectCard";
 import OCSICard from "./OCSI/OCSICard";
@@ -20,6 +23,7 @@ import PPEMediaTekCard from "./PPEMediaTek/PPEMediaTekCard";
 import StageFaibrikCard from "./stageFaibrik/StageFaibrikCard";
 import StageSDICard from "./stageSDI/StageSDICard";
 import SubTitle from "../tools/SubTitle";
+
 
 /**
  * Grid container for ProjectCards
@@ -45,6 +49,9 @@ const ProjectCardContainer = () => {
       </Grid>
       <SubTitle title = "Projets scolaires et personnels" />
       <Grid item style={theme.projectCard}>
+        <MigrationBDDCard />
+      </Grid>
+      <Grid item style={theme.projectCard}>
         <BackupChocCard />
       </Grid>
       <Grid item style={theme.projectCard}>
@@ -56,6 +63,12 @@ const ProjectCardContainer = () => {
       <Grid item style={theme.projectCard}>
         <PortfolioCard />
       </Grid>
+      <Grid item style={theme.projectCard}>
+        <GLPIDeploiementCard />
+      </Grid>
+      <Grid item style={theme.projectCard}>
+        <EnvWebCard />
+      </Grid>    
       <Grid item style={theme.projectCard}>
         <MSProjectCard />
       </Grid>    

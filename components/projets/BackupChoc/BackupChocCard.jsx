@@ -8,6 +8,7 @@ const BackupChocCard = () => {
       subtitle="Réalisation en cours de formation - 21/10/2021"
       image="/imgs/PCAChoc.png"
       imageTitle=""
+      cardText="Simulation de perte de données et restauration depuis la sauvegarde Azure."
       dialog={BackupChocDialog}
     />
   );

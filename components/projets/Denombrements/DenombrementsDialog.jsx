@@ -37,7 +37,7 @@ const DenombrementsDialog = ({ handleClose, open }) => {
         fullWidth={true}
         maxWidth="lg"
       >
-        <DialogTitle>Application console Dénombrements - C#</DialogTitle>
+        <DialogTitle>Revue de code application console Dénombrements - C#</DialogTitle>
         <DialogContent dividers>
           <Container
             maxWidth="md"

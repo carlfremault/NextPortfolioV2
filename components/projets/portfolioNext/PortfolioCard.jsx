@@ -11,7 +11,7 @@ const PortfolioCard = () => {
       cardText="A l'issue de mon stage, où j'ai pu mieux me familiariser
           avec Next.js / React et Material-UI, j'ai décidé de
           refaire mon portfolio fait auparavant en Wordpress."
-      repoLink="https://github.com/carlfremault/nextjsPortfolio"
+      repoLink="https://github.com/carlfremault/NextPortfolioV2"
       dialog={PortfolioDialog}
     />
   );

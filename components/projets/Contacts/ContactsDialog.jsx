@@ -38,7 +38,7 @@ const ContactsDialog = ({ handleClose, open }) => {
         fullWidth={true}
         maxWidth="lg"
       >
-        <DialogTitle>Application de bureau Contacts - C#</DialogTitle>
+        <DialogTitle>Évolution d&apos;application de bureau Contacts - C#</DialogTitle>
         <DialogContent dividers>
           <Container
             maxWidth="md"

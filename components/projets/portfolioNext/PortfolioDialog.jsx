@@ -57,7 +57,7 @@ const PortfolioDialog = ({ handleClose, open }) => {
           >
             <Grid item style={{ textAlign: "center" }}>
               <a
-                href="https://github.com/carlfremault/nextjsPortfolio"
+                href="https://github.com/carlfremault/NextPortfolioV2"
                 target="_blank"
                 rel="noreferrer"
               >
