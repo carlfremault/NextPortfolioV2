@@ -15,7 +15,6 @@ import {
 } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
-import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
 import CheckIcon from "@material-ui/icons/Check";
 import Image from "next/image";
 

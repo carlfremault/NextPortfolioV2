@@ -81,14 +81,14 @@ const GLPIDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Pendant cette séquence nous avons mis en place la solution GLPI sur l'environnement de préproduction créé auparavant (serveur web et serveur de base de données).
+              Pendant cette séquence nous avons mis en place la solution GLPI sur l&apos;environnement de préproduction créé auparavant (serveur web et serveur de base de données).
             </Typography>
             <Typography
               variant="body1"
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Ensuite nous avons configuré le serveur DNS pour rendre accessible l'application web par une URL plutôt qu'une adresse IP, et nous avons modifié les habilitations d'un utilisateur pour avoir les droits sur le dossier de publication et la base de données.
+              Ensuite nous avons configuré le serveur DNS pour rendre accessible l&apos;application web par une URL plutôt qu'une adresse IP, et nous avons modifié les habilitations d&apos;un utilisateur pour avoir les droits sur le dossier de publication et la base de données.
             </Typography>
             <Typography
               variant="body1"

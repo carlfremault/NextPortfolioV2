@@ -18,10 +18,6 @@ import MSProjectGallery from "./MSProjectGallery";
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 import CheckIcon from "@material-ui/icons/Check";
 
-const myLoader = ({ src, width, quality }) => {
-  return `${src}?w=${width}&q=${quality || 75}`;
-};
-
 const MSProjectDialog = ({ handleClose, open }) => {
   const theme = useTheme();
 

@@ -36,7 +36,7 @@ const OCSIDialog = ({ handleClose, open }) => {
         fullWidth={true}
         maxWidth="lg"
       >
-        <DialogTitle>Gestion d'inventaire de parc informatique - OCS Inventory</DialogTitle>
+        <DialogTitle>Gestion d&apos;inventaire de parc informatique - OCS Inventory</DialogTitle>
         <DialogContent dividers>
           <Container
             maxWidth="md"

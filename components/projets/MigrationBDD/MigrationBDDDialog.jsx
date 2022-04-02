@@ -81,21 +81,21 @@ const GLPIDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Cette activité nous a permis d'apprendre à faire la mise en place d'un serveur PostgreSQL sur une machine virtuelle Debian, de configurer une connexion SSL puis de migrer une base de données MariaDB vers une base de données PostgreSQL.
+              Cette activité nous a permis d&apos;apprendre à faire la mise en place d&apos;un serveur PostgreSQL sur une machine virtuelle Debian, de configurer une connexion SSL puis de migrer une base de données MariaDB vers une base de données PostgreSQL.
             </Typography>
             <Typography
               variant="body1"
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Ensuite nous avons installé un serveur PostgreSQL sur Azure puis nous avons fait une sauvegarde de la base de données installé en local et nous l'avons restauré sur le nouveau serveur Azure.
+              Ensuite nous avons installé un serveur PostgreSQL sur Azure puis nous avons fait une sauvegarde de la base de données installé en local et nous l&apos;avons restauré sur le nouveau serveur Azure.
             </Typography>
             <Typography
               variant="body1"
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Nous avons modifié le groupe tarifaire du serveur Azure pour permettre l'activation de la haute disponibilité, puis nous avons activé cette option et nous avons fait et testé un réplica de secours.
+              Nous avons modifié le groupe tarifaire du serveur Azure pour permettre l&apos;activation de la haute disponibilité, puis nous avons activé cette option et nous avons fait et testé un réplica de secours.
             </Typography>
             <Typography
               variant="body1"
