@@ -88,7 +88,7 @@ const GLPIDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Ensuite nous avons configuré le serveur DNS pour rendre accessible l&apos;application web par une URL plutôt qu'une adresse IP, et nous avons modifié les habilitations d&apos;un utilisateur pour avoir les droits sur le dossier de publication et la base de données.
+              Ensuite nous avons configuré le serveur DNS pour rendre accessible l&apos;application web par une URL plutôt qu&apos;une adresse IP, et nous avons modifié les habilitations d&apos;un utilisateur pour avoir les droits sur le dossier de publication et la base de données.
             </Typography>
             <Typography
               variant="body1"
