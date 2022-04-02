@@ -15,6 +15,7 @@ import GLPIDeploiementCard from "./GLPIDeploiement/GLPIDeploiementCard";
 import MigrationBDDCard from "./MigrationBDD/MigrationBDDCard";
 import MigrationChocCard from "./MigrationChoc/MigrationChocCard";
 import MSProjectCard from "./MSProject/MSProjectCard";
+import NolarkCard from "./Nolark/NolarkCard";
 import OCSICard from "./OCSI/OCSICard";
 import PacketTracerCard from "./PacketTracer/PacketTracerCard";
 import PCAChocCard from "./PCAChoc/PCAChocCard";
@@ -89,6 +90,9 @@ const ProjectCardContainer = () => {
       </Grid>
       <Grid item style={theme.projectCard}>
         <GestionReseauCard />
+      </Grid>
+      <Grid item style={theme.projectCard}>
+        <NolarkCard />
       </Grid>
       <Grid item style={theme.projectCard}>
         <ContactsCard />
