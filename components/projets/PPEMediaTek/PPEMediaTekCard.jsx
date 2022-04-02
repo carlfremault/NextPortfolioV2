@@ -5,7 +5,7 @@ const PPEMediaTekCard = () => {
   return (
     <ProjectCard
       title="Application de bureau - C#, MySQL"
-      subtitle="Projet Personnalisé Encadré - BTS SIO"
+      subtitle="Projet Personnalisé Encadré BTS SIO - 04/04/2021"
       image="/imgs/Personnel.png"
       imageTitle="Application de bureau MediaTek86"
       cardText="Pour cet Atelier Professionnel nous avons créé une application

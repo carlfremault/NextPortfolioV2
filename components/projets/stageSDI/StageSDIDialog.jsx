@@ -230,6 +230,71 @@ const StageSDIDialog = ({ handleClose, open }) => {
               </ListItem>
             </List>
           </Container>
+          <Container maxWidth="md">
+            <Typography
+              variant="body1"
+              align="justify"
+              style={{ margin: "4rem 0 1rem" }}
+            >
+              Les compétences officielles couvertes par cet atelier sont les suivantes :
+            </Typography>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Répondre aux incidents et aux demandes d&apos;assistance et d&apos;évolution</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Collecter, suivre et orienter des demandes</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Traiter des demandes concernant les applications</ListItemText>
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Développer la présence en lignde de l&apos;organisation</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Participer à la valorisation de l&apos;image de l&apos;organisation sur les médias numériques en tenant compte du cadre juridique et des enjeux économiques</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Référencer les services en ligne de l&apos;organisation et mesurer leur visibilité</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Participer à l&apos;évolution d&apos;un site Web exploitant les données de l&apos;organisation</ListItemText>
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Travailler en mode projet</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Analyser les objectifs et les modalités d&apos;organisation d&apos;un projet</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Planifier les activités</ListItemText>
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Mettre à disposition des utilisateurs un service informatique</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Réaliser les tests d&apos;intégration et d&apos;acceptation d&apos;un service</ListItemText>
+              </ListItem>
+            </List>
+          </Container>
         </DialogContent>
         <DialogActions>
           <Button

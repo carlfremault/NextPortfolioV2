@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="a2415ca4-944f-426d-8bfc-1f3b7f1caeff" Title="Contacts" Url="html/eadd2ed1-412d-0d57-b897-526b6325d272.htm">
+    <HelpTOCNode Id="9cde6d61-665f-4012-9d59-6fa63a5e1fad" Title="Contact Class" Url="html/04f4862a-d12b-0769-e045-e63a135bd943.htm">
+      <HelpTOCNode Title="Contact Constructor " Url="html/47f000d7-a90e-6499-1066-4c15d05a7d9f.htm" />
+      <HelpTOCNode Id="256e4ec1-52f8-4b12-b54c-c584d8fd972b" Title="Contact Methods" Url="html/27ee8083-20a5-ef6d-ec1a-83a6fb26c699.htm">
+        <HelpTOCNode Title="CompareTo Method " Url="html/7200d60c-a5b9-0852-7492-27a085e75ca1.htm" />
+        <HelpTOCNode Title="getNom Method " Url="html/80af72e6-ae17-1f0f-5ba4-fbc0a81e48e3.htm" />
+        <HelpTOCNode Title="getPhoto Method " Url="html/ed4a83b0-c62d-3a09-1e5b-bbe46ffae200.htm" />
+        <HelpTOCNode Title="getTel Method " Url="html/99cf88b7-5e2f-a845-2a78-62c8fed0f383.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="97e76804-a4fb-4890-b94c-c3edc038148f" Title="Contact Fields" Url="html/c2814243-cd9a-01b2-af6c-7f5f09eed634.htm">
+        <HelpTOCNode Title="nom Field" Url="html/821168e3-2c82-fabb-c1b0-d9f4b7b663c3.htm" />
+        <HelpTOCNode Title="tel Field" Url="html/e98ab46a-4a61-5e84-8ba3-a1621137b224.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="14d9a684-9deb-4ddb-98b5-eb5c2f7ab4e1" Title="frmContacts Class" Url="html/a5541bde-5d85-d2b4-ff87-f06c2fb60fed.htm">
+      <HelpTOCNode Title="frmContacts Constructor " Url="html/f0395211-c971-0cb2-6e24-b8676861c795.htm" />
+      <HelpTOCNode Title="frmContacts Properties" Url="html/107db935-8846-7e4c-9e7f-da8591f117eb.htm" />
+      <HelpTOCNode Id="3471cba7-ac0d-41b1-9e70-396f594ec185" Title="frmContacts Methods" Url="html/2c647843-d9b1-0ce2-b6f1-e38cf7144ad6.htm">
+        <HelpTOCNode Id="9e92402f-cdc3-4e72-8779-604ea879cd3e" Title="Dispose Method " Url="html/1d17c317-0e9f-4c2e-b580-ead6c1e334d8.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/033954d1-4d0a-d916-954c-217f1a0016bd.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="frmContacts Events" Url="html/0b42dcea-0177-36a4-56cf-179d140e6d3e.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="289342d4-0012-45f7-ad75-2a833262c893" Title="Particulier Class" Url="html/14e932f0-3a5f-72be-64f8-75d5f74f9b44.htm">
+      <HelpTOCNode Title="Particulier Constructor " Url="html/dd164625-d59b-26af-5404-e9a2a1efe59c.htm" />
+      <HelpTOCNode Id="6f7d28b3-e2b8-4ea1-b62a-bdea40e7acf8" Title="Particulier Methods" Url="html/bb296f13-1865-4f25-0745-c7715be66bfe.htm">
+        <HelpTOCNode Title="getPrenom Method " Url="html/01d58b3d-2049-7ba3-1598-fdd5eed8c68a.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/34961235-25cd-ba06-92fb-f60da364b127.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Particulier Fields" Url="html/bb642c3a-5b0b-88b7-c7da-3bf652e2d703.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="ebe16ffa-47b6-4c7d-b376-3286ccd4fb46" Title="Professionnel Class" Url="html/d1bddb83-91d7-e8a8-a155-eb94aac44ffd.htm">
+      <HelpTOCNode Title="Professionnel Constructor " Url="html/e2fa2ef0-4123-9165-f704-95f6f9bd620f.htm" />
+      <HelpTOCNode Id="bde84e68-d667-477b-9627-f153bb808221" Title="Professionnel Methods" Url="html/a684adc2-1acb-165e-9d33-66188ad38ce8.htm">
+        <HelpTOCNode Title="ToString Method " Url="html/07a75f22-eb63-8063-c244-27774c0139eb.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Professionnel Fields" Url="html/81cbd4d8-084a-049b-43a0-5e300f27f4ac.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="ec9b41cc-7408-4e1b-bc47-5cb5832f6d07" Title="Serialise Class" Url="html/c18dbbbc-c8f0-b3c9-b080-9eb0a6a0944e.htm">
+      <HelpTOCNode Title="Serialise Constructor " Url="html/d9eaea99-bbbc-e82e-a698-a055f346627b.htm" />
+      <HelpTOCNode Id="202206b9-89fb-4657-a91b-299f565dc274" Title="Serialise Methods" Url="html/64d50a33-c037-dadd-9950-96db1c59d2e8.htm">
+        <HelpTOCNode Title="Recup Method " Url="html/8d47671d-9efd-5d47-a249-550d2ffa4950.htm" />
+        <HelpTOCNode Title="Sauve Method " Url="html/f2e7524b-6108-6eeb-1d08-960746218326.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

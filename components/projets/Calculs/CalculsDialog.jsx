@@ -37,7 +37,7 @@ const CalculsDialog = ({ handleClose, open }) => {
         fullWidth={true}
         maxWidth="lg"
       >
-        <DialogTitle>Application console C# - Calculs</DialogTitle>
+        <DialogTitle>Prise en charge d&apos;incidents sur une application console Calculs - C#</DialogTitle>
         <DialogContent dividers>
           <Container
             maxWidth="md"
