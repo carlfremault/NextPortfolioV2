@@ -281,6 +281,23 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
                 <ListItemIcon style={{ transform: "translate(10px)" }}>
                   <CheckIcon color="secondary" />
                 </ListItemIcon>
+                <ListItemText>Gérer le patrimoine informatique</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Exploiter des référentiels, normes et standards adoptés par le prestataire informatique</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Mettre en place et vérifier les niveaux d&apos;habilitation associés à un service</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Vérifier le respect des règles d&apos;utilisation des ressources numériques</ListItemText>
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
                 <ListItemText>Répondre aux incidents et aux demandes d&apos;assistance et d&apos;évolution</ListItemText>
               </ListItem>
               <ListItem>

@@ -3,6 +3,7 @@ import { useTheme } from "@material-ui/styles";
 import AlgosTriCard from "./algosTri/AlgosTriCard";
 import AP1MediatekFormCard from "./AP1MediatekFormation/AP1MediatekFormCard";
 import AP3MediatekFormCard from "./AP3MediatekGestion/AP3MediatekFormCard";
+import APIRestCard from "./APIRest/APIRestCard";
 import BackupChocCard from "./BackupChoc/BackupChocCard";
 import CalculatriceCard from "./calculatrice/CalculatriceCard";
 import CalculsCard from "./Calculs/CalculsCard";
@@ -51,6 +52,9 @@ const ProjectCardContainer = () => {
       <SubTitle title = "Projets scolaires et personnels" />
       <Grid item style={theme.projectCard}>
         <MigrationBDDCard />
+      </Grid>
+      <Grid item style={theme.projectCard}>
+        <APIRestCard />
       </Grid>
       <Grid item style={theme.projectCard}>
         <BackupChocCard />
