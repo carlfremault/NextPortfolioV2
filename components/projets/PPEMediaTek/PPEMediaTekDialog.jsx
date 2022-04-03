@@ -7,11 +7,16 @@ import {
   DialogContent,
   DialogTitle,
   Grid,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
   Typography,
 } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
 import BuildIcon from "@material-ui/icons/Build";
 import BrushIcon from "@material-ui/icons/Brush";
+import CheckIcon from "@material-ui/icons/Check";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
 import Image from "next/image";
@@ -241,6 +246,51 @@ const PPEMediaTekDialog = ({ handleClose, open }) => {
               }}
             />
           </Grid>
+          <Container maxWidth="md">
+            <Typography
+              variant="body1"
+              align="justify"
+              style={{ margin: "3rem 0 1rem" }}
+            >
+              Les compétences officielles couvertes par cet atelier sont les suivantes :
+            </Typography>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Gérer le patrimoine informatique</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Mettre en place et vérifier les niveaux d&apos;habilitation associés à un service</ListItemText>
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Répondre aux incidents et aux demandes d&apos;assistance et d&apos;évolution</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Traiter des demandes concernant les applications</ListItemText>
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon style={{ transform: "translate(10px)" }}>
+                  <CheckIcon color="secondary" />
+                </ListItemIcon>
+                <ListItemText>Mettre à disposition des utilisateurs un service informatique</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Déployer un service</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText inset>- Accompagner les utilisateurs dans la mise en place d&apos;un service</ListItemText>
+              </ListItem>
+            </List>
+          </Container>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} style={theme.contrastColor}>
