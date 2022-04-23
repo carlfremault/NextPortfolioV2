@@ -94,9 +94,8 @@ const MigrationChocDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-                Pendant cette exercice nous avons procédé à la migration de l&apos;application web Chocolete&apos;in dans le cloud Azure. Avec le Azure CLI (Command Line Interface) nous avons créé un App Service et un Ressource Group. Après avoir fait un push de l&apos; du dépôt local vers le nouveau App Service nous avons créé une base de données MariaDB pour ensuite paramétrer le pare-feu Azure. Finalement nous avons fait une étude pour implémenter un service de mise à l&apos;échelle.
+                Pendant cet exercice nous avons procédé à la migration de l&apos;application web Chocolete&apos;in dans le cloud Azure. Avec le Azure CLI (Command Line Interface) nous avons créé un App Service et un Ressource Group. Après avoir fait un push de l&apos;application du dépôt local vers le nouveau App Service nous avons créé une base de données MariaDB pour ensuite paramétrer le pare-feu Azure. Finalement nous avons fait une étude pour implémenter un service de mise à l&apos;échelle.
             </Typography>
-            <Container maxWidth="md">
               <Typography
                 variant="body1"
                 align="justify"
@@ -118,7 +117,6 @@ const MigrationChocDialog = ({ handleClose, open }) => {
                   <ListItemText inset>- Vérifier les conditions de la continuité d&apos;un service informatique</ListItemText>
                 </ListItem>
               </List>
-            </Container>
           </Container>
         </DialogContent>
         <DialogActions>

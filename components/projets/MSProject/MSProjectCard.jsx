@@ -8,7 +8,7 @@ const MSProjectCard = () => {
       subtitle="Réalisation en cours de formation - 11/04/2021"
       image="/imgs/MSProject.png"
       imageTitle="Capture d'écran MSProject"
-      cardText="Pendant nos cours nous avons appris à faire la gestion et suivi d'un projet à l'aide de MS Project."
+      cardText="Pendant nos cours nous avons appris à faire la gestion et le suivi d'un projet à l'aide de MS Project."
       dialog={MSProjectDialog}
     />
   );

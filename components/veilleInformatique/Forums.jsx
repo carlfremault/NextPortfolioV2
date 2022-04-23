@@ -17,7 +17,7 @@ const Forums = () => {
             compléter l&apos;influx d&apos;informations reçus hebdomadairement
             je consulte régulièrement les sites Hackernews ainsi que Reddit. Sur
             un ton plus léger, ils me permettent non seulement de retrouver des
-            nouveautés ou autres informations que j&apos;aurais ratés, mais
+            nouveautés ou autres informations que j&apos;aurais raté, mais
             aussi d&apos;avoir des opinions, méthodes de travail, ...
             d&apos;autres personnes, dont beaucoup de développeurs
             professionnels. Les différents &quot;threads&quot; des forums

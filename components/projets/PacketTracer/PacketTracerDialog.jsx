@@ -94,7 +94,7 @@ const PacketTracerDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Pendant cette séance nous avons pris en compte des tickets d&apos;incidents concernant des différentes pannes d&apos;un parc informatique (ordinateurs et imprimantes). Après avoir vérifié si les pannes relèvent de notre mission comme spécifié dans le SLA (Service Level Agreement), nous avons procédé avec le diagnostique et correction des différents problèmes signalés.
+              Pendant cette séance nous avons pris en compte des tickets d&apos;incidents concernant des différentes pannes d&apos;un parc informatique (ordinateurs et imprimantes). Après avoir vérifié si les pannes relèvent de notre mission comme spécifié dans le SLA (Service Level Agreement), nous avons procédé avec le diagnostique et la correction des différents problèmes signalés.
             </Typography>
             <Typography
               variant="body1"

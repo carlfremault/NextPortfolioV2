@@ -81,9 +81,8 @@ const OCSIDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Lors de cette exercice nous avons fait connaissance avec l&apos;application de gestion d&apos;inventaire de parc informatique OCS Inventory. Nous avons fait des recherches parmi les caractéristiques des machines et crée des groupes statiques et dynamiques. Enfin nous avons fait des exports selon les configurations, sous format Excel ainsi que CSV.
+              Lors de cet exercice nous avons fait connaissance avec l&apos;application de gestion d&apos;inventaire de parc informatique OCS Inventory. Nous avons fait des recherches parmi les caractéristiques des machines et créé des groupes statiques et dynamiques. Enfin nous avons fait des exports selon les configurations, sous format Excel ainsi que CSV.
             </Typography>
-            <Container maxWidth="md">
               <Typography
                 variant="body1"
                 align="justify"
@@ -102,7 +101,6 @@ const OCSIDialog = ({ handleClose, open }) => {
                   <ListItemText inset>- Recenser et identifier les ressources numériques</ListItemText>
                 </ListItem>
               </List>
-            </Container>
           </Container>
         </DialogContent>
         <DialogActions>

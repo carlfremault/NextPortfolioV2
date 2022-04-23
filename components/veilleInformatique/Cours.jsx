@@ -29,7 +29,7 @@ const Cours = () => {
             />
           </Container>
           <Typography variant="body1" align="justify" gutterBottom>
-            Finalement, j&apos;aime bien m&apos;entraîner, aussi bien au niveau de maîtrise des langages qu&apos;en algorithmique et structures de données, avec les exercices proposées sur des différents sites. C&apos;est une façon ludique de progresser et de voir des différentes façons de résoudre un problème.
+            Finalement, j&apos;aime bien m&apos;entraîner, aussi bien au niveau de maîtrise des langages qu&apos;en algorithmique et structures de données, avec les exercices proposés sur des différents sites. C&apos;est une façon ludique de progresser et de voir des différentes façons de résoudre un problème.
           </Typography>
           <Grid
             container

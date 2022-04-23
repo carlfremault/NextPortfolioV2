@@ -88,7 +88,7 @@ const GLPIDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Ensuite nous avons installé un serveur PostgreSQL sur Azure puis nous avons fait une sauvegarde de la base de données installé en local et nous l&apos;avons restauré sur le nouveau serveur Azure.
+              Ensuite nous avons installé un serveur PostgreSQL sur Azure puis nous avons fait une sauvegarde de la base de données installée en local et nous l&apos;avons restauré sur le nouveau serveur Azure.
             </Typography>
             <Typography
               variant="body1"

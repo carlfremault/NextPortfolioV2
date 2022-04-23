@@ -214,7 +214,7 @@ const PPEMediaTekDialog = ({ handleClose, open }) => {
               L&apos;application est écrite en C# selon une architecture MVC et
               liée à une base de données MySQL. Elle permet de consulter la
               liste du personnel puis d&apos;ajouter, modifier ou supprimer des
-              membres. Pour chaque membre on peut consulter un liste de ses
+              membres. Pour chaque membre on peut consulter une liste de ses
               absences, on peut en ajouter des nouvelles, ou encore modifier ou
               supprimer des absences enrégistrées.
             </Typography>
@@ -224,7 +224,7 @@ const PPEMediaTekDialog = ({ handleClose, open }) => {
               style={{ margin: "1rem 0" }}
             >
               En plus, je suis complètement sorti de ma zone de confort pour
-              vous proposer cette vidéo de démonstration!
+              vous proposer cette vidéo de démonstration !
             </Typography>
           </Container>
           <Grid

@@ -225,7 +225,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              L&apos;application est liée à une base de données MySQL hébergé dans le cloud Azure. Les mésures nécessaires à la préservation de l&apos;intégrité de la base de données ont été prises : utilisation de transactions, triggers et procédures stockées.
+              L&apos;application est liée à une base de données MySQL hébergée dans le cloud Azure. Les mésures nécessaires à la préservation de l&apos;intégrité de la base de données ont été prises : utilisation de transactions, triggers et procédures stockées.
             </Typography>
             <Typography
               variant="body1"

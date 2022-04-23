@@ -122,9 +122,9 @@ const CalculatriceDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Pour ce projet POO j’ai créé une calculatrice en Java, avec une
-              (simple) architecture MVC. Au fin de compte ce n’était pas si
-              simple que ça!
+              Pour ce projet POO j&apos;ai créé une calculatrice en Java, avec une
+              (simple) architecture MVC. Au fin de compte ce n&apos;était pas si
+              simple que ça !
             </Typography>
             <Typography
               variant="body1"
@@ -148,7 +148,7 @@ const CalculatriceDialog = ({ handleClose, open }) => {
                 Passage obligatoire pour tous les apprentis développeurs? En
                 tout cas j&apos;étais bien surpris quand &quot;ma nouvelle
                 calculatrice&quot; affichait &quot;0.1 + 0.2 = 0.4&quot; ! La
-                problématique étant bien documenté sur le web, la solution était
+                problématique étant bien documentée sur le web, la solution était
                 facile à trouver et j&apos;ai modifié tous mes types pour des
                 BigDecimal au lieu des Doubles.
               </Typography>

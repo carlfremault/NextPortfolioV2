@@ -103,7 +103,6 @@ const BackupChocDialog = ({ handleClose, open }) => {
             >
 La prochaine étape était de créer un serveur replica dans Azure, puis de réitérer la démarche (simulation de panne, bascule sur le replica)
             </Typography>
-            <Container maxWidth="md">
               <Typography
                 variant="body1"
                 align="justify"
@@ -126,7 +125,6 @@ La prochaine étape était de créer un serveur replica dans Azure, puis de réi
                 </ListItem>
               </List>
             </Container>
-          </Container>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} style={theme.contrastColor}>
