@@ -148,7 +148,7 @@ const StageFaibrikDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Ensuite j&apos;ai entamé le développement en version &apos;standalone&apos; de l&apos;application. J&apos;ai pu me familiariser avec le développement en Node.js ainsi que le processus d&apos;enregistrement d&apos;une application dans Microsoft Azure. Pendant cette phase la communication du bot avec Teams passait par intermédiaire d&apos;un tunnel Ngrok. Une partie du temps était consacré à la création des dialogues (avec la technologie &apos;Adaptive Cards&apos; de Microsoft), qui permettent l&apos;intéraction avec l&apos;utilisateur. Ensuite j&apos;ai géré l&apos;authentification avec Auth0, basé sur l&apos;exemple SSO fourni dans les docs Microsoft Teams.
+              Ensuite j&apos;ai entamé le développement en version &apos;standalone&apos; de l&apos;application. J&apos;ai pu me familiariser avec le développement en Node.js ainsi que le processus d&apos;enregistrement d&apos;une application dans Microsoft Azure. Pendant cette phase la communication du bot avec Teams passait par intermédiaire d&apos;un tunnel Ngrok. Une partie du temps était consacrée à la création des dialogues (avec la technologie &apos;Adaptive Cards&apos; de Microsoft), qui permettent l&apos;intéraction avec l&apos;utilisateur. Ensuite j&apos;ai géré l&apos;authentification avec Auth0, basé sur l&apos;exemple SSO fourni dans les docs Microsoft Teams.
             </Typography>
             <Typography
               variant="body1"
@@ -215,7 +215,7 @@ const StageFaibrikDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "4rem 0 1rem" }}
             >
-              Les compétences officielles couvertes par cet atelier sont les suivantes :
+              Les compétences officielles couvertes pendant ce stage sont les suivantes :
             </Typography>
             <List>
               <ListItem>

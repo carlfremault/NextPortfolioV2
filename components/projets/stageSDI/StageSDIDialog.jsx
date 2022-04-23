@@ -179,10 +179,10 @@ const StageSDIDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Pour mon stage de première année j’ai été accueilli par Sport Data
+              Pour mon stage de première année j&apos;ai été accueilli par Sport Data
               Intelligence, une start-up basée à Annecy (74), du 24 mai au 2
-              juillet 2021. Pendant ce stage j’ai crée le nouveau site web
-              vitrine de l’entreprise.
+              juillet 2021. Pendant ce stage j&apos;ai créé le nouveau site web
+              vitrine de l&apos;entreprise.
             </Typography>
             <Typography
               variant="body1"
@@ -190,8 +190,8 @@ const StageSDIDialog = ({ handleClose, open }) => {
               style={{ margin: "1rem 0" }}
             >
               Cette première expériénce professionnelle en tant que développeur
-              m’a permis de consolider mes acquis en JavaScript, React, Next.js
-              et Material UI. J’ai également appris à développer dans un cadre
+              m&apos;a permis de consolider mes acquis en JavaScript, React, Next.js
+              et Material UI. J&apos;ai également appris à développer dans un cadre
               professionnel: travailler en équipe, avec des contraintes, des
               responsabilités, des délais à respecter et des attentes à
               satisfaire.
@@ -236,7 +236,7 @@ const StageSDIDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "4rem 0 1rem" }}
             >
-              Les compétences officielles couvertes par cet atelier sont les suivantes :
+              Les compétences officielles couvertes pendant ce stage sont les suivantes :
             </Typography>
             <List>
               <ListItem>

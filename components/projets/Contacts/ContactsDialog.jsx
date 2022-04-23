@@ -150,9 +150,8 @@ const ContactsDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Pendant cette exercice nous avons fait évoluer une petite application de bureau permettant d&apos;enregistrer, supprimer et rechercher des contacts. Le travail à faire était divisé en quatre sprints, puis à la fin nous avons généré la documentation technique de l&apos;application.
+              Pendant cet exercice nous avons fait évoluer une petite application de bureau permettant d&apos;enregistrer, supprimer et rechercher des contacts. Le travail à faire était divisé en quatre sprints, puis à la fin nous avons généré la documentation technique de l&apos;application.
             </Typography>
-            <Container maxWidth="md">
               <Typography
                 variant="body1"
                 align="justify"
@@ -174,7 +173,6 @@ const ContactsDialog = ({ handleClose, open }) => {
                 <ListItemText inset>- Planifier les activités</ListItemText>
               </ListItem>
             </List>
-            </Container>
           </Container>
         </DialogContent>
         <DialogActions>

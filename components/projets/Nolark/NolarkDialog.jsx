@@ -116,7 +116,7 @@ const DenombrementsDialog = ({ handleClose, open }) => {
                 style={{ margin: "1rem 0" }}
               >
               </Typography>
-              Pour optimiser le résultats des moteurs de recherche (SEO) nous avons implémenté un fichier &apos;sitemap.xml&apos; et corrigé le fichier &apos;robots.txt&apos; pour signaler ce nouveau sitemap et pour autoriser les robots à scanner le site. Nous avons également ajouté des balises &apos;strong&apos; pour signaler le contenu du site aux robots et implémenté l&apos;utilisation de balises HTML sémantiques.
+              Pour optimiser les résultats des moteurs de recherche (SEO) nous avons implémenté un fichier &apos;sitemap.xml&apos; et corrigé le fichier &apos;robots.txt&apos; pour signaler ce nouveau sitemap et pour autoriser les robots à scanner le site. Nous avons également ajouté des balises &apos;strong&apos; pour signaler le contenu du site aux robots et implémenté l&apos;utilisation de balises HTML sémantiques.
               <Typography
                 variant="body1"
                 align="justify"

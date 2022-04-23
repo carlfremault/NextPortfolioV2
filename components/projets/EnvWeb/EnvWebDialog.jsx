@@ -94,7 +94,7 @@ const EnvWebDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Dans cette exercice nous avons installé un environnement technique &quot;type&quot; pour un développement web classique : une VM Debian avec installation de serveur web Apache 2 et PHP, une deuxième VM Debian avec MariaDB.
+              Dans cet exercice nous avons installé un environnement technique &quot;type&quot; pour un développement web classique : une VM Debian avec installation de serveur web Apache 2 et PHP, une deuxième VM Debian avec MariaDB.
             </Typography>
             <Typography
               variant="body1"

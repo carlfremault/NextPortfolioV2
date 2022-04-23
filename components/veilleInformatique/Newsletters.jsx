@@ -285,7 +285,7 @@ const Newsletters = () => {
             </ListItem>
           </List>
           <Typography variant="body1" align="justify" gutterBottom style={{margin: "2rem 0 0"}}>
-            Pendant la formation au sein du CNED nous avons régulièrement été confronté à des nouvelles technologies. Lors de l&apos;installation, souvent les éditeurs proposent l&apos;inscription à leur newsletter. Ainsi je me suis inscrit également aux newsletters de Neo4j et MongoDB, technologies qui ont particulièrement retenus mon attention.
+            Pendant la formation au sein du CNED nous avons régulièrement été confronté à des nouvelles technologies. Lors de l&apos;installation, souvent les éditeurs proposent l&apos;inscription à leur newsletter. Ainsi je me suis inscrit également aux newsletters de Neo4j et MongoDB, technologies qui ont particulièrement retenues mon attention.
           </Typography>
           <Grid
             container

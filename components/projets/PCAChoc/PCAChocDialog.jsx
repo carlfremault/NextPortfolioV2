@@ -81,7 +81,7 @@ const PCAChocDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Dans le cadre d&apos;un audit interne nous avons examiné la phase &quot;maintien en codition opérationnelle&quot; des briques applicatives d&apos;un service web. À l&apos;aide du contrat d&apos;hébergement ainsi que des scénarios présentés dans le Plan de Continuité d&apos;Activité (PCA) nous avons vérifié les prestations et rédigé un rapport d&apos;audit. Après nous avons effectué des tests de performance avec Apache Bench.
+              Dans le cadre d&apos;un audit interne nous avons examiné la phase &quot;maintien en condition opérationnelle&quot; des briques applicatives d&apos;un service web. À l&apos;aide du contrat d&apos;hébergement ainsi que des scénarios présentés dans le Plan de Continuité d&apos;Activité (PCA) nous avons vérifié les prestations et rédigé un rapport d&apos;audit. Après nous avons effectué des tests de performance avec Apache Bench.
             </Typography>
             <Typography
               variant="body1"
@@ -90,7 +90,6 @@ const PCAChocDialog = ({ handleClose, open }) => {
             >
               Les résultats étant insatisfaisants, nous avons procédé à examiner l&apos;offre cloud Azure de type PaaS afin de proposer une autre solution d&apos;hébergement, avec des meilleures performances.
             </Typography>
-            <Container maxWidth="md">
               <Typography
                 variant="body1"
                 align="justify"
@@ -112,7 +111,6 @@ const PCAChocDialog = ({ handleClose, open }) => {
                   <ListItemText inset>- Vérifier les conditions de la continuité d&apos;un service informatique</ListItemText>
                 </ListItem>
               </List>
-            </Container>
           </Container>
         </DialogContent>
         <DialogActions>

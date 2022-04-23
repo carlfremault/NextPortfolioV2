@@ -151,7 +151,6 @@ const DenombrementsDialog = ({ handleClose, open }) => {
             >
               Pour cet exercice de revue de code j&apos;ai corrigé une application console qui permet de calculer des dénombrements. Des règles de codage à respecter étaient fournis, un rapport d&apos;analyse était à compléter.
             </Typography>
-            <Container maxWidth="md">
               <Typography
                 variant="body1"
                 align="justify"
@@ -173,7 +172,6 @@ const DenombrementsDialog = ({ handleClose, open }) => {
                   <ListItemText inset>- Traiter des demandes concernant les applications</ListItemText>
                 </ListItem>
               </List>
-            </Container>
           </Container>
         </DialogContent>
         <DialogActions>
