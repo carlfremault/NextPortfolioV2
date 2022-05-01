@@ -12,7 +12,7 @@ const Dossier = () => {
         <>
             <Navbar />
             <Container maxWidth={false} style={theme.lightBackgroundSection}>
-                <SectionTitle title="Dossier épreuves E4 et E5 1/2" />
+                <SectionTitle title="Dossier épreuves E4 et E5" />
                 <Grid
                     container
                     direction="column"
