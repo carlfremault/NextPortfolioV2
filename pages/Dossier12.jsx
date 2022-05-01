@@ -5,14 +5,14 @@ import Navbar from "../components/navbar/Navbar";
 import SectionTitle from "../components/tools/SectionTitle";
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 
-const dossier = () => {
+const Dossier = () => {
     const theme = useTheme();
 
     return (
         <>
             <Navbar />
             <Container maxWidth={false} style={theme.lightBackgroundSection}>
-                <SectionTitle title="Dossier épreuves E4 et E5" />
+                <SectionTitle title="Dossier épreuves E4 et E5 1/2" />
                 <Grid
                     container
                     direction="column"
@@ -55,4 +55,4 @@ const dossier = () => {
     );
 };
 
-export default dossier;
+export default Dossier;
