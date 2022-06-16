@@ -15,11 +15,6 @@ const Menu = () => {
       path: "projets",
       offset: 30,
     },
-    {
-      item: "Veille Informatique",
-      path: "veilleinfo",
-      offset: -60,
-    },
   ];
 };
 

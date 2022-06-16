@@ -16,30 +16,8 @@ const Projets = () => {
     <section id="projets" data-testid="projets">
       <Container maxWidth={false} style={theme.lightBackgroundSection}>
         <SectionTitle title="Projets" />
-        <Grid
-          container
-          direction="column"
-          justifyContent="space-between"
-          alignItems="center"
-        >
-          <Grid item style={{ textAlign: "center" }}>
-          <a
-            href="/pdf/TableauSynthese.pdf"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Button
-              variant="outlined"
-              style={theme.contrastButton}
-              startIcon={<PictureAsPdfIcon />}
-            >
-              Tableau de synthèse
-            </Button>
-          </a>
-        </Grid>
-      </Grid>
-      <ProjectCardContainer />
-    </Container>
+        <ProjectCardContainer />
+      </Container>
     </section >
   );
 };
