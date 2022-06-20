@@ -48,6 +48,7 @@ const lightTheme = createTheme({
     color: lightColors.primary,
     margin: "0 2rem 0 2rem",
     textTransform: "capitalize",
+    whiteSpace: "nowrap",
   },
   contrastColor: {
     color: lightColors.contrast,

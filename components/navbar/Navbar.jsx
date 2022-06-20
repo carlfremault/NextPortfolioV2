@@ -3,19 +3,15 @@ import { useEffect, useRef, useState } from "react";
 import { useTheme } from "@material-ui/styles";
 import {
   AppBar,
-  Grid,
   Hidden,
-  IconButton,
   Slide,
   Toolbar,
   useScrollTrigger,
 } from "@material-ui/core";
-import DesktopNavigation from "../navbar/DesktopNavigation";
-import MobileNavigation from "../navbar/MobileNavigation";
-import MenuIcon from "@material-ui/icons/Menu";
-import MenuOpenIcon from "@material-ui/icons/MenuOpen";
-import ThemeSwitcher from "./ThemeSwitcher";
+import DesktopNavbar from "./DesktopNavbar";
 import Menu from "./Menu";
+import MobileNavbar from "./MobileNavbar";
+import MobileNavigation from "../navbar/MobileNavigation";
 
 // Navigation items
 const menu = Menu();
@@ -69,44 +65,12 @@ const Navbar = (props) => {
         <AppBar style={theme.appbar}>
           <div ref={node}>
             <Toolbar>
-              <Grid
-                container
-                direction="row"
-                justifyContent="center"
-                alignItems="center"
-              >
-                <Grid
-                  item
-                  style={{
-                    visibility: "hidden",
-                  }}
-                >
-                  <ThemeSwitcher />
-                </Grid>
-                <Grid
-                  item
-                  style={{
-                    marginLeft: "auto",
-                  }}
-                >
-                  <Hidden smDown>
-                    <DesktopNavigation menu={menu} />
-                  </Hidden>
-                  <Hidden mdUp>
-                    <IconButton color="primary" onClick={toggleDrawer}>
-                      {openDrawer ? <MenuOpenIcon /> : <MenuIcon />}
-                    </IconButton>
-                  </Hidden>
-                </Grid>
-                <Grid
-                  item
-                  style={{
-                    marginLeft: "auto",
-                  }}
-                >
-                  <ThemeSwitcher />
-                </Grid>
-              </Grid>
+              <Hidden smDown>
+                <DesktopNavbar desktopMenu={menu} />
+              </Hidden>
+              <Hidden mdUp>
+                <MobileNavbar drawerState={openDrawer} drawerToggle={toggleDrawer} />
+              </Hidden>
             </Toolbar>
           </div>
         </AppBar>

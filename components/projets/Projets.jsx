@@ -13,7 +13,7 @@ const Projets = () => {
   const theme = useTheme();
 
   return (
-    <section id="projets" data-testid="projets">
+    <section id="projects" data-testid="projets">
       <Container maxWidth={false} style={theme.lightBackgroundSection}>
         <SectionTitle title="Projets" />
         <ProjectCardContainer />

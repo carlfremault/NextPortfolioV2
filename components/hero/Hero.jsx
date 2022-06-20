@@ -1,7 +1,7 @@
 import { Button, Container, Grid, Hidden, Typography } from "@material-ui/core";
-import { useTheme } from "@material-ui/styles";
 import { useContext } from "react";
-import { ColorContext } from "../../pages/_app";
+import { useTheme } from "@material-ui/styles";
+import { ColorContext, LanguageContext } from "../../pages/_app";
 import { Link } from "react-scroll";
 
 /**
@@ -10,6 +10,7 @@ import { Link } from "react-scroll";
 const Hero = () => {
   const theme = useTheme();
   const { darkMode } = useContext(ColorContext);
+  const { langFR } = useContext(LanguageContext);
 
   return (
     <section id="hero">
@@ -29,29 +30,14 @@ const Hero = () => {
             </Grid>
             <Grid item>
               <Typography variant="h2" component="h1">
-                Étudiant développeur
+                {langFR ? 'Développeur web' : 'Web developer'}
               </Typography>
             </Grid>
-            <Hidden only={["xs"]}>
-              <Grid item>
-                <Typography variant="subtitle1" component="h2">
-                  2ième année BTS SIO - Solutions Logicielles et Applications
-                  Métiers
-                </Typography>
-              </Grid>
-            </Hidden>
-            <Hidden smUp>
-              <Grid item>
-                <Typography variant="subtitle1" component="h2">
-                  2ième année BTS SIO
-                </Typography>
-              </Grid>
-              <Grid item>
-                <Typography variant="subtitle1" component="h2">
-                  Solutions Logicielles et Applications Métiers
-                </Typography>
-              </Grid>
-            </Hidden>
+            <Grid item>
+              <Typography variant="subtitle1" component="h2">
+                JavaScript, React, Node.js, ...
+              </Typography>
+            </Grid>
             <Grid item>
               <Link
                 to={"projets"}
@@ -61,13 +47,13 @@ const Hero = () => {
                 duration={500}
               >
                 <Button variant="outlined" style={theme.heroButton}>
-                  Découvrez mes projets
+                  {langFR ? 'Découvrez mes projets' : 'Discover my projects'}
                 </Button>
               </Link>
             </Grid>
           </Grid>
           <Typography style={theme.credits}>
-            Photo par{" "}
+            {langFR ? 'Photo par ' : 'Photo by '}
             {darkMode ? (
               <a
                 href="https://unsplash.com/@matthewhenry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
@@ -86,8 +72,8 @@ const Hero = () => {
               >
                 Adriel Kloppenburg
               </a>
-            )}{" "}
-            sur{" "}
+            )}
+            {langFR ? ' sur ' : ' on '}
             <a
               href="https://unsplash.com/s/photos/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
               target="_blank"

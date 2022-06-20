@@ -10,7 +10,7 @@ import Competences from "./Competences";
  */
 const Apropos = () => {
   return (
-    <section id="apropos" data-testid="apropos">
+    <section id="about" data-testid="apropos">
       <Container maxWidth={false}>
         <SectionTitle title="À propos" />
         <Bio />
