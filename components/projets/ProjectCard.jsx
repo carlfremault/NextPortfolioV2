@@ -1,7 +1,9 @@
 import PropTypes from "prop-types";
 import { Button, Grid, Typography } from "@material-ui/core";
+import { useContext } from "react";
 import { useTheme } from "@material-ui/styles";
 import { useState } from "react";
+import { LanguageContext } from "../../pages/_app";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkIcon from "@material-ui/icons/Link";
@@ -45,6 +47,8 @@ const ProjectCard = ({
   };
 
   const DialogComponent = dialog;
+
+  const { langFR } = useContext(LanguageContext);
 
   return (
     <Grid container direction="row">
@@ -118,7 +122,7 @@ const ProjectCard = ({
             style={theme.primaryButton}
             startIcon={<AddCircleOutlineIcon />}
           >
-            Plus d&apos;infos
+            {langFR ? "Plus d'infos" : "Details"}
           </Button>
         </a>
         <DialogComponent open={open} handleClose={handleClose} />

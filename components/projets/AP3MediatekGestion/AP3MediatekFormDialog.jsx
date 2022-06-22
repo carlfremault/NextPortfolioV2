@@ -7,22 +7,30 @@ import {
   DialogContent,
   DialogTitle,
   Grid,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   Typography,
 } from "@material-ui/core";
+import { useContext } from "react";
 import { useTheme } from "@material-ui/styles";
+import { LanguageContext } from "../../../pages/_app";
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import BuildIcon from "@material-ui/icons/Build";
-import CheckIcon from "@material-ui/icons/Check";
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 import GitHubIcon from "@material-ui/icons/GitHub";
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
 import Image from "next/image";
 import AP3MediatekFormGallery from "./AP3MediatekFormGallery";
 import ReactPlayer from "react-player/lazy";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  dialogDateFR,
+  dialogDateGB,
+  dialogTextFR,
+  dialogTextGB,
+  dialogVideoTextFR,
+  dialogVideoTextGB
+} from "./AP3MediatekGestionText";
+import DialogParagraph from "../../tools/DialogParagraph";
 
 const myLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 75}`;
@@ -30,6 +38,7 @@ const myLoader = ({ src, width, quality }) => {
 
 const AP1MediatekFormDialog = ({ handleClose, open }) => {
   const theme = useTheme();
+  const { langFR } = useContext(LanguageContext);
 
   return (
     <>
@@ -42,7 +51,8 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
         fullWidth={true}
         maxWidth="lg"
       >
-        <DialogTitle>Application de bureau Mediatek86  - C#, MySQL</DialogTitle>
+        <DialogTitle>
+          {langFR ? cardTitleFR : cardTitleGB}</DialogTitle>
         <DialogContent dividers>
           <Container
             maxWidth="md"
@@ -50,6 +60,17 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
           >
             <AP3MediatekFormGallery />
           </Container>
+          {!langFR &&
+            <Container maxWidth="md">
+              <Typography
+                variant="subtitle1"
+                align="center"
+                style={{ margin: "1rem 0" }}
+              >
+                As this was a school project, the entire application as well as all documents are in French.
+              </Typography>
+            </Container>
+          }
           <Grid
             container
             direction="column"
@@ -80,7 +101,9 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<AssignmentIcon />}
                 >
-                  Suivi de projet Trello
+                  {langFR ?
+                    "Suivi de projet Trello" : "Trello project"
+                  }
                 </Button>
               </a>
               <a
@@ -93,7 +116,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<DownloadForOfflineIcon />}
                 >
-                  Télécharger l&apos;application
+                  {langFR ? "Télécharger l'application" : "Download"}
                 </Button>
               </a>
             </Grid>
@@ -108,7 +131,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<BuildIcon />}
                 >
-                  Documentation technique
+                  {langFR ? "Documentation technique" : "Technical documentation"}
                 </Button>
               </a>
               <a
@@ -121,7 +144,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<PictureAsPdfIcon />}
                 >
-                  Contexte
+                  {langFR ? "Contexte" : "Context"}
                 </Button>
               </a>
               <a
@@ -134,7 +157,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<PictureAsPdfIcon />}
                 >
-                  Expression des besoins
+                  {langFR ? "Expression des besoins" : "Requirements"}
                 </Button>
               </a>
               <a
@@ -147,7 +170,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<PictureAsPdfIcon />}
                 >
-                  Compte Rendu
+                  {langFR ? "Compte Rendu" : "Report"}
                 </Button>
               </a>
             </Grid>
@@ -211,42 +234,19 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
           </Container>
           <Container maxWidth="md">
             <Typography variant="h6" style={{ margin: "2rem 0" }}>
-              17 mars 2022
+              {langFR ? dialogDateFR : dialogDateGB}
             </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              La mission donnée pour cet Atelier Professionnel était de faire évoluer l&apos;application de bureau permettant de gérer le catalogue d&apos;une médiathèque. Il fallait implémenter la possibilité d&apos;ajouter, modifier et supprimer des documents, commandes de documents, et abonnements aux revues.
-            </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              L&apos;application est liée à une base de données MySQL hébergée dans le cloud Azure. Les mésures nécessaires à la préservation de l&apos;intégrité de la base de données ont été prises : utilisation de transactions, triggers et procédures stockées.
-            </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Des systèmes d&apos;authentification et de journalisation ont été mises en place, et des tests unitaires et fonctionnels ont été créés. J&apos;ai également généré la documentation technique.
-            </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              À la base cet Atelier est conçu pour être effectué par plusieurs développeurs. En raison des particularités de la formation à distance CNED cependant j&apos;ai choisi de le faire seul. Dans ce cas il était permis d&apos;omettre deux des missions qui étaient optionnelles. J&apos;ai toutefois préféré réaliser une de ces deux missions.
-            </Typography>
+            {langFR ?
+              dialogTextFR.map(el => <DialogParagraph paragraphText={el} />)
+              :
+              dialogTextGB.map(el => <DialogParagraph paragraphText={el} />)
+            }
             <Typography
               variant="body1"
               align="justify"
               style={{ margin: "2rem 0 1rem" }}
             >
-              Voici une vidéo qui présente l&apos;utilisation de l&apos;application :
+              {langFR ? dialogVideoTextFR : dialogVideoTextGB}
             </Typography>
           </Container>
           <Grid
@@ -268,77 +268,6 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
               }}
             />
           </Grid>
-          <Container maxWidth="md">
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "4rem 0 1rem" }}
-            >
-              Les compétences officielles couvertes par cet atelier sont les suivantes :
-            </Typography>
-            <List>
-              <ListItem>
-                <ListItemIcon style={{ transform: "translate(10px)" }}>
-                  <CheckIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>Gérer le patrimoine informatique</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Exploiter des référentiels, normes et standards adoptés par le prestataire informatique</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Mettre en place et vérifier les niveaux d&apos;habilitation associés à un service</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Vérifier le respect des règles d&apos;utilisation des ressources numériques</ListItemText>
-              </ListItem>
-            </List>
-            <List>
-              <ListItem>
-                <ListItemIcon style={{ transform: "translate(10px)" }}>
-                  <CheckIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>Répondre aux incidents et aux demandes d&apos;assistance et d&apos;évolution</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Collecter, suivre et orienter des demandes</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Traiter des demandes concernant les applications</ListItemText>
-              </ListItem>
-            </List>
-            <List>
-              <ListItem>
-                <ListItemIcon style={{ transform: "translate(10px)" }}>
-                  <CheckIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>Travailler en mode projet</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Analyser les objectifs et les modalités d&apos;organisation d&apos;un projet</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Planifier les activités</ListItemText>
-              </ListItem>
-            </List>
-            <List>
-              <ListItem>
-                <ListItemIcon style={{ transform: "translate(10px)" }}>
-                  <CheckIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>Mettre à disposition des utilisateurs un service informatique</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Réaliser les tests d&apos;intégration et d&apos;acceptation d&apos;un service</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Déployer un service</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Accompagner les utilisateurs dans la mise en place d&apos;un service</ListItemText>
-              </ListItem>
-            </List>
-            </Container>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} style={theme.contrastColor}>

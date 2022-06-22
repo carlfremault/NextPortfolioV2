@@ -1,14 +1,27 @@
+import { useContext } from "react";
+import { LanguageContext } from "../../../pages/_app";
 import ProjectCard from "../ProjectCard";
 import AP3MediatekFormDialog from "./AP3MediatekFormDialog";
+import { cardTitleFR, 
+  cardTitleGB, 
+  cardSubTitleFR, 
+  cardSubTitleGB,
+  cardImageTitleFR,
+  cardImageTitleGB,
+  cardTextFR,
+  cardTextGB  
+} from "./AP3MediatekGestionText";
 
 const AP3MediatekFormCard = () => {
+  const { langFR } = useContext(LanguageContext);
+
   return (
     <ProjectCard
-      title="Atelier 3 : Application de bureau Mediatek86 - C#, MySQL"
-      subtitle="Atelier de professionnalisation BTS SIO - 17/03/2022"
+      title={langFR ? cardTitleFR : cardTitleGB}
+      subtitle={langFR ? cardSubTitleFR : cardSubTitleGB}
       image="/imgs/A3Application.png"
-      imageTitle="Application de bureau MediaTek86"
-      cardText="Pour cet Atelier Professionnel j&apos;ai implémenté les évolutions demdandées pour l&apos;application de bureau de gestion du catalogue d&apos;une médiathèque : gestion de documents, d&apos;abonnements et de commandes. Lien avec base de données dans le cloud Azure."
+      imageTitle={langFR ? cardImageTitleFR : cardImageTitleGB}
+      cardText={langFR ? cardTextFR : cardTextGB}
       repoLink="https://github.com/carlfremault/Mediatek86"
       dialog={AP3MediatekFormDialog}
     />

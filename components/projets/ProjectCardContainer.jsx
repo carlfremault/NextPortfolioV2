@@ -1,5 +1,7 @@
 import { Grid } from "@material-ui/core";
+import { useContext } from "react";
 import { useTheme } from "@material-ui/styles";
+import { ColorContext, LanguageContext } from "../../pages/_app";
 import AlgosTriCard from "./algosTri/AlgosTriCard";
 import AP1MediatekFormCard from "./AP1MediatekFormation/AP1MediatekFormCard";
 import AP3MediatekFormCard from "./AP3MediatekGestion/AP3MediatekFormCard";
@@ -10,15 +12,11 @@ import CalculsCard from "./Calculs/CalculsCard";
 import ContactsCard from "./Contacts/ContactsCard";
 import DenombrementsCard from "./Denombrements/DenombrementsCard";
 import EnvWebCard from "./EnvWeb/EnvWebCard";
-import GestionReseauCard from "./GestionReseau/GestionReseauCard";
-import GLPICard from "./GLPI/GLPICard";
 import GLPIDeploiementCard from "./GLPIDeploiement/GLPIDeploiementCard";
 import MigrationBDDCard from "./MigrationBDD/MigrationBDDCard";
 import MigrationChocCard from "./MigrationChoc/MigrationChocCard";
 import MSProjectCard from "./MSProject/MSProjectCard";
 import NolarkCard from "./Nolark/NolarkCard";
-import OCSICard from "./OCSI/OCSICard";
-import PacketTracerCard from "./PacketTracer/PacketTracerCard";
 import PCAChocCard from "./PCAChoc/PCAChocCard";
 import PortfolioCard from "./portfolioNext/PortfolioCard";
 import PPEMediaTekCard from "./PPEMediaTek/PPEMediaTekCard";
@@ -26,17 +24,17 @@ import StageFaibrikCard from "./stageFaibrik/StageFaibrikCard";
 import StageSDICard from "./stageSDI/StageSDICard";
 import SubTitle from "../tools/SubTitle";
 
-
 /**
  * Grid container for ProjectCards
  * When adding a new ProjectCard it needs to be inserted in a new Grid item
  */
 const ProjectCardContainer = () => {
   const theme = useTheme();
+  const { langFR } = useContext(LanguageContext);
 
   return (
     <Grid container direction="column" alignItems="center">
-      <SubTitle title = "Projets professionnels" />
+      <SubTitle title={langFR ? "Projets professionnels" : "Professional projects"} />
       <Grid item style={theme.projectCard} id="AP1">
         <AP1MediatekFormCard />
       </Grid>
@@ -49,7 +47,7 @@ const ProjectCardContainer = () => {
       <Grid item style={theme.projectCard}>
         <StageSDICard />
       </Grid>
-      <SubTitle title = "Projets scolaires et personnels" />
+      <SubTitle title={langFR ? "Projets scolaires et personnels" : "Course projects, personal projects"} />
       <Grid item style={theme.projectCard}>
         <MigrationBDDCard />
       </Grid>

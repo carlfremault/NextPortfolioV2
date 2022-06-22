@@ -29,7 +29,7 @@ const DesktopNavigation = ({ menu }) => {
           smooth={true}
           offset={item.offset}
           duration={500}
-          key={item.item}
+          key={item.itemGB}
         >
           <Button>
             <Typography

@@ -1,4 +1,4 @@
-import { Button, Container, Grid, Hidden, Typography } from "@material-ui/core";
+import { Button, Container, Grid, Typography } from "@material-ui/core";
 import { useContext } from "react";
 import { useTheme } from "@material-ui/styles";
 import { ColorContext, LanguageContext } from "../../pages/_app";
@@ -35,7 +35,12 @@ const Hero = () => {
             </Grid>
             <Grid item>
               <Typography variant="subtitle1" component="h2">
-                JavaScript, React, Node.js, ...
+                {langFR ? 
+                  "Fraîchement reconverti, très motivé, flexible et géographiquement mobile, je suis à la recherche d'un nouveau challenge et d'un nouveau poste."
+                  :
+                  'Freshly retrained, highly motivated, flexible and geographically mobile, I am currently looking for a new challenge and position.'
+                }
+                
               </Typography>
             </Grid>
             <Grid item>
