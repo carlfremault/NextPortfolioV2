@@ -45,7 +45,7 @@ const Hero = () => {
             </Grid>
             <Grid item>
               <Link
-                to={"projets"}
+                to={"projects"}
                 spy={true}
                 smooth={true}
                 offset={30}

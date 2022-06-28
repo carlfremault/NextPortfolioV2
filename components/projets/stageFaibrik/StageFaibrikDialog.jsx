@@ -13,11 +13,22 @@ import {
   ListItemText,
   Typography,
 } from "@material-ui/core";
+import { useContext } from "react";
 import { useTheme } from "@material-ui/styles";
+import { LanguageContext } from "../../../pages/_app";
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
 import CheckIcon from "@material-ui/icons/Check";
 import Image from "next/image";
 import StageFaibrikGallery from "./StageFaibrikGallery";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  dialogDateFR,
+  dialogDateGB,
+  dialogTextFR,
+  dialogTextGB,
+} from "./StageFaibrikText";
+import DialogParagraph from "../../tools/DialogParagraph";
 
 const myLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 75}`;
@@ -25,6 +36,7 @@ const myLoader = ({ src, width, quality }) => {
 
 const StageFaibrikDialog = ({ handleClose, open }) => {
   const theme = useTheme();
+  const { langFR } = useContext(LanguageContext);
 
   return (
     <>
@@ -37,7 +49,9 @@ const StageFaibrikDialog = ({ handleClose, open }) => {
         fullWidth={true}
         maxWidth="lg"
       >
-        <DialogTitle>Développement d&apos;un bot Microsoft Teams - Node.js</DialogTitle>
+        <DialogTitle>
+          {langFR ? cardTitleFR : cardTitleGB}
+        </DialogTitle>
         <DialogContent dividers data-testid="dialogContent">
           <Container
             maxWidth="md"
@@ -45,6 +59,17 @@ const StageFaibrikDialog = ({ handleClose, open }) => {
           >
             <StageFaibrikGallery />
           </Container>
+          {!langFR &&
+            <Container maxWidth="md">
+              <Typography
+                variant="subtitle1"
+                align="center"
+                style={{ margin: "1rem 0" }}
+              >
+                As this internship was a part of my (French) training program, all documents are in French.
+              </Typography>
+            </Container>
+          }
           <Grid
             container
             direction="column"
@@ -62,7 +87,7 @@ const StageFaibrikDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<PictureAsPdfIcon />}
                 >
-                  Rapport de Stage (PDF)
+                  {langFR ? "Rapport de stage" : "Internship report"}
                 </Button>
               </a>
             </Grid>
@@ -126,43 +151,19 @@ const StageFaibrikDialog = ({ handleClose, open }) => {
           </Container>
           <Container maxWidth="md">
             <Typography variant="h6" style={{ margin: "2rem 0" }}>
-              31 décembre 2021
+              {langFR ? dialogDateFR : dialogDateGB}
             </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Pour mon stage de deuxième année j&apos;ai intégré l&apos;équipe de fAIbrik, start-up basée à Annecy (74), du 15 novembre au 31 décembre
-              2021. La mission pour ce stage était de créer une application Microsoft Teams qui permet d&apos;envoyer des alertes aux utilisateurs de la plateforme fAIbrik lorsqu&apos;un événement s&apos;y produit.
-            </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Le projet de stage était très complet, et passait par une première phase d&apos;étude et d&apos;analyse des possiblités d&apos;applications que propose Microsoft Teams. Après avoir cerné les besoins, il a été décidé de créer un bot.
-            </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Ensuite j&apos;ai entamé le développement en version &apos;standalone&apos; de l&apos;application. J&apos;ai pu me familiariser avec le développement en Node.js ainsi que le processus d&apos;enregistrement d&apos;une application dans Microsoft Azure. Pendant cette phase la communication du bot avec Teams passait par intermédiaire d&apos;un tunnel Ngrok. Une partie du temps était consacrée à la création des dialogues (avec la technologie &apos;Adaptive Cards&apos; de Microsoft), qui permettent l&apos;intéraction avec l&apos;utilisateur. Ensuite j&apos;ai géré l&apos;authentification avec Auth0, basé sur l&apos;exemple SSO fourni dans les docs Microsoft Teams.
-            </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Quand le bot était fonctionnel en local sur ma machine, j&apos;ai procédé avec l&apos;intégration avec le plateforme fAIbrik. Il fallait gérer l&apos;abonnement (et désabonnement) des utilisateurs aux alertes (dans une base de données MongoDB) en les envoyant dans une &apos;queue&apos; RabbitMQ, ainsi que l&apos;écoute des événements envoyés sur une autre &apos;queue&apos;, afin d&apos;afficher des alertes.
-            </Typography>
+            {langFR ?
+              dialogTextFR.map(el => <DialogParagraph paragraphText={el} />)
+              :
+              dialogTextGB.map(el => <DialogParagraph paragraphText={el} />)
+            }
             <Typography
               variant="body1"
               align="justify"
               style={{ margin: "1rem 0 0 0" }}
             >
-              Expériences :
+              {langFR? "Expériences :" : "Experiences"}
             </Typography>
             <List>
               <ListItem>
@@ -199,75 +200,13 @@ const StageFaibrikDialog = ({ handleClose, open }) => {
                 <ListItemIcon>
                   <CheckIcon color="secondary" />
                 </ListItemIcon>
-                <ListItemText primary="Méthode Agile, Daily Scrum Meetings, Trello, Gitlab" />
+                <ListItemText primary={langFR ? "Méthode Agile, Daily Scrum Meetings, Trello, Gitlab": "Agile methodology, Daily Scrum Meetings, Trello, Gitlab"} />
               </ListItem>
               <ListItem>
                 <ListItemIcon>
                   <CheckIcon color="secondary" />
                 </ListItemIcon>
                 <ListItemText primary="Ngrok, Postman, Auth0, RabbitMQ" />
-              </ListItem>
-            </List>
-          </Container>
-          <Container maxWidth="md">
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "4rem 0 1rem" }}
-            >
-              Les compétences officielles couvertes pendant ce stage sont les suivantes :
-            </Typography>
-            <List>
-              <ListItem>
-                <ListItemIcon style={{ transform: "translate(10px)" }}>
-                  <CheckIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>Répondre aux incidents et aux demandes d&apos;assistance et d&apos;évolution</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Collecter, suivre et orienter des demandes</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Traiter des demandes concernant les applications</ListItemText>
-              </ListItem>
-            </List>
-            <List>
-              <ListItem>
-                <ListItemIcon style={{ transform: "translate(10px)" }}>
-                  <CheckIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>Développer la présence en ligne de l&apos;organisation</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Participer à la valorisation de l&apos;image de l&apos;organisation sur les médias numériques en tenant compte du cadre juridique et des enjeux économiques</ListItemText>
-              </ListItem>
-            </List>
-            <List>
-              <ListItem>
-                <ListItemIcon style={{ transform: "translate(10px)" }}>
-                  <CheckIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>Travailler en mode projet</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Analyser les objectifs et les modalités d&apos;organisation d&apos;un projet</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Planifier les activités</ListItemText>
-              </ListItem>
-            </List>
-            <List>
-              <ListItem>
-                <ListItemIcon style={{ transform: "translate(10px)" }}>
-                  <CheckIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>Mettre à disposition des utilisateurs un service informatique</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Réaliser les tests d&apos;intégration et d&apos;acceptation d&apos;un service</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Déployer un service</ListItemText>
               </ListItem>
             </List>
           </Container>
@@ -279,7 +218,7 @@ const StageFaibrikDialog = ({ handleClose, open }) => {
             style={theme.contrastColor}
             data-testid="projectCardCloseDialog"
           >
-            Fermer
+            {langFR ? 'Fermer' : 'Close'}
           </Button>
         </DialogActions>
       </Dialog>

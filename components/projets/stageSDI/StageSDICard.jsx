@@ -1,16 +1,28 @@
 import ProjectCard from "../ProjectCard";
 import StageSDIDialog from "./StageSDIDialog";
+import { useContext } from "react";
+import { LanguageContext } from "../../../pages/_app";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  cardSubTitleFR,
+  cardSubTitleGB,
+  cardImageTitleFR,
+  cardImageTitleGB,
+  cardTextFR,
+  cardTextGB
+} from "./StageSDIText";
 
 const StageSDICard = () => {
+  const { langFR } = useContext(LanguageContext);
+
   return (
     <ProjectCard
-      title="Création de site vitrine - Next.js"
-      subtitle="Stage en milieu professionnel - 24/05 au 02/07/2021"
+    title={langFR ? cardTitleFR : cardTitleGB}
+    subtitle={langFR ? cardSubTitleFR : cardSubTitleGB}
       image="/imgs/SDI.png"
-      imageTitle="Site web Sport Data Intelligence"
-      cardText="Pour mon stage de première année j’ai été accueilli par Sport Data
-          Intelligence, une start-up basée à Annecy (74), du 24 mai au 2 juillet
-          2021."
+      imageTitle={langFR ? cardImageTitleFR : cardImageTitleGB}
+      cardText={langFR ? cardTextFR : cardTextGB}
       dialog={StageSDIDialog}
     />
   );

@@ -270,7 +270,7 @@ const AP1MediatekFormDialog = ({ handleClose, open }) => {
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} style={theme.contrastColor}>
-            Fermer
+            {langFR ? 'Fermer' : 'Close'}
           </Button>
         </DialogActions>
       </Dialog>
