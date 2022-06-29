@@ -215,7 +215,7 @@ const StageSDIDialog = ({ handleClose, open }) => {
                 <ListItemIcon>
                   <CheckIcon color="secondary" />
                 </ListItemIcon>
-                <ListItemText primary="JavaScript, Next.js, React, Material UI" />
+                <ListItemText primary="JavaScript, Next.js, React, Material-UI" />
               </ListItem>
               <ListItem>
                 <ListItemIcon>

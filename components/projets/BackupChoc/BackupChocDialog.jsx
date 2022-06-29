@@ -56,7 +56,7 @@ const BackupChocDialog = ({ handleClose, open }) => {
               src="/imgs/PCAChoc.png"
               width="838px"
               height="485px"
-              alt="OCS Inventory"
+              alt="Chocolate'in web app"
             />
           </Container>
           {!langFR &&

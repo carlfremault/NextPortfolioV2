@@ -7,16 +7,22 @@ import {
   DialogContent,
   DialogTitle,
   Grid,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   Typography,
 } from "@material-ui/core";
+import { useContext } from "react";
 import { useTheme } from "@material-ui/styles";
+import { LanguageContext } from "../../../pages/_app";
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
-import CheckIcon from "@material-ui/icons/Check";
 import Image from "next/image";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  dialogDateFR,
+  dialogDateGB,
+  dialogTextFR,
+  dialogTextGB,
+} from "./PCAChocText";
+import DialogParagraph from "../../tools/DialogParagraph";
 
 const myLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 75}`;
@@ -24,6 +30,7 @@ const myLoader = ({ src, width, quality }) => {
 
 const PCAChocDialog = ({ handleClose, open }) => {
   const theme = useTheme();
+  const { langFR } = useContext(LanguageContext);
 
   return (
     <>
@@ -36,7 +43,9 @@ const PCAChocDialog = ({ handleClose, open }) => {
         fullWidth={true}
         maxWidth="lg"
       >
-        <DialogTitle>Audit PCA d&apos;une application web hébergée dans le cloud</DialogTitle>
+        <DialogTitle>
+          {langFR ? cardTitleFR : cardTitleGB}
+        </DialogTitle>
         <DialogContent dividers>
           <Container
             maxWidth="md"
@@ -47,9 +56,20 @@ const PCAChocDialog = ({ handleClose, open }) => {
               src="/imgs/PCAChoc.png"
               width="838px"
               height="485px"
-              alt="OCS Inventory"
+              alt="Chocolate'in web app"
             />
           </Container>
+          {!langFR &&
+            <Container maxWidth="md">
+              <Typography
+                variant="subtitle1"
+                align="center"
+                style={{ margin: "1rem 0" }}
+              >
+                As this project was a part of my (French) training program, all documents are in French.
+              </Typography>
+            </Container>
+          }
           <Grid
             container
             direction="column"
@@ -67,50 +87,20 @@ const PCAChocDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<DownloadForOfflineIcon />}
                 >
-                  Contrat, PCA et rapports (zip)
+                  {langFR ? "Contrat, PCA et rapports (zip)" : "Contract, BCP and reports (zip)"}
                 </Button>
               </a>
             </Grid>
           </Grid>
           <Container maxWidth="md">
             <Typography variant="h6" style={{ margin: "2rem 0" }}>
-              26 septembre 2021
+              {langFR ? dialogDateFR : dialogDateGB}
             </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Dans le cadre d&apos;un audit interne nous avons examiné la phase &quot;maintien en condition opérationnelle&quot; des briques applicatives d&apos;un service web. À l&apos;aide du contrat d&apos;hébergement ainsi que des scénarios présentés dans le Plan de Continuité d&apos;Activité (PCA) nous avons vérifié les prestations et rédigé un rapport d&apos;audit. Après nous avons effectué des tests de performance avec Apache Bench.
-            </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Les résultats étant insatisfaisants, nous avons procédé à examiner l&apos;offre cloud Azure de type PaaS afin de proposer une autre solution d&apos;hébergement, avec des meilleures performances.
-            </Typography>
-              <Typography
-                variant="body1"
-                align="justify"
-                style={{ margin: "4rem 0 1rem" }}
-              >
-                Les compétences officielles couvertes par cet exercice sont les suivantes :
-              </Typography>
-              <List>
-                <ListItem>
-                  <ListItemIcon style={{ transform: "translate(10px)" }}>
-                    <CheckIcon color="secondary" />
-                  </ListItemIcon>
-                  <ListItemText>Gérer le patrimoine informatique</ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemText inset>- Exploiter des référentiels, normes et standards adoptés par le prestataire informatique</ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemText inset>- Vérifier les conditions de la continuité d&apos;un service informatique</ListItemText>
-                </ListItem>
-              </List>
+            {langFR ?
+              dialogTextFR.map(el => <DialogParagraph paragraphText={el} />)
+              :
+              dialogTextGB.map(el => <DialogParagraph paragraphText={el} />)
+            }
           </Container>
         </DialogContent>
         <DialogActions>
