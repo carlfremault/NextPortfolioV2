@@ -1,14 +1,28 @@
 import ProjectCard from "../ProjectCard";
 import MigrationBDDDialog from "./MigrationBDDDialog";
+import { useContext } from "react";
+import { LanguageContext } from "../../../pages/_app";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  cardSubTitleFR,
+  cardSubTitleGB,
+  cardImageTitleFR,
+  cardImageTitleGB,
+  cardTextFR,
+  cardTextGB
+} from "./MigrationBDDText";
 
 const MigrationBDDCard = () => {
+  const { langFR } = useContext(LanguageContext);
+
   return (
     <ProjectCard
-      title="Migration d'une base de données MariaDB vers PostgreSQL dans le cloud Azure, gestion de sauvegardes"
-      subtitle="Réalisation en cours de formation - 30/01/2022"
+      title={langFR ? cardTitleFR : cardTitleGB}
+      subtitle={langFR ? cardSubTitleFR : cardSubTitleGB}
       image="/imgs/MigrationBDD.png"
-      imageTitle="Capture d'écran Azure"
-      cardText="Mise en place de serveur PostgreSQL, migration depuis MariaDB. Sauvegarde et restauration Azure, gestion de replica."
+      imageTitle={langFR ? cardImageTitleFR : cardImageTitleGB}
+      cardText={langFR ? cardTextFR : cardTextGB}
       dialog={MigrationBDDDialog}
     />
   );

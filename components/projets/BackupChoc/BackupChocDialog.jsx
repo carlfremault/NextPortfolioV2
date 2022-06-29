@@ -7,16 +7,22 @@ import {
   DialogContent,
   DialogTitle,
   Grid,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   Typography,
 } from "@material-ui/core";
+import { useContext } from "react";
 import { useTheme } from "@material-ui/styles";
+import { LanguageContext } from "../../../pages/_app";
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
-import CheckIcon from "@material-ui/icons/Check";
 import Image from "next/image";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  dialogDateFR,
+  dialogDateGB,
+  dialogTextFR,
+  dialogTextGB,
+} from "./BackupChocText";
+import DialogParagraph from "../../tools/DialogParagraph";
 
 const myLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 75}`;
@@ -24,6 +30,7 @@ const myLoader = ({ src, width, quality }) => {
 
 const BackupChocDialog = ({ handleClose, open }) => {
   const theme = useTheme();
+  const { langFR } = useContext(LanguageContext);
 
   return (
     <>
@@ -36,7 +43,9 @@ const BackupChocDialog = ({ handleClose, open }) => {
         fullWidth={true}
         maxWidth="lg"
       >
-        <DialogTitle>Mise en place de solution de sauvegarde d&apos;une application web Azure</DialogTitle>
+        <DialogTitle>
+          {langFR ? cardTitleFR : cardTitleGB}
+        </DialogTitle>
         <DialogContent dividers>
           <Container
             maxWidth="md"
@@ -50,6 +59,17 @@ const BackupChocDialog = ({ handleClose, open }) => {
               alt="OCS Inventory"
             />
           </Container>
+          {!langFR &&
+            <Container maxWidth="md">
+              <Typography
+                variant="subtitle1"
+                align="center"
+                style={{ margin: "1rem 0" }}
+              >
+                As this project was a part of my (French) training program, all documents are in French.
+              </Typography>
+            </Container>
+          }
           <Grid
             container
             direction="column"
@@ -57,7 +77,7 @@ const BackupChocDialog = ({ handleClose, open }) => {
             alignItems="center"
           >
             <Grid item style={{ textAlign: "center" }}>
-            <a
+              <a
                 href="/pdf/RestaurationAzureChocolatein.pdf"
                 target="_blank"
                 rel="noreferrer"
@@ -67,7 +87,7 @@ const BackupChocDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<PictureAsPdfIcon />}
                 >
-                  Compte rendu - Restauration des données
+                  {langFR ? "Compte rendu - Restauration des données" : "Activity report - Data restoration"}
                 </Button>
               </a>
               <a
@@ -80,55 +100,25 @@ const BackupChocDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<PictureAsPdfIcon />}
                 >
-                  Compte rendu - Configuration du réplica
+                  {langFR ? "Compte rendu - Configuration du réplica" : "Replica configuration"}
                 </Button>
               </a>
             </Grid>
           </Grid>
           <Container maxWidth="md">
             <Typography variant="h6" style={{ margin: "2rem 0" }}>
-              21 octobre 2021
+              {langFR ? dialogDateFR : dialogDateGB}
             </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Pendant cette activité nous avons commencé par simuler une perte de données dans la base. Ensuite nous avons effectué une restauration de données depuis la sauvegarde Azure. Ceci génère un nouveau serveur, où il faut vérifier les paramètres du pare-feu, puis il faut mettre à jour les informations de connexion dans l&apos;application, pour pointer vers ce nouveau serveur.
-            </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-La prochaine étape était de créer un serveur replica dans Azure, puis de réitérer la démarche (simulation de panne, bascule sur le replica)
-            </Typography>
-              <Typography
-                variant="body1"
-                align="justify"
-                style={{ margin: "4rem 0 1rem" }}
-              >
-                Les compétences officielles couvertes par cet exercice sont les suivantes :
-              </Typography>
-              <List>
-                <ListItem>
-                  <ListItemIcon style={{ transform: "translate(10px)" }}>
-                    <CheckIcon color="secondary" />
-                  </ListItemIcon>
-                  <ListItemText>Gérer le patrimoine informatique</ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemText inset>- Vérifier les conditions de la continuité d&apos;un service informatique</ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemText inset>- Gérer des sauvegardes</ListItemText>
-                </ListItem>
-              </List>
-            </Container>
+            {langFR ?
+              dialogTextFR.map(el => <DialogParagraph paragraphText={el} />)
+              :
+              dialogTextGB.map(el => <DialogParagraph paragraphText={el} />)
+            }
+          </Container>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} style={theme.contrastColor}>
-            Fermer
+          {langFR ? 'Fermer' : 'Close'}
           </Button>
         </DialogActions>
       </Dialog>

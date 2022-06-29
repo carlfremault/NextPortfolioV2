@@ -18,8 +18,8 @@ const StageSDICard = () => {
 
   return (
     <ProjectCard
-    title={langFR ? cardTitleFR : cardTitleGB}
-    subtitle={langFR ? cardSubTitleFR : cardSubTitleGB}
+      title={langFR ? cardTitleFR : cardTitleGB}
+      subtitle={langFR ? cardSubTitleFR : cardSubTitleGB}
       image="/imgs/SDI.png"
       imageTitle={langFR ? cardImageTitleFR : cardImageTitleGB}
       cardText={langFR ? cardTextFR : cardTextGB}
