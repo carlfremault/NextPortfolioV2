@@ -110,15 +110,15 @@ const BackupChocDialog = ({ handleClose, open }) => {
               {langFR ? dialogDateFR : dialogDateGB}
             </Typography>
             {langFR ?
-              dialogTextFR.map(el => <DialogParagraph paragraphText={el} />)
+              dialogTextFR.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
               :
-              dialogTextGB.map(el => <DialogParagraph paragraphText={el} />)
+              dialogTextGB.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
             }
           </Container>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} style={theme.contrastColor}>
-          {langFR ? 'Fermer' : 'Close'}
+            {langFR ? 'Fermer' : 'Close'}
           </Button>
         </DialogActions>
       </Dialog>

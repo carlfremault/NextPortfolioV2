@@ -154,16 +154,16 @@ const StageFaibrikDialog = ({ handleClose, open }) => {
               {langFR ? dialogDateFR : dialogDateGB}
             </Typography>
             {langFR ?
-              dialogTextFR.map(el => <DialogParagraph paragraphText={el} />)
+              dialogTextFR.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
               :
-              dialogTextGB.map(el => <DialogParagraph paragraphText={el} />)
+              dialogTextGB.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
             }
             <Typography
               variant="body1"
               align="justify"
               style={{ margin: "1rem 0 0 0" }}
             >
-              {langFR? "Expériences :" : "Experiences"}
+              {langFR ? "Expériences :" : "Experiences"}
             </Typography>
             <List>
               <ListItem>
@@ -200,7 +200,7 @@ const StageFaibrikDialog = ({ handleClose, open }) => {
                 <ListItemIcon>
                   <CheckIcon color="secondary" />
                 </ListItemIcon>
-                <ListItemText primary={langFR ? "Méthode Agile, Daily Scrum Meetings, Trello, Gitlab": "Agile methodology, Daily Scrum Meetings, Trello, Gitlab"} />
+                <ListItemText primary={langFR ? "Méthode Agile, Daily Scrum Meetings, Trello, Gitlab" : "Agile methodology, Daily Scrum Meetings, Trello, Gitlab"} />
               </ListItem>
               <ListItem>
                 <ListItemIcon>

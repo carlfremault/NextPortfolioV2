@@ -14,7 +14,7 @@ const DesktopNavigation = ({ menu }) => {
   const { langFR } = useContext(LanguageContext);
 
   return (
-    <Grid 
+    <Grid
       container
       direction="row"
       alignItems="center"
@@ -23,24 +23,24 @@ const DesktopNavigation = ({ menu }) => {
     >
       {menu.map((item) => (
         <Grid item>
-        <Link
-          to={item.path}
-          spy={true}
-          smooth={true}
-          offset={item.offset}
-          duration={500}
-          key={item.itemGB}
-        >
-          <Button>
-            <Typography
-              variant="subtitle1"
-              color="primary"
-              style={theme.desktopNavButton}              
-            >
-              {langFR ? item.itemFR : item.itemGB}
-            </Typography>
-          </Button>
-        </Link>
+          <Link
+            to={item.path}
+            spy={true}
+            smooth={true}
+            offset={item.offset}
+            duration={500}
+            key={item.itemGB}
+          >
+            <Button>
+              <Typography
+                variant="subtitle1"
+                color="primary"
+                style={theme.desktopNavButton}
+              >
+                {langFR ? item.itemFR : item.itemGB}
+              </Typography>
+            </Button>
+          </Link>
         </Grid>
       ))}
     </Grid>

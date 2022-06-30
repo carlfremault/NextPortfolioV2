@@ -79,12 +79,6 @@ const ProjectCardContainer = () => {
         <PPEMediaTekCard />
       </Grid>
       <Grid item style={theme.projectCard}>
-        <CalculatriceCard />
-      </Grid>
-      <Grid item style={theme.projectCard}>
-        <AlgosTriCard />
-      </Grid>
-      <Grid item style={theme.projectCard}>
         <NolarkCard />
       </Grid>
       <Grid item style={theme.projectCard}>

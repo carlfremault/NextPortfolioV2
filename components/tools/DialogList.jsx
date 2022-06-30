@@ -10,8 +10,8 @@ import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 const DialogList = ({ listItems, theme }) => {
     return (
         <List>
-            {listItems.map(item => (
-                <ListItem>
+            {listItems.map((item, index) => (
+                <ListItem key={index}>
                     <ListItemIcon>
                         <ArrowRightIcon color="secondary" />
                     </ListItemIcon>

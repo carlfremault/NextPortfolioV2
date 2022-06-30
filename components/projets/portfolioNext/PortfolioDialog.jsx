@@ -172,9 +172,9 @@ const PortfolioDialog = ({ handleClose, open }) => {
               {langFR ? dialogDateFR : dialogDateGB}
             </Typography>
             {langFR ?
-              dialogTextFR.map(el => <DialogParagraph paragraphText={el} />)
+              dialogTextFR.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
               :
-              dialogTextGB.map(el => <DialogParagraph paragraphText={el} />)
+              dialogTextGB.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
             }
             <Typography
               variant="h6"
@@ -198,9 +198,9 @@ const PortfolioDialog = ({ handleClose, open }) => {
               Context
             </Typography>
             {langFR ?
-              dialogTextContextFR.map(el => <DialogParagraph paragraphText={el} />)
+              dialogTextContextFR.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
               :
-              dialogTextContextGB.map(el => <DialogParagraph paragraphText={el} />)
+              dialogTextContextGB.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
             }
             {langFR ?
               <DialogList listItems={dialogListContextFR} />
@@ -215,9 +215,9 @@ const PortfolioDialog = ({ handleClose, open }) => {
               npm packages
             </Typography>
             {langFR ?
-              dialogTextPackageFR.map(el => <DialogParagraph paragraphText={el} />)
+              dialogTextPackageFR.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
               :
-              dialogTextPackageGB.map(el => <DialogParagraph paragraphText={el} />)
+              dialogTextPackageGB.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
             }
             {langFR ?
               <DialogList listItems={dialogListPackageFR} theme={theme} />
@@ -232,15 +232,15 @@ const PortfolioDialog = ({ handleClose, open }) => {
               Tests
             </Typography>
             {langFR ?
-              dialogTextTestFR.map(el => <DialogParagraph paragraphText={el} />)
+              dialogTextTestFR.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
               :
-              dialogTextTestGB.map(el => <DialogParagraph paragraphText={el} />)
+              dialogTextTestGB.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
             }
           </Container>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} style={theme.contrastColor}>
-            Fermer
+            {langFR ? "Fermer" : "Close"}
           </Button>
         </DialogActions>
       </Dialog>

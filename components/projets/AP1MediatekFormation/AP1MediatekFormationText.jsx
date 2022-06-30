@@ -13,7 +13,6 @@ const dialogTextGB = ["For this professionalization workshop I made the requeste
 const dialogVideoTextFR = "Voici une vidéo qui présente l&apos;utilisation du site :";
 const dialogVideoTextGB = "Here's a video explaining the application to its users:";
 
-
 export { 
     cardTitleFR, 
     cardTitleGB, 

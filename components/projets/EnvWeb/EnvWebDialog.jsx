@@ -7,16 +7,22 @@ import {
   DialogContent,
   DialogTitle,
   Grid,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   Typography,
 } from "@material-ui/core";
+import { useContext } from "react";
 import { useTheme } from "@material-ui/styles";
+import { LanguageContext } from "../../../pages/_app";
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
-import CheckIcon from "@material-ui/icons/Check";
 import Image from "next/image";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  dialogDateFR,
+  dialogDateGB,
+  dialogTextFR,
+  dialogTextGB,
+} from "./EnvWebText";
+import DialogParagraph from "../../tools/DialogParagraph";
 
 const myLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 75}`;
@@ -24,6 +30,7 @@ const myLoader = ({ src, width, quality }) => {
 
 const EnvWebDialog = ({ handleClose, open }) => {
   const theme = useTheme();
+  const { langFR } = useContext(LanguageContext);
 
   return (
     <>
@@ -36,7 +43,9 @@ const EnvWebDialog = ({ handleClose, open }) => {
         fullWidth={true}
         maxWidth="lg"
       >
-        <DialogTitle>Installation d&apos;un service web</DialogTitle>
+        <DialogTitle>
+          {langFR ? cardTitleFR : cardTitleGB}
+        </DialogTitle>
         <DialogContent dividers>
           <Container
             maxWidth="md"
@@ -50,6 +59,17 @@ const EnvWebDialog = ({ handleClose, open }) => {
               alt="Capture d'écran application web"
             />
           </Container>
+          {!langFR &&
+            <Container maxWidth="md">
+              <Typography
+                variant="subtitle1"
+                align="center"
+                style={{ margin: "1rem 0" }}
+              >
+                As this project was a part of my (French) training program, all documents are in French.
+              </Typography>
+            </Container>
+          }
           <Grid
             container
             direction="column"
@@ -67,7 +87,7 @@ const EnvWebDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<PictureAsPdfIcon />}
                 >
-                  Compte rendu : Préparation service web
+                  {langFR ? "Compte rendu : Préparation service web" : "Pre-production installation report"}
                 </Button>
               </a>
               <a
@@ -80,55 +100,25 @@ const EnvWebDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<PictureAsPdfIcon />}
                 >
-                  Compte rendu : déploiement application
+                  {langFR ? "Compte rendu : déploiement application" : "App deployment report"}
                 </Button>
               </a>
             </Grid>
           </Grid>
           <Container maxWidth="md">
             <Typography variant="h6" style={{ margin: "2rem 0" }}>
-              12 avril 2021
+              {langFR ? dialogDateFR : dialogDateGB}
             </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Dans cet exercice nous avons installé un environnement technique &quot;type&quot; pour un développement web classique : une VM Debian avec installation de serveur web Apache 2 et PHP, une deuxième VM Debian avec MariaDB.
-            </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Ensuite nous avons déployé une application web de gestion de stages sur cet environnement, et nous avons créé des enregistrements DNS dans Windows Server.
-            </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "4rem 0 1rem" }}
-            >
-              Les compétences officielles couvertes par cet exercice sont les suivantes :
-            </Typography>
-            <List>
-              <ListItem>
-                <ListItemIcon style={{ transform: "translate(10px)" }}>
-                  <CheckIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>Mettre à disposition des utilisateurs un service informatique</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Réaliser les tests d&apos;intégration et d&apos;acceptation d&apos;un service</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Déployer un service</ListItemText>
-              </ListItem>
-            </List>
+            {langFR ?
+              dialogTextFR.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
+              :
+              dialogTextGB.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
+            }
           </Container>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} style={theme.contrastColor}>
-            Fermer
+            {langFR ? "Fermer" : "Close"}
           </Button>
         </DialogActions>
       </Dialog>

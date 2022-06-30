@@ -1,14 +1,28 @@
 import ProjectCard from "../ProjectCard";
 import GLPIDeploiementDialog from "./GLPIDeploiementDialog";
+import { useContext } from "react";
+import { LanguageContext } from "../../../pages/_app";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  cardSubTitleFR,
+  cardSubTitleGB,
+  cardImageTitleFR,
+  cardImageTitleGB,
+  cardTextFR,
+  cardTextGB
+} from "./GLPIDeploiementText";
 
 const GLPIDeploiementCard = () => {
+  const { langFR } = useContext(LanguageContext);
+
   return (
     <ProjectCard
-      title="Déploiement d'application web dans un environnement de préproduction"
-      subtitle="Réalisation en cours de formation - 15/04/2021"
+      title={langFR ? cardTitleFR : cardTitleGB}
+      subtitle={langFR ? cardSubTitleFR : cardSubTitleGB}
       image="/imgs/GLPI.png"
-      imageTitle="Capture d'écran GLPI"
-      cardText="Utilisation de l'environnement de préproduction web créé auparavant pour déployer la solution GLPI."
+      imageTitle={langFR ? cardImageTitleFR : cardImageTitleGB}
+      cardText={langFR ? cardTextFR : cardTextGB}
       dialog={GLPIDeploiementDialog}
     />
   );
