@@ -10,6 +10,8 @@ import {
 } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
 import { useState } from "react";
+import { useContext } from "react";
+import { LanguageContext } from "../../pages/_app";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import FaceIcon from "@material-ui/icons/Face";
@@ -21,6 +23,8 @@ import EmailIcon from "@material-ui/icons/Email";
 const AproposLinks = () => {
   const theme = useTheme();
   const [open, setOpen] = useState(false);
+
+  const { langFR } = useContext(LanguageContext);
 
   const handleOpen = (e) => {
     e.preventDefault();
@@ -75,7 +79,7 @@ const AproposLinks = () => {
           </a>
         </Grid>
         <Grid item style={{ textAlign: "center" }}>
-          <a href="../../pdf/CVCarlFremault032022Web.pdf" target="_blank">
+          <a href={langFR ? "../../pdf/CVCarlFremault062022FR.pdf" : "../../pdf/CVCarlFremault062022GB.pdf"} target="_blank">
             <Button
               variant="outlined"
               style={theme.contrastButton}
@@ -115,7 +119,7 @@ const AproposLinks = () => {
             gutterBottom
             style={{ textAlign: "center" }}
           >
-            Vous pouvez me contacter par email :
+            {langFR ? "Vous pouvez me contacter par email :" : "You can contact me by email"}
           </Typography>
           <Typography
             variant="body1"
