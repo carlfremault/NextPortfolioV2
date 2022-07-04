@@ -10,15 +10,11 @@ import CalculsCard from "./Calculs/CalculsCard";
 import ContactsCard from "./Contacts/ContactsCard";
 import DenombrementsCard from "./Denombrements/DenombrementsCard";
 import EnvWebCard from "./EnvWeb/EnvWebCard";
-import GestionReseauCard from "./GestionReseau/GestionReseauCard";
-import GLPICard from "./GLPI/GLPICard";
 import GLPIDeploiementCard from "./GLPIDeploiement/GLPIDeploiementCard";
 import MigrationBDDCard from "./MigrationBDD/MigrationBDDCard";
 import MigrationChocCard from "./MigrationChoc/MigrationChocCard";
 import MSProjectCard from "./MSProject/MSProjectCard";
 import NolarkCard from "./Nolark/NolarkCard";
-import OCSICard from "./OCSI/OCSICard";
-import PacketTracerCard from "./PacketTracer/PacketTracerCard";
 import PCAChocCard from "./PCAChoc/PCAChocCard";
 import PortfolioCard from "./portfolioNext/PortfolioCard";
 import PPEMediaTekCard from "./PPEMediaTek/PPEMediaTekCard";
@@ -81,19 +77,10 @@ const ProjectCardContainer = () => {
         <PPEMediaTekCard />
       </Grid>
       <Grid item style={theme.projectCard}>
-        <GLPICard />
-      </Grid>
-      <Grid item style={theme.projectCard}>
         <CalculatriceCard />
       </Grid>
       <Grid item style={theme.projectCard}>
         <AlgosTriCard />
-      </Grid>
-      <Grid item style={theme.projectCard}>
-        <PacketTracerCard />
-      </Grid>
-      <Grid item style={theme.projectCard}>
-        <GestionReseauCard />
       </Grid>
       <Grid item style={theme.projectCard}>
         <NolarkCard />
@@ -106,9 +93,6 @@ const ProjectCardContainer = () => {
       </Grid>
       <Grid item style={theme.projectCard}>
         <CalculsCard />
-      </Grid>
-      <Grid item style={theme.projectCard}>
-        <OCSICard />
       </Grid>
     </Grid>
   );
