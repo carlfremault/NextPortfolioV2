@@ -1,4 +1,4 @@
-import { Grid, Switch } from "@material-ui/core";
+import { Switch } from "@material-ui/core";
 import { useContext } from "react";
 import { LanguageContext } from "../../pages/_app";
 import { FR, GB } from 'country-flag-icons/react/3x2'

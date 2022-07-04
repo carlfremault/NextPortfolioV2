@@ -1,13 +1,11 @@
 import { Grid } from "@material-ui/core";
 import { useContext } from "react";
 import { useTheme } from "@material-ui/styles";
-import { ColorContext, LanguageContext } from "../../pages/_app";
-import AlgosTriCard from "./algosTri/AlgosTriCard";
+import { LanguageContext } from "../../pages/_app";
 import AP1MediatekFormCard from "./AP1MediatekFormation/AP1MediatekFormCard";
 import AP3MediatekFormCard from "./AP3MediatekGestion/AP3MediatekFormCard";
 import APIRestCard from "./APIRest/APIRestCard";
 import BackupChocCard from "./BackupChoc/BackupChocCard";
-import CalculatriceCard from "./calculatrice/CalculatriceCard";
 import CalculsCard from "./Calculs/CalculsCard";
 import ContactsCard from "./Contacts/ContactsCard";
 import DenombrementsCard from "./Denombrements/DenombrementsCard";
