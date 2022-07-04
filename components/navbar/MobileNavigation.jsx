@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import { Drawer, Grid, List, Typography } from "@material-ui/core";
+import { useContext } from "react";
 import { useTheme } from "@material-ui/styles";
+import { LanguageContext } from "../../pages/_app";
 import { Link } from "react-scroll";
 
 /**
@@ -11,6 +13,7 @@ import { Link } from "react-scroll";
  */
 const MobileNavigation = ({ drawerOpen, menu, variant }) => {
   const theme = useTheme();
+  const { langFR } = useContext(LanguageContext);
 
   return (
     <Drawer variant={variant} anchor="top" open={drawerOpen}>
@@ -29,9 +32,9 @@ const MobileNavigation = ({ drawerOpen, menu, variant }) => {
               smooth={true}
               offset={item.offset}
               duration={500}
-              key={item.item}
+              key={item.itemGB}
             >
-              <Typography style={theme.mobileNavLink}>{item.item}</Typography>
+              <Typography style={theme.mobileNavLink}>{langFR ? item.itemFR : item.itemGB}</Typography>
             </Link>
           ))}
         </Grid>

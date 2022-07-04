@@ -48,6 +48,7 @@ const darkTheme = createTheme({
     color: darkColors.primary,
     margin: "0 2rem 0 2rem",
     textTransform: "capitalize",
+    whiteSpace: "nowrap",
   },
   contrastColor: {
     color: darkColors.contrast,

@@ -1,14 +1,28 @@
 import ProjectCard from "../ProjectCard";
 import MSProjectDialog from "./MSProjectDialog";
+import { useContext } from "react";
+import { LanguageContext } from "../../../pages/_app";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  cardSubTitleFR,
+  cardSubTitleGB,
+  cardImageTitleFR,
+  cardImageTitleGB,
+  cardTextFR,
+  cardTextGB
+} from "./MSProjectText";
 
 const MSProjectCard = () => {
+  const { langFR } = useContext(LanguageContext);
+
   return (
     <ProjectCard
-      title="Gestion et suivi de projet - MS Project"
-      subtitle="Réalisation en cours de formation - 11/04/2021"
+      title={langFR ? cardTitleFR : cardTitleGB}
+      subtitle={langFR ? cardSubTitleFR : cardSubTitleGB}
       image="/imgs/MSProject.png"
-      imageTitle="Capture d'écran MSProject"
-      cardText="Pendant nos cours nous avons appris à faire la gestion et le suivi d'un projet à l'aide de MS Project."
+      imageTitle={langFR ? cardImageTitleFR : cardImageTitleGB}
+      cardText={langFR ? cardTextFR : cardTextGB}
       dialog={MSProjectDialog}
     />
   );

@@ -8,8 +8,14 @@ import darkTheme from "../theme/darkTheme";
 import lightTheme from "../theme/lightTheme";
 
 export const ColorContext = createContext();
+export const LanguageContext = createContext();
 
 function MyApp({ Component, pageProps }) {
+  const [langFR, setLangFR] = useState(false);
+  const toggleLanguage = () => {
+    setLangFR(!langFR);
+  };
+
   const [darkMode, setDarkMode] = useState(false);
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -59,12 +65,14 @@ function MyApp({ Component, pageProps }) {
           content="Carl Fremault - Etudiant développeur en 2ième année du BTS Services Informatiques aux Organisations - Portfolio"
         />
       </Head>
-      <ColorContext.Provider value={{ darkMode, toggleDarkMode }}>
-        <ThemeProvider theme={{ ...appliedTheme }}>
-          <CssBaseline />
-          <Component {...pageProps} />
-        </ThemeProvider>
-      </ColorContext.Provider>
+      <LanguageContext.Provider value={{langFR, toggleLanguage}}>
+        <ColorContext.Provider value={{ darkMode, toggleDarkMode }}>
+          <ThemeProvider theme={{ ...appliedTheme }}>
+            <CssBaseline />
+            <Component {...pageProps} />
+          </ThemeProvider>
+        </ColorContext.Provider>
+      </LanguageContext.Provider>
     </>
   );
 }

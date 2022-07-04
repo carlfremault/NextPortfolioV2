@@ -1,14 +1,28 @@
+import { useContext } from "react";
+import { LanguageContext } from "../../../pages/_app";
 import ProjectCard from "../ProjectCard";
 import AP1MediatekFormDialog from "./AP1MediatekFormDialog";
+import { cardTitleFR, 
+  cardTitleGB, 
+  cardSubTitleFR, 
+  cardSubTitleGB,
+  cardImageTitleFR,
+  cardImageTitleGB,
+  cardTextFR,
+  cardTextGB  
+} from "./AP1MediatekFormationText";
+
 
 const AP1MediatekFormCard = () => {
+  const { langFR } = useContext(LanguageContext);
+
   return (
     <ProjectCard
-      title="Atelier 1 : Application web Mediatek Formations - PHP, Symfony, MySQL"
-      subtitle="Atelier de professionnalisation BTS SIO - 30/03/2022"
+      title={langFR ? cardTitleFR : cardTitleGB}
+      subtitle={langFR ? cardSubTitleFR : cardSubTitleGB}
       image="/imgs/A1Bienvenue.png"
-      imageTitle="Application web MediaTek86 Formations"
-      cardText="Pour cet Atelier Professionnel j'ai fait les évolutions demdandées pour l'application web Mediatek Formations : gestion des niveaux des formations, implémentation d'un backoffice."
+      imageTitle={langFR ? cardImageTitleFR : cardImageTitleGB}
+      cardText={langFR ? cardTextFR : cardTextGB}
       repoLink="https://github.com/carlfremault/mediatekformation"
       dialog={AP1MediatekFormDialog}
     />

@@ -7,16 +7,22 @@ import {
   DialogContent,
   DialogTitle,
   Grid,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   Typography,
 } from "@material-ui/core";
+import { useContext } from "react";
 import { useTheme } from "@material-ui/styles";
+import { LanguageContext } from "../../../pages/_app";
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
-import CheckIcon from "@material-ui/icons/Check";
 import Image from "next/image";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  dialogDateFR,
+  dialogDateGB,
+  dialogTextFR,
+  dialogTextGB,
+} from "./MigrationBDDText";
+import DialogParagraph from "../../tools/DialogParagraph";
 
 const myLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 75}`;
@@ -24,6 +30,7 @@ const myLoader = ({ src, width, quality }) => {
 
 const GLPIDialog = ({ handleClose, open }) => {
   const theme = useTheme();
+  const { langFR } = useContext(LanguageContext);
 
   return (
     <>
@@ -36,7 +43,9 @@ const GLPIDialog = ({ handleClose, open }) => {
         fullWidth={true}
         maxWidth="lg"
       >
-        <DialogTitle>Migration d&apos;une base de données MariaDB vers PostgreSQL dans le cloud Azure, gestion de sauvegardes</DialogTitle>
+        <DialogTitle>
+          {langFR ? cardTitleFR : cardTitleGB}
+        </DialogTitle>
         <DialogContent dividers>
           <Container
             maxWidth="md"
@@ -50,6 +59,17 @@ const GLPIDialog = ({ handleClose, open }) => {
               alt="Capture d'écran Azure"
             />
           </Container>
+          {!langFR &&
+            <Container maxWidth="md">
+              <Typography
+                variant="subtitle1"
+                align="center"
+                style={{ margin: "1rem 0" }}
+              >
+                As this project was a part of my (French) training program, all documents are in French.
+              </Typography>
+            </Container>
+          }
           <Grid
             container
             direction="column"
@@ -67,83 +87,25 @@ const GLPIDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<DownloadForOfflineIcon />}
                 >
-                  Compte-rendus de la migration (zip)
+                  {langFR ? "Compte-rendus de la migration (zip)" : "Migration report"}
                 </Button>
               </a>
             </Grid>
           </Grid>
           <Container maxWidth="md">
             <Typography variant="h6" style={{ margin: "2rem 0" }}>
-              30 janvier 2022
+              {langFR ? dialogDateFR : dialogDateGB}
             </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Cette activité nous a permis d&apos;apprendre à faire la mise en place d&apos;un serveur PostgreSQL sur une machine virtuelle Debian, de configurer une connexion SSL puis de migrer une base de données MariaDB vers une base de données PostgreSQL.
-            </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Ensuite nous avons installé un serveur PostgreSQL sur Azure puis nous avons fait une sauvegarde de la base de données installée en local et nous l&apos;avons restauré sur le nouveau serveur Azure.
-            </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Nous avons modifié le groupe tarifaire du serveur Azure pour permettre l&apos;activation de la haute disponibilité, puis nous avons activé cette option et nous avons fait et testé un réplica de secours.
-            </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Enfin, nous avons appris à générer un script pour automatiser la démarche entière.
-            </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "4rem 0 1rem" }}
-            >
-              Les compétences officielles couvertes par cet exercice sont les suivantes :
-            </Typography>
-            <List>
-              <ListItem>
-                <ListItemIcon style={{ transform: "translate(10px)" }}>
-                  <CheckIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>Gérer le patrimoine informatique</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Vérifier les conditions de la continuité d&apos;un service informatique</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Gérer des sauvegardes</ListItemText>
-              </ListItem>
-            </List>
-            <List>
-              <ListItem>
-                <ListItemIcon style={{ transform: "translate(10px)" }}>
-                  <CheckIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>Mettre à disposition des utilisateurs un service informatique</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Réaliser les tests d&apos;intégration et d&apos;acceptation d&apos;un service</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Déployer un service</ListItemText>
-              </ListItem>
-            </List>
+            {langFR ?
+              dialogTextFR.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
+              :
+              dialogTextGB.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
+            }
           </Container>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} style={theme.contrastColor}>
-            Fermer
+            {langFR ? 'Fermer' : 'Close'}
           </Button>
         </DialogActions>
       </Dialog>

@@ -7,16 +7,22 @@ import {
   DialogContent,
   DialogTitle,
   Grid,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   Typography,
 } from "@material-ui/core";
+import { useContext } from "react";
 import { useTheme } from "@material-ui/styles";
+import { LanguageContext } from "../../../pages/_app";
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
-import CheckIcon from "@material-ui/icons/Check";
 import Image from "next/image";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  dialogDateFR,
+  dialogDateGB,
+  dialogTextFR,
+  dialogTextGB,
+} from "./MigrationChocText";
+import DialogParagraph from "../../tools/DialogParagraph";
 
 const myLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 75}`;
@@ -24,6 +30,7 @@ const myLoader = ({ src, width, quality }) => {
 
 const MigrationChocDialog = ({ handleClose, open }) => {
   const theme = useTheme();
+  const { langFR } = useContext(LanguageContext);
 
   return (
     <>
@@ -36,7 +43,9 @@ const MigrationChocDialog = ({ handleClose, open }) => {
         fullWidth={true}
         maxWidth="lg"
       >
-        <DialogTitle>Migration dans le cloud Azure d&apos;une application web</DialogTitle>
+        <DialogTitle>
+          {langFR ? cardTitleFR : cardTitleGB}
+        </DialogTitle>
         <DialogContent dividers>
           <Container
             maxWidth="md"
@@ -47,9 +56,20 @@ const MigrationChocDialog = ({ handleClose, open }) => {
               src="/imgs/PCAChoc.png"
               width="838px"
               height="485px"
-              alt="OCS Inventory"
+              alt="Chocolate'in web app"
             />
           </Container>
+          {!langFR &&
+            <Container maxWidth="md">
+              <Typography
+                variant="subtitle1"
+                align="center"
+                style={{ margin: "1rem 0" }}
+              >
+                As this project was a part of my (French) training program, all documents are in French.
+              </Typography>
+            </Container>
+          }
           <Grid
             container
             direction="column"
@@ -67,7 +87,7 @@ const MigrationChocDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<PictureAsPdfIcon />}
                 >
-                  Compte rendu du déploiement
+                  {langFR ? "Compte rendu du déploiement" : "Migration report"}
                 </Button>
               </a>
               <a
@@ -80,48 +100,25 @@ const MigrationChocDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<PictureAsPdfIcon />}
                 >
-                  Étude mise à l&apos;échelle
+                  {langFR ? "Étude mise à l'échelle" : "Scalability study"}
                 </Button>
               </a>
             </Grid>
           </Grid>
           <Container maxWidth="md">
             <Typography variant="h6" style={{ margin: "2rem 0" }}>
-              21 octobre 2021
+              {langFR ? dialogDateFR : dialogDateGB}
             </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-                Pendant cet exercice nous avons procédé à la migration de l&apos;application web Chocolete&apos;in dans le cloud Azure. Avec le Azure CLI (Command Line Interface) nous avons créé un App Service et un Ressource Group. Après avoir fait un push de l&apos;application du dépôt local vers le nouveau App Service nous avons créé une base de données MariaDB pour ensuite paramétrer le pare-feu Azure. Finalement nous avons fait une étude pour implémenter un service de mise à l&apos;échelle.
-            </Typography>
-              <Typography
-                variant="body1"
-                align="justify"
-                style={{ margin: "4rem 0 1rem" }}
-              >
-                Les compétences officielles couvertes par cet exercice sont les suivantes :
-              </Typography>
-              <List>
-                <ListItem>
-                  <ListItemIcon style={{ transform: "translate(10px)" }}>
-                    <CheckIcon color="secondary" />
-                  </ListItemIcon>
-                  <ListItemText>Gérer le patrimoine informatique</ListItemText>
-                </ListItem>
-                <ListItem>
-                <ListItemText inset>- Recenser et identifier les ressources numériques</ListItemText>
-              </ListItem>
-                <ListItem>
-                  <ListItemText inset>- Vérifier les conditions de la continuité d&apos;un service informatique</ListItemText>
-                </ListItem>
-              </List>
+            {langFR ?
+              dialogTextFR.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
+              :
+              dialogTextGB.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
+            }
           </Container>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} style={theme.contrastColor}>
-            Fermer
+            {langFR ? 'Fermer' : 'Close'}
           </Button>
         </DialogActions>
       </Dialog>

@@ -10,7 +10,7 @@ const ThemeSwitcher = () => {
   const { darkMode, toggleDarkMode } = useContext(ColorContext);
 
   return (
-    <div style={{ alignItems: "center", display: "flex", flexWrap: "wrap" }}>
+    <div style={{ alignItems: "center", display: "flex"}}>
       <Brightness4Icon color="primary" />
       <Switch
         checked={darkMode}

@@ -7,16 +7,35 @@ import {
   DialogContent,
   DialogTitle,
   Grid,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   Typography,
 } from "@material-ui/core";
+import { useContext } from "react";
 import { useTheme } from "@material-ui/styles";
+import { LanguageContext } from "../../../pages/_app";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 import Image from "next/image";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  dialogDateFR,
+  dialogDateGB,
+  dialogTextFR,
+  dialogTextGB,
+  dialogTextStyleFR,
+  dialogTextStyleGB,
+  dialogTextContextFR,
+  dialogTextContextGB,
+  dialogListContextFR,
+  dialogListContextGB,
+  dialogTextPackageFR,
+  dialogTextPackageGB,
+  dialogListPackageFR,
+  dialogListPackageGB,
+  dialogTextTestFR,
+  dialogTextTestGB,
+} from "./PortfolioText";
+import DialogParagraph from "../../tools/DialogParagraph";
+import DialogList from "../../tools/DialogList";
 
 const myLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 75}`;
@@ -24,6 +43,8 @@ const myLoader = ({ src, width, quality }) => {
 
 const PortfolioDialog = ({ handleClose, open }) => {
   const theme = useTheme();
+  const { langFR } = useContext(LanguageContext);
+
   return (
     <>
       <Dialog
@@ -35,7 +56,9 @@ const PortfolioDialog = ({ handleClose, open }) => {
         fullWidth={true}
         maxWidth="lg"
       >
-        <DialogTitle>Création de site web portfolio - Next.js</DialogTitle>
+        <DialogTitle>
+          {langFR ? cardTitleFR : cardTitleGB}
+        </DialogTitle>
         <DialogContent dividers>
           <Container
             maxWidth="md"
@@ -146,25 +169,13 @@ const PortfolioDialog = ({ handleClose, open }) => {
           </Container>
           <Container maxWidth="md">
             <Typography variant="h6" style={{ margin: "2rem 0" }}>
-              16 septembre 2021
+              {langFR ? dialogDateFR : dialogDateGB}
             </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Après mes 6 semaines de stage chez Sport Data Intelligence, où
-              j&apos;ai créé leur nouveau site vitrine en utilisant Next.js,
-              React et Material-UI, j&apos;ai décidé de refaire mon portfolio
-              Wordpress avec ces mêmes technologies.
-            </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Pour ce projet je me suis concentré sur quelques points :
-            </Typography>
+            {langFR ?
+              dialogTextFR.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
+              :
+              dialogTextGB.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
+            }
             <Typography
               variant="h6"
               align="justify"
@@ -177,10 +188,7 @@ const PortfolioDialog = ({ handleClose, open }) => {
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Material-UI propose de différentes façons pour customiser le style
-              des éléments. Pour ce projet j&apos;ai choisi de tout centraliser
-              au maximum dans un &quot;custom theme&quot;, facilitant ainsi
-              toute modification ultérieure.
+              {langFR ? dialogTextStyleFR : dialogTextStyleGB}
             </Typography>
             <Typography
               variant="h6"
@@ -189,113 +197,33 @@ const PortfolioDialog = ({ handleClose, open }) => {
             >
               Context
             </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              J&apos;avais déjà utilisé React Context dans quelques petites
-              exercices, puis c&apos;était une bonne occasion d&apos;utiliser
-              cette technologie dans un &quot;vrai&quot; projet (même s&apos;il
-              s&apos;agit d&apos;un site statique). Ainsi j&apos;ai créé deux
-              thèmes différents qui sont insérés dans l&apos;application en
-              utilisant une implémentation (simple) du hook useContext.
-            </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Du coup l&apos;application est entouré de deux
-              &quot;providers&quot;:
-            </Typography>
-            <List>
-              <ListItem>
-                <ListItemIcon>
-                  <ArrowRightIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>
-                  La première couche (intérieure) utilise le
-                  &quot;ThemeProvider&quot; de Material-UI et reçoit un des deux
-                  thèmes en fonction du Context.
-                </ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
-                  <ArrowRightIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>
-                  La deuxième couche (extérieure) utilise le
-                  &quot;ContextProvider&quot;.
-                </ListItemText>
-              </ListItem>
-            </List>
+            {langFR ?
+              dialogTextContextFR.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
+              :
+              dialogTextContextGB.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
+            }
+            {langFR ?
+              <DialogList listItems={dialogListContextFR} />
+              :
+              <DialogList listItems={dialogListContextGB} />
+            }
             <Typography
               variant="h6"
               align="justify"
               style={{ margin: "1rem 0" }}
             >
-              Paquets npm
+              npm packages
             </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Je voulais m&apos;entrainer à utiliser des paquets npm. Les
-              paquets que j&apos;ai utilisé pour ce projet :
-            </Typography>
-            <List>
-              <ListItem>
-                <ListItemIcon>
-                  <ArrowRightIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>
-                  <a
-                    href="https://www.npmjs.com/package/react-scroll"
-                    target="_blank"
-                    rel="noreferrer"
-                    style={theme.heroLink}
-                  >
-                    react-scroll
-                  </a>{" "}
-                  pour les transitions entre les différentes sections de la page
-                </ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
-                  <ArrowRightIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>
-                  <a
-                    href="https://www.npmjs.com/package/react-player"
-                    target="_blank"
-                    rel="noreferrer"
-                    style={theme.heroLink}
-                  >
-                    react-player
-                  </a>{" "}
-                  pour insérer la vidéo de démonstration d&apos;un projet pour
-                  le CNED
-                </ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
-                  <ArrowRightIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>
-                  <a
-                    href="https://www.npmjs.com/package/react-image-gallery"
-                    target="_blank"
-                    rel="noreferrer"
-                    style={theme.heroLink}
-                  >
-                    react-image-gallery
-                  </a>{" "}
-                  pour les galleries d&apos;images pour certains projets
-                </ListItemText>
-              </ListItem>
-            </List>
+            {langFR ?
+              dialogTextPackageFR.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
+              :
+              dialogTextPackageGB.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
+            }
+            {langFR ?
+              <DialogList listItems={dialogListPackageFR} theme={theme} />
+              :
+              <DialogList listItems={dialogListPackageGB} theme={theme} />
+            }
             <Typography
               variant="h6"
               align="justify"
@@ -303,22 +231,16 @@ const PortfolioDialog = ({ handleClose, open }) => {
             >
               Tests
             </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Finalement je voulais m&apos;entrainer à l&apos;utilisation de
-              react-testing-library et Jest. Les tests unitaires que j&apos;ai
-              fait sont assez simples (comme il s&apos;agit d&apos;un site
-              statique) mais ainsi j&apos;ai pu me familiariser avec le
-              fonctionnement.
-            </Typography>
+            {langFR ?
+              dialogTextTestFR.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
+              :
+              dialogTextTestGB.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
+            }
           </Container>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} style={theme.contrastColor}>
-            Fermer
+            {langFR ? "Fermer" : "Close"}
           </Button>
         </DialogActions>
       </Dialog>

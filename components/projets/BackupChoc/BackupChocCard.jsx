@@ -1,14 +1,28 @@
 import ProjectCard from "../ProjectCard";
 import BackupChocDialog from "./BackupChocDialog";
+import { useContext } from "react";
+import { LanguageContext } from "../../../pages/_app";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  cardSubTitleFR,
+  cardSubTitleGB,
+  cardImageTitleFR,
+  cardImageTitleGB,
+  cardTextFR,
+  cardTextGB
+} from "./BackupChocText";
 
 const BackupChocCard = () => {
+  const { langFR } = useContext(LanguageContext);
+
   return (
     <ProjectCard
-      title="Mise en place de solution de sauvegarde d&apos;une application web Azure"
-      subtitle="Réalisation en cours de formation - 21/10/2021"
+      title={langFR ? cardTitleFR : cardTitleGB}
+      subtitle={langFR ? cardSubTitleFR : cardSubTitleGB}
       image="/imgs/PCAChoc.png"
-      imageTitle=""
-      cardText="Simulation de perte de données et restauration depuis la sauvegarde Azure."
+      imageTitle={langFR ? cardImageTitleFR : cardImageTitleGB}
+      cardText={langFR ? cardTextFR : cardTextGB}
       dialog={BackupChocDialog}
     />
   );

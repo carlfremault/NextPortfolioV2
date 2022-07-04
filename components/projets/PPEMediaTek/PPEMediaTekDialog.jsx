@@ -7,21 +7,27 @@ import {
   DialogContent,
   DialogTitle,
   Grid,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   Typography,
 } from "@material-ui/core";
+import { useContext } from "react";
 import { useTheme } from "@material-ui/styles";
+import { LanguageContext } from "../../../pages/_app";
 import BuildIcon from "@material-ui/icons/Build";
 import BrushIcon from "@material-ui/icons/Brush";
-import CheckIcon from "@material-ui/icons/Check";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
 import Image from "next/image";
 import PPEMediaTekGallery from "./PPEMediaTekGallery";
 import ReactPlayer from "react-player/lazy";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  dialogDateFR,
+  dialogDateGB,
+  dialogTextFR,
+  dialogTextGB,
+} from "./PPEMediaTekText";
+import DialogParagraph from "../../tools/DialogParagraph";
 
 const myLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 75}`;
@@ -29,6 +35,7 @@ const myLoader = ({ src, width, quality }) => {
 
 const PPEMediaTekDialog = ({ handleClose, open }) => {
   const theme = useTheme();
+  const { langFR } = useContext(LanguageContext);
 
   return (
     <>
@@ -41,7 +48,9 @@ const PPEMediaTekDialog = ({ handleClose, open }) => {
         fullWidth={true}
         maxWidth="lg"
       >
-        <DialogTitle>Application de bureau - C#, MySQL</DialogTitle>
+        <DialogTitle>
+          {langFR ? cardTitleFR : cardTitleGB}
+        </DialogTitle>
         <DialogContent dividers>
           <Container
             maxWidth="md"
@@ -49,6 +58,17 @@ const PPEMediaTekDialog = ({ handleClose, open }) => {
           >
             <PPEMediaTekGallery />
           </Container>
+          {!langFR &&
+            <Container maxWidth="md">
+              <Typography
+                variant="subtitle1"
+                align="center"
+                style={{ margin: "1rem 0" }}
+              >
+                As this project was a part of my (French) training program, all documents are in French.
+              </Typography>
+            </Container>
+          }
           <Grid
             container
             direction="column"
@@ -79,7 +99,7 @@ const PPEMediaTekDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<BuildIcon />}
                 >
-                  Documentation technique
+                  {langFR ? "Documentation technique" : "Technical documentation"}
                 </Button>
               </a>
               <a
@@ -105,7 +125,7 @@ const PPEMediaTekDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<PictureAsPdfIcon />}
                 >
-                  Contexte
+                  {langFR ? "Contexte" : "Context"}
                 </Button>
               </a>
               <a
@@ -118,7 +138,7 @@ const PPEMediaTekDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<PictureAsPdfIcon />}
                 >
-                  Expression des besoins
+                  {langFR ? "Expression des besoins" : "Requirements"}
                 </Button>
               </a>
               <a
@@ -131,7 +151,7 @@ const PPEMediaTekDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<PictureAsPdfIcon />}
                 >
-                  Compte Rendu
+                  {langFR ? "Compte Rendu" : "Report"}
                 </Button>
               </a>
             </Grid>
@@ -195,37 +215,13 @@ const PPEMediaTekDialog = ({ handleClose, open }) => {
           </Container>
           <Container maxWidth="md">
             <Typography variant="h6" style={{ margin: "2rem 0" }}>
-              4 avril 2021
+              {langFR ? dialogDateFR : dialogDateGB}
             </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Notre mission pour ce deuxième Atelier Professionnel était de
-              créer une application permettant la gestion des membres du
-              personnel d&apos;une médiathèque, ainsi que de leurs absences.
-            </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              L&apos;application est écrite en C# selon une architecture MVC et
-              liée à une base de données MySQL. Elle permet de consulter la
-              liste du personnel puis d&apos;ajouter, modifier ou supprimer des
-              membres. Pour chaque membre on peut consulter une liste de ses
-              absences, on peut en ajouter des nouvelles, ou encore modifier ou
-              supprimer des absences enrégistrées.
-            </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              En plus, je suis complètement sorti de ma zone de confort pour
-              vous proposer cette vidéo de démonstration !
-            </Typography>
+            {langFR ?
+              dialogTextFR.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
+              :
+              dialogTextGB.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
+            }
           </Container>
           <Grid
             container
@@ -246,55 +242,10 @@ const PPEMediaTekDialog = ({ handleClose, open }) => {
               }}
             />
           </Grid>
-          <Container maxWidth="md">
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "3rem 0 1rem" }}
-            >
-              Les compétences officielles couvertes par cet atelier sont les suivantes :
-            </Typography>
-            <List>
-              <ListItem>
-                <ListItemIcon style={{ transform: "translate(10px)" }}>
-                  <CheckIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>Gérer le patrimoine informatique</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Mettre en place et vérifier les niveaux d&apos;habilitation associés à un service</ListItemText>
-              </ListItem>
-            </List>
-            <List>
-              <ListItem>
-                <ListItemIcon style={{ transform: "translate(10px)" }}>
-                  <CheckIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>Répondre aux incidents et aux demandes d&apos;assistance et d&apos;évolution</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Traiter des demandes concernant les applications</ListItemText>
-              </ListItem>
-            </List>
-            <List>
-              <ListItem>
-                <ListItemIcon style={{ transform: "translate(10px)" }}>
-                  <CheckIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>Mettre à disposition des utilisateurs un service informatique</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Déployer un service</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Accompagner les utilisateurs dans la mise en place d&apos;un service</ListItemText>
-              </ListItem>
-            </List>
-          </Container>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} style={theme.contrastColor}>
-            Fermer
+            {langFR ? "Fermer" : "Close"}
           </Button>
         </DialogActions>
       </Dialog>

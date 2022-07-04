@@ -7,17 +7,23 @@ import {
   DialogContent,
   DialogTitle,
   Grid,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   Typography,
 } from "@material-ui/core";
+import { useContext } from "react";
 import { useTheme } from "@material-ui/styles";
+import { LanguageContext } from "../../../pages/_app";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
-import CheckIcon from "@material-ui/icons/Check";
 import Image from "next/image";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  dialogDateFR,
+  dialogDateGB,
+  dialogTextFR,
+  dialogTextGB,
+} from "./DenombrementsText";
+import DialogParagraph from "../../tools/DialogParagraph";
 
 const myLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 75}`;
@@ -25,6 +31,7 @@ const myLoader = ({ src, width, quality }) => {
 
 const DenombrementsDialog = ({ handleClose, open }) => {
   const theme = useTheme();
+  const { langFR } = useContext(LanguageContext);
 
   return (
     <>
@@ -37,7 +44,9 @@ const DenombrementsDialog = ({ handleClose, open }) => {
         fullWidth={true}
         maxWidth="lg"
       >
-        <DialogTitle>Revue de code application console Dénombrements - C#</DialogTitle>
+        <DialogTitle>
+          {langFR ? cardTitleFR : cardTitleGB}
+        </DialogTitle>
         <DialogContent dividers>
           <Container
             maxWidth="md"
@@ -51,6 +60,17 @@ const DenombrementsDialog = ({ handleClose, open }) => {
               alt="Application Console Educative Denombrements"
             />
           </Container>
+          {!langFR &&
+            <Container maxWidth="md">
+              <Typography
+                variant="subtitle1"
+                align="center"
+                style={{ margin: "1rem 0" }}
+              >
+                As this project was a part of my (French) training program, all documents are in French.
+              </Typography>
+            </Container>
+          }
           <Grid
             container
             direction="column"
@@ -81,7 +101,7 @@ const DenombrementsDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<PictureAsPdfIcon />}
                 >
-                  Rapport revue de code
+                  {langFR ? "Rapport revue de code" : "Code review report"}
                 </Button>
               </a>
               <a
@@ -94,7 +114,7 @@ const DenombrementsDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<PictureAsPdfIcon />}
                 >
-                  Règles de codage
+                  {langFR ? "Règles de codage" : "Coding standards"}
                 </Button>
               </a>
             </Grid>
@@ -142,41 +162,18 @@ const DenombrementsDialog = ({ handleClose, open }) => {
           </Container>
           <Container maxWidth="md">
             <Typography variant="h6" style={{ margin: "2rem 0" }}>
-              13 octobre 2020
+              {langFR ? dialogDateFR : dialogDateGB}
             </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Pour cet exercice de revue de code j&apos;ai corrigé une application console qui permet de calculer des dénombrements. Des règles de codage à respecter étaient fournis, un rapport d&apos;analyse était à compléter.
-            </Typography>
-              <Typography
-                variant="body1"
-                align="justify"
-                style={{ margin: "4rem 0 1rem" }}
-              >
-                Les compétences officielles couvertes par cet exercice sont les suivantes :
-              </Typography>
-              <List>
-                <ListItem>
-                  <ListItemIcon style={{ transform: "translate(10px)" }}>
-                    <CheckIcon color="secondary" />
-                  </ListItemIcon>
-                  <ListItemText>Répondre aux incidents et aux demandes d&apos;assistance et d&apos;évolution</ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemText inset>- Collecter, suivre et orienter des demandes</ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemText inset>- Traiter des demandes concernant les applications</ListItemText>
-                </ListItem>
-              </List>
+            {langFR ?
+              dialogTextFR.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
+              :
+              dialogTextGB.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
+            }
           </Container>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} style={theme.contrastColor}>
-            Fermer
+            {langFR ? "Fermer" : "Close"}
           </Button>
         </DialogActions>
       </Dialog>

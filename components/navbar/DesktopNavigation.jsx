@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
-import { Button, Typography } from "@material-ui/core";
+import { Button, Grid, Typography } from "@material-ui/core";
+import { useContext } from "react";
 import { useTheme } from "@material-ui/styles";
+import { LanguageContext } from "../../pages/_app";
 import { Link } from "react-scroll";
 
 /**
@@ -9,30 +11,41 @@ import { Link } from "react-scroll";
  */
 const DesktopNavigation = ({ menu }) => {
   const theme = useTheme();
+  const { langFR } = useContext(LanguageContext);
 
   return (
-    <>
+    <Grid
+      container
+      direction="row"
+      alignItems="center"
+      justifyContent="center"
+      wrap="nowrap"
+    >
       {menu.map((item) => (
-        <Link
-          to={item.path}
-          spy={true}
-          smooth={true}
-          offset={item.offset}
-          duration={500}
-          key={item.item}
+        <Grid
+          item
+          key={item.itemGB}
         >
-          <Button>
-            <Typography
-              variant="subtitle1"
-              color="primary"
-              style={theme.desktopNavButton}
-            >
-              {item.item}
-            </Typography>
-          </Button>
-        </Link>
+          <Link
+            to={item.path}
+            spy={true}
+            smooth={true}
+            offset={item.offset}
+            duration={500}
+          >
+            <Button>
+              <Typography
+                variant="subtitle1"
+                color="primary"
+                style={theme.desktopNavButton}
+              >
+                {langFR ? item.itemFR : item.itemGB}
+              </Typography>
+            </Button>
+          </Link>
+        </Grid>
       ))}
-    </>
+    </Grid>
   );
 };
 

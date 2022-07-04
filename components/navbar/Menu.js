@@ -1,24 +1,22 @@
 const Menu = () => {
   return [
     {
-      item: "Accueil",
+      itemFR: "Accueil",
+      itemGB: "Home",
       path: "hero",
       offset: 0,
     },
     {
-      item: "À Propos",
-      path: "apropos",
+      itemFR: "À Propos",
+      itemGB: "About",
+      path: "about",
       offset: -60,
     },
     {
-      item: "Projets",
-      path: "projets",
+      itemFR: "Projets",
+      itemGB: "Projects",
+      path: "projects",
       offset: 30,
-    },
-    {
-      item: "Veille Informatique",
-      path: "veilleinfo",
-      offset: -60,
     },
   ];
 };
