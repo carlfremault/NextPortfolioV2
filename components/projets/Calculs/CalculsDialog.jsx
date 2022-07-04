@@ -7,10 +7,6 @@ import {
   DialogContent,
   DialogTitle,
   Grid,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   Typography,
 } from "@material-ui/core";
 import { useContext } from "react";
@@ -18,7 +14,6 @@ import { useTheme } from "@material-ui/styles";
 import { LanguageContext } from "../../../pages/_app";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
-import CheckIcon from "@material-ui/icons/Check";
 import Image from "next/image";
 import {
   cardTitleFR,

@@ -22,14 +22,16 @@ const DesktopNavigation = ({ menu }) => {
       wrap="nowrap"
     >
       {menu.map((item) => (
-        <Grid item>
+        <Grid
+          item
+          key={item.itemGB}
+        >
           <Link
             to={item.path}
             spy={true}
             smooth={true}
             offset={item.offset}
             duration={500}
-            key={item.itemGB}
           >
             <Button>
               <Typography
