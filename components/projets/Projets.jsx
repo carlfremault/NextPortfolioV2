@@ -5,6 +5,8 @@ import { LanguageContext } from "../../pages/_app";
 import ProjectCardContainer from "./ProjectCardContainer";
 import SectionTitle from "../tools/SectionTitle";
 
+// merge 
+
 /**
  * 'Projects' section
  * SectionTitle and container ProjectCards for project cards
