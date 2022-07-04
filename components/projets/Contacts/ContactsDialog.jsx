@@ -7,18 +7,24 @@ import {
   DialogContent,
   DialogTitle,
   Grid,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   Typography,
 } from "@material-ui/core";
+import { useContext } from "react";
 import { useTheme } from "@material-ui/styles";
+import { LanguageContext } from "../../../pages/_app";
 import BuildIcon from "@material-ui/icons/Build";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
-import CheckIcon from "@material-ui/icons/Check";
 import Image from "next/image";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  dialogDateFR,
+  dialogDateGB,
+  dialogTextFR,
+  dialogTextGB,
+} from "./ContactsText";
+import DialogParagraph from "../../tools/DialogParagraph";
 
 const myLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 75}`;
@@ -26,6 +32,7 @@ const myLoader = ({ src, width, quality }) => {
 
 const ContactsDialog = ({ handleClose, open }) => {
   const theme = useTheme();
+  const { langFR } = useContext(LanguageContext);
 
   return (
     <>
@@ -38,7 +45,9 @@ const ContactsDialog = ({ handleClose, open }) => {
         fullWidth={true}
         maxWidth="lg"
       >
-        <DialogTitle>Évolution d&apos;application de bureau Contacts - C#</DialogTitle>
+        <DialogTitle>
+          {langFR ? cardTitleFR : cardTitleGB}
+        </DialogTitle>
         <DialogContent dividers>
           <Container
             maxWidth="md"
@@ -52,6 +61,17 @@ const ContactsDialog = ({ handleClose, open }) => {
               alt="Capture d'écran application Contacts"
             />
           </Container>
+          {!langFR &&
+            <Container maxWidth="md">
+              <Typography
+                variant="subtitle1"
+                align="center"
+                style={{ margin: "1rem 0" }}
+              >
+                As this project was a part of my (French) training program, all documents are in French.
+              </Typography>
+            </Container>
+          }
           <Grid
             container
             direction="column"
@@ -82,7 +102,7 @@ const ContactsDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<PictureAsPdfIcon />}
                 >
-                  Cas d&apos;utilisation
+                  {langFR ? "Cas d'utilisation" : "Use case"}
                 </Button>
               </a>
               <a
@@ -95,7 +115,7 @@ const ContactsDialog = ({ handleClose, open }) => {
                   style={theme.contrastButton}
                   startIcon={<BuildIcon />}
                 >
-                  Documentation technique
+                  {langFR ? "Documentation technique" : "Technical documentation"}
                 </Button>
               </a>
             </Grid>
@@ -143,41 +163,18 @@ const ContactsDialog = ({ handleClose, open }) => {
           </Container>
           <Container maxWidth="md">
             <Typography variant="h6" style={{ margin: "2rem 0" }}>
-              2 novembre 2020
+              {langFR ? dialogDateFR : dialogDateGB}
             </Typography>
-            <Typography
-              variant="body1"
-              align="justify"
-              style={{ margin: "1rem 0" }}
-            >
-              Pendant cet exercice nous avons fait évoluer une petite application de bureau permettant d&apos;enregistrer, supprimer et rechercher des contacts. Le travail à faire était divisé en quatre sprints, puis à la fin nous avons généré la documentation technique de l&apos;application.
-            </Typography>
-              <Typography
-                variant="body1"
-                align="justify"
-                style={{ margin: "4rem 0 1rem" }}
-              >
-                Les compétences officielles couvertes par cet exercice sont les suivantes :
-              </Typography>
-              <List>
-              <ListItem>
-                <ListItemIcon style={{ transform: "translate(10px)" }}>
-                  <CheckIcon color="secondary" />
-                </ListItemIcon>
-                <ListItemText>Travailler en mode projet</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Analyser les objectifs et les modalités d&apos;organisation d&apos;un projet</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText inset>- Planifier les activités</ListItemText>
-              </ListItem>
-            </List>
+            {langFR ?
+              dialogTextFR.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
+              :
+              dialogTextGB.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)
+            }
           </Container>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} style={theme.contrastColor}>
-            Fermer
+            {langFR ? "Fermer" : "Close"}
           </Button>
         </DialogActions>
       </Dialog>

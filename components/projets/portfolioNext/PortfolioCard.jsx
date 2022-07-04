@@ -1,16 +1,28 @@
 import PortfolioDialog from "./PortfolioDialog";
 import ProjectCard from "../ProjectCard";
+import { useContext } from "react";
+import { LanguageContext } from "../../../pages/_app";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  cardSubTitleFR,
+  cardSubTitleGB,
+  cardImageTitleFR,
+  cardImageTitleGB,
+  cardTextFR,
+  cardTextGB
+} from "./PortfolioText";
 
 const PortfolioCard = () => {
+  const { langFR } = useContext(LanguageContext);
+
   return (
     <ProjectCard
-      title="Création de site portfolio - Next.js"
-      subtitle="Projet Personnel - 16/09/2021"
+      title={langFR ? cardTitleFR : cardTitleGB}
+      subtitle={langFR ? cardSubTitleFR : cardSubTitleGB}
       image="/imgs/Portfolio.png"
-      imageTitle="Portfolio Carl Fremault"
-      cardText="A l'issue de mon stage, où j'ai pu mieux me familiariser
-          avec Next.js / React et Material-UI, j'ai décidé de
-          refaire mon portfolio fait auparavant en Wordpress."
+      imageTitle={langFR ? cardImageTitleFR : cardImageTitleGB}
+      cardText={langFR ? cardTextFR : cardTextGB}
       repoLink="https://github.com/carlfremault/NextPortfolioV2"
       dialog={PortfolioDialog}
     />

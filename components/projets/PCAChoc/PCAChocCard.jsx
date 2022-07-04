@@ -1,14 +1,28 @@
 import ProjectCard from "../ProjectCard";
 import PCAChocDialog from "./PCAChocDialog";
+import { useContext } from "react";
+import { LanguageContext } from "../../../pages/_app";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  cardSubTitleFR,
+  cardSubTitleGB,
+  cardImageTitleFR,
+  cardImageTitleGB,
+  cardTextFR,
+  cardTextGB
+} from "./PCAChocText";
 
 const PCAChocCard = () => {
+  const { langFR } = useContext(LanguageContext);
+
   return (
     <ProjectCard
-      title="Audit PCA d'une application web hébergée dans le cloud"
-      subtitle="Réalisation en cours de formation - 26/09/2021"
+      title={langFR ? cardTitleFR : cardTitleGB}
+      subtitle={langFR ? cardSubTitleFR : cardSubTitleGB}
       image="/imgs/PCAChoc.png"
-      imageTitle="Capture d'écran site Chocolatein"
-      cardText="Audit interne de Plan de Continuité d'Activité d'une application web hébergée dans le cloud Azure."
+      imageTitle={langFR ? cardImageTitleFR : cardImageTitleGB}
+      cardText={langFR ? cardTextFR : cardTextGB}
       dialog={PCAChocDialog}
     />
   );

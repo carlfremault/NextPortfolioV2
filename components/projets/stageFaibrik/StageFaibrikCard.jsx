@@ -1,15 +1,28 @@
+import { useContext } from "react";
+import { LanguageContext } from "../../../pages/_app";
 import ProjectCard from "../ProjectCard";
 import StageFaibrikDialog from "./StageFaibrikDialog";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  cardSubTitleFR,
+  cardSubTitleGB,
+  cardImageTitleFR,
+  cardImageTitleGB,
+  cardTextFR,
+  cardTextGB
+} from "./StageFaibrikText";
 
 const StageFaibrikCard = () => {
+  const { langFR } = useContext(LanguageContext);
+  
   return (
     <ProjectCard
-      title="Développement d'un bot Microsoft Teams - Node.js"
-      subtitle="Stage en milieu professionnel - 15/11 au 31/12/2021"
+      title={langFR ? cardTitleFR : cardTitleGB}
+      subtitle={langFR ? cardSubTitleFR : cardSubTitleGB}
       image="/imgs/faibrikAbout.png"
-      imageTitle="Microsoft Teams bot alerte"
-      cardText="Pour mon stage de deuxième année j’ai intégré l'équipe de fAIBRIK, start-up basée à Annecy (74), du 15 novembre au 31 décembre
-          2021."
+      imageTitle={langFR ? cardImageTitleFR : cardImageTitleGB}
+      cardText={langFR ? cardTextFR : cardTextGB}
       dialog={StageFaibrikDialog}
     />
   );

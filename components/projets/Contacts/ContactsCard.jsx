@@ -1,14 +1,28 @@
 import ProjectCard from "../ProjectCard";
 import ContactsDialog from "./ContactsDialog";
+import { useContext } from "react";
+import { LanguageContext } from "../../../pages/_app";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  cardSubTitleFR,
+  cardSubTitleGB,
+  cardImageTitleFR,
+  cardImageTitleGB,
+  cardTextFR,
+  cardTextGB
+} from "./ContactsText";
 
 const ContactsCard = () => {
+  const { langFR } = useContext(LanguageContext);
+
   return (
     <ProjectCard
-      title="Évolution d'application de bureau Contacts - C#"
-      subtitle="Réalisation en cours de formation - 02/11/2020"
+      title={langFR ? cardTitleFR : cardTitleGB}
+      subtitle={langFR ? cardSubTitleFR : cardSubTitleGB}
       image="/imgs/Contacts.png"
-      imageTitle="Capture d'écran application Contacts"
-      cardText="Evolution d'une application de bureau en quatre sprints. Génération de la documentation technique."
+      imageTitle={langFR ? cardImageTitleFR : cardImageTitleGB}
+      cardText={langFR ? cardTextFR : cardTextGB}
       repoLink="https://github.com/carlfremault/Contacts"
       dialog={ContactsDialog}
     />

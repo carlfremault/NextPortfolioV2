@@ -1,6 +1,6 @@
 # nextjsPortfolio
 
-## Creation of my new portfolio website with Next.js and Material UI
+## Creation of my new portfolio website with Next.js and Material-UI
 
 After my 6-week internship at [Sport Data Intelligence](https://sport-data-intelligence.com) where I made their new website using Next.js, React and Material-UI I decided to update my portfolio website, previously made with WordPress, using these same technologies.
 

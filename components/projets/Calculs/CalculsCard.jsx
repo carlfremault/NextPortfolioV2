@@ -1,14 +1,28 @@
 import ProjectCard from "../ProjectCard";
 import CalculsDialog from "./CalculsDialog";
+import { useContext } from "react";
+import { LanguageContext } from "../../../pages/_app";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  cardSubTitleFR,
+  cardSubTitleGB,
+  cardImageTitleFR,
+  cardImageTitleGB,
+  cardTextFR,
+  cardTextGB
+} from "./CalculsText";
 
 const CalculsCard = () => {
+  const { langFR } = useContext(LanguageContext);
+  
   return (
     <ProjectCard
-      title="Prise en charge d'incidents sur une application console Calculs - C#"
-      subtitle="Réalisation en cours de formation - 12/10/2020"
+      title={langFR ? cardTitleFR : cardTitleGB}
+      subtitle={langFR ? cardSubTitleFR : cardSubTitleGB}
       image="/imgs/Calculs.png"
-      imageTitle="Capture d'écran application Calculs"
-      cardText="Correction d'une application console éducative qui permet d'évaluer ses compétences en calculs suite à la soumission d&apos;un incident utilisateur."
+      imageTitle={langFR ? cardImageTitleFR : cardImageTitleGB}
+      cardText={langFR ? cardTextFR : cardTextGB}
       repoLink="https://github.com/carlfremault/Calculs"
       dialog={CalculsDialog}
     />

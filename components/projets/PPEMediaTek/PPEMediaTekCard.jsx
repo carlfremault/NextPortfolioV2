@@ -1,15 +1,28 @@
 import ProjectCard from "../ProjectCard";
 import PPEMediaTekDialog from "./PPEMediaTekDialog";
+import { useContext } from "react";
+import { LanguageContext } from "../../../pages/_app";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  cardSubTitleFR,
+  cardSubTitleGB,
+  cardImageTitleFR,
+  cardImageTitleGB,
+  cardTextFR,
+  cardTextGB
+} from "./PPEMediaTekText";
 
 const PPEMediaTekCard = () => {
+  const { langFR } = useContext(LanguageContext);
+
   return (
     <ProjectCard
-      title="Application de bureau - C#, MySQL"
-      subtitle="Projet Personnalisé Encadré BTS SIO - 04/04/2021"
+      title={langFR ? cardTitleFR : cardTitleGB}
+      subtitle={langFR ? cardSubTitleFR : cardSubTitleGB}
       image="/imgs/Personnel.png"
-      imageTitle="Application de bureau MediaTek86"
-      cardText="Pour cet Atelier Professionnel nous avons créé une application
-          C# liée à une base de données MySQL, permettant la gestion des membres du personnel d'une médiathèque, ainsi que de leurs absences."
+      imageTitle={langFR ? cardImageTitleFR : cardImageTitleGB}
+      cardText={langFR ? cardTextFR : cardTextGB}
       repoLink="https://github.com/carlfremault/CNED_Atelier2_MediaTek86"
       dialog={PPEMediaTekDialog}
     />

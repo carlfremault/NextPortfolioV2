@@ -1,14 +1,28 @@
 import ProjectCard from "../ProjectCard";
 import DenombrementsDialog from "./DenombrementsDialog";
+import { useContext } from "react";
+import { LanguageContext } from "../../../pages/_app";
+import {
+  cardTitleFR,
+  cardTitleGB,
+  cardSubTitleFR,
+  cardSubTitleGB,
+  cardImageTitleFR,
+  cardImageTitleGB,
+  cardTextFR,
+  cardTextGB
+} from "./DenombrementsText";
 
 const DenombrementsCard = () => {
+  const { langFR } = useContext(LanguageContext);
+
   return (
     <ProjectCard
-      title="Revue de code application console Dénombrements - C#"
-      subtitle="Réalisation en cours de formation - 13/10/2020"
+      title={langFR ? cardTitleFR : cardTitleGB}
+      subtitle={langFR ? cardSubTitleFR : cardSubTitleGB}
       image="/imgs/Denombrements.png"
-      imageTitle="Capture d'écran application Denombrements"
-      cardText="Revue de code d'une application console qui permet de calculer des dénombrements."
+      imageTitle={langFR ? cardImageTitleFR : cardImageTitleGB}
+      cardText={langFR ? cardTextFR : cardTextGB}
       repoLink="https://github.com/carlfremault/Denombrements"
       dialog={DenombrementsDialog}
     />
