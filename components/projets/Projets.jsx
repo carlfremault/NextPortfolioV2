@@ -1,8 +1,7 @@
-import { Button, Container, Grid } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
 import ProjectCardContainer from "./ProjectCardContainer";
 import SectionTitle from "../tools/SectionTitle";
-import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
 
 /**
  * 'Projets' section
