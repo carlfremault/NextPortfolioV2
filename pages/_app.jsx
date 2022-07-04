@@ -3,6 +3,7 @@ import "../styles/globals.css";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Head from "next/head";
 import ReactGA from "react-ga";
+import detectBrowserLanguage from 'detect-browser-language'
 import { ThemeProvider } from "@material-ui/styles";
 import darkTheme from "../theme/darkTheme";
 import lightTheme from "../theme/lightTheme";
@@ -15,6 +16,10 @@ function MyApp({ Component, pageProps }) {
   const toggleLanguage = () => {
     setLangFR(!langFR);
   };
+  
+  useEffect(() => {
+    detectBrowserLanguage() === "fr-FR" && setLangFR(true);
+  }, []);
 
   const [darkMode, setDarkMode] = useState(false);
   const toggleDarkMode = () => {
