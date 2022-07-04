@@ -67,7 +67,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           name="description"
-          content="Carl Fremault - Etudiant développeur en 2ième année du BTS Services Informatiques aux Organisations - Portfolio"
+          content="Carl Fremault - Junior Web Developer - Javascript, React, Node.js - Portfolio"
         />
       </Head>
       <LanguageContext.Provider value={{langFR, toggleLanguage}}>
