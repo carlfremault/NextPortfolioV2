@@ -34,8 +34,8 @@ import {
   dialogTextTestFR,
   dialogTextTestGB,
 } from "./PortfolioText";
-import DialogParagraph from "../../tools/DialogParagraph";
 import DialogList from "../../tools/DialogList";
+import DialogParagraph from "../../tools/DialogParagraph";
 
 const myLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 75}`;
