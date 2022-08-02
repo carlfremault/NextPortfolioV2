@@ -32,20 +32,21 @@ const ProjectCardContainer = () => {
 
   return (
     <Grid container direction="column" alignItems="center">
-      <SubTitle title={langFR ? "Projets professionnels" : "Professional projects"} />
-      <Grid item style={theme.projectCard} id="AP1">
-        <AP1MediatekFormCard />
-      </Grid>
-      <Grid item style={theme.projectCard} id="AP3">
-        <AP3MediatekFormCard />
-      </Grid>
+      <SubTitle title={langFR ? "Projets de stage" : "Internship projects"} />
       <Grid item style={theme.projectCard}>
         <StageFaibrikCard />
       </Grid>
       <Grid item style={theme.projectCard}>
         <StageSDICard />
       </Grid>
-      <SubTitle title={langFR ? "Projets scolaires et personnels" : "Course projects, personal projects"} />
+      <SubTitle title={langFR ? "Projets scolaires" : "Course projects"} />
+      <Grid item style={theme.projectCard} id="AP1">
+        <AP1MediatekFormCard />
+      </Grid>
+      <Grid item style={theme.projectCard} id="AP3">
+        <AP3MediatekFormCard />
+      </Grid>
+      <SubTitle title={langFR ? "Travaux pratiques" : "Course exercises"} />
       <Grid item style={theme.projectCard}>
         <MigrationBDDCard />
       </Grid>
@@ -62,17 +63,14 @@ const ProjectCardContainer = () => {
         <PCAChocCard />
       </Grid>
       <Grid item style={theme.projectCard}>
-        <PortfolioCard />
-      </Grid>
-      <Grid item style={theme.projectCard}>
         <GLPIDeploiementCard />
       </Grid>
       <Grid item style={theme.projectCard}>
         <EnvWebCard />
-      </Grid>    
+      </Grid>
       <Grid item style={theme.projectCard}>
         <MSProjectCard />
-      </Grid>    
+      </Grid>
       <Grid item style={theme.projectCard}>
         <PPEMediaTekCard />
       </Grid>
@@ -87,6 +85,10 @@ const ProjectCardContainer = () => {
       </Grid>
       <Grid item style={theme.projectCard}>
         <CalculsCard />
+      </Grid>
+      <SubTitle title={langFR ? "Projets personnels" : "Personal projects"} />
+      <Grid item style={theme.projectCard}>
+        <PortfolioCard />
       </Grid>
     </Grid>
   );

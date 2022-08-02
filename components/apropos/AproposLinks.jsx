@@ -79,7 +79,7 @@ const AproposLinks = () => {
           </a>
         </Grid>
         <Grid item style={{ textAlign: "center" }}>
-          <a href={langFR ? "../../pdf/CVCarlFremault062022FR.pdf" : "../../pdf/CVCarlFremault062022GB.pdf"} target="_blank" rel="noreferrer">
+          <a href={langFR ? "../../pdf/CVCarlFremault0822FRweb.pdf" : "../../pdf/CVCarlFremault0822GBweb.pdf"} target="_blank" rel="noreferrer">
             <Button
               variant="outlined"
               style={theme.contrastButton}
