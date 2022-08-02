@@ -34,20 +34,11 @@ const Hero = () => {
               </Typography>
             </Grid>
             <Grid item>
-              <Typography
-                variant="subtitle2"
-                component="h2"
-                align="center"
-              >
-                {langFR ? "BTS Services informatiques aux organisations - option Solutions logicielles et applications métiers" : "BTS SIO software development (French two-year technical degree)"}
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="subtitle1" component="h2" align="center" style={{ marginTop: "1.5rem" }}>
+              <Typography variant="subtitle1" component="h2" align="center">
                 {langFR ?
-                  "Fraîchement reconverti, très motivé, flexible et géographiquement mobile, je suis à la recherche d'un nouveau challenge et d'un nouveau poste."
+                  "À la recherche d'un nouveau challenge et d'un nouveau poste."
                   :
-                  'Freshly retrained, highly motivated, flexible and geographically mobile, I am currently looking for a new challenge and position.'
+                  'Looking for a new challenge and position.'
                 }
 
               </Typography>
