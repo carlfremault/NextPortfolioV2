@@ -1,18 +1,31 @@
 import { Container } from "@material-ui/core";
 import { useContext } from "react";
 import { LanguageContext } from "../../pages/_app";
-import BioTextFR from "./BioTextFR";
-import BioTextGB from "./BioTextGB";
+import {
+  bioTextFR,
+  bioTextGB,
+  dialogListBioFR,
+  dialogListBioGB,
+} from "./BioText";
+import DialogList from "../tools/DialogList";
+import DialogParagraph from "../tools/DialogParagraph";
 
-/**
- * Hardcoded bio
- */
 const Bio = () => {
   const { langFR } = useContext(LanguageContext);
 
   return (
-    <Container data-testid="bio">
-        {langFR ? <BioTextFR /> : <BioTextGB />}
+    <Container data-testid="bio" maxWidth="md">
+      {langFR ?
+        <Container>
+          {bioTextFR.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)}
+          <DialogList listItems={dialogListBioFR} style={{marginTop: "4rem"}}/>
+        </Container>
+        :
+        <Container>
+          {bioTextGB.map((el, index) => <DialogParagraph key={index} paragraphText={el} />)}
+          <DialogList listItems={dialogListBioGB} style={{marginTop: "4rem"}}/>
+        </Container>
+      }
     </Container>
   );
 };

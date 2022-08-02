@@ -17,7 +17,7 @@ const Apropos = () => {
   return (
     <section id="about" data-testid="apropos">
       <Container maxWidth={false}>
-        <SectionTitle title= {langFR ? "À propos" : "About me"} />
+        <SectionTitle title= {langFR ? "À propos" : "About"} />
         <Bio />
         <AproposLinks />
         <Competences />

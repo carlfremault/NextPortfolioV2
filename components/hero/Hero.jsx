@@ -33,7 +33,7 @@ const Hero = () => {
                 {langFR ? 'Développeur web' : 'Web developer'}
               </Typography>
             </Grid>
-            <Grid item>
+            {/* <Grid item>
               <Typography
                 variant="subtitle2"
                 component="h2"
@@ -51,7 +51,7 @@ const Hero = () => {
                 }
 
               </Typography>
-            </Grid>
+            </Grid> */}
             <Grid item>
               <Link
                 to={"projects"}
