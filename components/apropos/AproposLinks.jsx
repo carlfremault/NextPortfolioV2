@@ -7,15 +7,15 @@ import {
   DialogTitle,
   Grid,
   Typography,
-} from "@material-ui/core";
-import { useTheme } from "@material-ui/styles";
-import { useState } from "react";
-import { useContext } from "react";
-import { LanguageContext } from "../../pages/_app";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import FaceIcon from "@material-ui/icons/Face";
-import EmailIcon from "@material-ui/icons/Email";
+} from '@material-ui/core';
+import { useTheme } from '@material-ui/styles';
+import { useState } from 'react';
+import { useContext } from 'react';
+import { LanguageContext } from '../../pages/_app';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import FaceIcon from '@material-ui/icons/Face';
+import EmailIcon from '@material-ui/icons/Email';
 
 /**
  * Horizontal grid with link buttons
@@ -37,48 +37,48 @@ const AproposLinks = () => {
 
   return (
     <Container
-      maxWidth="md"
-      style={{ marginTop: "3rem", marginBottom: "4rem" }}
+      maxWidth='md'
+      style={{ marginTop: '3rem', marginBottom: '4rem' }}
     >
       <Grid
         container
-        direction="row"
-        justifyContent="space-evenly"
-        alignItems="center"
+        direction='row'
+        justifyContent='space-evenly'
+        alignItems='center'
       >
-        <Grid item style={{ textAlign: "center" }}>
+        <Grid item style={{ textAlign: 'center' }}>
           <a
-            href="https://www.linkedin.com/in/carl-fremault/"
-            target="_blank"
-            rel="noreferrer"
+            href='https://www.linkedin.com/in/carl-fremault/'
+            target='_blank'
+            rel='noreferrer'
           >
             <Button
-              variant="outlined"
+              variant='outlined'
               style={theme.contrastButton}
               startIcon={<LinkedInIcon />}
-              data-testid="aproposLinkedInButton"
+              data-testid='aproposLinkedInButton'
             >
               LinkedIn
             </Button>
           </a>
         </Grid>
-        <Grid item style={{ textAlign: "center" }}>
+        <Grid item style={{ textAlign: 'center' }}>
           <a
-            href="https://github.com/carlfremault"
-            target="_blank"
-            rel="noreferrer"
+            href='https://github.com/carlfremault'
+            target='_blank'
+            rel='noreferrer'
           >
             <Button
-              variant="outlined"
+              variant='outlined'
               style={theme.contrastButton}
               startIcon={<GitHubIcon />}
-              data-testid="aproposGitHubButton"
+              data-testid='aproposGitHubButton'
             >
               GitHub
             </Button>
           </a>
         </Grid>
-        <Grid item style={{ textAlign: "center" }}>
+        {/* <Grid item style={{ textAlign: "center" }}>
           <a href={langFR ? "../../pdf/CVCarlFremault0822FRweb.pdf" : "../../pdf/CVCarlFremault0822GBweb.pdf"} target="_blank" rel="noreferrer">
             <Button
               variant="outlined"
@@ -89,14 +89,14 @@ const AproposLinks = () => {
               CV (PDF)
             </Button>
           </a>
-        </Grid>
-        <Grid item style={{ textAlign: "center" }}>
-          <a href="#" onClick={handleOpen}>
+        </Grid> */}
+        <Grid item style={{ textAlign: 'center' }}>
+          <a href='#' onClick={handleOpen}>
             <Button
-              variant="outlined"
+              variant='outlined'
               style={theme.contrastButton}
               startIcon={<EmailIcon />}
-              data-testid="aproposContactButton"
+              data-testid='aproposContactButton'
             >
               Contact
             </Button>
@@ -110,21 +110,23 @@ const AproposLinks = () => {
           style: theme.dialog,
         }}
         fullWidth={true}
-        maxWidth="md"
+        maxWidth='md'
       >
         <DialogTitle>Contact</DialogTitle>
         <DialogContent dividers>
           <Typography
-            variant="body1"
+            variant='body1'
             gutterBottom
-            style={{ textAlign: "center" }}
+            style={{ textAlign: 'center' }}
           >
-            {langFR ? "Vous pouvez me contacter par email :" : "You can contact me by email"}
+            {langFR
+              ? 'Vous pouvez me contacter par email :'
+              : 'You can contact me by email'}
           </Typography>
           <Typography
-            variant="body1"
+            variant='body1'
             gutterBottom
-            style={{ textAlign: "center" }}
+            style={{ textAlign: 'center' }}
           >
             carlfremault (at) yahoo (dot) com
           </Typography>
