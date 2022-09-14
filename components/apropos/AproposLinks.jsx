@@ -14,7 +14,7 @@ import { useContext } from 'react';
 import { LanguageContext } from '../../pages/_app';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import FaceIcon from '@material-ui/icons/Face';
+// import FaceIcon from '@material-ui/icons/Face';
 import EmailIcon from '@material-ui/icons/Email';
 
 /**
